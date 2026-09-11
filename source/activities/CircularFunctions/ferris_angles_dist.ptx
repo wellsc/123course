@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id='sec_ferris_angles_dist' xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Ferris Wheels, Angles, and Distances</title>
+        <xi:include href='./height_of_ferris.ptx'/>
+        <xi:include href='./distance_and_angles.ptx'/>
+        <xi:include href='./sine_cosine.ptx'/>
+        <xi:include href='./similar_triangles.ptx'/>
+</section>

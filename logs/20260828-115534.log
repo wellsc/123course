@@ -1,0 +1,13 @@
+INFO    : Building target print
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/course.ptx by /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /home/wellsc/classes/123/Course/source/syllabus/dates.ptx: Error reading file '/home/wellsc/classes/123/Course/source/syllabus/dates.ptx': failed to load "/home/wellsc/classes/123/Course/source/syllabus/dates.ptx": No such file or directory
+ERROR   : Error assembling source file: Error reading file '/home/wellsc/classes/123/Course/source/syllabus/dates.ptx': failed to load "/home/wellsc/classes/123/Course/source/syllabus/dates.ptx": No such file or directory
+FATAL   : XML syntax for source file is invalid
+INFO    : ------------------------
+exit    : Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

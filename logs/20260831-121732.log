@@ -1,0 +1,5 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/course.ptx by /home/wellsc/.ptx/2.52.0/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /home/wellsc/classes/123/Course/source/Policies/201technology.ptx: Opening and ending tag mismatch: p line 35 and subsubsection, line 42, column 21 (201technology.ptx, line 42)
+ERROR   : Could not assemble source for validation: Opening and ending tag mismatch: p line 35 and subsubsection, line 42, column 21 (201technology.ptx, line 42)

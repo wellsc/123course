@@ -1,0 +1,69 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : Building target course
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/main.ptx by /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : verifying and expanding input directory: /home/wellsc/classes/123/Course/source/../assets
+INFO    : input directory expanded to absolute path: /home/wellsc/classes/123/Course/assets
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/wellsc/classes/123/Course/output/course.
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : verifying and expanding input directory: /home/wellsc/classes/123/Course/source/../assets
+INFO    : input directory expanded to absolute path: /home/wellsc/classes/123/Course/assets
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/main.ptx by /home/wellsc/.ptx/2.50.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.50.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.2.9
+INFO    : Downloading Runestone Services, version 8.2.9
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /home/wellsc/classes/123/Course/source/main.ptx to HTML in /tmp/ptx-0hckwgsp
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/main.ptx by /home/wellsc/.ptx/2.50.0/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing (prefaced with a *):
+INFO    : * PTX:INFO:   checking all deprecated elements.
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "coursecontent") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/p/xref
+INFO    : *              located within: "tldr" (xml:id), "TL;DR" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "policies") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/p/xref
+INFO    : *              located within: "tldr" (xml:id), "TL;DR" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "coursecontent") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/subsubsection/paragraphs/p/xref
+INFO    : *              located within: "course_description" (xml:id), "Course Description" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "objectives") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/subsubsection/paragraphs/p/xref
+INFO    : *              located within: "course_description" (xml:id), "Course Description" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "assessment") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/subsubsection/paragraphs/p/xref
+INFO    : *              located within: "learning_is_fun" (xml:id), "Learning is fun!" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "portfolio") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/p/xref
+INFO    : *              located within: "assess_intro" (xml:id), "Introduction to Ungrading" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "integrity") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/introduction/p/xref
+INFO    : *              located within: "genrative_ai" (xml:id), "Use of Generative AI" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "mathematical-typesetting") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/subsubsection/p/xref
+INFO    : *              located within: "feedback_format" (xml:id), "Format of Submissions" (title)
+ERROR   : * PTX:ERROR:      An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "assessment") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located at: pretext/book/chapter/section/subsection/subsubsection/p/xref
+INFO    : *              located within: "attendance" (xml:id), "Make Attendance a Priority" (title)
+INFO    : successful application of /home/wellsc/.ptx/2.50.0/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-0hckwgsp
+INFO    : Removing temporary directory /tmp/ptx-xkgov5gy
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+FATAL   : There were errors during the build.  See above.
+INFO    : ------------------------
+exit    : Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

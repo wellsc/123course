@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-week-01" xmlns:xi="http://www.w3.org/2001/XInclude" >
+        <title>Week 1</title>
+        <subsection>
+                <title>Tuesday, Sept. 1</title>
+                <introduction>
+                        <p>
+                                        Introduction, highlights from the syllabus, and an introduction to vectors using <q>Turtle Graphics</q> in a <url href="https://colab.research.google.com/drive/1n2eAzdE1ix9T4zX7N3-LxnRTpe75hkSY">Google Colaboratory Worksheet</url>.
+                                </p>
+                        </introduction>
+
+                        <subsubsection xml:id="notes_09_01_main">
+                                <title>Main Ideas</title>
+                                <p>
+                                        The main take-away ideas from the introduction to vectors were:
+                                        <ul>
+                                                <li>Vectors describe quantities that have not only a <term>magnitude</term>, or size, but also a <term>direction</term>.</li>
+                                                <li>Vectors are often represented graphically using arrows, with a <term>tail</term>, where the vector starts, and a <term>head</term>, where the vector ends.</li>
+                                                <li>A vector can be interpreted as a change, and graphically, only the direction and size, not the specific location, of a vector is important. So, for example, an arrow from <m>(0,0)</m> to <m>(30, -60)</m> and an arrow from <m>(-10,30)</m> to <m>(20,-30)</m> are different representation of the exact same vector, because in each case the <m>x</m>-coordinate changes by <m>+30</m> and the <m>y</m>-coordinate changes by <m>-60</m>.</li>
+                                                <li>Two ways to represent vectors algebraically are using <term>angle brackets</term>, such as <m>\Avec{30,-60}</m>, with the <term>elements</term> of the vector listed horizontally, and using <term>square brackets</term>, such as <m>\left[\begin{array}{r}30\\-60\end{array}\right]</m>, with the elements listed vertically.</li>
+                                                <li>Because the angle bracket and square bracket representations of vectors take a lot of space, we will often <q>name</q> vectors by assigning them to a variable, usually written either as a bold letter or an italic letter with an arrow over it. So, we might say something like <q>let <m>\vec{v}=\Avec{30,-60}</m> and let <m>\vec{w}=\Avec{20,20}</m>.</q></li>
+                                                <li>Vectors can be combined by <em>adding</em> them. Writing <m>\vec{u}=\vec{v}+\vec{w}</m> indicates that if we add <m>\vec{v}</m> and <m>\vec{w}</m> the <term>resultant vector</term> is <m>\vec{u}</m>. Graphically, to find <m>\vec{u}=\vec{v}+\vec{w}</m> when we are given <m>\vec{v}</m> and <m>\vec{w}</m>, we place the tail of <m>\vec{w}</m> at the head of <m>\vec{v}</m>, and <m>\vec{u}</m> is the vector from the tail of <m>\vec{v}</m> to the head of <m>\vec{w}</m>. (See example below.)</li>
+                                        </ul>
+                                </p>
+                                        <example xml:id='ex_vec_add'>
+                                                <title>Addition of Vectors</title>
+                                                <p>
+                                                        Let <m>\vec{v}=\Avec{30,-60}</m> and let <m>\vec{w}=\Avec{20,20}</m>.  Let <m>\vec{u}=\vec{v}+\vec{w}</m>. We will represent the addition of <m>\vec{v}</m> and <m>\vec{w}</m> graphically and algebraically.
+                                                </p>
+                                                <p>
+                                                        To add <m>\vec{v}</m> and <m>\vec{w}</m> graphically, since we have no information about where the tail of <m>\vec{v}</m> should go, we will draw <m>\vec{v}</m> with its tail at the origin (and so its head is at <m>(30,-60)</m>). Then, we draw <m>\vec{w}</m> with its tail at the head of <m>\vec{v}</m>. Then, the vector <m>\vec{u}=\vec{v}+\vec{w}</m> will have its tail at the tail of <m>\vec{v}</m> and its head at the head of <m>\vec{w}</m>. So, for this example, the tail of <m>\vec{u}</m> is at the origin and the head of <m>\vec{u}</m> is at <m>(50,-40)</m>. <alert>Note:</alert> We have included a grid and tick marks on the graph, but they are not necessary. You can add vectors graphically without knowing their algebraic values!
+                                                </p>
+                                                <figure xml:id='fig_example_graphical_vec_add'>
+                                                        <caption>Graphical Addition of Vectors</caption>
+                                                        <image width="60%">
+                                                                <description><p>Graphical depiction of adding two vectors.</p></description>
+                                                                <xi:include href="./vec_add_graph.xml" />
+                                                        </image>
+                                                </figure>
+                                                <p>
+                                                        To add <m>\vec{v}</m> and <m>\vec{w}</m> algebraically, we add <em>element-wise</em>, which means we add according to position. We will show this using both angle brackets and square brackets.
+                                                </p>
+                                                <p>
+                                                <md>
+                                                        <mrow> \vec{u} &amp;=\vec{v}+\vec{w}            &amp; \vec{u} &amp;=\vec{v}+\vec{w} </mrow>
+                                                        <mrow>         &amp;=\Avec{30,-60}+\Avec{20,20} &amp;         &amp;=\left[\begin{array}{r}30\\-60\end{array}\right]+\left[\begin{array}{r}20\\20\end{array}\right] </mrow>
+                                                        <mrow>         &amp;=\Avec{30+20,-60+20}        &amp;         &amp;=\left[\begin{array}{r}30+20\\-60+20\end{array}\right]</mrow>
+                                                        <mrow>         &amp;=\Avec{50,-40}              &amp;         &amp;=\left[\begin{array}{r}50\\-40\end{array}\right]</mrow>
+                                                </md>
+                                                </p>
+                                        </example>
+                                        <example xml:id='ex_graphical_vec_add'>
+                                                <title>Graphical Addition of Vectors Without Coordinates</title>
+                                                <p>
+                                                        In <xref ref='fig_example_graphical_vec_add' />, we show how to add two vectors graphically without knowing the algebraic representations.
+                                                </p>
+                                                <p>
+                                                                To add <m>\vec{v}</m> and <m>\vec{w}</m> graphically, we draw <m>\vec{w}</m> with its tail at the head of <m>\vec{v}</m>. Then, the vector <m>\vec{u}=\vec{v}+\vec{w}</m> will have its tail at the tail of <m>\vec{v}</m> and its head at the head of <m>\vec{w}</m>.
+                                                        </p>
+                                                        <figure xml:id='fig_example_graphical_vec_add_no_coords'>
+                                                                <caption>Graphical Addition of Vectors Without Coordinates</caption>
+                                                                <image width="60%">
+                                                                        <description><p>Graphical depiction of adding two vectors where coordinates are not known.</p></description>
+                                                                        <xi:include href="./vec_add_graph_no_coords.xml" />
+                                                                </image>
+                                                        </figure>
+                                                        <p>
+                                                                To add <m>\vec{v}</m> and <m>\vec{w}</m> algebraically, we add <em>element-wise</em>, which means we add according to position. We will show this using both angle brackets and square brackets.
+                                                        <md>
+                                                                <mrow> \vec{u} &amp;=\vec{v}+\vec{w}            &amp; \vec{u} &amp;=\vec{v}+\vec{w} </mrow>
+                                                                <mrow>         &amp;=\Avec{30,-60}+\Avec{20,20} &amp;         &amp;=\left[\begin{array}{r}30\\-60\end{array}\right]+\left[\begin{array}{r}20\\20\end{array}\right] </mrow>
+                                                                <mrow>         &amp;=\Avec{30+20,-60+20}        &amp;         &amp;=\left[\begin{array}{r}30+20\\-60+20\end{array}\right]</mrow>
+                                                                <mrow>         &amp;=\Avec{50,-40}              &amp;         &amp;=\left[\begin{array}{r}50\\-40\end{array}\right]</mrow>
+                                                        </md>
+                                                        </p>
+                                                </example>
+                                </subsubsection>
+                                <subsubsection xml:id="notes_09_01_extensions" >
+                                        <title>Extensions</title>
+                                        <p>
+                                                While we have looked at vectors in two dimensions, in the <m>xy</m>-plane, there are also three dimensional vectors that behave in pretty much the exact same way! Depending on how the semester goes, we may briefly take a look at three-dimensional vectors.
+                                        </p>
+                                        <p>
+                                                There are lots of things that can be treated as vectors. Mathematicians define what it means to be a vector not so much in terms of what something <em>is</em>, but more in terms of how it <em>behaves</em>, but we won't get that in this class.
+                                        </p>
+                                        <p>
+                                                Another thing to be aware of is that sometimes we want to graphically add vectors that are not drawn tail-to-head. For example, we might wish to add two vectors that are currently drawn with their tails in the same place. (This is common for forces acting on a body in physics applications.)
+                                        </p>
+                                                <example>
+                                                        <title>Two Forces Acting on a Body.</title>
+                                                        <p>
+                                                                <xref ref='fig_example_graphical_vec_forces_on_a_body'/> shows two forces, represented by <m>\vec{F}_{1}</m> and <m>\vec{F}_{2}</m> acting on a body (represented as a rectangle).
+                                                        </p>
+                                                        <p>
+                                                                To add the vectors, we duplicate <m>\vec{F}_{2}</m> with its tail at the head of <m>\vec{F}_{1}</m> and we duplicate <m>\vec{F}_{1}</m> with its tail at the head of <m>\vec{F}_{2}</m>, as shown by the dashed vectors. While we really only need to duplicate one of these, duplicating both allows us to see that the resultant vector, <m>\vec{F}_{r}=\vec{F}_{1}+\vec{F}_{2}</m>, lies along the diagonal of a parallelogram.
+                                                        </p>
+                                                        <figure xml:id='fig_example_graphical_vec_forces_on_a_body'>
+                                                                <caption>Showing <m>\vec{F}_{r}=\vec{F}_{1}+\vec{F}_{2}</m> where the tails of <m>\vec{F}_{1}</m> and <m>\vec{F}_{2}</m> coincide.</caption>
+                                                                <image width="60%">
+                                                                        <description><p>Adding two vectors with tails at the same point.</p></description>
+                                                                        <xi:include href="./vec_add_forces_on_body.xml" />
+                                                                </image>
+                                                        </figure>
+                                                </example>
+                                </subsubsection>
+                        </subsection>
+
+
+                        <subsection>
+                                <title>Thursday, Sept. 3</title>
+                                        <p>
+                                                Discussion of measures of success, very brief launch of ideas that lead to circular functions.
+                                        </p>
+                                        <p>
+                                                        We will re-launch <q>Ferris Wheels and Circular Functions</q> on Tuesday.
+                                        </p>
+                        </subsection>
+                </section>

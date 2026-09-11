@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<publication>
+
+    <common>
+        <!-- 0 is an entire book in one file   -->
+        <!-- 1 is each chapter is its own file -->
+        <chunking level="1"/>
+    </common>
+
+    <html print='no'>
+            <css theme='default-modern'/>
+    </html>
+<latex print="yes">
+  <page>
+    <geometry>letterpaper,margin=1.5in,headheight=0.25in,includefoot</geometry>
+  </page>
+</latex>
+</publication>
+

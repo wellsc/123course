@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="prefigure_vec_add_example" >
+        <diagram dimensions="(240,300)" margins="5">
+                <definition>v=(30,-60)</definition> 
+                <definition>w=(20,20)</definition>
+                <definition>u=v+w</definition> 
+                <definition>vlabel=v/2</definition> 
+                <definition>wlabel=v+w/2</definition> 
+                <definition>ulabel=u/2</definition> 
+                <coordinates bbox="(-20,-70,60,30)">
+                        <grid-axes />
+                        <vector v="v" at="vec_v"/>
+                        <vector v="w" tail="v" at="vec_w"/>
+                        <vector v="u" stroke="green" at="vec_v_plus_w"/>
+                        <label anchor="vlabel" alignment="w"><m>\vec{v}</m></label>
+                        <label anchor="wlabel" alignment="se"><m>\vec{w}</m></label>
+                        <label anchor="ulabel" alignment="e" offset="(5,5)" color="green" ><m>\vec{u}=\vec{v}+\vec{w}</m></label>
+                </coordinates>
+                <annotations text="A graph showing the addition of two vectors">
+                        <annotation ref="vector-add" text="The vector v plus the vector w is the vector u">
+                                <annotation ref="vec_v" text="The vector v"/>
+                                <annotation ref="vec_w" text="The vector w"/>
+                                <annotation ref="vec_u" text="The vector u, the sum of v and w"/>
+                        </annotation>
+                </annotations>
+        </diagram>
+</prefigure>
+

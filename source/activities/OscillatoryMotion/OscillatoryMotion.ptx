@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handout  xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Oscillatory Motion</title>
+        <xi:include href="./oscillatory_intro.ptx" />
+        <xi:include href="./pendulum.ptx" />
+</handout>

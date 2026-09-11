@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsection xml:id="coursecontent"><title>Content</title>
+        <subsubsection xml:id="topics">
+                <title>Topics</title>
+                <p>
+                        <ul>
+                                <li>
+                                                Circular functions
+                                </li>
+                                <li>
+                                                Vectors
+                                </li>
+                                <li>
+                                                Complex numbers
+                                </li>
+                                <li>
+                                                Polar Coordinates
+                                </li>
+                                <li>
+                                                Graphing sinusoidal functions
+                                </li>
+                                <li>
+                                                Inverse trigonometric functions
+                                </li>
+                                <li>
+                                                Recognizing and applying trigonometric identities
+                                </li>
+                                <li>
+                                                Solving equations involving trigonometric functions
+                                </li>
+                                <li>
+                                                Solving triangles
+                                </li>
+                        </ul>
+                </p>
+        </subsubsection>
+        <subsubsection xml:id="additional_content">
+                <title>Additional Content</title>
+                <p>
+                        In addition to developing mathematical tools, techniques, and skills, we will seek to further our understanding of the role and importance of mathematics as a not only a tool, but as a field of human endeavor. We will explore how various concepts have developed and evolved, and how various mathematical models are interrelated.
+                </p>
+        </subsubsection>
+</subsection>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <worksheet xml:id="ssec_sim_tri_pyth_thm" xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Similar Triangles and the Pythagorean Theorem</title>
+                <introduction>
+                <p>
+                        An extremely important concept in physics, trigonometry, calculus, and even carpentry is the notion of <em>similar triangles</em>. We will briefly discuss how to recognize similar triangles and what properties they have before returning to the ideas we explored in <xref ref='ssec_explore_heights'/>.
+                </p>
+                        <p>
+                                Combining the definitions of sine and cosine with similar triangles and the Pythagorean theorem gives us tools that make these functions extremely useful in a variety of situations.
+                        </p>
+                <definition xml:id='def_similar_triangles'>
+                        <title>Similar Triangles</title>
+                        <statement>
+                                <p>
+                                                When two triangles have exactly the same three angles, we say that they are <em>similar triangles</em> or that the triangles are <em>similar</em>. 
+                                </p>
+                        </statement>
+                </definition>
+                <figure xml:id='fig_sim_tri_example'>
+                        <caption>An Example of Similar Triangles</caption>
+                        <image>
+                                <description><p>An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.</p></description>
+                                <latex-image>
+                                        \begin{tikzpicture}
+                                        \begin{scope}[rotate=-25]
+                                        \draw[thick] (0,0) node[left] {\(C\)}
+                                        -- (30:2) node[midway,above] {\(a\)} node[above] {\(B\)}
+                                        -- (0:3.4641) node[midway,above] {\(c\)}  node[right] {\(A\)}
+                                        -- cycle node[midway,below] {\(b\)} ;
+                                        \draw (0:0.5) arc[start angle=0, end angle=30, radius=0.5];
+                                        \draw (0:0.6) arc[start angle=0, end angle=30, radius=0.6];
+                                        \draw (0:0.7) arc[start angle=0, end angle=30, radius=0.7];
+                                        \draw (0:2.9641) arc[start angle=180, delta angle=-30, radius=0.5];
+                                        \draw (0:3.0641) arc[start angle=180, delta angle=-30, radius=0.4];
+                                        \draw (0,0) -- (0:0.5) arc[start angle=0, end angle=30] (30:0.5);
+                                        \draw (30:1.8) arc[start angle=210, delta angle=120,radius=0.2];
+                                        \end{scope}
+                                        \begin{scope}[xshift=8cm, rotate=10]
+                                        \draw[thick] (0,0) node[left] {\(D\)}
+                                        -- (30:4) node[midway,above] {\(f\)} node[above] {\(E\)}
+                                        -- (0:6.9282) node[midway,above] {\(d\)} node[right] {\(F\)}
+                                        -- cycle node[midway,above] {\(e\)};
+                                        \draw (0:0.5) arc[start angle=0, end angle=30, radius=0.5];
+                                        \draw (0:0.6) arc[start angle=0, end angle=30, radius=0.6];
+                                        \draw (0:0.7) arc[start angle=0, end angle=30, radius=0.7];
+                                        \draw (0:6.4282) arc[start angle=180, delta angle=-30, radius=0.5];
+                                        \draw (0:6.5282) arc[start angle=180, delta angle=-30, radius=0.4];
+                                        \draw (30:3.8) arc[start angle=210, delta angle=120,radius=0.2];
+                                        \end{scope}
+                                        \end{tikzpicture}
+                                </latex-image>
+                        </image>
+                </figure>
+                <p>
+                        The triangles shown in <xref ref='fig_sim_tri_example'/> are similar because
+                        angle <m>C</m> is the same as angle <m>D</m> (<m>\angle C\cong \angle D</m>),
+                        angle <m>B</m> is the same as angle <m>E</m> (<m>\angle B\cong \angle E</m>),
+                        and
+                        angle <m>A</m> is the same as angle <m>F</m> (<m>\angle A\cong \angle F</m>).
+                </p>
+                <p>
+                        We say that
+                        <m>\angle C</m> and <m>\angle D</m>, 
+                        <m>\angle B</m> and <m>\angle E</m>, 
+                        <m>\angle A</m> and <m>\angle F</m> are <em>corresponding angles</em>,
+                        and similarly, we say that 
+                                sides <m>\overline{CB}</m> and <m>\overline{DE}</m>,
+                                sides <m>\overline{BA}</m> and <m>\overline{EF}</m>,
+                                        sides <m>\overline{AC}</m> and <m>\overline{FD}</m>
+                                                are <em>corresponding sides</em>.
+                </p>
+                <p>
+                                Furthermore, we say that <m>\triangle CBA \sim \triangle DEF</m>, and the order matters!
+                </p>
+                <theorem xml:id='thm_corresponding_sides'>
+                        <title>Corresponding Sides of Similar Triangles</title>
+                        <statement>
+                                <p>
+                                        Given two triangles, <m>\triangle MNE</m> and <m>\triangle PQR</m>, when the triangles are similar <m>(\triangle MNE\sim\triangle PQR)</m>, the lengths of the corresponding sides are proportional.
+                                </p>
+                        </statement>
+                        </theorem>
+                        <p>
+                                Applying <xref ref='thm_corresponding_sides'/> to <xref ref='fig_sim_tri_example'/>, for example, we have that 
+                                <md>\frac{f}{a}=\frac{e}{b}=\frac{d}{c},</md>
+                                and, equivalently, 
+                                <md>
+                                        <mrow>
+                                                        \frac{a}{c}&amp;=\frac{f}{d},&amp;
+                                                        \frac{a}{b}&amp;=\frac{f}{e},&amp;
+                                                        \frac{b}{c}&amp;=\frac{d}{e}.
+                                        </mrow>
+                                </md>
+                        </p>
+                <theorem xml:id='thm_pythagorean'>
+                        <title>The Pythagorean Theorem</title>
+                        <statement>
+                                <p>
+                                                For any positive numbers, <m>a</m>, <m>b</m>, and <m>c</m>, if <m>a</m> and <m>b</m> are the lengths of two legs of a right triangle and <m>c</m> is the length of the hypoteneuse, then <m>a^{2}+b^{2}=c^{2}</m>.
+                                </p>
+                                <p>
+                                                Furthermore, for any triangle with side lengths <m>a</m>, <m>b</m>, and <m>c</m>, if <m>a^{2}+b^{2}=c^{2}</m>, then the triangle is a right triangle, the sides with lengths <m>a</m> and <m>b</m> are the legs, and the side with length <m>c</m> is the hypotenuse. 
+                                </p>
+                        </statement>
+                        </theorem>
+                </introduction>
+                        <exercise xml:id='exer_ratios'>
+                                <introduction>
+                                        <p>
+                                                In <xref ref='fig_ratios'/>, <m>\overline{OA}</m> has length <m>0.5</m>m, <m>\overline{OB}</m> has length <m>1</m>m, and <m>\overline{OD}</m> has length <m>3</m>m.
+                                        </p>
+                                        <figure xml:id='fig_ratios'>
+                                                <caption>Circles with Similar Triangles</caption>
+                                                <image width='60%'>
+                                                        <description><p>Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.</p></description>
+                                                        <latex-image>
+                                                                \begin{tikzpicture}
+                                                                \draw (0,0) circle (2);
+                                                                \draw (0,0) circle (6);
+                                                                \draw (-6.2,0) -- (6.2,0) 
+                                                                      (0,-6.2) -- (0,6.2);
+                                                                \draw[thick] let \p1 = (60:2)
+                                                                in
+                                                                (\x1,0) node[below] {\(A\)} 
+                                                                -- (\p1)node[above] {\(B\)} 
+                                                                ($(\x1,0)+(-0.2,0)$)--($(\x1,0)+(-0.2,0.2)$)--(\x1,0.2);
+                                                                \draw[thick] let \p1 = (60:6)
+                                                                in
+                                                                (\x1,0)  node[below] {\(C\)} 
+                                                                -- (\p1) node[above] {\(D\)}
+                                                                -- (0,0) node[below left] {\(O\)} 
+                                                                ($(\x1,0)+(-0.2,0)$)--($(\x1,0)+(-0.2,0.2)$)--(\x1,0.2);
+                                                                \end{tikzpicture}
+                                                        </latex-image>
+                                                </image>
+                                        </figure>
+                                </introduction>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                                Explain why <m>\triangle{}OBA</m> is similar to <m>\triangle{}ODC</m>.
+                                                </p>
+                                        </statement>
+                                        <solution>
+                                                <p>
+                                                                Both triangles share <m>\angle{}AOB\cong{}\angle{}COD</m>, and <m>\angle{}DCO</m> and <m>\angle{}BAO</m> are both right angles. Because the measures of the three angles of any triangle add to <m>180^{\circ}=\pi</m><nbsp/>radians, we must have <m>\angle{}OBA\cong\angle{}ODC</m>.
+                                                </p>
+                                                <p>
+                                                                Since all three angles of <m>\triangle{}OBA</m> are congruent to the respective angles of <m>\triangle{}ODC</m>, the two triangles are similar, <m>\triangle{}OBA\sim{}\triangle{}ODC</m>.
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                                Use the fact that <m>\triangle{}OBA\sim{}\triangle{}ODC</m> to find the length of <m>\overline{OC}</m>.
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>1.5</m>m.
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                        We will represent the length of a segment as the two endpoints, so, for example, we will say that <m>OA=0.5</m>m.
+                                                        </p>
+                                                        <p>
+                                                                        We know that <m>OA=0.5</m>m, <m>OB=1</m>m, and <m>OD=3</m>m.                                                </p>
+                                                                <p>
+                                                                        Because <m>\triangle{}OBA\sim{}\triangle{}ODC</m>, we know that <m>\frac{OA}{OB}=\frac{OC}{OD}</m>, so substituting the known lengths, we have
+                                                                        <md>
+<mrow>\frac{OC}{OD}=\frac{OA}{OB}&amp;\rightarrow\frac{OC}{3\text{m}}=\frac{0.5\text{m}}{1\text{m}}</mrow>
+<mrow>&amp;\rightarrow{OC}={3\text{m}}\frac{0.5\text{m}}{1\text{m}}</mrow>
+<mrow>&amp;\rightarrow{OC}={1.5\text{m}}</mrow>
+                                                                        </md>
+                                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                                Use the Pythagorean theorem to find <m>AB</m>, the length of <m>\overline{AB}</m>. 
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>\frac{\sqrt{3}}{2}\text{m}\approx 0.866025</m>m.
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                 From the Pythagorean theorem, since <m>\triangle{}BAO</m> is a right triangle, we have <m>\left(BA\right)^{2}+\left(OA\right)^{2}=\left(OB\right)^{2}</m>, so <m>\left(BA\right)^{2}+\left(0.5\right)^{2}=\left(1\right)^2</m>, so
+                                                <md>
+                                                        <mrow>\left(BA\right)^{2}&amp;=\left(1\right)^2-\left(0.5\right)^{2}</mrow>
+                                                        <mrow>                   &amp;=1-0.25</mrow>
+                                                        <mrow>                   &amp;=0.75</mrow>
+                                                        <mrow>                   &amp;=\frac{3}{4} </mrow>
+                                                </md>
+                                                so
+                                                <md>
+                                                        <mrow>BA&amp;=\sqrt{\frac{3}{4}}</mrow>
+                                                        <mrow>  &amp;=\frac{\sqrt{3}}{\sqrt{4}}</mrow>
+                                                        <mrow>  &amp;=\frac{\sqrt{3}}{{2}}</mrow>
+                                                        <mrow>  &amp;\approx 0.866025.</mrow>
+                                                </md>
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                                Find the length of <m>CD</m>.
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>\frac{3\sqrt{3}}{2}\text{m}\approx 2.5981</m>m
+                                                </p>
+                                        </answer>
+                                </task>
+                        </exercise>
+        </worksheet>

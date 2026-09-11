@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id='ssec_explore_heights' xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Height of a Ferris Wheel Car</title>
+        <introduction>
+        <p>
+                <xref ref='fig_ferris'/> shows the height of a Ferris wheel car as a function of the distance the car has travelled from the bottom. A full animation is available from the National Council of Teachers of Mathematics [NCTM] <em>Illuminations</em> classroom resources, <url href='https://www.nctm.org/Classroom-Resources/Illuminations/Interactives/Investigating-Functions-with-a-Ferris-Wheel-Distance-vs-Height/'>Investigating Functions with a Ferris Wheel: Distance vs. Height</url> (<url href='https://gvsu.edu/s/3MV' visual='gvsu.edu/s/3MV'/>).
+        </p>
+        <figure xml:id='fig_ferris'>
+                <caption>Height of a Ferris Wheel Car</caption>
+                <image width='75%' xml:id='img_ferris' source='FerrisWheel.jpg'>
+                        <description><p>Screenshot from https://www.nctm.org/Classroom-Resources/Illuminations/Interactives/Investigating-Functions-with-a-Ferris-Wheel-Distance-vs-Height/</p></description>
+                </image>
+        </figure>
+        </introduction>
+        <exercise label='heights' xml:id='exer_heights'>
+                <introduction>
+                        <p>
+                                For the calculations in this exercise, assume that the circumference of the Ferris wheel is <m>128</m>m, and recall that the circumference, <m>C</m>, of a circle is given by <m>C=2\pi{}r</m>, where <m>r</m> is the radius of the circle.
+                        </p>
+                        <p>
+                                        We will refer to the height as <m>h</m> and the distance travelled as <m>d</m>.
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                Find the total height of the Ferris wheel (in meters). 
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>40.74367</m>m
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                The total height is twice the radius. Since the radius is <m>\frac{128\text{m}}{2\pi}</m>, the total height is <m>\frac{128\text{m}}{\pi}\approx 40.74367</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                When <m>d=32</m>m, find the value of <m>h</m>. That is, when the car when has travelled <m>32</m>m, how high is it?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>20.37183</m>m
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                When the car has travelled <m>32</m>m, it has travelled one quarter of the way around, or half-way to the top. Thus its height is half the total height, approximately <m>20.37183</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                Find <m>h</m> when <m>d=64</m>m.
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>40.74367</m>m
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                When the car has travelled <m>64</m>m, it has travelled half of the way around, so it is at the top. Thus its height is the same as the total height, approximately <m>40.7467</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                How much distance along the circle has the cab traversed at the moment it first reaches a height of <m>\frac{128\text{m}}{2\pi}\approx 20.37183</m>m?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>32</m>m.
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                We know that <m>\frac{128\text{m}}{2\pi}</m> is the radius, which is also half the diameter, and so the height is half of the total height. The first time the car reaches this height is when it has travelled <m>\frac{1}{4}</m> of the way around, which is <m>\frac{128\text{m}}{4}=32</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                How much distance along the circle has the cab traversed at the moment it reaches a height of <m>\frac{128\text{m}}{2\pi}\approx 20.37183</m>m for the <em>second</em> time?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>96</m>m.
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                The second time the car reaches a height of  is when it has travelled <m>\frac{3}{4}</m> of the way around, which is <m>\frac{3}{4}128\text{m}=96</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Can we express <m>h</m> as a function of <m>d</m>?
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        Yes.
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                                Every distance travelled corresponds to exactly one position on the circular path of the Ferris wheel car, and each position has a particular height. Since there is always exactly one value of <m>h</m> for each value of <m>d</m>, we can express <m>h</m> as a function of <m>d</m>.
+                                                        </p>
+                                                </solution>
+                                        </task>
+                                        <task>
+                                                <statement>
+                                                        <p>
+                                                                        Can we express <m>d</m> as a function of <m>h</m>?
+                                                                </p>
+                                                        </statement>
+                                                        <answer>
+                                                                <p>
+                                                                        No.
+                                                                </p>
+                                                        </answer>
+                                                        <solution>
+                                                                <p>
+                                                                                As the Ferris wheel car travels around its circular path, it passes through each height multiple times. Since there is <em>not</em> always exactly one value of <m>d</m> for each value of <m>h</m>, we cannot express <m>d</m> as a function of <m>h</m>.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                </exercise>
+                                                <p>
+                                                        An important idea in setting up mathematical models that is often assumed or overlooked is the fact that <alert>you get to choose where you measure from</alert>. Sometimes the choice of your <q>referece point</q> is the difference between straight-forward calculations and much more complicated ones.  With that in mind, we will revisit the Ferris wheel problem, but with a couple of slight twists. 
+                                                </p>
+                                                <p>
+                                                        First, instead of measuring height above the ground, we will measure the height, <m>h</m>, as the vertical distance from a horizontal line <alert>through the center</alert> of the Ferris wheel.  Of course, we will need to indicate whether a given height is <em>above</em> the center or <em>below</em> the center, so we will use <em>positive</em> values of <m>h</m> to indicate distance <em>above</em> the center line, and <em>negative</em> values to indicate distance <em>below</em> the center line.
+                                                </p>
+                                                <p>
+                                                        Second, we will measure the distance the Ferris wheel car has travelled relative to the point where it is farthest to the right. In other words, when it is on the center line. 
+                                                </p>
+                                                <p>
+                                                        Here, distances that are <em>before</em> reaching the line will be negative, and distances after will be positive.
+                                                </p>
+                                                <exercise label='circ_func' xml:id='exer_circ_func'>
+                                                        <introduction>
+                                                                <p>
+                                                                        For this problem, we will consider a Ferris wheel whose total height is <m>40</m>m.
+                                                                </p>
+                                                                <p>
+                                                                        Recall that we are measuring distance travelled, <m>d</m>, relative to the point on the circle to the extreme right, and we are measuring the height, <m>h</m>, relative to the center of the Ferris wheel, so, for example, when <m>d=0</m>m, <m>h=0</m>m.
+                                                                </p>
+                                                        </introduction>
+                                                        <task>
+                                                                <statement>
+                                                                        <p>
+                                                                                How high is the center of the Ferris wheel above the ground?
+                                                                        </p>
+                                                                </statement>
+                                                                <answer>
+                                                                        <p>
+                                                                                <m>20</m>m.
+                                                                        </p>
+                                                                </answer>
+                                                                <solution>
+                                                                        <p>
+                                                                                The total height is <m>40</m>m, so the center is half that distance above the ground, which is <m>20</m>m.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                        <task>
+                                                                <statement>
+                                                                        <p>
+                                                                                What is the circumference of the Ferris wheel?
+                                                                        </p>
+                                                                </statement>
+                                                                <answer>
+                                                                        <p>
+                                                                                <m>\approx 125.6637</m>m.
+                                                                        </p>
+                                                                </answer>
+                                                                <solution>
+                                                                        <p>
+                                                                                We will call the radius of the Ferris wheel <m>r</m> and the circumference <m>C</m>. Since the total height is twice the radius, we have <m>r=20</m>m, and thus <m>C=2\pi r=2\pi\cdot 20\text{m}\approx{}125.6637</m>m.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                        <task>
+                                                                <statement>
+                                                                        <p>
+                                                                                What is the value of <m>h</m> when <m>31.4159</m>m?
+                                                                        </p>
+                                                                </statement>
+                                                                <answer>
+                                                                        <p>
+                                                                                <m>20</m>m.
+                                                                        </p>
+                                                                </answer>
+                                                                <solution>
+                                                                        <p>
+                                                                                When the car has travelled <m>31.4159\text{m}=\frac{1}{4}\cdot{}125.6637</m>m, it has travelled <m>\frac{1}{4}</m> of the circumference. Because we are measuring <m>d</m> from the point on the extreme right, this means that the Ferris wheel car is at its highest point. Since we are measuring <m>h</m> from the center of the Ferris wheel, that means that <m>h=20</m>m.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                        <task>
+                                                                <statement>
+                                                                        <p>
+                                                                                What is the value of <m>h</m> when <m>d=62.8315</m>m?
+                                                                        </p>
+                                                                </statement>
+                                                                <answer>
+                                                                        <p>
+                                                                                <m>0</m>m.
+                                                                        </p>
+                                                                </answer>
+                                                                <solution>
+                                                                        <p>
+                                                                                When the car has travelled <m>62.8315\text{m}=\frac{1}{2}\cdot{}125.6637</m>m, it has travelled <m>\frac{1}{2}</m> of the circumference. Because we are measuring <m>d</m> from the point on the extreme right, this means that the Ferris wheel car is at the extreme left. Since we are measuring <m>h</m> from the center of the Ferris wheel and we are back at the original height, that means that <m>h=0</m>m.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                        <task>
+                                                                <statement>
+                                                                        <p>
+                                                                                What is the value of <m>h</m> when <m>d=94.2478</m>m?
+                                                                        </p>
+                                                                </statement>
+                                                                <answer>
+                                                                        <p>
+                                                                                <m>-20</m>m.
+                                                                        </p>
+                                                                </answer>
+                                                                <solution>
+                                                                        <p>
+                                                                                When the car has travelled <m>94.2478\text{m}=\frac{3}{4}\cdot{}125.6637</m>m, it has travelled <m>\frac{3}{4}</m> of the circumference. Because we are measuring <m>d</m> from the point on the extreme right, this means that the Ferris wheel car is at the bottom of its path, so it is <m>20</m>m below the center, and therefore <m>h=-20</m>m.
+                                                                        </p>
+                                                                </solution>
+                                                        </task>
+                                                </exercise>
+                                        </worksheet>

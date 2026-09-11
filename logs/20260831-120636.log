@@ -1,0 +1,35 @@
+WARNING : Overriding source file for target with: /home/wellsc/classes/123/Course/source/Syllabus.ptx
+INFO    : Building target pdf
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/Syllabus.ptx by /home/wellsc/.ptx/2.52.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.52.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : verifying and expanding input directory: /home/wellsc/classes/123/Course/source/../assets
+INFO    : input directory expanded to absolute path: /home/wellsc/classes/123/Course/assets
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/wellsc/classes/123/Course/output/pdfs.
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : verifying and expanding input directory: /home/wellsc/classes/123/Course/source/../assets
+INFO    : input directory expanded to absolute path: /home/wellsc/classes/123/Course/assets
+INFO    : discovering source file's directory name: /home/wellsc/classes/123/Course/source
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/Syllabus.ptx by /home/wellsc/.ptx/2.52.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.52.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /home/wellsc/classes/123/Course/source/Syllabus.ptx to LaTeX as /tmp/ptx-oucfyt50/Syllabus.tex
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/Syllabus.ptx by /home/wellsc/.ptx/2.52.0/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing (prefaced with a *):
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /home/wellsc/.ptx/2.52.0/core/xsl/pretext-latex.xsl
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/Syllabus.ptx by /home/wellsc/.ptx/2.52.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.52.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Rerunning LaTeX for Syllabus.tex (pass 2)
+INFO    : Removing temporary directory /tmp/ptx-oucfyt50
+INFO    : Removing temporary directory /tmp/ptx-baxp2sih
+INFO    : Removing temporary directory /tmp/ptx-6mtno9uu
+INFO    : 
+Finished build for target pdf. The output is in /home/wellsc/classes/123/Course/output/pdfs.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

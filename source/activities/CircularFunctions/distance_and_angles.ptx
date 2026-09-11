@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="ssec_distance_and_angles" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Distance and Angles</title>
+        <introduction>
+        <p>
+                In <xref ref='exer_circ_func'/>, we know that the Ferris wheel is <m>40</m>m tall, so it has a radius of <m>20</m>m. We also know that the circumference is <m>C=2\pi{}r\approx{}125.6637</m>m. Said another way, the radius would fit <m>2\pi\approx6.28</m> times around the circle. Given two points on a circle, the part of the circle between them is called an <term>arc</term>, and its length is, appropriately, called the <term>arc length</term>. So, there are <m>2\pi</m> radii of arc length in a circle.
+        </p>
+        <p>
+                It's not too much of a stretch to wonder how many radii of arc length lie between two points on a circle, and in fact, it gives a very natural way to measure angles, because given any angle, the arc length determined by the angle depends on the radius of the circle, and if an angle has an arc length of one radius on one circle, that same angle has one radius of arc length on any circle!
+        </p>
+        <figure xml:id='fig_radian'>
+                <caption>One radius of arc length on two different circles</caption>
+                <image width="50%">
+                        <description><p>One radius of arc length on two circles of different radius with the same center.</p></description>
+                        <latex-image>
+                                \begin{tikzpicture}
+                                \draw (-3.3,0) -- (3.3,0) (0,-3.3) -- (0,3.3);
+                                \draw (0,0) node[below left] {\(O\)} circle (3);
+                                \draw (0,0) circle (1);
+                                \draw[very thick] (0,0) -- (3,0) node[below right] {\(A\)} arc[start angle=0, end angle=57.296, radius=3] -- (57.296:3) node[above right] {\(B\)} -- cycle;
+                                \draw[very thick] (1,0) node[below right] {\(a\)} arc[start angle=0, end angle=57.296, radius=1];
+                                \draw (57.296:1) node[above ] {\(b\)};
+                                \end{tikzpicture}
+                        </latex-image>
+                </image>
+        </figure>
+        <p>
+                        An angle that has one radius of arc length has a measure of<nbsp/><m>1</m><nbsp/><term>radian</term>. Both of the angles shown in <xref ref="fig_radian"/>, <m>\angle{}AOB</m> and <m>\angle{}aOb</m>, have a measure of<nbsp/>1<nbsp/>radian, which we will often abbreviate as <m>1\text{ rad}</m>.
+                </p>
+        </introduction>
+                <exercise xml:id='exer_radians_vs_dist'>
+                        <introduction>
+                                <p>
+                                        In this problem, we again consider a circle (a Ferris wheel) with a radius of<nbsp/><m>20</m>m.
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                When the car has travelled through<nbsp/><m>1</m><nbsp/>rad of angle, how much distance (arc length) has it travelled?
+                                        </p>
+                                </statement>
+                                <answer><p>20m</p></answer>
+                                <solution>
+                                        <p>
+                                                When the car has travelled one radian, it has travelled a distance (arc length) equal to its radius. Since the radius is <m>20</m>m, the car has travelled <m>20</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                When the car has travelled through an angle of <m>2.5</m><nbsp/>rad, how much arc length has it travelled?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                50m.
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                When the car has travelled <m>2.5</m><nbsp/>rad, it has travelled an arc length that is <m>2.5</m> times its radius, so it has travelled an arc length of <m>2.5\cdot20\text{m}=50</m>m.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task xml:id='task_radians_unitless'>
+                                <statement>
+                                        <p>
+                                                When the car has travelled through <m>30</m>m of arc length, what angle (in radians) has it travelled through?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>1.5</m><nbsp/>rad.
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                        When when the car has travelled through <m>\theta</m><nbsp/>rad, it has travelled a distance of <m>\theta\cdot 20</m>m, so we can solve <m>20\text{m}\cdot\theta=30</m>m to get <m>\theta=\frac{30\text{m}}{20\text{m}}=1.5</m><nbsp/>rad.<fn xml:id='fn_radians_unitless'>It is worth noting here that if we do unit analysis of <m>20\text{m}/30\text{m}</m>, we see that the units cancel out. Therefore, technically radians are <alert>unitless</alert>.</fn>
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                        What is the arc length of one quarter of the circle?
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>31.4159</m>m
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                        The total circumference is <m>2\pi\cdot20\text{m}=40\pi\text{m}\approx{}125.6637</m>m, so one quarter of the circumference is <m>40\pi\text{m}/4=10\pi\approx{}31.4159</m>m.
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                        What is the radian measure of one quarter of a revolution (the angle for one fourth of a circle)?
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>\pi/2\approx{}1.57079</m> rad.
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                        There are two ways we could approach this. We could use our previous result for the arc length of a quarter circle is approximately <m>31.4159</m>m and divide by the radius to find the angle,
+                                                        <md>\frac{31.4159\text{m}}{20\text{m}}\approx{}1.57079</md>
+                                                        or we could realize that there are <m>2\pi</m> radii in the circumference, and thus a total revolution is <m>2\pi</m> radians. Then, we get that one quarter of that is <m>\frac{2\pi}{4}=\frac{\pi}{2}\approx{}1.57079</m> radians.
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                        What is the radian measure of one eighth of a revolution?
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        <m>\pi/4\approx{}0.78534</m> rad.
+                                                </p>
+                                        </answer>
+                                        <solution>
+                                                <p>
+                                                        Since there are <m>2\pi</m> radii in the circumference, and thus a total revolution is <m>2\pi</m> rad, we get that one eighth of that is <m>\frac{2\pi}{8}=\frac{\pi}{4}\approx{}0.78534</m> rad.
+                                                </p>
+                                        </solution>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                        What fraction of the distance around the circle is <m>\frac{\pi}{4}</m><nbsp/>rad?
+                                                </p>
+                                        </statement>
+                                        <answer>
+                                                <p>
+                                                        One eighth.
+                                                </p>
+                                        </answer>
+                                </task>
+                        </exercise>
+                        <p>
+                                A couple of important things about radians before we move on. 
+                                <ul>
+                                        <li>
+                                                <p>
+                                                        As we noted in the solution to <xref ref='task_radians_unitless'/>, radians are <term>unitless</term> from a dimensional/unit analysis point of view.
+                                                </p>
+                                        </li>
+                                        <li>
+                                                <p>
+                                                        One full revolution, what we are used to thinking of as <m>360^{\circ}</m>, is <m>2\pi</m><nbsp/>rad. This means that <m>180^{\circ}=\pi\text{ rad}</m>, and a right angle is <m>90^{\circ}=\frac{\pi}{2}\text{ rad}</m>. In general, the conversions between degrees and radians are
+                                                        <md>
+                                                                <mrow>
+                                                                        {d}{\text{ deg}}&amp;=\frac{\pi}{180}d\text{ rad},&amp;\theta\text{ rad}&amp;=\theta{\left(\frac{180}{\pi}\right)}{\text{ deg}}.
+                                                                </mrow>
+                                                        </md>
+                                                </p>
+                                        </li>
+                                        <li>
+                                                <p>
+                                                        Some important angles to become familiar with are:
+                                                        <md>
+                                                                <mrow>
+                                                                        \frac{\pi}{6}&amp;=30^{\circ},
+                                                                                &amp;
+                                                                        \frac{\pi}{4}&amp;=45^{\circ},
+                                                                                &amp;
+                                                                        \frac{\pi}{3}&amp;=60^{\circ},
+                                                                                &amp;
+                                                                        \frac{\pi}{2}&amp;=90^{\circ},
+                                                                </mrow>
+                                                                <mrow></mrow>
+                                                                <mrow>
+                                                                        \frac{2\pi}{3}&amp;=120^{\circ},
+                                                                                &amp;
+                                                                        \frac{3\pi}{4}&amp;=135^{\circ},
+                                                                                &amp;
+                                                                        \frac{5\pi}{6}&amp;=150^{\circ},
+                                                                                &amp;
+                                                                        \pi&amp;=180^{\circ},
+                                                                </mrow>
+                                                                <mrow></mrow>
+                                                                <mrow>
+                                                                        \frac{7\pi}{6}&amp;=210^{\circ},
+                                                                                &amp;
+                                                                        \frac{5\pi}{4}&amp;=225^{\circ},
+                                                                                &amp;
+                                                                        \frac{4\pi}{3}&amp;=240^{\circ},
+                                                                                &amp;
+                                                                        \frac{3\pi}{2}&amp;=270^{\circ},
+                                                                </mrow>
+                                                                <mrow></mrow>
+                                                                <mrow>
+                                                                        \frac{5\pi}{3}&amp;=300^{\circ},
+                                                                                &amp;
+                                                                        \frac{7\pi}{4}&amp;=315^{\circ},
+                                                                                &amp;
+                                                                        \frac{11\pi}{6}&amp;=330^{\circ},
+                                                                                &amp;
+                                                                        2\pi&amp;=360^{\circ}.
+                                                                </mrow>
+                                                        </md>
+                                                </p>
+                                        </li>
+                                </ul>
+                        </p>
+                </worksheet>

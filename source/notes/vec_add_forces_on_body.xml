@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="prefigure_vec_add_forces_on_body" >
+        <diagram dimensions="(300,180)" margins="5">
+                <definition>v=(60,-10)</definition> 
+                <definition>w=(20, 30)</definition>
+                <definition>u=v+w</definition> 
+                <definition>vlabel=v/2</definition> 
+                <definition>wlabel=w/2</definition> 
+                <definition>ulabel=u/2</definition> 
+                <coordinates bbox="(-20,-20,80,40)">
+                        <vector v="v" at="vec_v"/>
+                        <vector v="w" at="vec_w"/>
+                        <vector v="v" at="vec_v_shift" tail="w" dash="9 9" color="gray" />
+                        <vector v="w" at="vec_w_shift" tail="v" dash="9 9" color="gray" />
+                        <vector v="u" stroke="green" at="vec_v_plus_w"/>
+                        <label anchor="vlabel" alignment="se"><m>\vec{F}_{1}</m></label>
+                        <label anchor="wlabel" alignment="e"><m>\vec{F}_{2}</m></label>
+                        <label anchor="vlabel+w" alignment="n"><m>\vec{F}_{1}</m></label>
+                        <label anchor="wlabel+v" alignment="e"><m>\vec{F}_{2}</m></label>
+                        <label anchor="ulabel" alignment="s" offset="(0,-5)" color="green" ><m>\vec{F}_{r}=\vec{F}_{1}+\vec{F}_{2}</m></label>
+                        <rectangle lower-left="(-20,-10)" dimensions="(20,10)" stroke="black" fill="green"/>
+                </coordinates>
+                <annotations text="A graph showing the addition of two vectors">
+                        <annotation ref="vector-add" text="The vector v plus the vector w is the vector u">
+                                <annotation ref="vec_v" text="The vector v"/>
+                                <annotation ref="vec_w" text="The vector w"/>
+                                <annotation ref="vec_u" text="The vector u, the sum of v and w"/>
+                        </annotation>
+                </annotations>
+        </diagram>
+</prefigure>
+
+

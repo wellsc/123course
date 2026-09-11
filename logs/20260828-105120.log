@@ -1,0 +1,14 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/main.ptx by /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Validating source of target course (method: local, report form: full, engine: jing).
+INFO    : converting /tmp/ptx-thk1521p/merged.xml to enhanced (pre-processed) PreTeXt source as /tmp/ptx-thk1521p/assembled-attributed.xml
+INFO    : XSL conversion of /tmp/ptx-thk1521p/merged.xml by /home/wellsc/.ptx/2.50.0/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : ID activities already defined, line 1008, column 33 (merged.xml, line 1008)
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

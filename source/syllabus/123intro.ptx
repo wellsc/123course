@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsection xml:id="intro_123">
+	<title>Introduction to Math 123</title>
+        <subsubsection>
+                <title>Introduction</title>
+		    <p>
+			    Trigonometry, Math<nbsp />123 is designed to give you tools to succeed
+                            in various programs in science, such as health professions, geology, and
+                            biology.
+		    </p>
+        </subsubsection>
+        <subsubsection xml:id="course_description">
+                <title>Course Description</title>
+                <blockquote>
+                <p>
+                        Math<nbsp/>123 is a study of oscillatory behavior, circular functions, and their applications. In order to understand these things, it is important to see where they arise. This means analyzing data or situations, choosing among appropriate models, and solving applied problems. Of course, we can't predict every situation you will encounter in your future, so it is also important to develop flexibility and resilience.
+                </p>
+                </blockquote>
+                <p>
+                        More information can be found in <xref ref='coursecontent' text='title' /> and <xref ref='objectives' text='title' />.
+                </p>
+        </subsubsection>
+    </subsection>

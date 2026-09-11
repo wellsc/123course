@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Include common macros etc: -->
+  <xi:include href="./docinfo.ptx" />
+  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+  <book>
+    <title>Trigonometry</title>
+
+    <subtitle>MATH 123 Fall 2026</subtitle>
+
+    <!-- Optional: include frontmatter with author info and date -->
+    <xi:include href="./frontmatter.ptx" />
+
+      <xi:include href="./syllabus/syllabus.ptx" />
+    <chapter xml:id="course-documents">
+      <title>Course Documents</title>
+
+      <!-- Course syllabus -->
+      <xi:include href="./Assessment/Assessment.ptx" />
+      <xi:include href="./Policies/Policies.ptx" />
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
+
+    <chapter xml:id="course-notes">
+      <title>Course Notes</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./notes/week01.ptx"/>
+
+    </chapter>
+
+
+    <chapter xml:id="activities">
+      <title>In-Class Activities</title>
+      <xi:include href="./activities/CircularFunctions/ferris_angles_dist.ptx"/>
+      <xi:include href='./activities/UsingSineAndCosine/practical_sine.ptx'/>
+      <xi:include href='./activities/OscillatoryMotion/OscillatoryMotion.ptx'/>
+      <xi:include href='./activities/Transformations/Transformations.ptx'/>
+    </chapter>
+
+    <chapter xml:id="handouts">
+      <title>Class Handouts</title>
+
+      <xi:include href="./handouts/ProblemSolving.ptx"/>
+    </chapter>
+
+    </book>
+  </pretext>

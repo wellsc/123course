@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Transformations of Sine and Cosine</title>
+
+  <introduction>
+    <p>
+            In this activity we will first review transformations of functions using Desmos, and then we will apply what we notice to graphs of the sine and cosine.
+    </p>
+  </introduction>
+
+  <exercise workspace="0.5in">
+          <title>Review of Transformations of a Graph</title>
+          <introduction>
+                  <p>
+                          Open the Desmos activity <url href="https://www.desmos.com/calculator/m12t66m4ok">Review of Transformations</url>, <url href="https://www.desmos.com/calculator/m12t66m4ok" />. 
+                  </p>
+                  <p>
+                                  This graph shows a function, <m>f(x)</m>, in blue, and the function <md>g(x)=a\cdot{}f\left(b(x-c)\right)+d</md> in red, and has a set of sliders, one for each of the parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+                  </p>
+          </introduction>
+          <task>
+                  <title>The Effect of <m>a</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>a</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>a</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>b</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>b</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>b</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>c</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>c</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>c</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>d</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>d</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>d</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+  </exercise>
+
+</worksheet>
