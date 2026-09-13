@@ -1,0 +1,83 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure_vec_add_example-figure" speech2="A graph showing the addition of two vectors">
+      <grouped>prefigure_vec_add_example-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure_vec_add_example-grid-axes</active>
+        <active>prefigure_vec_add_example-vector-add</active>
+      </children>
+      <components>
+        <active>prefigure_vec_add_example-grid-axes</active>
+        <active>prefigure_vec_add_example-vector-add</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure_vec_add_example-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure_vec_add_example-grid</active>
+        <active>prefigure_vec_add_example-axes</active>
+      </children>
+      <components>
+        <active>prefigure_vec_add_example-grid</active>
+        <active>prefigure_vec_add_example-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure_vec_add_example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-grid" speech2="The coordinate grid">
+      <active>prefigure_vec_add_example-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure_vec_add_example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-axes" speech2="The coordinate axes">
+      <active>prefigure_vec_add_example-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure_vec_add_example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-vector-add" speech2="The vector v plus the vector w is the vector u">
+      <grouped>prefigure_vec_add_example-vector-add</grouped>
+      <position>2</position>
+      <children>
+        <active>prefigure_vec_add_example-vec_v</active>
+        <active>prefigure_vec_add_example-vec_w</active>
+        <active>prefigure_vec_add_example-vec_u</active>
+      </children>
+      <components>
+        <active>prefigure_vec_add_example-vec_v</active>
+        <active>prefigure_vec_add_example-vec_w</active>
+        <active>prefigure_vec_add_example-vec_u</active>
+      </components>
+      <parents>
+        <grouped>prefigure_vec_add_example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-vec_v" speech2="The vector v">
+      <active>prefigure_vec_add_example-vec_v</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure_vec_add_example-vector-add</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-vec_w" speech2="The vector w">
+      <active>prefigure_vec_add_example-vec_w</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure_vec_add_example-vector-add</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure_vec_add_example-vec_u" speech2="The vector u, the sum of v and w">
+      <active>prefigure_vec_add_example-vec_u</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure_vec_add_example-vector-add</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
