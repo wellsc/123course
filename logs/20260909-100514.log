@@ -1,6 +1,0 @@
-INFO    : Since no target was supplied, we will use "course".
-
-INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/course.ptx by /home/wellsc/.ptx/2.52.3/core/xsl/utilities/pretext-enhanced-source.xsl
-ERROR   : You are trying to use 'xi:include' in a file that does not contain 'xmlns:xi="http://www.w3.org/2001/XInclude"' in its root element.
-ERROR   : Error loading /home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/UsingSineAndCosine.ptx: Namespace prefix xi on include is not defined, line 2, column 33 (UsingSineAndCosine.ptx, line 2)
-ERROR   : Could not assemble source for validation: Namespace prefix xi on include is not defined, line 2, column 33 (UsingSineAndCosine.ptx, line 2)

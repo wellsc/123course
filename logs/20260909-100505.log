@@ -1,5 +1,0 @@
-INFO    : Since no target was supplied, we will use "course".
-
-INFO    : XSL conversion of /home/wellsc/classes/123/Course/source/course.ptx by /home/wellsc/.ptx/2.52.3/core/xsl/utilities/pretext-enhanced-source.xsl
-ERROR   : Error loading /home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/macros.ptx: Error reading file '/home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/macros.ptx': failed to load "/home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/macros.ptx": No such file or directory
-ERROR   : Could not assemble source for validation: Error reading file '/home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/macros.ptx': failed to load "/home/wellsc/classes/123/Course/source/activities/UsingSineAndCosine/macros.ptx": No such file or directory
