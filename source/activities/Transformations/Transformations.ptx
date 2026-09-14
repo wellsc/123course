@@ -145,4 +145,298 @@
           </task>
   </exercise>
 
+  <exercise workspace="0.5in">
+          <title>Transformations Sine</title>
+          <introduction>
+                  <p>
+                                  Open the Desmos activity <url href="https://www.desmos.com/calculator/6dk4cjfgsu">Transformations of Sine</url>, <url href="https://www.desmos.com/calculator/6dk4cjfgsu" />. 
+                  </p>
+                  <p>
+                                  This graph shows the function, <m>f(x)=\sin(x)</m> in blue, and the function <md>g(x)=a\cdot{}f\left(b(x-c)\right)+d</md> in red, and has a set of sliders, one for each of the parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+                  </p>
+          </introduction>
+          <task>
+                  <title>The Effect of <m>a</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>a</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>a</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>b</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>b</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>b</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>c</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>c</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>c</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>d</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>d</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>d</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+  </exercise>
+  <exercise workspace="0.5in">
+          <title>Transformations Cosine</title>
+          <introduction>
+                  <p>
+                                  Open the Desmos activity <url href="https://www.desmos.com/calculator/7dwhncpsfz">Transformations of Cosine</url>, <url href="https://www.desmos.com/calculator/7dwhncpsfz" />. 
+                  </p>
+                  <p>
+                                  This graph shows the function, <m>f(x)=\cos(x)</m> in blue, and the function <md>g(x)=a\cdot{}f\left(b(x-c)\right)+d</md> in red, and has a set of sliders, one for each of the parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+                  </p>
+          </introduction>
+          <task>
+                  <title>The Effect of <m>a</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>a</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>a</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>a</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>b</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>b</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>b</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>b</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>c</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>c</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>c</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>c</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+          <task>
+                  <title>The Effect of <m>d</m></title>
+            <task>
+                    <statement>
+                            <p>
+                              Move the slider for <m>d</m> to <m>3</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>0.5</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                              Now move the slider for <m>d</m> to <m>-2</m>. How does the transformed graph (red) compare to the original (blue).
+                            </p>
+                    </statement>
+            </task>
+            <task>
+                    <statement>
+                            <p>
+                                            How would you describe the effect of <m>d</m> on the graph?
+                            </p>
+                    </statement>
+            </task>
+          </task>
+  </exercise>
+  <conclusion>
+          <p>
+                          Functions of the form  <m>f(x)=a\sin\big(b(x-c)\big)+d</m> and <m>g(x)=a\cos\big(b(x-c)\big)+d</m> are called <term>sinusoidal functions</term> or simply <term>sinusoids</term>.
+                          </p>
+                          <p>
+                  For the graphs of sinusoidal functions, the various sliders affect aspects of the graphs that we define below with specific names. 
+          </p>
+          <definition>
+                  <title>Midline, Amplitude, Period, and Phase Shift of Sinusoids</title>
+                  <statement>
+                          <p>
+                          <ul>
+                          <li><p> The <term>midline</term> of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is <m>y=0</m>. For the functions <m>f(x)=a\sin\big(b(x-c)\big)+d</m> and <m>g(x)=a\cos\big(b(x-c)\big)+d</m>, the midline is <m>y=d</m>.  </p></li>
+                          <li><p> The <term>amplitude</term> of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is <m>1</m>. For the functions <m>f(x)=a\sin\big(b(x-c)\big)+d</m> and <m>g(x)=a\cos\big(b(x-c)\big)+d</m>, the amplitude is <m>\left\lvert{}a\right\rvert{}</m>.  </p></li>
+                          <li><p> The <term>period</term> of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is <m>2\pi</m>. For the functions <m>f(x)=a\sin\big(b(x-c)\big)+d</m> and <m>g(x)=a\cos\big(b(x-c)\big)+d</m>, the period is <m>\frac{2\pi}{\left\lvert{}b\right\rvert{}}</m>.  </p></li>
+                          <li><p> The <term>phase shift</term> of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is <m>0</m>. Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between <m>0</m> and the period or with a shift that is between <m>\frac{-1}{2}</m> times the period and  <m>\frac{1}{2}</m> times the period. For the functions <m>f(x)=a\sin\big(b(x-c)\big)+d</m> and <m>g(x)=a\cos\big(b(x-c)\big)+d</m>, the phase shift is <m>c</m>.  </p></li>
+                          </ul>
+                          </p>
+                  </statement>
+          </definition>
+          <p>
+                          In some cases, rather than specifying the <em>period</em>, we may specify the <term>frequency</term> of the sinusoid. The frequency of a sinusoid is the number of periods per unit time. Thus, if <m>F</m> is the frequency and <m>P</m> is the period, we have <m>F=\frac{1}{P}</m> or <m>P=\frac{1}{F}</m>. In relation to the sliders in this activity, we have <m>F=\frac{\left\lvert{}b\right\rvert{}}{2\pi}</m>.
+          </p>
+  </conclusion>
 </worksheet>
