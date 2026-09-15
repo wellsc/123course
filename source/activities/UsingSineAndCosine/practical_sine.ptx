@@ -180,7 +180,7 @@
                                                                 Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the <m>x</m>-axis. This triangle is similar to the triangle from the origin to the top of the tree to the <m>x</m>-axis because the share the angle <m>\theta</m> and they both have right angles on the <m>x</m>-axis.
                                                 </p>
                                                 <p>
-                                                        We know the coordinates of the point on the unit circle are <m>(\cos(\theta),\sin(theta))</m>, and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, <m>\frac{d}{10\text{m}}=\frac{\sin(\theta)}{\cos(\theta)}</m>, so we have
+                                                        We know the coordinates of the point on the unit circle are <m>(\cos(\theta),\sin(\theta))</m>, and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, <m>\frac{d}{10\text{m}}=\frac{\sin(\theta)}{\cos(\theta)}</m>, so we have
                                                         <md>
                                                                 <mrow>d&amp;=10\text{m}\frac{\sin(\theta)}{\cos(\theta)}</mrow>
                                                                 <mrow> &amp;=10\text{m}\frac{\sin(1.15251)}{\cos(1.15251)}</mrow>
