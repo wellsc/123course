@@ -553,82 +553,82 @@ var ptx_lunr_docs = [
   "id": "activities-4",
   "level": "1",
   "url": "activities-4.html",
-  "type": "Handout",
-  "number": "4.3",
-  "title": "Oscillatory Motion",
-  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum  We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.   A Pendulum   A drawing of a pendulum.      "
-},
-{
-  "id": "fig_pendulum",
-  "level": "2",
-  "url": "activities-4.html#fig_pendulum",
-  "type": "Figure",
-  "number": "26",
-  "title": "",
-  "body": " A Pendulum   A drawing of a pendulum.    "
-},
-{
-  "id": "activities-5",
-  "level": "1",
-  "url": "activities-5.html",
   "type": "Worksheet",
-  "number": "4.4",
+  "number": "4.3",
   "title": "Transformations of Sine and Cosine",
   "body": " Transformations of Sine and Cosine   In this activity we will first review transformations of functions using Desmos, and then we will apply what we notice to graphs of the sine and cosine.    Review of Transformations of a Graph   Open the Desmos activity Review of Transformations , .  This graph shows a function, , in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Transformations Sine   Open the Desmos activity Transformations of Sine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Transformations Cosine   Open the Desmos activity Transformations of Cosine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Functions of the form and are called sinusoidal functions or simply sinusoids .  For the graphs of sinusoidal functions, the various sliders affect aspects of the graphs that we define below with specific names.   Midline, Amplitude, Period, and Phase Shift of Sinusoids     The midline of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is . For the functions and , the midline is .  The amplitude of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is . For the functions and , the amplitude is .  The period of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is . For the functions and , the period is .  The phase shift of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is . Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between and the period or with a shift that is between times the period and times the period. For the functions and , the phase shift is .      In some cases, rather than specifying the period , we may specify the frequency of the sinusoid. The frequency of a sinusoid is the number of periods per unit time. Thus, if is the frequency and is the period, we have or . In relation to the sliders in this activity, we have .   "
 },
 {
-  "id": "activities-5-3",
+  "id": "activities-4-3",
   "level": "2",
-  "url": "activities-5.html#activities-5-3",
+  "url": "activities-4.html#activities-4-3",
   "type": "Worksheet Exercise",
-  "number": "4.4.1",
+  "number": "4.3.1",
   "title": "Review of Transformations of a Graph.",
   "body": " Review of Transformations of a Graph   Open the Desmos activity Review of Transformations , .  This graph shows a function, , in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
 },
 {
-  "id": "activities-5-4",
+  "id": "activities-4-4",
   "level": "2",
-  "url": "activities-5.html#activities-5-4",
+  "url": "activities-4.html#activities-4-4",
   "type": "Worksheet Exercise",
-  "number": "4.4.2",
+  "number": "4.3.2",
   "title": "Transformations Sine.",
   "body": " Transformations Sine   Open the Desmos activity Transformations of Sine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
 },
 {
-  "id": "activities-5-5",
+  "id": "activities-4-5",
   "level": "2",
-  "url": "activities-5.html#activities-5-5",
+  "url": "activities-4.html#activities-4-5",
   "type": "Worksheet Exercise",
-  "number": "4.4.3",
+  "number": "4.3.3",
   "title": "Transformations Cosine.",
   "body": " Transformations Cosine   Open the Desmos activity Transformations of Cosine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
 },
 {
-  "id": "activities-5-6-1",
+  "id": "activities-4-6-1",
   "level": "2",
-  "url": "activities-5.html#activities-5-6-1",
+  "url": "activities-4.html#activities-4-6-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "sinusoidal functions sinusoids "
 },
 {
-  "id": "activities-5-6-3",
+  "id": "activities-4-6-3",
   "level": "2",
-  "url": "activities-5.html#activities-5-6-3",
+  "url": "activities-4.html#activities-4-6-3",
   "type": "Definition",
-  "number": "27",
+  "number": "26",
   "title": "Midline, Amplitude, Period, and Phase Shift of Sinusoids.",
   "body": " Midline, Amplitude, Period, and Phase Shift of Sinusoids     The midline of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is . For the functions and , the midline is .  The amplitude of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is . For the functions and , the amplitude is .  The period of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is . For the functions and , the period is .  The phase shift of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is . Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between and the period or with a shift that is between times the period and times the period. For the functions and , the phase shift is .     "
 },
 {
-  "id": "activities-5-6-4",
+  "id": "activities-4-6-4",
   "level": "2",
-  "url": "activities-5.html#activities-5-6-4",
+  "url": "activities-4.html#activities-4-6-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "frequency "
+},
+{
+  "id": "activities-5",
+  "level": "1",
+  "url": "activities-5.html",
+  "type": "Handout",
+  "number": "4.4",
+  "title": "Oscillatory Motion",
+  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum  We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.   A Pendulum   A drawing of a pendulum.      "
+},
+{
+  "id": "fig_pendulum",
+  "level": "2",
+  "url": "activities-5.html#fig_pendulum",
+  "type": "Figure",
+  "number": "27",
+  "title": "",
+  "body": " A Pendulum   A drawing of a pendulum.    "
 },
 {
   "id": "triangle_sine_cosine",
