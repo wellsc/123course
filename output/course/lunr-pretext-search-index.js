@@ -631,6 +631,33 @@ var ptx_lunr_docs = [
   "body": "frequency "
 },
 {
+  "id": "triangle_sine_cosine",
+  "level": "1",
+  "url": "triangle_sine_cosine.html",
+  "type": "Worksheet",
+  "number": "4.5",
+  "title": "Sine, Cosine, and Triangles",
+  "body": " Sine, Cosine, and Triangles   In this activity, we will use the unit circle and similar triangle to investigate how sine and cosine can be used with triangles.     Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .       Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?     "
+},
+{
+  "id": "exer_rt_triangles",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles",
+  "type": "Worksheet Exercise",
+  "number": "4.5.1",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .    "
+},
+{
+  "id": "exer_rt_triangles2",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles2",
+  "type": "Worksheet Exercise",
+  "number": "4.5.2",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?    "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",

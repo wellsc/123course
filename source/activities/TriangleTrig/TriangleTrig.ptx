@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<worksheet xml:id="triangle_sine_cosine"  xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Sine, Cosine, and Triangles</title>
+<introduction xml:id="triangle_trig_intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <p>
+                In this activity, we will use the unit circle and similar triangle to investigate how sine and cosine can be used with triangles.
+        </p>
+</introduction>
+                <exercise xml:id='exer_rt_triangles'>
+                        <introduction>
+                                <p>
+                                Investigate the following questions using <xref ref='fig_rt_triangles'/>.
+                                </p>
+                <figure xml:id='fig_rt_triangles'>
+                        <caption>Two Triangles</caption>
+                        <image width='75%'>
+                                <description><p>Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta.</p></description>
+<prefigure xmlns="https://prefigure.org" label="prefigure_two_triangles" >
+<diagram dimensions="(500, 400)" margins="5">
+  <definition>O=(0,0)</definition>
+  <definition>P=6*(4,3)</definition>
+  <definition>Q=6*(4,0)</definition>
+  <definition>M=6*(8/5,6/5)</definition>
+  <definition>N=6*(8/5,0)</definition>
+  <definition>opp=(-3,4)</definition>
+  <definition>one=(M)/2</definition>
+  <definition>are=P/2</definition>
+  <coordinates bbox="(-2*5, -2*5, 8*5, 6*5)">
+          <line endpoints="(M,N)" />
+  
+    <line endpoints="(O,opp)" thickness="1"/>
+    <line endpoints="(P,P+opp)" thickness="1" />
+
+    <line endpoints="(O,Q)" alignment="se"><m>x</m></line>
+    <line endpoints="(Q,P)" alignment="s" rotate="-90" offset="(0,-5)"><m>y</m></line>
+    <line endpoints="(O,M)" ><m>1</m></line>
+  
+    <line endpoints="(3*opp/4,P+3*opp/4)" arrows="2"><m>r</m></line>
+    <arc center="O" radius="12" range="(-10,60)" stroke="gray" thickness="1" />
+    
+    <triangle vertices="(O,P,Q)" labels="O,P,Q"
+              show-vertices="yes" point-fill="orange" />
+     <point p="M" fill="orange" stroke="black" size="3" alignment="se">M</point>
+     <point p="N" fill="orange" stroke="black" size="3" alignment="s">N</point>
+ 
+     <angle-marker points="(Q,O,P)" radius="35" arrow="yes" thickness="1">    
+        <m>\theta</m>
+     </angle-marker>
+     <angle-marker points="(P,Q,O)" />
+     <angle-marker points="(M,N,O)" />
+  </coordinates>
+</diagram>
+</prefigure>
+                        </image>
+                </figure>
+                        </introduction>
+                        <task xml:id='task_explain_similar'>
+                                <statement>
+                                        <p>
+                                                        Explain why <m>\triangle{}OPQ</m> and <m>\triangle{}OMN</m> are similar triangles.
+                                        </p>
+                                </statement>
+                                <solution xml:id='solution_explain_similar'>
+                                        <p>
+                                                        Both <m>\triangle{}OPQ</m> and <m>\triangle{}OMN</m> are right triangles with right angles
+                                                        <m>\angle{}OQP</m> and <m>\angle{}ONM</m>, respectively, so 
+                                                        <m>\angle{}OQP\cong\angle{}ONM</m>. 
+                                        </p>
+                                        <p>
+                                                        Next, <m>\angle{}POQ</m> and <m>\angle{}MON</m> are the same angle, so
+                                                        <m>\angle{}POQ\cong\angle{}MON</m>.
+                                        </p>
+                                        <p>
+                                                Finally, because the sum of the measures of the three angles in a triangle is always <m>\pi</m><nbsp/>radians (or <m>180^{\circ}</m>), we must have 
+                                                <m>\angle{}OMN\cong\angle{}OPQ</m>.
+                                        </p>
+                                        <p>
+                                                Because 
+                                                        <m>\angle{}OQP\cong\angle{}ONM</m>,
+                                                        <m>\angle{}POQ\cong\angle{}MON</m>,
+                                                        and
+                                                <m>\angle{}OMN\cong\angle{}OPQ</m>,
+                                                we have 
+                                                        <m>\triangle{}OPQ\sim\triangle{}OMN</m>.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task xml:id='task_hyp_ratio'>
+                                <statement>
+                                        <p>
+                                                        What is the value of the ratio <m>\frac{OP}{OM}</m>? What does this (and the fact that the triangles are similar) tell you about the ratios <m>\frac{OQ}{ON}</m> and <m>\frac{PQ}{MN}</m>?
+                                        </p>
+                                </statement>
+                                <solution>
+                                        <p>
+                                                <md>
+                                                        <mrow>\frac{OP}{OM}&amp;=\frac{r}{1}</mrow>
+                                                        <mrow>             &amp;=r.</mrow>
+                                                </md>
+                                                Because corresponding sides of similar triangles have proportional lengths, 
+                                                <md>
+                                                        <mrow>\frac{OQ}{ON}&amp;=\frac{PQ}{MN}</mrow>
+                                                        <mrow>             &amp;=r.</mrow>
+                                                </md>
+                                        </p>
+                                </solution>
+                        </task>
+                        <task xml:id='task_sine_cosine_ratios'>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        What is the value of <m>ON</m> in terms of <m>\theta</m>?
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                        Use the fact that <m>M</m> is a point on the unit circle.
+                                        </p>
+                                </hint>
+                                <answer>
+                                        <p>
+                                                <m>ON=\cos(\theta)</m>
+                                        </p>
+                                </answer>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        What is the value of <m>MN</m> in terms of <m>\theta</m>?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>MN=\sin(\theta)</m>
+                                        </p>
+                                </answer>
+                                </task>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Use your conclusions in <xref ref='task_hyp_ratio'/> and <xref ref='task_sine_cosine_ratios'/> to express <m>x</m> and <m>y</m> in terms of <m>r</m> and <m>\theta</m>.
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                        Notice, for example, that <m>ON=\frac{ON}{1}=\frac{ON}{OM}</m>.
+                                        </p>
+                                </hint>
+                                <solution>
+                                        <p>
+                                                We know that <m>x=OQ</m> and <m>ON=\cos(\theta)</m>.
+                                                By similar triangles,
+                                                <md>
+                                                        <mrow>r&amp;=\frac{PO}{MO}</mrow>
+                                                        <mrow> &amp;=\frac{OQ}{ON}</mrow>
+                                                        <mrow> &amp;=\frac{x}{\cos(\theta)},</mrow>
+                                                </md>
+                                                        so, <m>r=\frac{x}{\cos(\theta)}</m>.
+                                        </p>
+                                        <p>
+                                                        Multiplying both sides by <m>\cos(\theta)</m> gives us 
+                                                        <m>r{\cos(\theta)}={x}</m>.
+                                        </p>
+                                        <p>
+                                                        Similarly, <m>y=PQ</m>, and <m>r=\frac{PQ}{\sin(\theta)}=\frac{y}{\sin(\theta)}</m>, so <m>y=r\sin(\theta)</m>.
+                                        </p>
+                                </solution>
+                        </task>
+                </exercise>
+                <exercise xml:id='exer_rt_triangles2'>
+                        <introduction>
+                                <p>
+                                Investigate the following questions using <xref ref='fig_rt_triangles2'/>.
+                                </p>
+                <figure xml:id='fig_rt_triangles2'>
+                        <caption>Two Triangles</caption>
+                        <image width='75%'>
+                                <description><p>Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).</p></description>
+                                <!--
+                                -->
+<prefigure xmlns="https://prefigure.org" label="prefigure_two_triangles_with_point" >
+<diagram dimensions="(500, 400)" margins="5">
+  <definition>O=(0,0)</definition>
+  <definition>P=6*(4,3)</definition>
+  <definition>Q=6*(4,0)</definition>
+  <definition>M=6*(8/5,6/5)</definition>
+  <definition>N=6*(8/5,0)</definition>
+  <definition>opp=(-3,4)</definition>
+  <definition>one=(M)/2</definition>
+  <definition>are=P/2</definition>
+  <coordinates bbox="(-2*5, -2*5, 8*5, 6*5)">
+          <line endpoints="(M,N)" />
+  
+    <line endpoints="(O,opp)" thickness="1"/>
+    <line endpoints="(P,P+opp)" thickness="1" />
+
+    <line endpoints="(O,Q)" alignment="se" ><m>x</m></line>
+    <line endpoints="(Q,P)" alignment="s" rotate="-90" offset="(0,-5)"><m>y</m></line>
+    <line endpoints="(O,M)" ><m>1</m></line>
+  
+    <line endpoints="(3*opp/4,P+3*opp/4)" arrows="2"><m>r</m></line>
+    <arc center="O" radius="12" range="(-10,60)" stroke="gray" thickness="1" />
+    
+    <triangle vertices="(O,P,Q)" labels="O,P,Q"
+              show-vertices="yes" point-fill="orange" />
+     <label anchor="P+(2,0)" alignment="ne"><m>=(4,3)</m></label>
+     <point p="M" fill="orange" stroke="black" size="3" alignment="se">M</point>
+     <point p="N" fill="orange" stroke="black" size="3" alignment="s">N</point>
+ 
+     <angle-marker points="(Q,O,P)" radius="35" arrow="yes" thickness="1">    
+        <m>\theta</m>
+     </angle-marker>
+     <angle-marker points="(P,Q,O)" />
+     <angle-marker points="(M,N,O)" />
+  </coordinates>
+</diagram>
+</prefigure>
+                        </image>
+                </figure>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Explain why <m>\triangle{}OPQ</m> and <m>\triangle{}OMN</m> are similar triangles.
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                This is essentially the same argument as in <xref ref='solution_explain_similar'/>.
+                                        </p>
+                                </answer>
+                        </task>
+                        <task xml:id='task_pythag'>
+                                <statement>
+                                        <p>
+                                                        Use the Pythagorean theorem to calculate <m>r</m>, the length of <m>OP</m>.
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>r=\sqrt{(4)^{2}+(3)^{2}}=5.</m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task xml:id='task_coord'>
+                                <statement>
+                                        <p>
+                                                        Find the coordinates for <m>Q</m>.
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                        <m>(4,0).</m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task xml:id='task_sine_cosine_numeric_ratios'>
+                                <introduction>
+                                        <p>
+                                                Use your results from <xref ref='task_pythag'/> and <xref ref='task_coord'/> to answer the following questions.
+                                        </p>
+                                </introduction>
+                                        <task>
+                                                <statement>
+                                        <p>
+                                                        What is the value of <m>\frac{y}{r}</m>?
+                                        </p>
+                                                </statement>
+                                                <answer>
+                                                        <p>
+                                                                <m>\frac{3}{5}</m>
+                                                        </p>
+                                                </answer>
+                                        </task>
+                                        <task>
+                                                <statement>
+                                        <p>
+                                                        What is the value of <m>\frac{x}{r}</m>?
+                                        </p>
+                                                </statement>
+                                                <answer>
+                                                        <p>
+                                                                <m>\frac{4}{5}</m>
+                                                        </p>
+                                                </answer>
+                                        </task>
+                        </task>
+                        <task xml:id='task_scale'>
+                                <statement>
+                                        <p>
+                                                        Use the your result from <xref ref='task_pythag'/> to find the coordinates of <m>M</m> and <m>N</m>.
+                                        </p>
+                                </statement>
+                                <solution>
+                                        <p>
+                                                        Using similar triangles, we know that <m>\frac{OQ}{ON}=5</m> and <m>OQ=4</m>, so <m>ON=\frac{4}{5}</m>. We also know that <m>QP=3</m> and <m>\frac{QP}{NM}=5</m>, so <m>QP=\frac{3}{5}</m>. This means that <m>N=\left(\frac{4}{5},0\right)</m> and <m>M=\left(\frac{4}{5},\frac{3}{5}\right)</m>.
+                                        </p>
+                                </solution>
+                                <solution>
+                                        <p>
+                                                Using vectors, we know that <m>P=(4,3)</m> is associated with the vector <m>\vec{p}=\begin{bmatrix}4\\3\end{bmatrix}</m>, and <m>M</m> is associated with a unit vector, call it <m>\vec{u}</m>, in the same direction. Since <m>\Abs{\vec{p}}=5</m>, we know that <m>\vec{p}=5\vec{u}</m>, so
+                                                <md>
+                                                        <mrow>\vec{u}&amp;=\frac{1}{\Abs{\vec{p}}}\vec{p}</mrow>
+                                                        <mrow>       &amp;=\frac{1}{5}\vec{p}</mrow>
+                                                        <mrow>       &amp;=\frac{1}{5}\begin{bmatrix}4\\3\end{bmatrix}</mrow>
+                                                        <mrow>       &amp;=\begin{bmatrix}\frac{4}{5}\\\frac{3}{5}\end{bmatrix}.</mrow>
+                                                </md>
+                                                        Thus, <m>M=\left(\frac{4}{5},\frac{3}{5}\right)</m>, and <m>N</m> is directly below it on the <m>x</m>-axis, so <m>N=\left(\frac{4}{5},0\right)</m>.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task xml:id='task_sine_cosine_numeric'>
+                                <introduction>
+                                        <p>
+                                                        Use the fact that <m>M</m> is on the unit circle to answer the following questions.
+                                        </p>
+                                </introduction>
+                                        <task>
+                                                <statement>
+                                        <p>
+                                                        What is the value of <m>\sin(\theta)</m>?
+                                        </p>
+                                                </statement>
+                                                <answer>
+                                                        <p>
+                                                                <m>\frac{3}{5}</m>
+                                                        </p>
+                                                </answer>
+                                        </task>
+                                        <task>
+                                                <statement>
+                                        <p>
+                                                        What is the value of <m>\cos(\theta)</m>?
+                                        </p>
+                                                </statement>
+                                                <answer>
+                                                        <p>
+                                                                <m>\frac{4}{5}</m>
+                                                        </p>
+                                                </answer>
+                                        </task>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                What do you notice about your results from 
+                                                <xref ref='task_sine_cosine_numeric_ratios'/>
+                                and 
+                                                <xref ref='task_sine_cosine_numeric'/>?
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+</worksheet>
