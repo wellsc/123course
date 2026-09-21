@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefig_pendulum-figure" width="360" height="260" viewBox="0 0 360 260">
+  <defs>
+    <clipPath id="prefig_pendulum-__clipPath-0">
+      <rect x="5.0" y="5.0" width="350.0" height="250.0"/>
+    </clipPath>
+    <clipPath id="prefig_pendulum-__clipPath-1">
+      <rect x="5.0" y="5.0" width="350.0" height="250.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefig_pendulum-grid-axes">
+    <g id="prefig_pendulum-grid" stroke="#ccc" stroke-width="1">
+      <line x1="5.0" y1="255.0" x2="5.0" y2="5.0"/>
+      <line x1="55.0" y1="255.0" x2="55.0" y2="5.0"/>
+      <line x1="105.0" y1="255.0" x2="105.0" y2="5.0"/>
+      <line x1="155.0" y1="255.0" x2="155.0" y2="5.0"/>
+      <line x1="205.0" y1="255.0" x2="205.0" y2="5.0"/>
+      <line x1="255.0" y1="255.0" x2="255.0" y2="5.0"/>
+      <line x1="305.0" y1="255.0" x2="305.0" y2="5.0"/>
+      <line x1="355.0" y1="255.0" x2="355.0" y2="5.0"/>
+      <line x1="5.0" y1="255.0" x2="355.0" y2="255.0"/>
+      <line x1="5.0" y1="205.0" x2="355.0" y2="205.0"/>
+      <line x1="5.0" y1="155.0" x2="355.0" y2="155.0"/>
+      <line x1="5.0" y1="105.0" x2="355.0" y2="105.0"/>
+      <line x1="5.0" y1="55.0" x2="355.0" y2="55.0"/>
+      <line x1="5.0" y1="5.0" x2="355.0" y2="5.0"/>
+    </g>
+    <g id="prefig_pendulum-axes" stroke="black" stroke-width="2">
+      <line id="prefig_pendulum-__line-14" x1="5.0" y1="205.0" x2="355.0" y2="205.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefig_pendulum-__line-15" x1="155.0" y1="208.0" x2="155.0" y2="202.0"/>
+        <line id="prefig_pendulum-__line-16" x1="255.0" y1="208.0" x2="255.0" y2="202.0"/>
+      </g>
+      <line id="prefig_pendulum-__line-17" x1="55.0" y1="255.0" x2="55.0" y2="5.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefig_pendulum-__line-18" x1="52.0" y1="105.0" x2="58.0" y2="105.0"/>
+      </g>
+    </g>
+    <g id="prefig_pendulum-__label-0" transform="translate(155.0,216.0) translate(-9.0,-0.0)">
+      <g id="prefig_pendulum-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_pendulum-MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="prefig_pendulum-MJX-2-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="10">
+                <use data-c="31" xlink:href="#prefig_pendulum-MJX-2-TEX-N-31"/>
+                <use data-c="30" xlink:href="#prefig_pendulum-MJX-2-TEX-N-30" transform="translate(500,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefig_pendulum-__label-1" transform="translate(255.0,216.0) translate(-9.0,-0.0)">
+      <g id="prefig_pendulum-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_pendulum-MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="prefig_pendulum-MJX-3-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="20">
+                <use data-c="32" xlink:href="#prefig_pendulum-MJX-3-TEX-N-32"/>
+                <use data-c="30" xlink:href="#prefig_pendulum-MJX-3-TEX-N-30" transform="translate(500,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefig_pendulum-__label-2" transform="translate(44.0,105.0) translate(-18.1,-6.2)">
+      <g id="prefig_pendulum-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_pendulum-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="prefig_pendulum-MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="10">
+                <use data-c="31" xlink:href="#prefig_pendulum-MJX-4-TEX-N-31"/>
+                <use data-c="30" xlink:href="#prefig_pendulum-MJX-4-TEX-N-30" transform="translate(500,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <line id="prefig_pendulum-__line-19" x1="55.0" y1="205.0" x2="55.0" y2="55.0" stroke="black" stroke-width="2" fill="none"/>
+  <line id="prefig_pendulum-__line-20" x1="55.0" y1="205.0" x2="355.0" y2="205.0" stroke="black" stroke-width="2" fill="none"/>
+  <line id="prefig_pendulum-__line-21" x1="255.0" y1="55.0" x2="255.0" y2="155.0" stroke="blue" stroke-width="2" fill="none"/>
+  <path id="prefig_pendulum-__path-0" d="M 205.0 141.6 L 205.9 142.1 L 206.8 142.6 L 207.7 143.1 L 208.7 143.6 L 209.6 144.1 L 210.5 144.6 L 211.5 145.0 L 212.4 145.5 L 213.4 145.9 L 214.3 146.4 L 215.3 146.8 L 216.2 147.2 L 217.2 147.6 L 218.2 148.0 L 219.2 148.4 L 220.1 148.7 L 221.1 149.1 L 222.1 149.4 L 223.1 149.8 L 224.1 150.1 L 225.1 150.4 L 226.1 150.7 L 227.1 151.0 L 228.1 151.3 L 229.1 151.6 L 230.1 151.9 L 231.1 152.1 L 232.2 152.4 L 233.2 152.6 L 234.2 152.8 L 235.2 153.0 L 236.3 153.2 L 237.3 153.4 L 238.3 153.6 L 239.4 153.8 L 240.4 153.9 L 241.4 154.1 L 242.5 154.2 L 243.5 154.3 L 244.5 154.5 L 245.6 154.6 L 246.6 154.6 L 247.7 154.7 L 248.7 154.8 L 249.8 154.9 L 250.8 154.9 L 251.9 155.0 L 252.9 155.0 L 254.0 155.0 L 255.0 155.0 L 256.0 155.0 L 257.1 155.0 L 258.1 155.0 L 259.2 154.9 L 260.2 154.9 L 261.3 154.8 L 262.3 154.7 L 263.4 154.6 L 264.4 154.6 L 265.5 154.5 L 266.5 154.3 L 267.5 154.2 L 268.6 154.1 L 269.6 153.9 L 270.6 153.8 L 271.7 153.6 L 272.7 153.4 L 273.7 153.2 L 274.8 153.0 L 275.8 152.8 L 276.8 152.6 L 277.8 152.4 L 278.9 152.1 L 279.9 151.9 L 280.9 151.6 L 281.9 151.3 L 282.9 151.0 L 283.9 150.7 L 284.9 150.4 L 285.9 150.1 L 286.9 149.8 L 287.9 149.4 L 288.9 149.1 L 289.9 148.7 L 290.8 148.4 L 291.8 148.0 L 292.8 147.6 L 293.8 147.2 L 294.7 146.8 L 295.7 146.4 L 296.6 145.9 L 297.6 145.5 L 298.5 145.0 L 299.5 144.6 L 300.4 144.1 L 301.3 143.6 L 302.3 143.1 L 303.2 142.6 L 304.1 142.1 L 305.0 141.6" stroke="#777" stroke-width="1" stroke-dasharray="4 2" fill="none"/>
+  <line id="prefig_pendulum-__line-22" x1="205.0" y1="141.6" x2="255.0" y2="55.0" stroke="#777" opacity="0.5" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+  <circle id="prefig_pendulum-__circle-0" cx="255.0" cy="55.0" r="4" stroke="black" stroke-width="2" fill="black"/>
+  <circle id="prefig_pendulum-__circle-1" cx="255.0" cy="155.0" r="4" stroke="black" stroke-width="2" fill="blue"/>
+  <circle id="prefig_pendulum-__circle-2" cx="205.0" cy="141.6" r="4" stroke="black" stroke-width="2" fill="red" fill-opacity="0.5"/>
+</svg>
