@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "4.4",
   "title": "Oscillatory Motion",
-  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum  We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.   A Pendulum   A drawing of a pendulum.      "
+  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum  We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.   A Pendulum   A drawing of a pendulum.    f(x)=2.5-x^2\/2  a = 1                   "
 },
 {
   "id": "fig_pendulum",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "27",
   "title": "",
-  "body": " A Pendulum   A drawing of a pendulum.    "
+  "body": " A Pendulum   A drawing of a pendulum.    f(x)=2.5-x^2\/2  a = 1                 "
 },
 {
   "id": "triangle_sine_cosine",
