@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<paragraphs xml:id="sec_pendulum">
+<exercise xml:id="exer_pendulum">
 		<title>Modeling the Motion of a Pendulum</title>
+	<introduction>
 		<p>
                         We have a pendulum suspended from a point (on a stand) <m>20</m>cm away from a wall and <m>15</m>cm above the table top. At its farthest from the wall, it is <m>25</m>cm away from the wall and at its closest it is <m>15</m>cm away from the wall (see <xref ref='fig_pendulum'/>).
 		</p>
@@ -8,10 +9,10 @@
                         Every two seconds, it completes one swing, from farthest point back to farthest point.
                 </p>
                 <p>
-                        We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.
+                        We want to find a model sinusoidal that will give us the pendulum bob's distance away from the wall as a function of time.
                 </p>
                 <p>
-                        As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.
+                        As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time using a sinusoidal function.
                 </p>
                 <figure xml:id='fig_pendulum'>
                         <caption>A Pendulum</caption>
@@ -39,4 +40,253 @@
                                 </prefigure>
                         </image>
                 </figure>
-	</paragraphs>
+	</introduction>
+        <task>
+                <title>Modeling the Horizontal Motion</title>
+                <introduction>
+                        <p>
+                                        For this exercise, let <m>f_{x}(t)</m> give the horizontal distance of the pendulum from the wall, in centimeters, at time <m>t</m> seconds. (We will decide on what time <m>t=0</m> means later.)
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        What is the maximum value of <m>f_{x}(t)</m>? That is, what is the maximum horizontal distance of the pendulum from the wall?
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>25\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What is the minimum value of <m>f_{x}(t)</m>? That is, what is the minimum horizontal distance of the pendulum from the wall?
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>15\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Use the maximum and minimum values to calculate the midline for <m>f_{x}(t)</m>.
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>20\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Use the maximum and minimum values to calculate the amplitude for <m>f_{x}(t)</m>.
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>20\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Sketch a graph of a sinusoidal function that fits your previous answers.
+                                </p>
+                                <p>
+                                                In your sketch, what is the pendulum doing at time <m>t=0</m>, specifically, how far from the wall is the pendulum and is it moving toward or away from the wall?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                How long does it take for the distance from the wall of the pendulum to return to the same position and direction?
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>2\text{s}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Assume that at time <m>t=0</m>, the pendulum is at its farthest point from the wall.
+                                </p>
+                                <p>
+                                                Find parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> so that the function <m>f_{x}(t)=a\cos(b(t-c))+d</m> fits all our information.
+
+
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                <m>f_{x}(t)=5\cos(\pi{}(t-0))+20=5\cos(\pi{}t)+20</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Assume that at time <m>t=0</m>, the pendulum is at its nearest point to the wall.
+                                </p>
+                                <p>
+                                                Find parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> so that the function <m>f_{x}(t)=a\sin(b(t-c))+d</m> fits all our information.
+
+
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                <m>f_{x}(t)=5\sin\left(\pi{}\left(t-0.5\right)\right)+20</m>.
+                                </p>
+                        </answer>
+                </task>
+        </task>
+        <task>
+                <title>Modeling the Vertical Motion</title>
+                <introduction>
+                        <p>
+                                        For this exercise, let <m>f_{y}(t)</m> give the horizontal distance of the pendulum from the wall, in centimeters, at time <m>t</m> seconds. (We will decide on what time <m>t=0</m> means later.)
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        What is the minimum value of <m>f_{y}(t)</m>? That is, what is the minimum vertical distance of the pendulum from the floor?
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>5\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <introduction>
+                                <p>
+                                        Note that when the pendulum is closest to the wall, this corresponds to a point of maximum height. In <xref ref='fig_pendulum'/>, if we draw a horizontal line through the position of the pendulum when it is closest to the wall, we form a right triangle with the vertical line and the string. The string (which has length <m>10\text{cm}</m>) is the hypotenuse of this right triangle.
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                What is the length of the horizontal leg of the right triangle?
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>5\text{cm}</m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                Use the Pythagorean theorem to find the length of the other (vertical) leg of the right triangle.
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>5\sqrt{3}\text{cm}</m>
+                                        </p>
+                                </answer>
+                                <solution>
+                                        <p>
+                                                        Since the hypotenuse is <m>10\text{cm}</m> and one leg is <m>5\text{cm}</m>, if we let the length of the other leg be <m>z</m>, we have <m>5^{2}+z^{2}=10^{2}</m>, so <m>z^{2}=100-25=75</m>. Since distance is positive, we have <m>z=\sqrt{75}=\sqrt{3\cdot{}25}=5\sqrt{3}</m>. Thus, the length of the leg is <m>5\sqrt{3}\text{cm}</m>.
+                                        </p>
+                                </solution>
+                        </task>
+                        <task xml:id="task_vert_pivot_pendulum">
+                                <statement>
+                                        <p>
+                                                Calculate the maximum value of <m>f_{y}(t)</m>. That is, find the minimum vertical distance of the pendulum from the floor.
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                        The distance from the floor to the pivot point is <m>15\text{cm}</m> and you found the vertical distance from the pivot point to highest point of the pendulum's path in <xref ref="task_vert_pivot_pendulum" />.
+                                        </p>
+                                </hint>
+                                <answer>
+                                        <p>
+                                                <m>(15-5\sqrt{3})\text{cm}</m>
+                                        </p>
+                                </answer>
+                        </task>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Use the maximum and minimum values to calculate the midline for <m>f_{y}(t)</m>.
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>\left(10+\frac{5\sqrt{3}}{2}\right)\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Use the maximum and minimum values to calculate the amplitude for <m>f_{y}(t)</m>.
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>\left(5-\frac{5\sqrt{3}}{2}\right)\text{cm}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Sketch a graph of a sinusoidal function that fits your previous answers.
+                                </p>
+                                <p>
+                                                In your sketch, what is the pendulum doing at time <m>t=0</m>, specifically, how far from the floor is the pendulum and is it moving toward or away from the floor?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                How long does it take for the distance from the floor of the pendulum to return to the same position and direction?
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                        <m>1\text{s}</m>.
+                                </p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Assume that at time <m>t=0</m>, the pendulum is at its farthest point from the wall.
+                                </p>
+                                <p>
+                                                Find parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> so that the function <m>f_{y}(t)=a\cos(b(t-c))+d</m> fits all our information.
+
+
+                                </p>
+                        </statement>
+                        <answer>
+                                <p>
+                                <m>f_{y}(t)=\left(5-\frac{5\sqrt{3}}{2}\right)\cos(2\pi{}(t-0))+\left(10+\frac{5\sqrt{3}}{2}\right)</m>.
+                                </p>
+                        </answer>
+                </task>
+        </task>
+</exercise>
