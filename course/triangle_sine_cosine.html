@@ -36,7 +36,7 @@ lang: "en-US",
 <meta name="twitter:description" content="MATH 123 Fall 2026">
 <meta property="og:description" content="MATH 123 Fall 2026">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.53"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.53"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -119,11 +119,12 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="activities-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="activities-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="wksht_other_trig_functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+      \newcommand{\Abs}[1]{\left\lvert{}{#1}\right\rvert{}}
       \newcommand{\Avec}[1]{\left\langle{}{#1}\right\rangle{}}
       \newcommand{\Bvec}[1]{\begin{bmatrix} { #1 } \end{bmatrix}}
 \newcommand{\lt}{&lt;}
@@ -318,6 +319,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Transformations of Sine and Cosine</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Oscillatory Motion</span></a></div></li>
 <li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="triangle_sine_cosine.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Sine, Cosine, and Triangles</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="wksht_other_trig_functions.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Other Trigonometric Functions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -374,7 +376,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <figure class="figure figure-like" id="fig_rt_triangles"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
 <img src="generated/prefigure/prefigure_two_triangles.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_rt_triangles-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_rt_triangles-2-description">
-<div class="para" id="fig_rt_triangles-2-1-1">Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_rt_triangles-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="fig_rt_triangles-2-1-1">Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_rt_triangles-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></details>
 </div>
@@ -660,7 +662,7 @@ r&amp;=\frac{PO}{MO}\\
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="activities-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="activities-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="wksht_other_trig_functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
