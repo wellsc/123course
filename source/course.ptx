@@ -45,6 +45,7 @@
       <xi:include href='./activities/Transformations/Transformations.ptx'/>
       <xi:include href='./activities/OscillatoryMotion/OscillatoryMotion.ptx'/>
       <xi:include href='./activities/TriangleTrig/TriangleTrig.ptx'/>
+      <xi:include href='./activities/OtherTrigFunctions/OtherTrig.ptx'/>
     </chapter>
 
     <chapter xml:id="handouts">
