@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<worksheet xml:id="wksht_other_trig_functions"  xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Other Trigonometric Functions</title>
+<introduction xml:id="other_trig" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <p>
+                In addition to sine (<m>\sin(\theta)</m>) and cosine (<m>\cos(\theta)</m>) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:
+                <dl>
+                        <li><title>Tangent</title><p><m>\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}</m></p></li>
+                        <li><title>Co-Tangent</title><p><m>\cot(\theta)=\frac{\cos(\theta)}{\sin(\theta)}</m></p></li>
+                        <li><title>Secant</title><p><m>\sec(\theta)=\frac{1}{\cos(\theta)}</m></p></li>
+                        <li><title>Co-Secant</title><p><m>\csc(\theta)=\frac{1}{\sin(\theta)}</m></p></li>
+                </dl>
+        </p>
+        <p>
+                        In terms of the unit circle, recall that <m>\cos(\theta)</m> is the <m>x</m>-coordinate of the point, let's call it <m>P</m>, on the unit circle at an angle <m>\theta</m> counter-clockwise from the point <m>(1,0)</m> and <m>\sin(\theta)</m> it the <m>y</m>-coordinate of <m>P</m>. (We will denote the <m>x</m>- and <m>y</m>-coordinates of <m>P</m> by <m>x_{P}</m> and <m>y_{P}</m>, so we can say <m>\cos(\theta)=x_{P}</m> and <m>\sin(\theta)=y_{P}</m>.)
+        </p>
+        <p>
+                        With this in mind, we see that
+                <md>
+                        <mrow>\tan(\theta)&amp;=\frac{\sin(\theta)}{\cos(\theta)}</mrow>
+                        <mrow>&amp;=\frac{y_{P}}{x_{P}},</mrow>
+                </md>
+                        so <m>\tan(\theta)</m> can be thought of as the slope of the line through <m>(0,0)</m> and <m>P</m>.
+        </p>
+                 <figure xml:id='fig_tan_unit_circle'>
+                        <caption></caption>
+                        <image width='75%'>
+                                <description><p>The Unit Circle showing a point at angle <m>\theta</m>.</p></description>
+                                        <prefigure xmlns="https://prefigure.org" label="prefigure_tan_unit_circle" >
+                                        <diagram dimensions="(600, 500)" margins="5">
+                                          <definition>O=(0,0)</definition>
+                                          <definition>Z=(1,0)</definition>
+                                          <definition>P=(-4/5,3/5)</definition>
+                                          <definition>Y1=(-2,3/5)</definition>
+                                          <definition>Y2=(2,3/5)</definition>
+                                          <definition>X1=(-4/5,-2)</definition>
+                                          <definition>X2=(-4/5,2)</definition>
+                                          <definition>PE=3*P</definition>
+                                          <definition>N=-3*P</definition>
+                                          <coordinates bbox="(-3,-2.5,3,2.5)">
+                                                  <axes />
+                                                  <line endpoints="(O,P)" />
+                                                  <line endpoints="(N,PE)" stroke="gray" dash="4 4"/>
+                                                  <line endpoints="(X1,X2)" stroke="gray" dash="4 4"/>
+                                                  <line endpoints="(Y1,Y2)" stroke="gray" dash="4 4"/>
+                                                  <circle center="O" radius="1" />
+                                                  <angle-marker points="(Z,O,P)" radius="40" arrow="yes">
+                                                    <m>\theta</m>
+                                                  </angle-marker>
+                                                  <point p="P" alignment="sw" offset="(-3,-1)"><m>P</m></point>
+                                                  <point p="Y2" size="0" alignment="e"><m>\sin(\theta)=y</m></point>
+                                                  <point p="X2" size="0" alignment="n"><m>\cos(\theta)=x</m></point>
+                                                  <point p="PE" size="0" alignment="n"><m>\tan(\theta)=\frac{y}{x}</m></point>
+                                          </coordinates>
+                                        </diagram>
+                                        </prefigure>
+                        </image>
+        </figure>
+</introduction>
+                <exercise xml:id='exer_tangent'>
+                        <introduction>
+                                <p>
+                                </p>
+
+                        </introduction>
+                        <task xml:id='task_tangent_calc'>
+                                <statement>
+                                        <p>
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+</worksheet>
