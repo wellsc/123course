@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.6",
   "title": "Other Trigonometric Functions",
-  "body": " Other Trigonometric Functions   In addition to sine ( ) and cosine ( ) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:  Tangent  Co-Tangent  Secant  Co-Secant    In terms of the unit circle, recall that is the -coordinate of the point, let's call it , on the unit circle at an angle counter-clockwise from the point and it the -coordinate of . (We will denote the - and -coordinates of by and , so we can say and .)  With this in mind, we see that so can be thought of as the slope of the line through and .     The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  N=-3*P          \\theta   P  \\sin(\\theta)=y  \\cos(\\theta)=x  \\tan(\\theta)=\\frac{y}{x}                    "
+  "body": " Other Trigonometric Functions   In addition to sine ( ) and cosine ( ) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:  Tangent  Cotangent  Secant  Cosecant    In terms of the unit circle, recall that is the -coordinate of the point, let's call it , on the unit circle at an angle counter-clockwise from the point and is the -coordinate of . That is, .  With this in mind, we see that so can be thought of as the slope of the line through and .   The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a           In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .      Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     "
 },
 {
   "id": "fig_tan_unit_circle",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "30",
   "title": "",
-  "body": "   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  N=-3*P          \\theta   P  \\sin(\\theta)=y  \\cos(\\theta)=x  \\tan(\\theta)=\\frac{y}{x}      "
+  "body": " The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a       "
 },
 {
   "id": "exer_tangent",
@@ -682,7 +682,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.6.1",
   "title": "",
-  "body": "           "
+  "body": "  In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .   "
+},
+{
+  "id": "exer_cotangent",
+  "level": "2",
+  "url": "wksht_other_trig_functions.html#exer_cotangent",
+  "type": "Worksheet Exercise",
+  "number": "4.6.2",
+  "title": "",
+  "body": "  Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?    "
 },
 {
   "id": "handouts-2",
