@@ -3,27 +3,28 @@
         <title>Other Trigonometric Functions</title>
 <introduction xml:id="other_trig" xmlns:xi="http://www.w3.org/2001/XInclude">
         <p>
-                In addition to sine (<m>\sin(\theta)</m>) and cosine (<m>\cos(\theta)</m>) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:
+                In addition to sine (<m>\sin\left(\theta\right)</m>) and cosine (<m>\cos\left(\theta\right)</m>) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:
                 <dl>
-                        <li><title>Tangent</title><p><m>\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}</m></p></li>
-                        <li><title>Co-Tangent</title><p><m>\cot(\theta)=\frac{\cos(\theta)}{\sin(\theta)}</m></p></li>
-                        <li><title>Secant</title><p><m>\sec(\theta)=\frac{1}{\cos(\theta)}</m></p></li>
-                        <li><title>Co-Secant</title><p><m>\csc(\theta)=\frac{1}{\sin(\theta)}</m></p></li>
+                        <li><title>Tangent</title><p><m>\tan\left(\theta\right)=\frac{\sin\left(\theta\right)}{\cos\left(\theta\right)}</m></p></li>
+                        <li><title>Cotangent</title><p><m>\cot(\theta)=\frac{\cos\left(\theta\right)}{\sin\left(\theta\right)}</m></p></li>
+                        <li><title>Secant</title><p><m>\sec(\theta)=\frac{1}{\cos\left(\theta\right)}</m></p></li>
+                        <li><title>Cosecant</title><p><m>\csc(\theta)=\frac{1}{\sin\left(\theta\right)}</m></p></li>
                 </dl>
         </p>
         <p>
-                        In terms of the unit circle, recall that <m>\cos(\theta)</m> is the <m>x</m>-coordinate of the point, let's call it <m>P</m>, on the unit circle at an angle <m>\theta</m> counter-clockwise from the point <m>(1,0)</m> and <m>\sin(\theta)</m> it the <m>y</m>-coordinate of <m>P</m>. (We will denote the <m>x</m>- and <m>y</m>-coordinates of <m>P</m> by <m>x_{P}</m> and <m>y_{P}</m>, so we can say <m>\cos(\theta)=x_{P}</m> and <m>\sin(\theta)=y_{P}</m>.)
-        </p>
+                        In terms of the unit circle, recall that <m>\cos\left(\theta\right)</m> is the <m>x</m>-coordinate of the point, let's call it <m>P</m>, on the unit circle at an angle <m>\theta</m> counter-clockwise from the point <m>(1,0)</m> and <m>\sin\left(\theta\right)</m> is the <m>y</m>-coordinate of <m>P</m>. That is, <m>P=\left(\cos\left(\theta\right),\sin\left(\theta\right)\right)</m>.
+                </p>
         <p>
                         With this in mind, we see that
                 <md>
-                        <mrow>\tan(\theta)&amp;=\frac{\sin(\theta)}{\cos(\theta)}</mrow>
-                        <mrow>&amp;=\frac{y_{P}}{x_{P}},</mrow>
+                        <mrow>\tan\left(\theta\right)&amp;=\frac{\sin\left(\theta\right)}{\cos\left(\theta\right)}</mrow>
+                        <mrow>&amp;=\frac{\sin\left(\theta\right)-0}{\cos\left(\theta\right)-0}</mrow>
+                        <mrow>&amp;=\frac{\Delta{}y}{\Delta{}x},</mrow>
                 </md>
-                        so <m>\tan(\theta)</m> can be thought of as the slope of the line through <m>(0,0)</m> and <m>P</m>.
+                        so <m>\tan\left(\theta\right)</m> can be thought of as the slope of the line through <m>(0,0)</m> and <m>P</m>.
         </p>
                  <figure xml:id='fig_tan_unit_circle'>
-                        <caption></caption>
+                         <caption>The unit circle showing <m>\cos\left(\theta\right)</m>, <m>\sin\left(\theta\right)</m>, and <m>\tan\left(\theta\right)</m>.</caption>
                         <image width='75%'>
                                 <description><p>The Unit Circle showing a point at angle <m>\theta</m>.</p></description>
                                         <prefigure xmlns="https://prefigure.org" label="prefigure_tan_unit_circle" >
@@ -31,26 +32,34 @@
                                           <definition>O=(0,0)</definition>
                                           <definition>Z=(1,0)</definition>
                                           <definition>P=(-4/5,3/5)</definition>
+                                          <definition>Q=-1*P</definition>
                                           <definition>Y1=(-2,3/5)</definition>
                                           <definition>Y2=(2,3/5)</definition>
                                           <definition>X1=(-4/5,-2)</definition>
                                           <definition>X2=(-4/5,2)</definition>
                                           <definition>PE=3*P</definition>
-                                          <definition>N=-3*P</definition>
+                                          <definition>QE=-3*P</definition>
                                           <coordinates bbox="(-3,-2.5,3,2.5)">
-                                                  <axes />
-                                                  <line endpoints="(O,P)" />
-                                                  <line endpoints="(N,PE)" stroke="gray" dash="4 4"/>
-                                                  <line endpoints="(X1,X2)" stroke="gray" dash="4 4"/>
-                                                  <line endpoints="(Y1,Y2)" stroke="gray" dash="4 4"/>
+                                                  <axes decorations="no" thickness="1"/>
+                                                  <line endpoints="(P,O)" alignment="nw" ><m>1</m></line>
+                                                  <line endpoints="(QE,O)"   stroke="gray" thickness="1" dash="4 4"/>
+                                                  <line endpoints="(P,PE)"  stroke="gray" thickness="1" dash="4 4"/>
+                                                  <line endpoints="(X1,X2)" stroke="gray" thickness="1" dash="4 4"/>
+                                                  <line endpoints="(Y1,Y2)" stroke="gray" thickness="1" dash="4 4"/>
                                                   <circle center="O" radius="1" />
                                                   <angle-marker points="(Z,O,P)" radius="40" arrow="yes">
                                                     <m>\theta</m>
                                                   </angle-marker>
-                                                  <point p="P" alignment="sw" offset="(-3,-1)"><m>P</m></point>
-                                                  <point p="Y2" size="0" alignment="e"><m>\sin(\theta)=y</m></point>
-                                                  <point p="X2" size="0" alignment="n"><m>\cos(\theta)=x</m></point>
-                                                  <point p="PE" size="0" alignment="n"><m>\tan(\theta)=\frac{y}{x}</m></point>
+                                                  <angle-marker points="(P,O,Q)" radius="30" arrow="yes">
+                                                          <m>\pi</m>
+                                                  </angle-marker>
+                                                  <point p="P" alignment="sw" offset="(-4,-1)"><m>P=(a,b)</m></point>
+                                                  <point p="Q" alignment="e" offset="(0,0)"><m>Q=(-a,-b)</m></point>
+                                                  <point p="Y2" size="0" alignment="e"><m>y=b</m></point>
+                                                  <point p="X2" size="0" alignment="n"><m>x=a</m></point>
+                                                  <!--
+                                                  <point p="PE" size="0" alignment="n"><m>\tan\left(\theta\right)=\frac{b}{a}</m></point>
+                                                  -->
                                           </coordinates>
                                         </diagram>
                                         </prefigure>
@@ -60,12 +69,118 @@
                 <exercise xml:id='exer_tangent'>
                         <introduction>
                                 <p>
+                                        In this problem, we will assume that the point on the unit circle at angle <m>\theta</m> is <m>P=(a,b)</m> and that the point <m>Q=(-a,-b)</m> is obtained by rotating <m>P</m> through <m>\pi</m> radians (<m>180^{\circ}</m>), as shown in <xref ref='fig_tan_unit_circle'/>.
                                 </p>
 
                         </introduction>
-                        <task xml:id='task_tangent_calc'>
+                        <task xml:id='task_cos_coord'>
                                 <statement>
                                         <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\cos\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_sin_coord'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\sin\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_tan_coord'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\tan\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_cos_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\cos\left(\theta+\pi\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_sin_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\sin\left(\theta+\pi\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_tan_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\tan\left(\theta+\pi\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <conclusion>
+                                <p>
+                                                We have just discovered three <term>trigonometric identities</term>:for any real number<nbsp/><m>\theta</m>,
+                                                <ul>
+                                                        <li>
+                                                                <p><m>\cos\left(\theta+\pi\right)=-1\cdot\cos\left(\theta\right)</m>;</p>
+                                                        </li>
+                                                        <li>
+                                                                <p><m>\sin\left(\theta+\pi\right)=-1\cdot\sin\left(\theta\right)</m>; and</p>
+                                                        </li>
+                                                        <li>
+                                                                <p><m>\tan\left(\theta+\pi\right)=\tan\left(\theta\right)</m>.</p>
+                                                        </li>
+                                                </ul>
+                                </p>
+                                <p>
+                                                We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number<nbsp/><m>\theta</m>, <m>\cos\left(\theta+2\pi\right)=\cos\left(\theta\right)</m> and <m>\sin\left(\theta+2\pi\right)=\sin\left(\theta\right)</m>.
+                                </p>
+                        </conclusion>
+                </exercise>
+                <exercise xml:id='exer_cotangent'>
+                        <introduction>
+                                <p>
+                                        Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use <xref ref='fig_tan_unit_circle'/> in this activity.
+                                </p>
+
+                        </introduction>
+                        <task xml:id='task_sec_coord'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\sec\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_csc_coord'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\csc\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_cot_coord'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\cot\left(\theta\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_sec_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\sec\left(\theta+\pi\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_csc_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\csc\left(\theta+\pi\right)</m>?
+                                        </p>
+                                </statement>
+                        </task>
+                        <task xml:id='task_cot_coord_Q'>
+                                <statement>
+                                        <p>
+                                                        In <xref ref='fig_tan_unit_circle'/>, what is the value of <m>\cot\left(\theta+\pi\right)</m>?
                                         </p>
                                 </statement>
                         </task>
