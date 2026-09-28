@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="wksht_inverse_trig" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Vectors and Inverse Trigonometric Functions</title>
+        <xi:include href='./inverse_intro.ptx'/>
+        <xi:include href='./direction_to_coords.ptx'/>
+        <xi:include href='./invcos.ptx'/>
+        <xi:include href='./invsine.ptx'/>
+        <xi:include href='./invtan.ptx'/>
+</section>

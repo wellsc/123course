@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subsection xml:id="sec_inverse_sine">
+		<title>The Inverse Sine Function</title>
+                <introduction>
+                <p>
+                                Just like with cosine, we can't find <em>the</em> angle <m>\theta</m> so that <m>\sin(\theta)=s</m>, be we can find <em>an</em> angle. So, to find an <q>un-sine</q> function that takes <m>s</m> between <m>-1</m> and <m>1</m> as its input and gives an angle, we again need to find a <term>branch</term>.
+                </p>
+                </introduction>
+                <subsubsection xml:id='ssec_principle_branch_sine'>
+                        <title>The Principle Branch of Sine</title>
+                        <exercise xml:id='exer_find_branch_sine'>
+                                <statement>
+                                        <p>
+                                                        Use the graph of <m>y=\sin(x)</m> in <xref ref='fig_sine'/> to find a subsection of the graph, <m>a\le{}x\le{}b</m>, that every value of <m>y</m> from <m>-1</m> to <m>1</m> occurs exactly once in that range of <m>x</m> values.
+                                        </p>
+                                </statement>
+                                <solution>
+                                        <p>
+                                                        One choice is <m>-\frac{1}{2}\pi\le{}x\le{}\frac{1}{2}\pi</m>. This is called the <term>principle branch</term> of sine, sometimes written with a capital S, <m>\Sin(x)</m>.
+                                        </p>
+                                </solution>
+                        </exercise>
+                <figure xml:id='fig_sine'>
+                        <caption>The Sine Function</caption>
+                        <image width="50%">
+                                <latex-image>
+                                        \begin{tikzpicture}[scale=1]
+                            \begin{scope}
+                                        \draw (0,-1.75) -- (0,1.75);
+                                        \draw (0.1,1) -- (-0.1,1) node[left] {\(1\)};
+                                        \draw (0.1,0.5) -- (-0.1,0.5) node[left] {\(\frac{1}{2}\)};
+                                        \draw (0.1,1.5) -- (-0.1,1.5) node[left] {\(\frac{3}{2}\)};
+                                        \draw (0.1,-1) -- (-0.1,-1) node[left] {\(-1\)};
+                                        \draw (0.1,-0.5) -- (-0.1,-0.5) node[left] {\(-{}{}\frac{1}{2}\)};
+                                        \draw (0.1,-1.5) -- (-0.1,-1.5) node[left] {\(-{}{}\frac{3}{2}\)};
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                        ({-2.2*\n2},0) -- ({2.2*\n2},0) 
+                                        \foreach \x in {-7/4,-5/4,-3/4,-1/4,7/4,5/4,3/4,1/4}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1)
+                                        }
+                                        \foreach \x in {-2,-3/2,-1/2,1/2,3/2,2}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1) node[below=0.25] {\(\x\pi\)}
+                                        }
+                                        ({-1*\n2},0.1) -- ({-1*\n2},-0.1) node[below=0.25] {\(-\pi\)}
+                                        ({\n2},0.1)    --    ({\n2},-0.1) node[below=0.25] {\(\pi\)}
+                                        ;
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                                        plot[domain={-2*\n1}:{2*\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{sin(\t)})
+                                        ;
+                            \end{scope}
+                                        \end{tikzpicture}
+                                </latex-image>
+                        </image>
+                </figure>
+                </subsubsection>
+                <subsubsection xml:id='ssec_un_sin'>
+                        <title>The <q>Un-Sine</q></title>
+                <p>
+                                Now, we can find a function that undoes this branch of sine: the <q>un-sine</q> of a number <m>c</m> is the <em>unique</em> angle <m>\theta</m> so that: <m>\sin(\theta)=c</m> <alert>and</alert> <m>0\le{}\theta\le{}\pi</m>. For now, we will write <m>\unsin(c)</m> and give the following definition.
+                </p>
+                <definition xml:id='def_unsin'>
+                        <title>The <q>Un-Sine</q> Function</title>
+                        <statement>
+                                <p>
+                                        For any value <m>x</m> with <m>-1\le{}x\le{}1</m>, saying <m>\unsin(x)=\theta</m> means that <m>\theta</m> is the (unique) angle so that
+                                        <ol marker="(a)">
+                                                <li><p><m>\sin(\theta)=x</m>, and</p></li>
+                                                <li><p><m>-\frac{1}{2}\pi\le{}\theta\le{}\frac{1}{2}\pi</m>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </definition>
+                <example xml:id='example_unsin'>
+                        <statement>
+                                <p>
+                                                We will find <m>\unsin(x)</m> for several values of <m>x</m> using the unit circle.
+                                </p>
+                                <p>
+                                        <ol>
+                                                <li><p>To find <m>\unsin\left(\frac{\sqrt{3}}{2}\right)</m>, we first locate points where the <m>y</m>-coordinate is <m>\frac{\sqrt{3}}{2}</m>, because <m>y</m>-coordinates correspond to the sine. The points where the <m>y</m>-coordinate is <m>\frac{\sqrt{3}}{2}</m> are <m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{\pi}{3}</m> and <m>\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{2\pi}{3}</m>. Since <m>0\le{}\frac{\pi}{3}\le{}\pi</m>, <md>\unsin\left(\frac{\sqrt{3}}{2}\right)=\frac{\pi}{3}</md>.</p></li>
+                                                <li><p>To find <m>\unsin\left(-\frac{1}{2}\right)</m>, we first locate points where the <m>y</m>-coordinate is <m>-\frac{1}{2}</m>, because <m>y</m>-coordinates correspond to the sine. The points where the <m>y</m>-coordinate is <m>-\frac{1}{2}</m> are <m>\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m> at <m>\theta=\frac{11\pi}{6}</m> and <m>\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m> at <m>\theta=\frac{7\pi}{6}</m>. Neither of these lie in the interval<m>\left[-\frac{1}{2}\pi,\frac{1}{2}\pi\right]</m>, though. Instead, we will look at negative angles. The point at <m>\theta=\frac{11\pi}{6}</m> is also at <m>\theta=-\frac{\pi}{2}</m>. This is in the correct range, so <md>\unsin\left(-\frac{1}{2}\right)=-\frac{\pi}{6}</md>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </example>
+                <exercise xml:id='exer_unsin'>
+                        <introduction>
+                                <p>
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\unsin\left(\frac{\sqrt{2}}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\unsin\left(-\frac{\sqrt{3}}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\unsin\left(\frac{1}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+                </subsubsection>
+                <subsubsection xml:id='ssec_arc_and_inv_sin'>
+                        <title>Notation</title>
+                        <p>
+                                        The name we chose for our function, <q>un-sine</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-sine</term>, <m>\arcsin(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse sine</term>, which is confusingly written as <m>\sin^{-1}(x)</m>.
+                        </p>
+                </subsubsection>
+	</subsection>
+

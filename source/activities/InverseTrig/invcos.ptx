@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subsection xml:id="sec_inverse_cosine">
+		<title>The Inverse Cosine Function</title>
+                <introduction>
+                <p>
+                        As we saw in <xref ref='exer_coords_to_dir'/> (particularly <xref ref='task_explain_AN_angle'/>), given a value <m>c</m> with <m>-1\le{}c\le{}1</m>, we can't find <em>the</em> angle <m>\theta</m> so that <m>\cos(\theta)=c</m>, be we can find <em>an</em> angle. This isn't really a huge problem in general, but it is a problem if we want to have a <em>function</em>, a sort of <q>un-cosine</q>, that takes <m>c</m> as its input and gives an angle, because <em>a function must have one unique output for each input</em>. So, if we want to undo the cosine function, we need to make a decision on how to choose <em>the</em> angle.
+                </p>
+                </introduction>
+                <subsubsection xml:id='ssec_principle_branch_cosine'>
+                        <title>The Principle Branch of Cosine</title>
+                <p>
+                        <xref ref='fig_cosine'/> shows the graph <m>y=\cos(x)</m>, and a subsection of the graph is shown in bold, from <m>x=0</m> to <m>x=\pi</m>, so that every value of <m>y</m> from <m>-1</m> to <m>1</m> occurs exactly once. By <term>restricting the domain</term> of cosine to <m>0\le{}x\le{}\pi</m> we get what is called the <term>principle branch</term> of cosine, and it is sometimes written with a capital C as <m>\Cos(x)</m>.
+                </p>
+                <figure xml:id='fig_cosine'>
+                        <caption>The Cosine Function and its Principle Branch</caption>
+                        <image width="50%">
+                                <latex-image>
+                                        \begin{tikzpicture}[scale=1]
+                            \begin{scope}
+                                        \draw (0,-1.75) -- (0,1.75);
+                                        \draw (0.1,1) -- (-0.1,1) node[left] {\(1\)};
+                                        \draw (0.1,0.5) -- (-0.1,0.5) node[left] {\(\frac{1}{2}\)};
+                                        \draw (0.1,1.5) -- (-0.1,1.5) node[left] {\(\frac{3}{2}\)};
+                                        \draw (0.1,-1) -- (-0.1,-1) node[left] {\(-1\)};
+                                        \draw (0.1,-0.5) -- (-0.1,-0.5) node[left] {\(-{}{}\frac{1}{2}\)};
+                                        \draw (0.1,-1.5) -- (-0.1,-1.5) node[left] {\(-{}{}\frac{3}{2}\)};
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                        ({-2.2*\n2},0) -- ({2.2*\n2},0) 
+                                        \foreach \x in {-7/4,-5/4,-3/4,-1/4,7/4,5/4,3/4,1/4}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1)
+                                        }
+                                        \foreach \x in {-2,-3/2,-1/2,1/2,3/2,2}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1) node[below=0.25] {\(\x\pi\)}
+                                        }
+                                        ({-1*\n2},0.1) -- ({-1*\n2},-0.1) node[below=0.25] {\(-\pi\)}
+                                        ({\n2},0.1)    --    ({\n2},-0.1) node[below=0.25] {\(\pi\)}
+                                        ;
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                                        plot[domain={-2*\n1}:{2*\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{cos(\t)})
+                                        ;
+                                        \draw[line width=2]
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                                        plot[domain={0}:{\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{cos(\t)})
+                                                        ({3*\n2/4},1) node {\(y=\cos(t)\)}
+                                        ;
+                            \end{scope}
+                                        \end{tikzpicture}
+                                </latex-image>
+                        </image>
+                </figure>
+                </subsubsection>
+                <subsubsection xml:id='ssec_un_cos'>
+                        <title>The <q>Un-Cosine</q></title>
+                <p>
+                                Now, we can find a function that undoes this branch of cosine: the <q>un-cosine</q> of a number <m>c</m> is the <em>unique</em> angle <m>\theta</m> so that: <m>\cos(\theta)=c</m> <alert>and</alert> <m>0\le{}\theta\le{}\pi</m>. For now, we will write <m>\uncos(c)</m> and give the following definition.
+                </p>
+                <definition xml:id='def_uncos'>
+                        <title>The <q>Un-Cosine</q> Function</title>
+                        <statement>
+                                <p>
+                                        For any value <m>x</m> with <m>-1\le{}x\le{}1</m>, saying <m>\uncos(x)=\theta</m> means that <m>\theta</m> is the (unique) angle so that
+                                        <ol marker="(a)">
+                                                <li><p><m>\cos(\theta)=x</m>, and</p></li>
+                                                <li><p><m>0\le{}\theta\le{}\pi</m>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </definition>
+                <example xml:id='example_uncos'>
+                        <statement>
+                                <p>
+                                                We will find <m>\uncos(x)</m> for several values of <m>x</m> using the unit circle.
+                                </p>
+                                <p>
+                                        <ol>
+                                                <li><p>To find <m>\uncos\left(\frac{\sqrt{3}}{2}\right)</m>, we first locate points where the <m>x</m>-coordinate is <m>\frac{\sqrt{3}}{2}</m>, because <m>x</m>-coordinates correspond to the cosine. The points where the <m>x</m>-coordinate is <m>\frac{\sqrt{3}}{2}</m> are <m>\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m> at <m>\theta=\frac{\pi}{6}</m> and <m>\left(\frac{\sqrt{3}}{2},{}-\frac{1}{2}\right)</m> at <m>\theta=\frac{11\pi}{6}</m>. Since <m>0\le{}\frac{\pi}{6}\le{}\pi</m>, <md>\uncos\left(\frac{\sqrt{3}}{2}\right)=\frac{\pi}{6}</md>.</p></li>
+                                                <li><p>To find <m>\uncos\left(-\frac{1}{2}\right)</m>, we first locate points where the <m>x</m>-coordinate is <m>-\frac{1}{2}</m>, because <m>x</m>-coordinates correspond to the cosine. The points where the <m>x</m>-coordinate is <m>-\frac{1}{2}</m> are <m>\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{2\pi}{3}</m> and <m>\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{4\pi}{3}</m>. Since <m>0\le{}\frac{2\pi}{3}\le{}\pi</m>, <md>\uncos\left(-\frac{1}{2}\right)=\frac{2\pi}{3}</md>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </example>
+                <exercise xml:id='exer_uncos'>
+                        <introduction>
+                                <p>
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\uncos\left(\frac{\sqrt{2}}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\uncos\left(-\frac{\sqrt{3}}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Find <m>\uncos\left(\frac{1}{2}\right)</m>.
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+                </subsubsection>
+                <subsubsection xml:id='ssec_arc_and_inv_cos'>
+                        <title>Notation</title>
+                        <p>
+                                        The name we chose for our function, <q>un-cosine</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-cosine</term>, <m>\arccos(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse cosine</term>, which is confusingly written as <m>\cos^{-1}(x)</m>.
+                        </p>
+                </subsubsection>
+	</subsection>

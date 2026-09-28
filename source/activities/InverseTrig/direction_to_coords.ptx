@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subsection xml:id="sec_direction_to_coords">
+		<title>From Direction and Magnitude to Coordinates</title>
+                <exercise xml:id='exer_dir_to_coords'>
+                        <introduction>
+                                <p>
+                                Investigate the following questions using <xref ref='fig_dir_to_coords'/>.
+                                </p>
+                <figure xml:id='fig_dir_to_coords'>
+                        <caption>Vectors and the Unit Circle</caption>
+                        <image width='50%'>
+                                <latex-image>
+                                        \begin{tikzpicture}[scale=1]
+                                        \coordinate (O) at (0,0);
+                                        \coordinate (v1) at (30:4);
+                                        \coordinate (u1) at (30:1);
+                                        \coordinate (v2) at (135:3);
+                                        \coordinate (u2) at (135:1);
+                                        \draw[-stealth] (-3.7,0) -- (3.7,0);
+                                        \draw[-stealth] (0,-1.7) -- (0,3.7);
+                                        \draw (O) circle (1);
+                                        \draw[dotted] (O) -- node[midway] {\(1\)cm} (225:1);
+
+                                        % Draw v1 and u1, labeling length and angle
+                                        \draw[thick,-stealth] (O) -- node[near end,right] {\(4\)cm} (v1) node[right] {\(\vec{v}_{1}\)};
+                                        \draw[very thick,-stealth] (O) -- (u1) node[above] {\(\vec{u}_{1}\)};
+                                        \draw[-stealth,color=black!50] 
+                                        let
+                                        \n1 = {0.6},
+                                        in
+                                        (\n1,0) arc[start angle=0, end angle=30,radius=\n1] node[midway,right] {\(\theta=\frac{\pi}{6}\)};
+
+                                        % Draw v2 and u2, labeling length and angle
+                                        \draw[thick,-stealth] (O) -- node[midway,left] {\(3\)cm} (v2) node[right] {\(\vec{v}_{2}\)};
+                                        \draw[very thick,-stealth] (O) -- (u2) node[below] {\(\vec{u}_{2}\)};
+                                        \draw[-stealth,color=black!50] 
+                                        let
+                                        \n1 = {2.3},
+                                        in
+                                        (\n1,0) arc[start angle=0, end angle=135,radius=\n1] node[near end,above] {\(\phi=\frac{3\pi}{4}\)};
+                                        \end{tikzpicture}
+                                </latex-image>
+                        </image>
+                </figure>
+                        </introduction>
+                        <task xml:id='task_coords_u1_and_v1'>
+                                <task>
+                                <statement>
+                                        <p>
+                                                The vector <m>\vec{u}_{1}</m> has length <m>1</m>cm and makes an angle of <m>\theta=\frac{\pi}{6}</m>radians (<q>theta</q> radians) with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                The tip of <m>\vec{u}_{1}</m> is on the unit circle.
+                                        </p>
+                                </hint>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        The vector <m>\vec{v}_{1}</m> has length <m>4</m>cm and makes an angle of <m>\frac{\pi}{6}</m>radians with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                How is <m>\vec{v}_{1}</m> related to <m>\vec{u}_{1}</m>?
+                                        </p>
+                                </hint>
+                                </task>
+                        </task>
+                        <task xml:id='task_coords_u2_and_v2'>
+                                <task>
+                                <statement>
+                                        <p>
+                                                The vector <m>\vec{u}_{2}</m> has length <m>1</m>cm and makes an angle of <m>\phi=\frac{3\pi}{4}</m>radians (<q>phi</q> radians) with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        The vector <m>\vec{v}_{2}</m> has length <m>3</m>cm and makes an angle of <m>\frac{3\pi}{4}</m>radians with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                </task>
+                        </task>
+                        <task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                Find the coordinates of the unit vector, <m>\vec{u}_{3}</m> that makes an angle of <m>\alpha=\frac{5\pi}{4}</m>radians (<q>alpha</q>) with the positive <m>x</m>-axis.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        Find the coordinates of the vector, <m>\vec{v}_{3}</m> that has length <m>5\sqrt{2}</m> and makes an angle of <m>\alpha=\frac{5\pi}{4}</m>radians with the positive <m>x</m>-axis.
+                                        </p>
+                                </statement>
+                                </task>
+                        </task>
+                        <task xml:id='task_coords_un_and_vn'>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        Given any angle, <m>\beta</m> (<q>beta</q>), explain how to find the coordinates of the unit vector that makes that angle with the positive <m>x</m>-axis.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                Given any angle, <m>\beta</m>, and any positive length, <m>r</m>, explain how to find the coordinates of the vector of that length that makes that angle with the positive <m>x</m>-axis.
+                                        </p>
+                                </statement>
+                                </task>
+                        </task>
+                        <task xml:id='task_coords_u1a_and_v1a'>
+                                <task>
+                                <statement>
+                                        <p>
+                                                The vector <m>\vec{u}_{1a}</m> has length <m>1</m>cm and makes an angle of <m>\theta=\frac{13\pi}{6}</m>radians (<q>theta</q> radians) with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        The vector <m>\vec{v}_{1a}</m> has length <m>4</m>cm and makes an angle of <m>\frac{13\pi}{6}</m>radians with the positive <m>x</m>-axis. Find its coordinates.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>
+                                                        Compare your results from 
+                                                        <xref ref='task_coords_u1_and_v1'/>
+                                                        and
+                                                        <xref ref='task_coords_u1a_and_v1a'/>. What do you notice?
+                                                </p>
+                                        </statement>
+                                </task>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                        Using a calculator, find (approximately) the coordinates of the vector <m>\vec{v}_{4}</m> that has length <m>2</m> and makes an angle <m>\gamma=2</m>rad (<q>gamma</q>).
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+                <exercise xml:id='exer_coords_to_dir'>
+                        <task>
+                                <introduction>
+                                        <p>
+                                                        Let <m>\vec{V}=\begin{bmatrix}{\sqrt{3}}\\ {-1}\end{bmatrix}</m>.
+                                        </p>
+                                </introduction>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        What is the magnitude (length) of <m>\vec{V}</m>? (In other words, calculate <m>\Abs{\vec{V}}</m>.)
+                                        </p>
+                                </statement>
+                                </task>
+                                <task>
+                                <statement>
+                                        <p>
+                                                        What are the coordinates of a unit vector, call it <m>\vec{U}</m>, that points in the same direction as <m>\vec{V}</m>?
+                                        </p>
+                                </statement>
+                                </task>
+                                <task xml:id='task_find_zeta'>
+                                <statement>
+                                        <p>
+                                                        Find an angle, <m>\zeta</m> (<q>zeta</q>) so that <m>\vec{U}=\begin{bmatrix}\cos(\zeta)\\\sin(\zeta)\end{bmatrix}</m>.
+                                        </p>
+                                </statement>
+                                </task>
+                                <task xml:id='task_find_zeta2'>
+                                <statement>
+                                        <p>
+                                                Find at least one other valid answer for <xref ref='task_find_zeta'/>.
+                                        </p>
+                                </statement>
+                                <hint>
+                                        <p>
+                                                        What happens if you go completely around the unit circle before getting to where <m>\vec{U}</m> is?
+                                        </p>
+                                </hint>
+                                </task>
+                                <task xml:id='task_explain_AN_angle'>
+                                        <statement>
+                                                <p>
+                                                                Explain why, given coordinates for a vector, we cannot say <q>the angle</q> that it makes with the positive <m>x</m>-axis, but must instead say <q>an angle</q>.
+                                                </p>
+                                        </statement>
+                                </task>
+                        </task>
+                </exercise>
+	</subsection>
+

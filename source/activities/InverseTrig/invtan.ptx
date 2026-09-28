@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subsection xml:id="sec_tan_and_inverse_tan">
+		<title>The Tangent and the Inverse Tangent</title>
+                <introduction>
+                <p>
+                                The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.
+                </p>
+                </introduction>
+                <subsubsection xml:id='ssec_graph_of_tan'>
+                        <title>The Graph of the Tangent Function</title>
+                <p>
+                        As shown in <xref ref='fig_tan'/>, the graph <m>y=\tan(x)</m> is undefined with vertical asymptotes at <m>x=-\frac{3}{2}\pi,-\frac{1}{2}\pi,\frac{1}{2}\pi,\frac{3}{2}\pi</m> and so forth. In fact for any whole number (or <term>integer</term>) <m>k</m>, <m>\tan(x)</m> is undefined at <m>x=k \pi +\frac{1}{2}\pi=\frac{(2k+1)}{2}\pi</m>. 
+                        </p>
+                        <p>
+                                        As we come up on one of these <term>discontinuities</term> from the left side, values of the tangent grow larger and larger. We formally say that as <m>x\to\frac{1}{2}\pi</m>, for example, from the left, the tangent <em>increases without bound</em>, and sometimes we write <m>\tan(x)\to\infty</m> as <m>x\to\frac{1}{2}\pi^{-}</m>.
+                </p>
+                        <p>
+                        Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as <m>x\to\frac{1}{2}\pi</m> from the right, the tangent <em>decreases without bound</em>, and sometimes we write <m>\tan(x)\to-\infty</m> as <m>x\to\frac{1}{2}\pi^{+}</m>.
+                </p>
+                <figure xml:id='fig_tan'>
+                        <caption>The Tangent Function</caption>
+                        <image width="50%">
+                                <latex-image>
+                                        \begin{tikzpicture}[scale=1]
+                            \begin{scope}
+%                                        \clip (-6.4,-4.7) rectangle (6.45,4.7);
+                                        \draw[stealth-stealth] (0,-4.7) -- (0,4.7);
+                                        \foreach \y in {-4,-3,-2,-1,1,2,3,4}
+                                                \draw (0.1,\y) -- (-0.1,\y) node[left] {\(\y\)};
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                        ({-2.2*\n2},0) -- ({2.2*\n2},0) 
+                                        \foreach \x in {-7/4,-5/4,-3/4,-1/4,7/4,5/4,3/4,1/4}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1)
+                                        }
+                                        \foreach \x in {-2,-3/2,-1/2,1/2,3/2,2}{
+                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1) node[below=0.25] {\(\x\pi\)}
+                                        }
+                                        ({-1*\n2},0.1) -- ({-1*\n2},-0.1) node[below=0.25] {\(-\pi\)}
+                                        ({\n2},0.1)    --    ({\n2},-0.1) node[below=0.25] {\(\pi\)}
+                                        ;
+                                        \draw
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                        plot[domain={-2*\n1-12}:{-3*\n1/2-12},samples=180,smooth,variable=\t] ({\t/\n1*\n2},{tan(\t)})
+                                        plot[domain={-3*\n1/2+12}:{-1*\n1/2-12},samples=180,smooth,variable=\t] ({\t/\n1*\n2},{tan(\t)})
+                                        plot[domain={-1*\n1/2+12}:{1*\n1/2-12},samples=180,smooth,variable=\t] ({\t/\n1*\n2},{tan(\t)})
+                                        plot[domain={1*\n1/2+12}:{3*\n1/2-12},samples=180,smooth,variable=\t] ({\t/\n1*\n2},{tan(\t)})
+                                        plot[domain={3*\n1/2+12}:{2*\n1+12},samples=180,smooth,variable=\t] ({\t/\n1*\n2},{tan(\t)})
+                                        ;
+                                        \draw[dotted]
+                                                let
+                                                        \n1 = {180},
+                                                        \n2 = {3.14159},
+                                                in
+                                        ({-3*\n2/2},-4.7) -- ({-3*\n2/2},4.7)
+                                        ({-\n2/2},-4.7) -- ({-\n2/2},4.7)
+                                        ({\n2/2},-4.7) -- ({\n2/2},4.7)
+                                        ({3*\n2/2},-4.7) -- ({3*\n2/2},4.7)
+                                        ;
+                            \end{scope}
+                                        \end{tikzpicture}
+                                </latex-image>
+                        </image>
+                </figure>
+                </subsubsection>
+                <subsubsection xml:id='ssec_principle_branch_tangent'>
+                        <title>The Principle Branch of Tangent</title>
+                        <exercise xml:id='exer_find_branch_tangent'>
+                                <statement>
+                                        <p>
+                                                        Use the graph of <m>y=\tan(x)</m> in <xref ref='fig_tan'/> to find a subsection of the graph, <m>a\lt{}x\lt{}b</m>, that every real number value of <m>y</m> occurs exactly once in that range of <m>x</m> values.
+                                        </p>
+                                </statement>
+                                <solution>
+                                        <p>
+                                                        One choice is <m>-\frac{1}{2}\pi\lt{}x\lt{}\frac{1}{2}\pi</m>. This is called the <term>principle branch</term> of tangent, sometimes written with a capital T, <m>\Tan(x)</m>.
+                                        </p>
+                                </solution>
+                        </exercise>
+                </subsubsection>
+                <subsubsection xml:id='ssec_un_tan'>
+                        <title>The <q>Un-Tangent</q></title>
+                <p>
+                                Now, we can find a function that undoes this branch of tangent: the <q>un-tangent</q> of a number <m>c</m> is the <em>unique</em> angle <m>\theta</m> so that: <m>\tan(\theta)=c</m> <alert>and</alert> <m>0\lt{}\theta\lt{}\pi</m>. For now, we will write <m>\untan(c)</m> and give the following definition.
+                </p>
+                <definition xml:id='def_untan'>
+                        <title>The <q>Un-Tangent</q> Function</title>
+                        <statement>
+                                <p>
+                                        For any real <m>x</m>, saying <m>\untan(x)=\theta</m> means that <m>\theta</m> is the (unique) angle so that
+                                        <ol marker="(a)">
+                                                <li><p><m>\tan(\theta)=x</m>, and</p></li>
+                                                <li><p><m>-\frac{1}{2}\pi\lt{}\theta\lt{}\frac{1}{2}\pi</m>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </definition>
+                <example xml:id='example_untan'>
+                        <statement>
+                                <p>
+                                                We will find <m>\untan(x)</m> for several values of <m>x</m> using the unit circle.
+                                </p>
+                                <p>
+                                        <ol>
+                                                <li><p>To find <m>\untan\left(\sqrt{3}\right)</m>, we first locate points where the slope is <m>\sqrt{3}</m>, because <m>\tan(\theta)=\frac{y}{x}</m>. The points where the slope is <m>\sqrt{3}</m> are <m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{\pi}{3}</m> and <m>\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m> at <m>\theta=\frac{4\pi}{3}</m>. Since <m>0\lt{}\frac{\pi}{3}\lt{}\pi</m>, <md>\untan\left(\sqrt{3}\right)=\frac{\pi}{3}</md>.</p></li>
+                                                <li><p>To find <m>\untan\left(-1\right)</m>, we first locate points where the slope is <m>-1</m>. The points where the slope is <m>-1</m> are <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m> at <m>\theta=\frac{7\pi}{4}</m> and <m>\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)</m> at <m>\theta=\frac{3\pi}{4}</m>. Neither of these lie in the interval<m>\left(-\frac{1}{2}\pi,\frac{1}{2}\pi\right)</m>, though. Instead, we will look at negative angles. The point at <m>\theta=\frac{7\pi}{4}</m> is also at <m>\theta=-\frac{\pi}{4}</m>. This is in the correct range, so <md>\untan\left(-1\right)=-\frac{\pi}{4}</md>.</p></li>
+                                        </ol>
+                                </p>
+                        </statement>
+                </example>
+                </subsubsection>
+                <subsubsection xml:id='ssec_arc_and_inv_tan'>
+                        <title>Notation</title>
+                        <p>
+                                        The name we chose for our function, <q>un-tangent</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-tangent</term>, <m>\arctan(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse tangent</term>, which is confusingly written as <m>\tan^{-1}(x)</m>.
+                        </p>
+                </subsubsection>
+	</subsection>
+

@@ -694,6 +694,240 @@ var ptx_lunr_docs = [
   "body": "  Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?    "
 },
 {
+  "id": "sec_direction_to_coords",
+  "level": "1",
+  "url": "sec_direction_to_coords.html",
+  "type": "Subsection",
+  "number": "4.7.1",
+  "title": "From Direction and Magnitude to Coordinates",
+  "body": " From Direction and Magnitude to Coordinates    Investigate the following questions using .   Vectors and the Unit Circle          The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).        Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .      "
+},
+{
+  "id": "exer_dir_to_coords",
+  "level": "2",
+  "url": "sec_direction_to_coords.html#exer_dir_to_coords",
+  "type": "Checkpoint",
+  "number": "31",
+  "title": "",
+  "body": "  Investigate the following questions using .   Vectors and the Unit Circle          The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).    "
+},
+{
+  "id": "exer_coords_to_dir",
+  "level": "2",
+  "url": "sec_direction_to_coords.html#exer_coords_to_dir",
+  "type": "Checkpoint",
+  "number": "33",
+  "title": "",
+  "body": "   Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .     "
+},
+{
+  "id": "sec_inverse_cosine",
+  "level": "1",
+  "url": "sec_inverse_cosine.html",
+  "type": "Subsection",
+  "number": "4.7.2",
+  "title": "The Inverse Cosine Function",
+  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch        The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
+},
+{
+  "id": "ssec_principle_branch_cosine-2",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#ssec_principle_branch_cosine-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "restricting the domain principle branch "
+},
+{
+  "id": "fig_cosine",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#fig_cosine",
+  "type": "Figure",
+  "number": "34",
+  "title": "",
+  "body": " The Cosine Function and its Principle Branch     "
+},
+{
+  "id": "def_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#def_uncos",
+  "type": "Definition",
+  "number": "35",
+  "title": "The “Un-Cosine” Function.",
+  "body": " The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#example_uncos",
+  "type": "Example",
+  "number": "36",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .     "
+},
+{
+  "id": "exer_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#exer_uncos",
+  "type": "Checkpoint",
+  "number": "37",
+  "title": "",
+  "body": "       Find .      Find .      Find .    "
+},
+{
+  "id": "ssec_arc_and_inv_cos-2",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#ssec_arc_and_inv_cos-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-cosine inverse cosine "
+},
+{
+  "id": "sec_inverse_sine",
+  "level": "1",
+  "url": "sec_inverse_sine.html",
+  "type": "Subsection",
+  "number": "4.7.3",
+  "title": "The Inverse Sine Function",
+  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function        The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
+},
+{
+  "id": "sec_inverse_sine-2-1",
+  "level": "2",
+  "url": "sec_inverse_sine.html#sec_inverse_sine-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "branch "
+},
+{
+  "id": "exer_find_branch_sine",
+  "level": "2",
+  "url": "sec_inverse_sine.html#exer_find_branch_sine",
+  "type": "Checkpoint",
+  "number": "38",
+  "title": "",
+  "body": "  Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .   "
+},
+{
+  "id": "fig_sine",
+  "level": "2",
+  "url": "sec_inverse_sine.html#fig_sine",
+  "type": "Figure",
+  "number": "39",
+  "title": "",
+  "body": " The Sine Function     "
+},
+{
+  "id": "def_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#def_unsin",
+  "type": "Definition",
+  "number": "40",
+  "title": "The “Un-Sine” Function.",
+  "body": " The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#example_unsin",
+  "type": "Example",
+  "number": "41",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
+},
+{
+  "id": "exer_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#exer_unsin",
+  "type": "Checkpoint",
+  "number": "42",
+  "title": "",
+  "body": "       Find .      Find .      Find .    "
+},
+{
+  "id": "ssec_arc_and_inv_sin-2",
+  "level": "2",
+  "url": "sec_inverse_sine.html#ssec_arc_and_inv_sin-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-sine inverse sine "
+},
+{
+  "id": "sec_tan_and_inverse_tan",
+  "level": "1",
+  "url": "sec_tan_and_inverse_tan.html",
+  "type": "Subsection",
+  "number": "4.7.4",
+  "title": "The Tangent and the Inverse Tangent",
+  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function        The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
+},
+{
+  "id": "ssec_graph_of_tan-2",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_graph_of_tan-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integer "
+},
+{
+  "id": "ssec_graph_of_tan-3",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_graph_of_tan-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "discontinuities "
+},
+{
+  "id": "fig_tan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#fig_tan",
+  "type": "Figure",
+  "number": "43",
+  "title": "",
+  "body": " The Tangent Function     "
+},
+{
+  "id": "exer_find_branch_tangent",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#exer_find_branch_tangent",
+  "type": "Checkpoint",
+  "number": "44",
+  "title": "",
+  "body": "  Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .   "
+},
+{
+  "id": "def_untan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#def_untan",
+  "type": "Definition",
+  "number": "45",
+  "title": "The “Un-Tangent” Function.",
+  "body": " The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_untan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#example_untan",
+  "type": "Example",
+  "number": "46",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
+},
+{
+  "id": "ssec_arc_and_inv_tan-2",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_arc_and_inv_tan-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-tangent inverse tangent "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<introduction xml:id="intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <p>
+                        In this activity, we explore the interpretation of vectors as quantities that have a <term>magnitude</term> and a <term>direction</term>, and we investigate how to move back and forth between this interpretation and the interpretation as a list of coordinates.
+        </p>
+</introduction>

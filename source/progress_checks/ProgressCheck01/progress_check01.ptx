@@ -8,7 +8,16 @@
                           <p>
                                   The London Eye is a <q>cantilevered observation wheel</q> (not quite the same as a Ferris wheel, but close) that stands on the South Bank of the Thames in London, England. Here are some facts about the London Eye, and some questions for you to answer.
                                   </p>
-                                  <image decorative="yes" width="50%" source="london-eye_23-2147514691.jpg" />
+                                  <figure xml:id='pc1_fig_london_eye'>
+                                          <caption>A Clipart image of the London Eye</caption>
+                                  <image width="45%" source="london-eye_23-2147514691.jpg" >
+                                  <description>
+                                          <p>
+                                                  A Clipart image of the London Eye
+                                          </p>
+                                  </description>
+                          </image>
+                                  </figure>
                                   <p>
                                           <ul>
                                                   <li>
@@ -32,6 +41,15 @@
                                           How long does it take the wheel to make one complete revolution? Give your answer in seconds and in terms that are meaningful for the average person (for example, the average person would not say that it takes them 3600 seconds to drive to Kalamazoo).
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          The circumference is <m>135\pi</m><nbsp/>meters, and the speed the wheel travels is <m>26\text{cm}/s=0.26\text{m}/\text{s}</m>, so the time it takes for one revolution is
+                                                  <md>
+                                                          <mrow>\frac{135\pi\text{m}}{0.26\text{m}/\text{s}}&amp;\approx 1631.21157\text{s}</mrow>
+                                                          <mrow>&amp;\approx 27.187\text{min}</mrow>
+                                                  </md>
+                                          </p>
+                          </solution>
                   </task>
                   <task>
                           <statement>
@@ -39,6 +57,13 @@
                                           If you miss one pod, how long do you have to wait for the next one?
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                                  <md>
+                                                          \frac{1631.21157\text{s}}{32}&amp;\approx 50.98\text{s}
+                                                  </md>
+                                  </p>
+                          </solution>
                   </task>
                   <task>
                           <introduction>
@@ -67,7 +92,7 @@
           <exercise workspace="0.5in" xml:id="pc1_plane">
                   <introduction>
                           <p>
-                                          You can see a plane off in the distance coming toward you. You know that the plane is flying at a cruising altitude of <m>5\text{km}=5000\text{m}</m>. The plane at two different times along with angles of elevation are shown in 
+                                  You can see a plane in the air coming toward you. You know (somehow) that the plane is flying at a cruising altitude of <m>5\text{km}=5000\text{m}</m>. <xref ref="pc1_figure_plane" text="type-hybrid" /> depicts the plane at two different times along with angles of elevation for each position.
                           </p>
                           <figure xml:id="pc1_figure_plane">
                                   <caption>A Plane at Height 5km at Two Different Times</caption>
@@ -108,7 +133,7 @@
           <exercise workspace="0.65in">
                   <introduction>
                           <p>
-                                  <xref ref="pc1_fig_vectors" text="type-hybrid"/> shows a pendulum along with vectors representing forces acting on the pendulum bob. The vector <m>\vec{F}_{g}</m> represents force due to gravity, while the vectors <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> represent the radial and tangential components of <m>\vec{F}_{g}</m>, respectively. That is, <m>\vec{F}_{R}</m> represents the part of the force from gravity that pulls against the pendulum string (and is balanced by an equal and opposite force that the string exerts) and <m>\vec{F}_{T}</m> is the part of the force from gravity that tends to move the pendulum along its path, and <m>\vec{F}_{T}+\vec{F}_{R}=\vec{F}_{g}</m>.
+                                  <xref ref="pc1_fig_vectors" text="type-hybrid"/> shows a pendulum along with vectors representing forces acting on the pendulum bob. The vector <m>\vec{F}_{g}=\left\langle{}0,-32\right\rangle{}</m> represents the force due to gravity of <m>32</m><nbsp/>pounds in the downward direction, while the vectors <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> represent the radial and tangential components of <m>\vec{F}_{g}</m>, respectively. That is, <m>\vec{F}_{R}</m> represents the part of the force from gravity that pulls against the pendulum string (and is balanced by an equal and opposite force that the string exerts) and <m>\vec{F}_{T}</m> is the part of the force from gravity that tends to move the pendulum along its path, and <m>\vec{F}_{T}+\vec{F}_{R}=\vec{F}_{g}</m>.
                           </p>
                           <figure xml:id="pc1_fig_vectors">
                                   <caption>Force Vectors Acting on a Pendulum</caption>
@@ -158,7 +183,7 @@
                   <task>
                           <statement>
                                   <p>
-                                                  Using the lengths <m>\ell_{R}</m> and <m>\ell_{T}</m> that you found in <xref ref="pc1_vectors_lengths" text='type-local'>Part</xref> and the unit vectors <m>\vec{u}_{R}</m> and <m>\vec{u}_{T}</m> that you found in <xref ref="pc1_vectors_direction_R" text='type-local'>Part</xref> and <xref ref="pc1_vectors_direction_T" text='type-local'>Part</xref>, find <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m>.
+                                                  Using the lengths <m>\ell_{R}</m> and <m>\ell_{T}</m> that you found in <xref ref="pc1_vectors_lengths" text='type-local'>Part</xref> and the unit vectors <m>\vec{u}_{R}</m> and <m>\vec{u}_{T}</m> that you found in <xref ref="pc1_vectors_direction_R" text='type-local'>Part</xref> and <xref ref="pc1_vectors_direction_T" text='type-local'>Part</xref>, find <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m>. Be sure to verify that <m>\vec{F}_{T}+\vec{F}_{R}=\vec{F}_{g}</m>!
                                   </p>
                           </statement>
                   </task>

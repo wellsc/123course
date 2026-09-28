@@ -46,6 +46,7 @@
       <xi:include href='./activities/OscillatoryMotion/OscillatoryMotion.ptx'/>
       <xi:include href='./activities/TriangleTrig/TriangleTrig.ptx'/>
       <xi:include href='./activities/OtherTrigFunctions/OtherTrig.ptx'/>
+      <xi:include href='./activities/InverseTrig/InverseTrig.ptx'/>
     </chapter>
 
     <chapter xml:id="handouts">

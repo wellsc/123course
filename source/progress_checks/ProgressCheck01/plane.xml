@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prefigure xmlns="https://prefigure.org" label="123_PC1_plane">
+<diagram dimensions="(300,300)" margins="25">
+
+<definition>theta1=0.785</definition>
+<definition>theta2=0.968</definition>
+<definition>plane1=(5/tan(theta1),5)</definition>
+<definition>plane2=(5/tan(theta2),5)</definition>
+<definition>obs=(0,0)</definition>
+<definition>ground=(5,0)</definition>
+  <coordinates bbox="(-0.1,-0.1,5.1,5.1)">
+    <axes decorations="no" />
+    <line endpoints="(obs,plane1)" dash="4 4" stroke="black" />
+     <angle-marker points="(ground,obs,plane1)" radius="40"  arrow="yes">
+      <m>\theta_1</m>
+      </angle-marker>
+          <line endpoints="(obs,plane2)" dash="4 4" stroke="black" />
+     <angle-marker points="(ground,obs,plane2)" radius="70" arrow="yes">
+      <m>\theta_2</m>
+      </angle-marker>
+      <line endpoints="(ground,plane1)" dash="4 4" ><m>5</m>km</line>
+      <vector v="plane2-plane1" tail="plane1" />      
+      <!--
+    <point p="plane1" size="3" fill="blue"/>
+    <point p="plane2" size="3" fill="blue" />
+      -->
+
+  </coordinates>
+
+</diagram>
+</prefigure>

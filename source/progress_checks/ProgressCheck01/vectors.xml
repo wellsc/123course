@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prefigure xmlns="https://prefigure.org" label="123_PC1_vectors">
+<diagram dimensions="(300,240)" margins="25">
+<definition>g=7</definition>
+<definition>pivot=(20,20)</definition>
+<definition>below=(20,0)</definition>
+<definition>pfrac=28/24</definition>
+<definition>d_frac=(3/2-pfrac)</definition>
+<definition>p_ang=pi*pfrac</definition>
+<definition>d_ang=(pi*d_frac)</definition>
+<definition>ddir=((cos(p_ang),sin(p_ang)))</definition>
+<definition>tdir=((-sin(p_ang),cos(p_ang)))</definition>
+<definition>FR=g*cos(d_ang)*ddir</definition>
+<definition>FT=g*sin(d_ang)*tdir</definition>
+<definition>displacement=15*ddir</definition>
+<definition>bob=pivot+displacement</definition>
+<definition>Fg=(0,-g)</definition>
+  <coordinates bbox="(0,0,25,20)">
+    <axes decorations="no" />
+    <!--
+    <arc center="pivot" radius="15" range="(14/12*pi,16/12*pi)" degrees="no" arrows="2" stroke="black" dash="4 4" opacity="0.5"/>
+    -->
+    <line endpoints="(pivot,pivot+displacement)" />
+    <line endpoints="(pivot,below)" stroke="black" dash="4 4" opacity="0.5" />
+    <angle-marker 
+      points="(bob,pivot,below)" 
+      radius="45"
+      alignment="s" >
+            <!--
+      <m>${round(d_frac,4)}\pi</m>
+            -->
+      <m>\frac{\pi}{3}</m>
+      </angle-marker>
+      <vector v="Fg" tail="bob" alignment="s" thickness="2" ><m>\vec{F}_{g}=\left[\begin{array}{r}0\\-32\end{array}\right]</m></vector>
+    <vector 
+        alignment="w" 
+        v="FR" 
+        tail="bob" thickness="2" 
+        dash="4 4" >
+        <m>\vec{F}_{R}</m>
+    </vector>
+    <vector 
+        alignment="e" 
+        v="FT" 
+        tail="bob" thickness="2" 
+        dash="4 4" >
+        <m>\vec{F}_{T}</m>
+    </vector>
+    <angle-marker points="(bob+Fg,bob,bob+FT)" radius="25" offset="(5,0)"><m>\theta_{1}</m></angle-marker>
+    <angle-marker points="(bob+FR,bob,bob+Fg)" radius="30" offset="(5,0)"><m>\theta_{2}</m></angle-marker>
+    <angle-marker points="(bob+FR,bob,bob+FT)" radius="10" offset="(5,0)"/>
+    <point p="pivot" size="2" fill="black" />
+    <point p="pivot+displacement" fill="black" />
+  </coordinates>
+
+</diagram>
+</prefigure>
