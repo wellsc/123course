@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet margin="0.5in" bottom="0.75in" xml:id="progress_check_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Progress Check 1</title>
+  <page>
+          <exercise workspace="1.5in" xml:id="pc1_london_eye">
+                  <introduction>
+                          <p>
+                                  The London Eye is a <q>cantilevered observation wheel</q> (not quite the same as a Ferris wheel, but close) that stands on the South Bank of the Thames in London, England. Here are some facts about the London Eye, and some questions for you to answer.
+                                  </p>
+                                  <image decorative="yes" width="50%" source="london-eye_23-2147514691.jpg" />
+                                  <p>
+                                          <ul>
+                                                  <li>
+                                   The London Eye is designed so that it turns slowly enough that riders can get on and off without the wheel ever having to stop.
+                                                  </li>
+                                                  <li>
+                                                          The London Eye has 32 passenger <q>pods</q>, numbered 1<ndash/>12, 14<ndash/>33, skipping <q>unlucky</q> 13.
+                                                  </li>
+                                                  <li>
+                                                          The London Eye has a diameter of <m>135</m><nbsp/>meters.
+                                                  </li>
+                                                  <li>
+                                                                  The London Eye rotates so that the speed with which the pods move around the Eye is <m>26\text{cm}/\text{s}</m>.
+                                                  </li>
+                                          </ul>
+                          </p>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                          How long does it take the wheel to make one complete revolution? Give your answer in seconds and in terms that are meaningful for the average person (for example, the average person would not say that it takes them 3600 seconds to drive to Kalamazoo).
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                          If you miss one pod, how long do you have to wait for the next one?
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <introduction>
+                                  <p>
+                                          Assume that you get on the Eye at time <m>t=0\text{s}</m>. 
+                                  </p>
+                          </introduction>
+                          <task>
+                          <statement>
+                                  <p>
+                                          Find a sinusoidal model of the form <m>h(t)=a\sin\left(\omega(t-\phi)\right)+d</m>, that gives your height, in meters, as a function of time, in seconds.
+                                  </p>
+                          </statement>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                  How high will you be after 5 minutes? After 10 minutes? After 15 minutes?
+                                          </p>
+                                  </statement>
+                          </task>
+                  </task>
+          </exercise>
+  </page>
+  <page>
+          <exercise workspace="0.5in" xml:id="pc1_plane">
+                  <introduction>
+                          <p>
+                                          You can see a plane off in the distance coming toward you. You know that the plane is flying at a cruising altitude of <m>5\text{km}=5000\text{m}</m>. The plane at two different times along with angles of elevation are shown in 
+                          </p>
+                          <figure xml:id="pc1_figure_plane">
+                                  <caption>A Plane at Height 5km at Two Different Times</caption>
+                                  <image width="50%">
+                                          <description>
+                                                  <p>
+                                                  A diagram showing the height and angles of elevation of a plane. The height is constant 5km and the angles of elevation are theta 1 = 0.785 radians and theta 2 = 0.968 radians. 
+                                                  </p>
+                                          </description>
+                                          <xi:include href="./plane.xml"/>
+                                  </image>
+                          </figure>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  When you first notice the plane, it has an angle of elevation of <m>\theta_{1}=0.785</m><nbsp/>radians. How far away, horizontally, is the plane from you at that time?
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  When you look at the plane five seconds later, it has an angle of elevation of <m>\theta_{2}=0.968</m><nbsp/>radians. How far away, horizontally, is the plane from you at that time?
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                          Based on your previous calculations, how fast, in meters per second, is the plane flying?
+                                  </p>
+                          </statement>
+                  </task>
+          </exercise>
+  </page>
+  <page>
+          <exercise workspace="0.65in">
+                  <introduction>
+                          <p>
+                                  <xref ref="pc1_fig_vectors" text="type-hybrid"/> shows a pendulum along with vectors representing forces acting on the pendulum bob. The vector <m>\vec{F}_{g}</m> represents force due to gravity, while the vectors <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> represent the radial and tangential components of <m>\vec{F}_{g}</m>, respectively. That is, <m>\vec{F}_{R}</m> represents the part of the force from gravity that pulls against the pendulum string (and is balanced by an equal and opposite force that the string exerts) and <m>\vec{F}_{T}</m> is the part of the force from gravity that tends to move the pendulum along its path, and <m>\vec{F}_{T}+\vec{F}_{R}=\vec{F}_{g}</m>.
+                          </p>
+                          <figure xml:id="pc1_fig_vectors">
+                                  <caption>Force Vectors Acting on a Pendulum</caption>
+                                  <image width="50%">
+                                          <description>
+                                                  <p>
+                                                          A diagram showing a pendulum at an angle of pi / 3 left from vertical, and three force vectors drawn with their tails at the pendulum bob. They are the force vector F sub g pointing downward from the pendulum bob, the force vector F sub T perpendicular to the pendulum's string and thus pointing right and downwards and the force vector F sub R pointing in the direction opposite of the pendulum's pivot point. The vectors F sub R and F sub T are the radial and tangential components of F sub g.
+                                                  </p>
+                                          </description>
+                                          <xi:include href="./vectors.xml"/>
+                                  </image>
+                          </figure>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  Use geometry and the fact that <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> are perpendicular to find angles <m>\theta_{1}</m> and <m>\theta_{2}</m>.
+                                  </p>
+                          </statement>
+                  </task>
+                  <task xml:id="pc1_vectors_lengths" workspace="0in">
+                          <statement>
+                                  <p>
+                                                  Draw a copy of <m>\vec{F}_{T}</m> with its tail at the head of <m>\vec{F}_{R}</m> to form a right triangle and use trigonometry to find the lengths of <m>\vec{F}_{T}</m> and <m>\vec{F}_{R}</m>. Call these lengths <m>\ell_{T}</m> and <m>\ell_{R}</m>.
+                                  </p>
+                          </statement>
+                  </task>
+                  <task xml:id="pc1_vectors_direction_R">
+                          <statement>
+                                  <p>
+                                                  Use your knowledge of the unit circle to find a vector of length <m>1</m> pointing in the direction of <m>\vec{F}_{R}</m>. Call this vector <m>\vec{u}_{R}</m>.
+                                  </p>
+                          </statement>
+                          <hint>
+                                  <p>
+                                                  You can draw <m>\vec{F}_{R}</m> with its tail at the pivot point of the pendulum and make the pivot point of the pendulum the center of the unit circle.
+                                  </p>
+                          </hint>
+                  </task>
+                  <task xml:id="pc1_vectors_direction_T">
+                          <statement>
+                                  <p>
+                                                  Use geometry and your knowledge of the unit circle to find a vector of length <m>1</m> pointing in the direction of <m>\vec{F}_{T}</m>. Call this vector <m>\vec{u}_{T}</m>.
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  Using the lengths <m>\ell_{R}</m> and <m>\ell_{T}</m> that you found in <xref ref="pc1_vectors_lengths" text='type-local'>Part</xref> and the unit vectors <m>\vec{u}_{R}</m> and <m>\vec{u}_{T}</m> that you found in <xref ref="pc1_vectors_direction_R" text='type-local'>Part</xref> and <xref ref="pc1_vectors_direction_T" text='type-local'>Part</xref>, find <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m>.
+                                  </p>
+                          </statement>
+                  </task>
+          </exercise>
+  </page>
+</worksheet>
