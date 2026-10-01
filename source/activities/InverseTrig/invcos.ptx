@@ -14,6 +14,7 @@
                 <figure xml:id='fig_cosine'>
                         <caption>The Cosine Function and its Principle Branch</caption>
                         <image width="50%">
+                                <description><p>The graph of cosine with its principle branch, from 0 to pi, emphasized</p></description>
                                 <latex-image>
                                         \begin{tikzpicture}[scale=1]
                             \begin{scope}

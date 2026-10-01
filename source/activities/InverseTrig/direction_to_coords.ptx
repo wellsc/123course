@@ -9,6 +9,7 @@
                 <figure xml:id='fig_dir_to_coords'>
                         <caption>Vectors and the Unit Circle</caption>
                         <image width='50%'>
+                                <description><p>The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle  3 pi over 4, and v2 from the origin in the same direction with length 3.</p></description>
                                 <latex-image>
                                         \begin{tikzpicture}[scale=1]
                                         \coordinate (O) at (0,0);

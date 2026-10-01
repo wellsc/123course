@@ -23,6 +23,7 @@
                 <figure xml:id='fig_sine'>
                         <caption>The Sine Function</caption>
                         <image width="50%">
+                                <description><p>The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized</p></description>
                                 <latex-image>
                                         \begin{tikzpicture}[scale=1]
                             \begin{scope}

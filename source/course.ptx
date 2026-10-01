@@ -40,6 +40,7 @@
 
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
+      <xi:include href='./activities/RepresentationOfPoints/Representation.ptx'/>
       <xi:include href="./activities/CircularFunctions/ferris_angles_dist.ptx"/>
       <xi:include href='./activities/UsingSineAndCosine/practical_sine.ptx'/>
       <xi:include href='./activities/Transformations/Transformations.ptx'/>
