@@ -60,7 +60,9 @@
                           <solution>
                                   <p>
                                                   <md>
+                                                          <mrow>
                                                           \frac{1631.21157\text{s}}{32}&amp;\approx 50.98\text{s}
+                                                          </mrow>
                                                   </md>
                                   </p>
                           </solution>
@@ -77,6 +79,28 @@
                                           Find a sinusoidal model of the form <m>h(t)=a\sin\left(\omega(t-\phi)\right)+d</m>, that gives your height, in meters, as a function of time, in seconds.
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          We know that the London Eye is <m>135</m>m tall, and we can assume the bottom is at ground level, so <m>\text{max}=135</m> and <m>\text{min}=0</m>, which gives us 
+                                          <md>
+                                                  <mrow>a&amp;=\frac{\text{max}-\text{min}}{2}&amp;d&amp;=\frac{\text{max}+\text{min}}{2}</mrow>
+                                                  <mrow> &amp;=\frac{135-0}{2}&amp; &amp;=\frac{135+0}{2}</mrow>
+                                                  <mrow> &amp;=67.5&amp;d&amp;=67.5</mrow>
+                                          </md>
+                                  </p>
+                                  <p>
+                                                  We also know that the period is <m>P=1631.21157\text{s}</m>, so 
+                                                  <md>
+                                                          <mrow> \omega&amp;=\frac{2\pi}{P} </mrow>
+                                                          <mrow>       &amp;=\frac{2\pi}{1631.21157} </mrow>
+                                                          <mrow>       &amp;\approx 0.00385185185</mrow>
+                                                  </md>
+                                  </p>
+                                  <p>
+                                          Finally, we want the sinusoid to start at its minimum (<m>0</m>m), but sine starts at the midline (increasing). To move the minimum to <m>t=0</m>, we need to either shift left by <m>3/4</m> of the period or shift right by <m>1/4</m> of the period. Thus, we can choose either <m>\phi=P/4</m> or <m>\phi=-3P/4</m>. We will use <m>\phi=P/4\approx 407.8028925</m>. So, our sinusoid is
+                                          <md>h(t)=67.5\sin\big(0.00385185185(t-407.8028925)\big)+67.5</md>
+                                  </p>
+                          </solution>
                           </task>
                           <task>
                                   <statement>
@@ -84,6 +108,18 @@
                                                   How high will you be after 5 minutes? After 10 minutes? After 15 minutes?
                                           </p>
                                   </statement>
+                                  <solution>
+                                          <p>
+                                                  First, we note that <m>5\text{min}=300\text{s}</m>, <m>10\text{min}=600\text{s}</m>, and <m>15\text{min}=900\text{s}</m>. So, we can evaluate our function, <m>h(t)</m> at each of these times to get the height:
+                                                  <md>
+                                                          <mrow>
+                                                                  h(300\text{s})&amp;=40.269808\text{m}&amp;
+                                                                  h(600\text{s})&amp;=113.03012\text{m}&amp;
+                                                                  h(900\text{s})&amp;=131.46484\text{m}
+                                                          </mrow>
+                                                  </md>
+                                          </p>
+                                  </solution>
                           </task>
                   </task>
           </exercise>
@@ -112,6 +148,18 @@
                                                   When you first notice the plane, it has an angle of elevation of <m>\theta_{1}=0.785</m><nbsp/>radians. How far away, horizontally, is the plane from you at that time?
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          Let <m>x_{1}</m> be the horizontal distance for the first measurement. Then from the unit circle and similar triangles, we know that 
+<md>\frac{\cos\left(\theta_{1}\right)}{x_{1}}=\frac{\sin\left(\theta_{1}\right)}{5000\text{m}}</md>
+                                          so,
+                                <md>
+                                        <mrow>{x_{1}}&amp;=\frac{\cos\left(\theta_{1}\right)}{\sin\left(\theta_{1}\right)}{5000\text{m}}</mrow>
+                                        <mrow>       &amp;=\frac{\cos\left(0.785\right)}{\sin\left(0.785\right)}{5000\text{m}}</mrow>
+                                        <mrow>&amp;\approx{}5003.98\text{m}</mrow>
+                                </md>
+                                  </p>
+                          </solution>
                   </task>
                   <task>
                           <statement>
@@ -119,6 +167,18 @@
                                                   When you look at the plane five seconds later, it has an angle of elevation of <m>\theta_{2}=0.968</m><nbsp/>radians. How far away, horizontally, is the plane from you at that time?
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          Let <m>x_{2}</m> be the horizontal distance for the second measurement. Then from the unit circle and similar triangles, we know that 
+<md>\frac{\cos\left(\theta_{2}\right)}{x_{2}}=\frac{\sin\left(\theta_{2}\right)}{5000\text{m}}</md>
+                                          so,
+                                <md>
+                                        <mrow>{x_{2}}&amp;=\frac{\cos\left(\theta_{2}\right)}{\sin\left(\theta_{2}\right)}{5000\text{m}}</mrow>
+                                        <mrow>&amp;=\frac{\cos\left(0.968\right)}{\sin\left(0.968\right)}{5000\text{m}}</mrow>
+                                        <mrow>&amp;\approx{}3441.25\text{m}</mrow>
+                                </md>
+                                  </p>
+                          </solution>
                   </task>
                   <task>
                           <statement>
@@ -126,6 +186,11 @@
                                           Based on your previous calculations, how fast, in meters per second, is the plane flying?
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                                  The distance travelled was <m>5003.98\text{m}-3441.25\text{m}=1562.73\text{m}</m>, and the elapsed time was <m>5\text{s}</m>, so the speed was <m>1562.73\text{m}/5\text{s}=312.547\text{m}/\text{s}</m>.
+                                  </p>
+                          </solution>
                   </task>
           </exercise>
   </page>
@@ -153,13 +218,23 @@
                                                   Use geometry and the fact that <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> are perpendicular to find angles <m>\theta_{1}</m> and <m>\theta_{2}</m>.
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                                  Because <m>\vec{F}_{R}</m> is pointing in the same direction as the pendulum string, we know that <m>\theta_{2}=\pi/3</m>, and because <m>\theta_{1}</m> and <m>\theta_{2}</m> are perpendicular to each other, <m>\theta_{1}+\theta_{2}=\pi/2</m>, so we know that <m>\theta_{2}=\pi/6</m>.
+                                  </p>
+                          </solution>
                   </task>
-                  <task xml:id="pc1_vectors_lengths" workspace="0in">
+                  <task xml:id="pc1_vectors_lengths" workspace="1in">
                           <statement>
                                   <p>
                                                   Draw a copy of <m>\vec{F}_{T}</m> with its tail at the head of <m>\vec{F}_{R}</m> to form a right triangle and use trigonometry to find the lengths of <m>\vec{F}_{T}</m> and <m>\vec{F}_{R}</m>. Call these lengths <m>\ell_{T}</m> and <m>\ell_{R}</m>.
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                                  We can see that <m>\frac{\ell_{R}}{\cos(\theta_{2})}=\frac{32}{1}</m>, so <m>\ell_{R}=32\cos\left(\pi/3\right)=32\cdot\frac{1}{2}=16</m>, and similarly, <m>\frac{\ell_{T}}{\sin(\theta_{2})}=\frac{32}{1}</m>,  so <m>\ell_{T}=32\sin\left(\pi/3\right)=32\sqrt{3}/2=16\sqrt{3}\approx 27.7128</m>.
+                                  </p>
+                          </solution>
                   </task>
                   <task xml:id="pc1_vectors_direction_R">
                           <statement>
@@ -169,9 +244,22 @@
                           </statement>
                           <hint>
                                   <p>
-                                                  You can draw <m>\vec{F}_{R}</m> with its tail at the pivot point of the pendulum and make the pivot point of the pendulum the center of the unit circle.
+                                                  You can draw the unit circle with its center at the pendulum bob.
                                   </p>
                           </hint>
+                          <solution>
+                                  <p>
+                                          If we put the origin at the pendulum bob, then the angle from the positive <m>x</m>-axis to the <m>\vec{F}_{R}</m> is <m>\pi/2+\pi/3=5\pi/6</m>, but the angle is clockwise, so the point on the unit circle at that angle would be
+                                          <md>
+                                                  <mrow>
+                                                          \vec{u}_{R}&amp;=\begin{bmatrix}\cos\left(\frac{-5\pi}{6}\right)\\[1.5ex]\sin\left(\frac{-5\pi}{6}\right)\end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\begin{bmatrix}\frac{-\sqrt{3}}{2}\\[1.5ex]\frac{-1}{2}\end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </solution>
                   </task>
                   <task xml:id="pc1_vectors_direction_T">
                           <statement>
@@ -179,6 +267,19 @@
                                                   Use geometry and your knowledge of the unit circle to find a vector of length <m>1</m> pointing in the direction of <m>\vec{F}_{T}</m>. Call this vector <m>\vec{u}_{T}</m>.
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          If we again put the origin at the pendulum bob, then the angle from the positive <m>x</m>-axis to the <m>\vec{F}_{T}</m> is <m>-\pi/2+\pi/6=-\pi/3</m>, so the point on the unit circle at that angle would be
+                                          <md>
+                                                  <mrow>
+                                                          \vec{u}_{T}&amp;=\begin{bmatrix}\cos\left(\frac{-\pi}{3}\right)\\[1.5ex]\sin\left(\frac{-\pi}{3}\right)\end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\begin{bmatrix}\frac{1}{2}\\[1.5ex]\frac{-\sqrt{3}}{2}\end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </solution>
                   </task>
                   <task>
                           <statement>
@@ -186,6 +287,53 @@
                                                   Using the lengths <m>\ell_{R}</m> and <m>\ell_{T}</m> that you found in <xref ref="pc1_vectors_lengths" text='type-local'>Part</xref> and the unit vectors <m>\vec{u}_{R}</m> and <m>\vec{u}_{T}</m> that you found in <xref ref="pc1_vectors_direction_R" text='type-local'>Part</xref> and <xref ref="pc1_vectors_direction_T" text='type-local'>Part</xref>, find <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m>. Be sure to verify that <m>\vec{F}_{T}+\vec{F}_{R}=\vec{F}_{g}</m>!
                                   </p>
                           </statement>
+                          <solution>
+                                  <p>
+                                          <md>
+                                                  <mrow>
+                                                          \vec{F}_{R}&amp;=\ell_{R}\vec{u}_{R}
+                                                          &amp;
+                                                          \vec{F}_{T}&amp;=\ell_{R}\vec{u}_{R}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=16\begin{bmatrix} \frac{-\sqrt{3}}{2}\\ \frac{-1}{2}\end{bmatrix}
+                                                          &amp;
+                                                                  &amp;=16\sqrt{3}\begin{bmatrix} \frac{1}{2}\\\frac{-\sqrt{3}}{2}\end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                     &amp;=\begin{bmatrix} -8\sqrt{3}\\ -8\end{bmatrix}
+                                                          &amp;
+                                                                     &amp;=\begin{bmatrix} 8\sqrt{3}\\-24\end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                                  We then verify that <m>\vec{F}_{R}+\vec{F}_{T}=\vec{F}_{g}</m>:
+                                                  <md>
+                                                          <mrow>
+                                                                  \vec{F}_{R}+\vec{F}_{T}
+                                                          &amp;=
+                                                          \begin{bmatrix} -8\sqrt{3}\\ -8\end{bmatrix}
+                                                          +\begin{bmatrix}-8\sqrt{3}\\-24\end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                          &amp;=
+                                                                  \begin{bmatrix}
+                                                                  -8\sqrt{3}+8\sqrt{3} \\
+                                                                  -8-24
+                                                                  \end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                          &amp;=
+                                                                  \begin{bmatrix}
+                                                                  0 \\
+                                                                  -32
+                                                                  \end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                          &amp;=\vec{F}_{g}
+                                                          </mrow>
+                                                  </md>
+                                  </p>
+                          </solution>
                   </task>
           </exercise>
   </page>
