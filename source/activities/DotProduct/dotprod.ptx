@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subsection xml:id="sec_dotprod" xmlns:xi="http://www.w3.org/2001/XInclude">
+		<title>The Dot Product</title>
+		<p>
+                                We will now define the <term>dot product</term> of two vectors.
+		</p>
+                <definition xml:id='def_dot_prod'>
+                        <title>The Dot Product</title>
+                        <statement>
+                                <p>
+                                        Given a positive integer <m>n</m>, the <term>dot product</term> of two <m>n</m>-vectors, <m>\vec{a}</m> and <m>\vec{b}</m> obtained by multiplying corresponding entries of the vectors and adding the results. That is,
+                                        <md>
+                                                <mrow>
+                                                        \vec{a}\cdot\vec{b}
+                                                                &amp;=
+                                                        a_{1}b_{1}+
+                                                        a_{2}b_{2}+
+                                                        a_{3}b_{3}+
+                                                        \cdots+
+                                                        a_{n}b_{n}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                The dot product is also sometimes called the <term>inner product</term> and written as <m>\left\langle\vec{b},\vec{a}\right\rangle</m> or <m>\left\langle\left.\vec{b}\right\vert\vec{a}\right\rangle</m>.
+                                </p>
+                        </statement>
+                </definition>
+                <exercise>
+                        <introduction>
+                                <p>
+                                        Calculate the dot product for each given pair of vectors.
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\2\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\2\end{bmatrix}
+                                                        =2.
+                                                </m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                        =0.
+                                                </m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\\4\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\3\\4\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\\4\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\3\\4\end{bmatrix}
+                                                        =16.
+                                                </m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                        =0.
+                                                </m>
+                                        </p>
+                                </answer>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                                <answer>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                        =0.
+                                                </m>
+                                        </p>
+                                </answer>
+                        </task>
+                </exercise>
+                <exercise xml:id="exercise_dot_product_orthogonal">
+                        <introduction>
+                                <p>
+                                        For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?
+                                </p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}5\\7\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}7\\-5\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}1\\-1\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}1\\1\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                        </task>
+                        <task>
+                                <statement>
+                                        <p>
+                                                <m>
+                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \cdot
+                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                </m>
+                                        </p>
+                                </statement>
+                        </task>
+                </exercise>
+                <exercise xml:id="exercise_geometric_dot_product">
+                        <statement>
+                                <p>
+                                        Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form <m>\begin{bmatrix}\cos(\theta)\\ \sin(\theta)\end{bmatrix}</m>. So, let  <m>\vec{v}_{2}</m> and <m>\vec{v}_{2}</m> be any vectors, and we can write
+                                        <md>
+                                                <mrow>
+                                                        \vec{v}_{1}&amp;=\ell_{1}\begin{bmatrix}\cos\left(\theta_{1}\right)\\ \sin\left(\theta_{1}\right)\end{bmatrix}
+                                                        &amp;
+                                                        \vec{v}_{2}&amp;=\ell_{2}\begin{bmatrix}\cos\left(\theta_{2}\right)\\ \sin\left(\theta_{2}\right)\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                   &amp;=\begin{bmatrix}\ell_{1}\cos\left(\theta_{1}\right)\\ \ell_{1}\sin\left(\theta_{1}\right)\end{bmatrix}
+                                                        &amp;
+                                                                   &amp;=\begin{bmatrix}\ell_{2}\cos\left(\theta_{2}\right)\\ \ell_{2}\sin\left(\theta_{2}\right)\end{bmatrix}
+                                                </mrow>
+                                        </md>
+                                                where <m>\ell_{1}=\Abs{\vec{v}_{1}}</m> and <m>\ell_{2}=\Abs{\vec{v}_{2}}</m>.
+                                </p>
+                                <p>
+                                        Calculate <m>\vec{v}_{1}\cdot{}\vec{v}_{2}</m> and use algebra and trigonometric identities to verify that 
+                                        <md>
+                                                \vec{v}_{1}\cdot{}\vec{v}_{2}
+                                                        =\Abs{\vec{v}_{1}}\Abs{\vec{v}_{2}}\cos\left(\theta_{1}-\theta_{2}\right).
+                                        </md>
+                                </p>
+                        </statement>
+                </exercise>
+                <p>
+                        <xref ref="exercise_geometric_dot_product"/> gives us a <em>geometric</em> interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in <xref ref="exercise_dot_product_orthogonal"/>, that when two vectors are perpendicular (or more generally, <term>orthogonal</term>) to each other, their dot product is zero. This is consistent, since <m>\cos\left(90^{\circ}\right)=\cos\left(\frac{\pi}{2}\right)=0</m>.
+                </p>
+                <p>
+                                If the angle between two vectors is greater than <m>\frac{\pi}{2}</m>, then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.
+                </p>
+
+	</subsection>

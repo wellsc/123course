@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <subsection xml:id="sec_projection" xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Orthogonal Projection</title>
+                <sidebyside>
+                <figure xml:id="fig_orth_proj">
+                        <caption>Orthogonal Projection of <m>\vec{v}_{1}</m> onto <m>\vec{v}_{2}</m></caption>
+                        <image>
+                                <description><p>An image of vector v1 projected onto vector v2.</p></description>
+                                <xi:include href="./projection.xml"/>
+                        </image>
+                </figure>
+                <figure xml:id="fig_orth_proj2">
+                        <caption>Orthogonal Projection of <m>\vec{v}_{1}</m> onto <m>\vec{v}_{2}</m></caption>
+                        <image>
+                                <description><p>An image of vector v1 projected onto vector v2.</p></description>
+                                <xi:include href="./projection2.xml"/>
+                        </image>
+                </figure>
+                </sidebyside>
+                <p>
+                                An important use of the dot product is in <term>orthogonal projection</term> of one vector onto another. This allows us to easily decompose a vector into a part that points in the direction of (or in the direction opposite to) another vector. We denote the projection of <m>\vec{v}_{1}</m> onto <m>\vec{v}_{2}</m> by <m>\proj_{\vec{v}_{2}}(\vec{v}_{1})</m>.
+                </p>
+                <p>
+                                For vectors that point more or less in the same direction, as shown in <xref ref="fig_orth_proj"/>, the projection of <m>\vec{v}_{1}</m> onto <m>\vec{v}_{2}</m> points in the direction of  <m>\vec{v}_{2}</m>, but its length is determined by the angle between the vectors as well as the length of the vector <m>\vec{v}_{1}</m>.
+                </p>
+                <p>
+                                Referring to <xref ref="fig_orth_proj"/>, let <m>\vec{p}=\proj_{\vec{v}_{2}}(\vec{v}_{1})</m>. We can see that <m>\frac{\Abs{\vec{p}}}{\Abs{\vec{v}_{1}}}=\cos(\theta)</m>, so <m>{\Abs{\vec{p}}}={\Abs{\vec{v}_{1}}}\cos(\theta)</m>. The direction of <m>\vec{p}</m> is the direction of <m>\vec{v}_{2}</m>, which can be expressed as the unit vector <m>\vec{u}_{2}=\frac{1}{\Abs{\vec{v}_{2}}}\vec{v}_{2}</m>.
+                </p>
+                <p>
+                        Since a vector is determined by its magnitude and its direction, we see that
+                        <md>
+                                <mrow>
+                                        \proj_{\vec{v}_{2}}(\vec{v}_{1})
+                                                &amp;={\Abs{\vec{v}_{1}}}\cos(\theta)\frac{1}{\Abs{\vec{v}_{2}}}\vec{v}_{2}
+                                </mrow>
+                                <mrow>
+                                                &amp;
+                                              =\frac{\Abs{\vec{v}_{1}}}{\Abs{\vec{v}_{2}}}\cos(\theta)\vec{v}_{2}
+                                </mrow>
+                                <mrow>
+                                                &amp;
+                                                =\frac{\Abs{\vec{v}_{1}}\Abs{\vec{v}_{2}}\cos(\theta)}{\Abs{\vec{v}_{2}}^{2}}\vec{v}_{2}
+                                </mrow>
+                                <mrow>
+                                                &amp;
+                                                =\left(\frac{\vec{v}_{1}\cdot{}\vec{v}_{2}}{\vec{v}_{2}\cdot{}\vec{v}_{2}}\right)\vec{v}_{2}
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                                In the case that the angle between the vectors is greater than <m>\pi/2</m>, the cosine will be negative, but the direction will be <m>-\vec{u}_{2}</m>, so that the same formula applies. Thus, we have the following definition.
+                </p>
+                <definition>
+                        <title>Orthogonal Projection of One Vector Onto Another</title>
+                        <statement>
+                                <p>
+                                                Given any vector, <m>\vec{v}_{1}</m> and any non-zero vector <m>\vec{v}_{2}</m>, the <term>orthogonal projection</term> of <m>\vec{v}_{1}</m> onto <m>\vec{v}_{2}</m> is given by
+                        <md>
+                                <mrow>
+                                        \proj_{\vec{v}_{2}}(\vec{v}_{1})
+                                        &amp;=\left(\frac{\vec{v}_{1}\cdot{}\vec{v}_{2}}{\vec{v}_{2}\cdot{}\vec{v}_{2}}\right)\vec{v}_{2}.
+                                </mrow>
+                        </md>
+                                </p>
+                                <p>
+                                                If <m>\vec{p}=\proj_{\vec{v}_{2}}(\vec{v}_{1})</m>, then <m>\vec{p}</m> is perpendicular to <m>\vec{v}_{1}-\vec{p}</m>, and <m>\Abs{\vec{v}_{1}-\vec{p}}</m> is as small as possible.
+                                </p>
+                        </statement>
+                </definition>
+        </subsection>

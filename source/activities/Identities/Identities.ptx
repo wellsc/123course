@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Trigonometric Identities</title>
+
+  <introduction>
+    <p>
+                    In this activity, we will investigate some important trigonometric <term>identities</term>. These are relationships among trigonometric functions that are universally true.
+    </p>
+  </introduction>
+
+  <exercise workspace="0.5in">
+          <title>The Pythagorean Identity for Sine and Cosine</title>
+    <statement>
+      <p>
+                      Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle <m>\theta</m>, <m>\left(\cos(\theta)\right)^{2}+\left(\sin(\theta)\right)^{2}=1</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in" xml:id="exercise_sine_cosine_symmetry">
+          <title>
+                  Symmetry Identities for Sine and Cosine
+          </title>
+          <task>
+                  <statement>
+                          <p>
+                            Examine the graph of <m>y=\sin(x)</m>.
+                                    Explain why, in terms of transformations of graphs and symmetry, for any angle <m>x</m>, <m>\sin\left(-1\cdot{}x\right)=-1\cdot{}\sin\left(x\right)</m>
+                          </p>
+                  </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                      Examine the graph of <m>y=\cos(x)</m>. Explain why, in terms of transformations of graphs and symmetry, for any angle <m>x</m>, <m>\cos(-1\cdot{}x)=\cos(x)</m>.
+              </p>
+            </statement>
+          </task>
+  </exercise>
+  <exercise workspace="0.5in" >
+          <title>Co-Function Identities for Sine and Cosine</title>
+          <introduction>
+                  <p>
+                                  Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called <term>co-function</term> pairs, or simply co-functions. The <q>co-</q> in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if <m>\theta</m> and <m>\phi</m> are complementary angles, <m>\theta+\phi=\frac{\pi}{2}</m>, or equivalently <m>\phi=\frac{\pi}{2}-\theta</m> or <m>\theta=\frac{\pi}{2}-\phi</m>.
+                  </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                              Use Desmos or a graphing calculator to graph <m>\sin\left(x-\frac{\pi}{2}\right)</m> and <m>\cos\left(x\right)</m> and describe their relationship.
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                              Explain, based on previous exercises in this worksheet, why <m>\sin\left(\frac{\pi}{2}-x\right)=\cos(x)</m>.
+              </p>
+            </statement>
+            <hint><p><m>\frac{\pi}{2}-x=-1\cdot{}\left(x-\frac{\pi}{2}\right)</m>.</p></hint>
+          </task>
+          <task>
+            <statement>
+              <p>
+                              Substitute <m>x=\frac{\pi}{2} -\theta</m> in the identity <m>\sin\left(\frac{\pi}{2}-x\right)=\cos(x)</m>. Simplify <m>\frac{\pi}{2}-(\frac{\pi}{2}-\theta)</m>. What identity do you now have for <m>\cos\left(\frac{\pi}{2}-\theta\right)</m>?
+              </p>
+            </statement>
+          </task>
+  </exercise>
+  <exercise workspace="0.4in" xml:id="exercise_sine_cosine_angle_sum">
+          <title>Angle Sum Identities for Sine and Cosine</title>
+          <introduction>
+                  <p>
+                          For this exercise, we will use <xref ref="fig_angle_sum"/>. This figure begins with the unit circle with center <m>O=(0,0)</m> and the <m>x</m>- and <m>y</m>-axes, with point <m>B</m> at angle <m>\theta</m> and point <m>A</m> at angle <m>\theta+\phi</m> on the unit circle. We then draw the following constructions.
+                                  <ul>
+                                          <li>
+                                                  Draw  segment <m>\overline{OA}</m>;
+                                          </li>
+                                          <li>
+                                                  draw  segment <m>\overline{OB}</m>;
+                                          </li>
+                                          <li>
+                                                  draw a perpendicular line from <m>A</m> to <m>\overline{OB}</m>, intersecting at <m>C</m>;
+                                          </li>
+                                          <li>
+                                                          draw a vertical line from <m>A</m> to the <m>x</m>-axis, intersecting at <m>F</m>;
+                                          </li>
+                                          <li>
+                                                  draw a vertical line from <m>C</m> to the <m>x</m>-axis, intersecting at <m>D</m>;
+                                          </li>
+                                          <li>
+                                                          draw a horizontal segment from <m>C</m> to <m>\overline{AF}</m>, intersecting at <m>E</m>;
+                                          </li>
+                                          <li>
+                                                  draw a vertical line from <m>B</m> to the <m>x</m>-axis, intersecting at <m>G</m>.
+                                          </li>
+                                  </ul>
+                                          We have highlighted <m>\triangle{}AEC</m> in blue and <m>\triangle{}ODC</m> in green.
+                  </p>
+                  <figure xml:id="fig_angle_sum">
+                          <caption>The Unit Circle with Points at Angles <m>\theta</m> and <m>\theta+\phi</m></caption>
+                          <image width="80%">
+                                  <description>
+                                          <p>
+                                                  The Unit Circle with a point with angle theta and another point at angle theta+phi.
+                                          </p>
+                                  </description>
+                                  <xi:include href="./angle_sum.xml"/>
+                          </image>
+                  </figure>
+          </introduction>
+          <task>
+                  <statement>
+                          <p>
+                                          Explain why <m>\angle{}ACE\cong\angle{}OCD</m>.
+                          </p>
+                  </statement>
+          </task>
+          <task>
+                  <statement>
+                          <p>
+                                          Explain why <m>\angle{}EAC\cong\angle{}DOC</m>.
+                          </p>
+                  </statement>
+          </task>
+          <task xml:id="task_rotated_triangle">
+                  <statement>
+                          <p>
+                                          Explain why <m>AC=\sin(\phi)</m> and <m>OC=\cos(\phi)</m>.
+                          </p>
+                  </statement>
+                  <hint><p>Rotate the unit circle and all points so that <m>B</m> lies on the <m>x</m>-axis.</p></hint>
+          </task>
+          <task xml:id="task_triangle_green">
+                  <statement>
+                          <p>
+                                          Explain why <m>\frac{DC}{OC}=\sin(\theta)</m> and <m>\frac{OD}{OC}=\cos(\theta)</m>
+                          </p>
+                  </statement>
+          </task>
+          <task xml:id="task_triangle_blue">
+                  <statement>
+                          <p>
+                                          Explain why <m>\frac{EC}{AC}=\sin(\theta)</m> and <m>\frac{EA}{AC}=\cos(\theta)</m>
+                          </p>
+                  </statement>
+          </task>
+          <task>
+                  <statement>
+                          <p>
+                                          Note that <m>\sin\left(\theta+\phi\right)=FA=FE+EA</m> and <m>FE=DC</m>. Use <xref ref="task_rotated_triangle,task_triangle_green,task_triangle_blue" text="type-hybrid" >Part</xref> to express <m>\sin\left(\theta+\phi\right)</m> in terms of <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, <m>\sin(\phi)</m>, and <m>\cos(\phi)</m>.
+                          </p>
+                  </statement>
+          </task>
+          <task>
+                  <statement>
+                          <p>
+                                          Note that <m>\cos\left(\theta+\phi\right)=OD-DF</m> and <m>DF=CE</m>. Use <xref ref="task_rotated_triangle,task_triangle_green,task_triangle_blue" text="type-hybrid" >Part</xref> to express <m>\cos\left(\theta+\phi\right)</m> in terms of <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, <m>\sin(\phi)</m>, and <m>\cos(\phi)</m>.
+                                          </p>
+                                          <p>
+                                          (Note that in this figure, <m>\theta+\phi</m> is in the second quadrant, so <m>\cos(\theta+\phi)\lt 0</m>.)
+                          </p>
+                  </statement>
+          </task>
+          <conclusion>
+                  <p>
+                                  The specific geometric arguments in this activity are only valid when <m>\theta\gt0</m>, <m>\phi\gt0</m>, and <m>\theta+\phi\lt \pi</m>, but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of <m>\theta</m> and <m>\phi</m>.
+                  </p>
+          </conclusion>
+  </exercise>
+  <exercise workspace="0.4in" xml:id="exercise_sine_cosine_angle_diff">
+          <title>Angle Difference Identities for Sine and Cosine</title>
+          <task>
+                  <statement>
+                          <p>
+                                          Rewriting <m>\theta-\phi</m> as <m>\theta+(-1\cdot{}\phi)</m> and using <xref ref="exercise_sine_cosine_symmetry,exercise_sine_cosine_angle_sum" text="type-local"/>,  express <m>\sin\left(\theta-\phi\right)</m> in terms of <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, <m>\sin(\phi)</m>, and <m>\cos(\phi)</m>.
+
+                          </p>
+                  </statement>
+          </task>
+          <task>
+                  <statement>
+                          <p>
+                                          Rewriting <m>\theta-\phi</m> as <m>\theta+(-1\cdot{}\phi)</m> and using <xref ref="exercise_sine_cosine_symmetry,exercise_sine_cosine_angle_sum" text="type-local"/>,  express <m>\cos\left(\theta-\phi\right)</m> in terms of <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, <m>\sin(\phi)</m>, and <m>\cos(\phi)</m>.
+
+                          </p>
+                  </statement>
+          </task>
+  </exercise>
+
+</worksheet>

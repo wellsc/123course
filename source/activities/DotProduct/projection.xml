@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="prefig-projection">
+<diagram dimensions="(500,300)" margins="25">
+  <definition>O=(0,0)</definition>
+  <definition>v1=(3,1)</definition>
+  <definition>v2=(4,-1)</definition>
+  <definition>l1=length(v1)</definition>
+  <definition>u1=normalize(v1)</definition>
+  <definition>l2=length(v2)</definition>
+  <definition>u2=normalize(v2)</definition>
+  <definition>d12=dot(v1,v2)</definition>
+  <definition>d22=dot(v2,v2)</definition>
+  <definition>pro12=d12/d22*v2</definition>
+  <definition>diff=v1-pro12</definition>
+  
+  <coordinates bbox="(-3,-2,7,4)">
+    
+    <vector v="v1" thickness="2" alignment="ne">
+            <m>\vec{v}_{1}</m>
+    </vector>
+    <vector v="v2" thickness="2" >
+            <m>\vec{v}_{2}</m>
+    </vector>
+    <vector v="pro12" thickness="4" alignment="sw"><m>\operatorname{proj}_{\vec{v}_{2}}(\vec{v}_{1})</m></vector>
+    <line endpoints="(v1,pro12)" dash="4 4" thickness="2" />
+    <angle-marker points="(v2,O,v1)"><m>\theta</m></angle-marker>
+    <angle-marker points="(v2,pro12,v1)" />
+  </coordinates>
+
+</diagram>
+</prefigure>

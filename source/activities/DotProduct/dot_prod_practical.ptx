@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<worksheet xml:id="sec_dot_prod_practical" xmlns:xi="http://www.w3.org/2001/XInclude">
+		<title>Practical Application of the Dot Product</title>
+                <p>
+                        In this subsection, our goal is to solve the following problem.
+                </p>
+                                <p>
+                                        A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers <m>3</m>m horizontally and rises <m>0.2</m>m.  Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.
+                                </p>
+                <figure xml:id='fig_ramp'>
+                        <caption>A 3 Meter Ramp with a <m>15\text{kg}</m> Object</caption>
+                        <image width='50%'>
+                                <description><p>An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.</p></description>
+                                <xi:include href="./force_diagram.xml" />
+                        </image>
+                </figure>
+                <exercise>
+                        <statement>
+                                <p>
+                                        The object has a mass of <m>15\text{kg}</m>, and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is <m>9.8\text{m}/\text{s}^{2}</m>, and gravity accelerates objects straight down. (The SI unit of force is a <term>Newton</term>, defined to be <m>1\text{N}=1\text{kg}\cdot\text{m}/\text{s}^{2}</m>.)
+                                </p>
+                                <p>
+                                                Express the force from gravity as a vector, <m>\vec{F}_{g}</m>.
+                                </p>
+                        </statement>
+                </exercise>
+                <exercise>
+                        <statement>
+                                <p>
+                                                Express the movement from the start of the ramp to the end of the ramp as a vector, <m>\vec{R}</m>.
+                                </p>
+                        </statement>
+                </exercise>
+                <exercise>
+                        <statement>
+                                <p>
+                                                Calculate <m>\vec{F}_{R}=\proj_{\vec{R}}(\vec{F}_{g})</m>.
+                                </p>
+                        </statement>
+                </exercise>
+                <exercise>
+                        <statement>
+                                <p>
+                                                Calculate <m>\vec{F}_{\perp}=\vec{F}_{g}-\vec{F}_{R}</m>.
+                                </p>
+                        </statement>
+                </exercise>
+                <exercise>
+                        <statement>
+                                <p>
+                                                Verify that <m>\vec{F}_{\perp}\cdot{}\vec{F}_{R}=0</m>, and therefore they are perpendicular to each other.
+                                </p>
+                        </statement>
+                </exercise>
+                <exercise>
+                        <statement>
+                                <p>
+                                        Let <m>\vec{F}_{h}</m> be the horizontal pulling force, given by 
+                                        <md>
+                                                \vec{F}_{h}=\begin{bmatrix}\alpha \\ 0\end{bmatrix}
+                                        </md>
+                                                where the parameter <m>\alpha</m> is an unspecified quantity.
+                                </p>
+                                <p>
+                                        Find <m>\proj_{\vec{R}}(\vec{F}_{h})</m>.
+                                </p>
+                                <p>
+                                                Compare <m>\proj_{\vec{R}}(\vec{F}_{h})</m> to <m>\proj_{\vec{R}}(\vec{F}_{g})</m> to determine the value of <m>\alpha</m> needed to offset the effect of gravity.
+                                </p>
+                        </statement>
+                </exercise>
+</worksheet>

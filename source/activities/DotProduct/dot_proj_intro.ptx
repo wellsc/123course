@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<introduction xml:id="sec_dot_prod_intro">
+                <p>
+                        In this activity, we will extend our definition of vector, investigate an operation on vectors called the <term>dot product</term>, and use the dot product to determine angles and <term>projection</term> (technically <term>orthogonal projection</term>) of a vector onto a vector.
+                </p>
+	</introduction>

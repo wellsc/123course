@@ -6,11 +6,11 @@ your source:
 
   (1) "jing" checked conformance with the development RELAX-NG
       schema at
-      /home/wellsc/.ptx/2.54.0/core/schema/pretext-dev.rng
+      /home/wellsc/.ptx/2.55.0/core/schema/pretext-dev.rng
       (a schema can only describe parent-child relationships,
       plus the attributes of each element)
   (2) a second "jing" run, against the production schema at
-      /home/wellsc/.ptx/2.54.0/core/schema/pretext.rng
+      /home/wellsc/.ptx/2.55.0/core/schema/pretext.rng
       surveyed the experimental constructs in use; that section
       of this report begins with a fuller explanation
   (3) the PreTeXt "validation-plus" stylesheet made checks that

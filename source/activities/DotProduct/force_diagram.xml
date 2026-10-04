@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="prefig-force_diagram">
+<diagram dimensions="(300,250)" margins="25">
+  <definition>rise=0.9</definition>
+  <definition>run=6.0</definition>
+  <definition>g=-9.8</definition>
+  <definition>m=15</definition>
+  <definition>Fg=(0,m*g)</definition>
+  <definition>lfg=3.2</definition>
+  <definition>f(x)=rise/run*x</definition>
+  
+  <definition>a=3</definition>
+  <definition>pt=(a,f(a))</definition>
+  <definition>par=normalize((run,rise))</definition>
+  <definition>perp=normalize((-rise,run))</definition>
+  
+  <definition>dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])</definition>
+  <definition>dpar=(Fg[0]*par[0]+Fg[1]*par[1])</definition>
+  <definition>vpar=-dpar*lfg*par/(m*g)</definition>
+  <definition>vperp=-dperp*lfg*perp/(m*g)</definition>
+  <definition>ctr=pt+2*perp/10+par/2</definition>
+
+  <coordinates bbox="(0,-4,run,1)">
+    
+    <graph at="ramp" function="f" stroke="black" />
+    <line at="ground" endpoints="((0,0),(run,0))" stroke="black" alignment="sw">
+        <m>3\text{m}</m>
+    </line>
+    <line at="right" 
+        endpoints="((run,rise),(run,0))"
+        stroke="black" >
+          <m>0.2\text{m}</m>
+    </line>
+    <polygon at="box" points="(pt,pt+2*perp/5,pt+2*perp/5+par,pt+par)" stroke="black"/>
+    <point p="ctr" size="2" fill="black" />
+    <vector at="pull" v="(0.9,0)" tail="ctr" alignment="n" thickness="2" >
+        <m>\vec{F}_{h}</m>
+    </vector>
+    <vector at="gravity" v="(0,-lfg)" 
+          tail="ctr"
+          thickness="2"
+          alignment="s"
+          opacity="0.6"
+          >
+            <!--
+        <m>\vec{F}_{g}=\left[\begin{array}{r}0\\${m*g} \end{array}\right]</m>
+            -->
+        <m>\vec{F}_{g}</m>
+    </vector>
+    <vector v="vperp" tail="ctr" dash="4 4" thickness="1" />
+    <vector v="vpar" tail="ctr" dash="4 4" thickness="1" />
+    <vector v="-dperp*lfg*perp/(m*g)" tail="vpar+ctr" dash="4 4" thickness="1" />
+    <vector v="vpar" tail="ctr+vperp" dash="4 4" thickness="1" />
+  </coordinates>
+
+  <annotations text="A force diagram for an object on a ramp">
+    <annotation ref="graph-group" text="A force diagram for an object on a ramp">
+      <annotation ref="ramp" text="The sloped top of the ramp" sonify="yes" />
+      <annotation ref="ground" text="The point a comma f of a" />
+      <annotation ref="box" text="A rectangle representing the object"/>
+      <annotation ref="gravity" text="A vector pointing down representing gravity"/>
+      <annotation ref="pull" text="A vector pointing right representing pull force"/>
+    </annotation>
+  </annotations>
+</diagram>
+</prefigure>

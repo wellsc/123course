@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<section xml:id="dot_prod_proj" xmlns:xi="http://www.w3.org/2001/XInclude" >
+        <title>The Dot Product, Angles, and Projection</title>
+        <xi:include href='./dot_proj_intro.ptx'/>
+        <xi:include href='./more_vectors.ptx'/>
+        <xi:include href='./dotprod.ptx'/>
+        <xi:include href='./projection.ptx'/>
+        <xi:include href='./dot_prod_practical.ptx'/>
+</section>

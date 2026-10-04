@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="prefig_angle_sum">
+<diagram dimensions="(500,350)" margins="5">
+        <definition>theta=0.7</definition>
+        <definition>phi=1.05</definition>
+        <definition>sum=theta+phi</definition>
+        <definition>O=(0,0)</definition>
+        <definition>A=(cos(sum),sin(sum))</definition>
+        <definition>B=(cos(theta),sin(theta))</definition>
+        <definition>C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)</definition>
+        <definition>D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)</definition>
+        <definition>E=(A[0],C[1])</definition>
+        <definition>F=(cos(sum),0)</definition>
+        <definition>G=(B[0],0)</definition>
+        <coordinates bbox="(-1.25,-0.5,1.25,1.25)" >
+          <axes decorations="no" opacity="0.2" stroke="gray" />
+                <circle center="O" radius="1" stroke="gray" opacity="0.5"/>
+
+                <line endpoints="(O,A)" />
+                <line endpoints="(O,C)" stroke="green" thickness="3"/>
+                <line endpoints="(C,B)" />
+                <line endpoints="(C,A)" stroke="blue"/>
+                <line endpoints="(A,E)" stroke="blue"/>
+                <line endpoints="(E,F)"/>
+                <line endpoints="(C,D)" stroke="green" thickness="3"/>
+                <line endpoints="(O,D)" stroke="green" thickness="3"/>
+                <line endpoints="(C,E)" stroke="blue" />
+                <line endpoints="(B,G)" />
+
+                <angle-marker points="(D,O,B)" radius="35" arrow="no" >
+                  <m>\theta</m>
+                </angle-marker>
+                <angle-marker points="(B,O,A)" radius="30" arrow="no">
+                  <m>\phi</m>
+                </angle-marker>
+                <angle-marker points="(O,C,D)" radius="20" arrow="no">
+                  <m>\alpha</m>
+                </angle-marker>
+                <angle-marker points="(A,C,E)" radius="20" arrow="no">
+                  <m>\alpha</m>
+                </angle-marker>
+                <angle-marker points="(E,A,C)" radius="35" arrow="no" alignment="se" >
+                  <m>\theta</m>
+                </angle-marker>
+                <angle-marker points="(C,D,O)"/>
+                <angle-marker points="(C,E,A)" radius="10"/>
+                <angle-marker points="(A,C,O)" radius="40"/>
+                
+                <point p="O" alignment="se" size="1"><m>O</m></point>
+                <point p="A" alignment="n" size="1"><m>A</m></point>
+                <point p="B" size="1"><m>B</m></point>
+                <point p="C" size="1" alignment="se" offset="(0,3)"><m>C</m></point>
+                <point p="D" size="1" alignment="s"><m>D</m></point>
+                <point p="E" size="1" alignment="w"><m>E</m></point>
+                <point p="F" size="1" alignment="sw"><m>F</m></point>
+                <point p="G" size="1" alignment="s"><m>G</m></point>
+<!--
+                <label anchor="(-1.2,-0.1)" alignment="e"><m>\scriptsize{}OC=\cos(\phi)</m></label>
+                <label anchor="(-1.2,-0.25)" alignment="e"><m>\scriptsize{}AC=\sin(\phi)</m></label>
+                <label anchor="(-1.2,-0.4)" alignment="e"><m>\scriptsize{}\frac{DC}{OC}=\sin(\theta)</m></label>
+                <label anchor="(-1.2,-0.6)" alignment="e"><m>\scriptsize{}\frac{EA}{AC}=\cos(\theta)</m></label>
+                <label anchor="(-0.6,-0.4)" alignment="e"><m>\scriptsize{}{DC}=\sin(\theta){OC}=\sin(\theta)\cos(\phi)</m></label>
+                <label anchor="(-0.6,-0.6)" alignment="e"><m>\scriptsize{}{EA}=\cos(\theta){AC}=\cos(\theta)\sin(\phi)</m></label>
+-->
+        </coordinates>
+</diagram>
+</prefigure>

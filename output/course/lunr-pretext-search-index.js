@@ -982,6 +982,285 @@ var ptx_lunr_docs = [
   "body": "arc-tangent inverse tangent "
 },
 {
+  "id": "activities-10",
+  "level": "1",
+  "url": "activities-10.html",
+  "type": "Worksheet",
+  "number": "4.9",
+  "title": "Trigonometric Identities",
+  "body": " Trigonometric Identities   In this activity, we will investigate some important trigonometric identities . These are relationships among trigonometric functions that are universally true.    The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .     Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .      Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?      Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .     Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .     "
+},
+{
+  "id": "activities-10-2-1",
+  "level": "2",
+  "url": "activities-10.html#activities-10-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "identities "
+},
+{
+  "id": "activities-10-3",
+  "level": "2",
+  "url": "activities-10.html#activities-10-3",
+  "type": "Worksheet Exercise",
+  "number": "4.9.1",
+  "title": "The Pythagorean Identity for Sine and Cosine.",
+  "body": " The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .   "
+},
+{
+  "id": "exercise_sine_cosine_symmetry",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_symmetry",
+  "type": "Worksheet Exercise",
+  "number": "4.9.2",
+  "title": "Symmetry Identities for Sine and Cosine.",
+  "body": " Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .    "
+},
+{
+  "id": "activities-10-5",
+  "level": "2",
+  "url": "activities-10.html#activities-10-5",
+  "type": "Worksheet Exercise",
+  "number": "4.9.3",
+  "title": "Co-Function Identities for Sine and Cosine.",
+  "body": " Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?    "
+},
+{
+  "id": "exercise_sine_cosine_angle_sum",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_angle_sum",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4",
+  "title": "Angle Sum Identities for Sine and Cosine.",
+  "body": " Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .   "
+},
+{
+  "id": "exercise_sine_cosine_angle_diff",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_angle_diff",
+  "type": "Worksheet Exercise",
+  "number": "4.9.5",
+  "title": "Angle Difference Identities for Sine and Cosine.",
+  "body": " Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .    "
+},
+{
+  "id": "sec_more_vectors",
+  "level": "1",
+  "url": "sec_more_vectors.html",
+  "type": "Subsection",
+  "number": "4.10.1",
+  "title": "More Vectors",
+  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     "
+},
+{
+  "id": "def_vectors_rn",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vectors_rn",
+  "type": "Definition",
+  "number": "51",
+  "title": "",
+  "body": "  For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,    "
+},
+{
+  "id": "def_vector_arithmetic",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vector_arithmetic",
+  "type": "Definition",
+  "number": "52",
+  "title": "Vector Arithmetic.",
+  "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
+},
+{
+  "id": "sec_more_vectors-7",
+  "level": "2",
+  "url": "sec_more_vectors.html#sec_more_vectors-7",
+  "type": "Theorem",
+  "number": "53",
+  "title": "",
+  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
+},
+{
+  "id": "sec_dotprod",
+  "level": "1",
+  "url": "sec_dotprod.html",
+  "type": "Subsection",
+  "number": "4.10.2",
+  "title": "The Dot Product",
+  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
+},
+{
+  "id": "sec_dotprod-2",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dot product "
+},
+{
+  "id": "def_dot_prod",
+  "level": "2",
+  "url": "sec_dotprod.html#def_dot_prod",
+  "type": "Definition",
+  "number": "54",
+  "title": "The Dot Product.",
+  "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
+},
+{
+  "id": "sec_dotprod-4",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-4",
+  "type": "Checkpoint",
+  "number": "55",
+  "title": "",
+  "body": "  Calculate the dot product for each given pair of vectors.                                                               "
+},
+{
+  "id": "exercise_dot_product_orthogonal",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_dot_product_orthogonal",
+  "type": "Checkpoint",
+  "number": "56",
+  "title": "",
+  "body": "  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                      "
+},
+{
+  "id": "exercise_geometric_dot_product",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_geometric_dot_product",
+  "type": "Checkpoint",
+  "number": "57",
+  "title": "",
+  "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
+},
+{
+  "id": "sec_dotprod-7",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal "
+},
+{
+  "id": "sec_projection",
+  "level": "1",
+  "url": "sec_projection.html",
+  "type": "Subsection",
+  "number": "4.10.3",
+  "title": "Orthogonal Projection",
+  "body": " Orthogonal Projection    Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta         Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta         An important use of the dot product is in orthogonal projection of one vector onto another. This allows us to easily decompose a vector into a part that points in the direction of (or in the direction opposite to) another vector. We denote the projection of onto by .  For vectors that point more or less in the same direction, as shown in , the projection of onto points in the direction of , but its length is determined by the angle between the vectors as well as the length of the vector .  Referring to , let . We can see that , so . The direction of is the direction of , which can be expressed as the unit vector .  Since a vector is determined by its magnitude and its direction, we see that   In the case that the angle between the vectors is greater than , the cosine will be negative, but the direction will be , so that the same formula applies. Thus, we have the following definition.   Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.    "
+},
+{
+  "id": "fig_orth_proj",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj",
+  "type": "Figure",
+  "number": "58",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta       "
+},
+{
+  "id": "fig_orth_proj2",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj2",
+  "type": "Figure",
+  "number": "59",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta       "
+},
+{
+  "id": "sec_projection-3",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal projection "
+},
+{
+  "id": "sec_projection-8",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-8",
+  "type": "Definition",
+  "number": "60",
+  "title": "Orthogonal Projection of One Vector Onto Another.",
+  "body": " Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.   "
+},
+{
+  "id": "sec_dot_prod_practical",
+  "level": "1",
+  "url": "sec_dot_prod_practical.html",
+  "type": "Worksheet",
+  "number": "4.10.4",
+  "title": "Practical Application of the Dot Product",
+  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .      Express the movement from the start of the ramp to the end of the ramp as a vector, .      Calculate .      Calculate .      Verify that , and therefore they are perpendicular to each other.      Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.    "
+},
+{
+  "id": "fig_ramp",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#fig_ramp",
+  "type": "Figure",
+  "number": "61",
+  "title": "",
+  "body": " A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                    "
+},
+{
+  "id": "sec_dot_prod_practical-5",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-5",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.1",
+  "title": "",
+  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-6",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-6",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.2",
+  "title": "",
+  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-7",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-7",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.3",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-8",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-8",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.4",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-9",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-9",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.5",
+  "title": "",
+  "body": "  Verify that , and therefore they are perpendicular to each other.   "
+},
+{
+  "id": "sec_dot_prod_practical-10",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-10",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.6",
+  "title": "",
+  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.   "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
