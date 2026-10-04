@@ -1,0 +1,73 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig-force_diagram-figure" speech2="A force diagram for an object on a ramp">
+      <grouped>prefig-force_diagram-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-force_diagram-graph-group</active>
+      </children>
+      <components>
+        <active>prefig-force_diagram-graph-group</active>
+      </components>
+    </annotation>
+    <annotation id="prefig-force_diagram-graph-group" speech2="A force diagram for an object on a ramp">
+      <grouped>prefig-force_diagram-graph-group</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-force_diagram-ramp</active>
+        <active>prefig-force_diagram-ground</active>
+        <active>prefig-force_diagram-box</active>
+        <active>prefig-force_diagram-gravity</active>
+        <active>prefig-force_diagram-pull</active>
+      </children>
+      <components>
+        <active>prefig-force_diagram-ramp</active>
+        <active>prefig-force_diagram-ground</active>
+        <active>prefig-force_diagram-box</active>
+        <active>prefig-force_diagram-gravity</active>
+        <active>prefig-force_diagram-pull</active>
+      </components>
+      <parents>
+        <grouped>prefig-force_diagram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-force_diagram-ramp" speech2="The sloped top of the ramp" sonify="yes">
+      <active>prefig-force_diagram-ramp</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig-force_diagram-graph-group</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefig-force_diagram-ramp</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefig-force_diagram-ground" speech2="The point a comma f of a">
+      <active>prefig-force_diagram-ground</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig-force_diagram-graph-group</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-force_diagram-box" speech2="A rectangle representing the object">
+      <active>prefig-force_diagram-box</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig-force_diagram-graph-group</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-force_diagram-gravity" speech2="A vector pointing down representing gravity">
+      <active>prefig-force_diagram-gravity</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefig-force_diagram-graph-group</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-force_diagram-pull" speech2="A vector pointing right representing pull force">
+      <active>prefig-force_diagram-pull</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefig-force_diagram-graph-group</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
