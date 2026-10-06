@@ -685,38 +685,11 @@ var ptx_lunr_docs = [
   "body": " Modeling the Motion of a Pendulum   We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model sinusoidal that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time using a sinusoidal function.   A Pendulum   A drawing of a pendulum.    f(x)=2.5-x^2\/2  a = 1                    Modeling the Horizontal Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the maximum value of ? That is, what is the maximum horizontal distance of the pendulum from the wall?     .      What is the minimum value of ? That is, what is the minimum horizontal distance of the pendulum from the wall?     .      Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the wall is the pendulum and is it moving toward or away from the wall?      How long does it take for the distance from the wall of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .      Assume that at time , the pendulum is at its nearest point to the wall.  Find parameters , , , and so that the function fits all our information.     .      Modeling the Vertical Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the minimum value of ? That is, what is the minimum vertical distance of the pendulum from the floor?     .      Note that when the pendulum is closest to the wall, this corresponds to a point of maximum height. In , if we draw a horizontal line through the position of the pendulum when it is closest to the wall, we form a right triangle with the vertical line and the string. The string (which has length ) is the hypotenuse of this right triangle.     What is the length of the horizontal leg of the right triangle?           Use the Pythagorean theorem to find the length of the other (vertical) leg of the right triangle.         Since the hypotenuse is and one leg is , if we let the length of the other leg be , we have , so . Since distance is positive, we have . Thus, the length of the leg is .      Calculate the maximum value of . That is, find the minimum vertical distance of the pendulum from the floor.    The distance from the floor to the pivot point is and you found the vertical distance from the pivot point to highest point of the pendulum's path in .            Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the floor is the pendulum and is it moving toward or away from the floor?      How long does it take for the distance from the floor of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .     "
 },
 {
-  "id": "triangle_sine_cosine",
-  "level": "1",
-  "url": "triangle_sine_cosine.html",
-  "type": "Worksheet",
-  "number": "4.6",
-  "title": "Sine, Cosine, and Triangles",
-  "body": " Sine, Cosine, and Triangles   In this activity, we will use the unit circle and similar triangle to investigate how sine and cosine can be used with triangles.     Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .       Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?     "
-},
-{
-  "id": "exer_rt_triangles",
-  "level": "2",
-  "url": "triangle_sine_cosine.html#exer_rt_triangles",
-  "type": "Worksheet Exercise",
-  "number": "4.6.1",
-  "title": "",
-  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .    "
-},
-{
-  "id": "exer_rt_triangles2",
-  "level": "2",
-  "url": "triangle_sine_cosine.html#exer_rt_triangles2",
-  "type": "Worksheet Exercise",
-  "number": "4.6.2",
-  "title": "",
-  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?    "
-},
-{
   "id": "wksht_other_trig_functions",
   "level": "1",
   "url": "wksht_other_trig_functions.html",
   "type": "Worksheet",
-  "number": "4.7",
+  "number": "4.6",
   "title": "Other Trigonometric Functions",
   "body": " Other Trigonometric Functions   In addition to sine ( ) and cosine ( ) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:  Tangent  Cotangent  Secant  Cosecant    In terms of the unit circle, recall that is the -coordinate of the point, let's call it , on the unit circle at an angle counter-clockwise from the point and is the -coordinate of . That is, .  With this in mind, we see that so can be thought of as the slope of the line through and .   The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a           In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .      Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     "
 },
@@ -725,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "wksht_other_trig_functions.html#fig_tan_unit_circle",
   "type": "Figure",
-  "number": "33",
+  "number": "31",
   "title": "",
   "body": " The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a       "
 },
@@ -734,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "wksht_other_trig_functions.html#exer_tangent",
   "type": "Worksheet Exercise",
-  "number": "4.7.1",
+  "number": "4.6.1",
   "title": "",
   "body": "  In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .   "
 },
@@ -743,16 +716,322 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "wksht_other_trig_functions.html#exer_cotangent",
   "type": "Worksheet Exercise",
-  "number": "4.7.2",
+  "number": "4.6.2",
   "title": "",
   "body": "  Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?    "
+},
+{
+  "id": "triangle_sine_cosine",
+  "level": "1",
+  "url": "triangle_sine_cosine.html",
+  "type": "Worksheet",
+  "number": "4.7",
+  "title": "Sine, Cosine, and Triangles",
+  "body": " Sine, Cosine, and Triangles   In this activity, we will use the unit circle and similar triangle to investigate how sine and cosine can be used with triangles.     Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .       Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?     "
+},
+{
+  "id": "exer_rt_triangles",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles",
+  "type": "Worksheet Exercise",
+  "number": "4.7.1",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .    "
+},
+{
+  "id": "exer_rt_triangles2",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles2",
+  "type": "Worksheet Exercise",
+  "number": "4.7.2",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?    "
+},
+{
+  "id": "activities-9",
+  "level": "1",
+  "url": "activities-9.html",
+  "type": "Worksheet",
+  "number": "4.8",
+  "title": "Trigonometric Identities",
+  "body": " Trigonometric Identities   In this activity, we will investigate some important trigonometric identities . These are relationships among trigonometric functions that are universally true.    The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .     Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .      Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?      Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .     Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .     "
+},
+{
+  "id": "activities-9-2-1",
+  "level": "2",
+  "url": "activities-9.html#activities-9-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "identities "
+},
+{
+  "id": "activities-9-3",
+  "level": "2",
+  "url": "activities-9.html#activities-9-3",
+  "type": "Worksheet Exercise",
+  "number": "4.8.1",
+  "title": "The Pythagorean Identity for Sine and Cosine.",
+  "body": " The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .   "
+},
+{
+  "id": "exercise_sine_cosine_symmetry",
+  "level": "2",
+  "url": "activities-9.html#exercise_sine_cosine_symmetry",
+  "type": "Worksheet Exercise",
+  "number": "4.8.2",
+  "title": "Symmetry Identities for Sine and Cosine.",
+  "body": " Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .    "
+},
+{
+  "id": "activities-9-5",
+  "level": "2",
+  "url": "activities-9.html#activities-9-5",
+  "type": "Worksheet Exercise",
+  "number": "4.8.3",
+  "title": "Co-Function Identities for Sine and Cosine.",
+  "body": " Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?    "
+},
+{
+  "id": "exercise_sine_cosine_angle_sum",
+  "level": "2",
+  "url": "activities-9.html#exercise_sine_cosine_angle_sum",
+  "type": "Worksheet Exercise",
+  "number": "4.8.4",
+  "title": "Angle Sum Identities for Sine and Cosine.",
+  "body": " Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .   "
+},
+{
+  "id": "exercise_sine_cosine_angle_diff",
+  "level": "2",
+  "url": "activities-9.html#exercise_sine_cosine_angle_diff",
+  "type": "Worksheet Exercise",
+  "number": "4.8.5",
+  "title": "Angle Difference Identities for Sine and Cosine.",
+  "body": " Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .    "
+},
+{
+  "id": "sec_more_vectors",
+  "level": "1",
+  "url": "sec_more_vectors.html",
+  "type": "Subsection",
+  "number": "4.9.1",
+  "title": "More Vectors",
+  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     "
+},
+{
+  "id": "def_vectors_rn",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vectors_rn",
+  "type": "Definition",
+  "number": "35",
+  "title": "",
+  "body": "  For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,    "
+},
+{
+  "id": "def_vector_arithmetic",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vector_arithmetic",
+  "type": "Definition",
+  "number": "36",
+  "title": "Vector Arithmetic.",
+  "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
+},
+{
+  "id": "sec_more_vectors-7",
+  "level": "2",
+  "url": "sec_more_vectors.html#sec_more_vectors-7",
+  "type": "Theorem",
+  "number": "37",
+  "title": "",
+  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
+},
+{
+  "id": "sec_dotprod",
+  "level": "1",
+  "url": "sec_dotprod.html",
+  "type": "Subsection",
+  "number": "4.9.2",
+  "title": "The Dot Product",
+  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
+},
+{
+  "id": "sec_dotprod-2",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dot product "
+},
+{
+  "id": "def_dot_prod",
+  "level": "2",
+  "url": "sec_dotprod.html#def_dot_prod",
+  "type": "Definition",
+  "number": "38",
+  "title": "The Dot Product.",
+  "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
+},
+{
+  "id": "sec_dotprod-4",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-4",
+  "type": "Checkpoint",
+  "number": "39",
+  "title": "",
+  "body": "  Calculate the dot product for each given pair of vectors.                                                               "
+},
+{
+  "id": "exercise_dot_product_orthogonal",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_dot_product_orthogonal",
+  "type": "Checkpoint",
+  "number": "40",
+  "title": "",
+  "body": "  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                      "
+},
+{
+  "id": "exercise_geometric_dot_product",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_geometric_dot_product",
+  "type": "Checkpoint",
+  "number": "41",
+  "title": "",
+  "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
+},
+{
+  "id": "sec_dotprod-7",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal "
+},
+{
+  "id": "sec_projection",
+  "level": "1",
+  "url": "sec_projection.html",
+  "type": "Subsection",
+  "number": "4.9.3",
+  "title": "Orthogonal Projection",
+  "body": " Orthogonal Projection    Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta         Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta         An important use of the dot product is in orthogonal projection of one vector onto another. This allows us to easily decompose a vector into a part that points in the direction of (or in the direction opposite to) another vector. We denote the projection of onto by .  For vectors that point more or less in the same direction, as shown in , the projection of onto points in the direction of , but its length is determined by the angle between the vectors as well as the length of the vector .  Referring to , let . We can see that , so . The direction of is the direction of , which can be expressed as the unit vector .  Since a vector is determined by its magnitude and its direction, we see that   In the case that the angle between the vectors is greater than , the cosine will be negative, but the direction will be , so that the same formula applies. Thus, we have the following definition.   Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.    "
+},
+{
+  "id": "fig_orth_proj",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj",
+  "type": "Figure",
+  "number": "42",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta       "
+},
+{
+  "id": "fig_orth_proj2",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj2",
+  "type": "Figure",
+  "number": "43",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta       "
+},
+{
+  "id": "sec_projection-3",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal projection "
+},
+{
+  "id": "sec_projection-8",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-8",
+  "type": "Definition",
+  "number": "44",
+  "title": "Orthogonal Projection of One Vector Onto Another.",
+  "body": " Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.   "
+},
+{
+  "id": "sec_dot_prod_practical",
+  "level": "1",
+  "url": "sec_dot_prod_practical.html",
+  "type": "Worksheet",
+  "number": "4.9.4",
+  "title": "Practical Application of the Dot Product",
+  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .      Express the movement from the start of the ramp to the end of the ramp as a vector, .      Calculate .      Calculate .      Verify that , and therefore they are perpendicular to each other.      Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.    "
+},
+{
+  "id": "fig_ramp",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#fig_ramp",
+  "type": "Figure",
+  "number": "45",
+  "title": "",
+  "body": " A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                    "
+},
+{
+  "id": "sec_dot_prod_practical-5",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-5",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.1",
+  "title": "",
+  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-6",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-6",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.2",
+  "title": "",
+  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-7",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-7",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.3",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-8",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-8",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.4",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-9",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-9",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.5",
+  "title": "",
+  "body": "  Verify that , and therefore they are perpendicular to each other.   "
+},
+{
+  "id": "sec_dot_prod_practical-10",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-10",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4.6",
+  "title": "",
+  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.   "
 },
 {
   "id": "sec_direction_to_coords",
   "level": "1",
   "url": "sec_direction_to_coords.html",
   "type": "Subsection",
-  "number": "4.8.1",
+  "number": "4.10.1",
   "title": "From Direction and Magnitude to Coordinates",
   "body": " From Direction and Magnitude to Coordinates    Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).        Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .      "
 },
@@ -761,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_direction_to_coords.html#exer_dir_to_coords",
   "type": "Checkpoint",
-  "number": "34",
+  "number": "46",
   "title": "",
   "body": "  Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).    "
 },
@@ -770,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_direction_to_coords.html#exer_coords_to_dir",
   "type": "Checkpoint",
-  "number": "36",
+  "number": "48",
   "title": "",
   "body": "   Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .     "
 },
@@ -779,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec_inverse_cosine.html",
   "type": "Subsection",
-  "number": "4.8.2",
+  "number": "4.10.2",
   "title": "The Inverse Cosine Function",
   "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized       The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
 },
@@ -797,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#fig_cosine",
   "type": "Figure",
-  "number": "37",
+  "number": "49",
   "title": "",
   "body": " The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    "
 },
@@ -806,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#def_uncos",
   "type": "Definition",
-  "number": "38",
+  "number": "50",
   "title": "The “Un-Cosine” Function.",
   "body": " The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -815,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#example_uncos",
   "type": "Example",
-  "number": "39",
+  "number": "51",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .     "
 },
@@ -824,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#exer_uncos",
   "type": "Checkpoint",
-  "number": "40",
+  "number": "52",
   "title": "",
   "body": "       Find .      Find .      Find .    "
 },
@@ -842,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec_inverse_sine.html",
   "type": "Subsection",
-  "number": "4.8.3",
+  "number": "4.10.3",
   "title": "The Inverse Sine Function",
   "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized       The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
 },
@@ -860,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_find_branch_sine",
   "type": "Checkpoint",
-  "number": "41",
+  "number": "53",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .   "
 },
@@ -869,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#fig_sine",
   "type": "Figure",
-  "number": "42",
+  "number": "54",
   "title": "",
   "body": " The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    "
 },
@@ -878,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#def_unsin",
   "type": "Definition",
-  "number": "43",
+  "number": "55",
   "title": "The “Un-Sine” Function.",
   "body": " The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -887,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#example_unsin",
   "type": "Example",
-  "number": "44",
+  "number": "56",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -896,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_unsin",
   "type": "Checkpoint",
-  "number": "45",
+  "number": "57",
   "title": "",
   "body": "       Find .      Find .      Find .    "
 },
@@ -914,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec_tan_and_inverse_tan.html",
   "type": "Subsection",
-  "number": "4.8.4",
+  "number": "4.10.4",
   "title": "The Tangent and the Inverse Tangent",
   "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized       The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
 },
@@ -941,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#fig_tan",
   "type": "Figure",
-  "number": "46",
+  "number": "58",
   "title": "",
   "body": " The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    "
 },
@@ -950,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#exer_find_branch_tangent",
   "type": "Checkpoint",
-  "number": "47",
+  "number": "59",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .   "
 },
@@ -959,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#def_untan",
   "type": "Definition",
-  "number": "48",
+  "number": "60",
   "title": "The “Un-Tangent” Function.",
   "body": " The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -968,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#example_untan",
   "type": "Example",
-  "number": "49",
+  "number": "61",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -980,285 +1259,6 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "arc-tangent inverse tangent "
-},
-{
-  "id": "activities-10",
-  "level": "1",
-  "url": "activities-10.html",
-  "type": "Worksheet",
-  "number": "4.9",
-  "title": "Trigonometric Identities",
-  "body": " Trigonometric Identities   In this activity, we will investigate some important trigonometric identities . These are relationships among trigonometric functions that are universally true.    The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .     Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .      Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?      Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .     Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .     "
-},
-{
-  "id": "activities-10-2-1",
-  "level": "2",
-  "url": "activities-10.html#activities-10-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "identities "
-},
-{
-  "id": "activities-10-3",
-  "level": "2",
-  "url": "activities-10.html#activities-10-3",
-  "type": "Worksheet Exercise",
-  "number": "4.9.1",
-  "title": "The Pythagorean Identity for Sine and Cosine.",
-  "body": " The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .   "
-},
-{
-  "id": "exercise_sine_cosine_symmetry",
-  "level": "2",
-  "url": "activities-10.html#exercise_sine_cosine_symmetry",
-  "type": "Worksheet Exercise",
-  "number": "4.9.2",
-  "title": "Symmetry Identities for Sine and Cosine.",
-  "body": " Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .    "
-},
-{
-  "id": "activities-10-5",
-  "level": "2",
-  "url": "activities-10.html#activities-10-5",
-  "type": "Worksheet Exercise",
-  "number": "4.9.3",
-  "title": "Co-Function Identities for Sine and Cosine.",
-  "body": " Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?    "
-},
-{
-  "id": "exercise_sine_cosine_angle_sum",
-  "level": "2",
-  "url": "activities-10.html#exercise_sine_cosine_angle_sum",
-  "type": "Worksheet Exercise",
-  "number": "4.9.4",
-  "title": "Angle Sum Identities for Sine and Cosine.",
-  "body": " Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .   "
-},
-{
-  "id": "exercise_sine_cosine_angle_diff",
-  "level": "2",
-  "url": "activities-10.html#exercise_sine_cosine_angle_diff",
-  "type": "Worksheet Exercise",
-  "number": "4.9.5",
-  "title": "Angle Difference Identities for Sine and Cosine.",
-  "body": " Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .    "
-},
-{
-  "id": "sec_more_vectors",
-  "level": "1",
-  "url": "sec_more_vectors.html",
-  "type": "Subsection",
-  "number": "4.10.1",
-  "title": "More Vectors",
-  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     "
-},
-{
-  "id": "def_vectors_rn",
-  "level": "2",
-  "url": "sec_more_vectors.html#def_vectors_rn",
-  "type": "Definition",
-  "number": "51",
-  "title": "",
-  "body": "  For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,    "
-},
-{
-  "id": "def_vector_arithmetic",
-  "level": "2",
-  "url": "sec_more_vectors.html#def_vector_arithmetic",
-  "type": "Definition",
-  "number": "52",
-  "title": "Vector Arithmetic.",
-  "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
-},
-{
-  "id": "sec_more_vectors-7",
-  "level": "2",
-  "url": "sec_more_vectors.html#sec_more_vectors-7",
-  "type": "Theorem",
-  "number": "53",
-  "title": "",
-  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
-},
-{
-  "id": "sec_dotprod",
-  "level": "1",
-  "url": "sec_dotprod.html",
-  "type": "Subsection",
-  "number": "4.10.2",
-  "title": "The Dot Product",
-  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
-},
-{
-  "id": "sec_dotprod-2",
-  "level": "2",
-  "url": "sec_dotprod.html#sec_dotprod-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "dot product "
-},
-{
-  "id": "def_dot_prod",
-  "level": "2",
-  "url": "sec_dotprod.html#def_dot_prod",
-  "type": "Definition",
-  "number": "54",
-  "title": "The Dot Product.",
-  "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
-},
-{
-  "id": "sec_dotprod-4",
-  "level": "2",
-  "url": "sec_dotprod.html#sec_dotprod-4",
-  "type": "Checkpoint",
-  "number": "55",
-  "title": "",
-  "body": "  Calculate the dot product for each given pair of vectors.                                                               "
-},
-{
-  "id": "exercise_dot_product_orthogonal",
-  "level": "2",
-  "url": "sec_dotprod.html#exercise_dot_product_orthogonal",
-  "type": "Checkpoint",
-  "number": "56",
-  "title": "",
-  "body": "  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                      "
-},
-{
-  "id": "exercise_geometric_dot_product",
-  "level": "2",
-  "url": "sec_dotprod.html#exercise_geometric_dot_product",
-  "type": "Checkpoint",
-  "number": "57",
-  "title": "",
-  "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
-},
-{
-  "id": "sec_dotprod-7",
-  "level": "2",
-  "url": "sec_dotprod.html#sec_dotprod-7",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "orthogonal "
-},
-{
-  "id": "sec_projection",
-  "level": "1",
-  "url": "sec_projection.html",
-  "type": "Subsection",
-  "number": "4.10.3",
-  "title": "Orthogonal Projection",
-  "body": " Orthogonal Projection    Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta         Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta         An important use of the dot product is in orthogonal projection of one vector onto another. This allows us to easily decompose a vector into a part that points in the direction of (or in the direction opposite to) another vector. We denote the projection of onto by .  For vectors that point more or less in the same direction, as shown in , the projection of onto points in the direction of , but its length is determined by the angle between the vectors as well as the length of the vector .  Referring to , let . We can see that , so . The direction of is the direction of , which can be expressed as the unit vector .  Since a vector is determined by its magnitude and its direction, we see that   In the case that the angle between the vectors is greater than , the cosine will be negative, but the direction will be , so that the same formula applies. Thus, we have the following definition.   Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.    "
-},
-{
-  "id": "fig_orth_proj",
-  "level": "2",
-  "url": "sec_projection.html#fig_orth_proj",
-  "type": "Figure",
-  "number": "58",
-  "title": "",
-  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta       "
-},
-{
-  "id": "fig_orth_proj2",
-  "level": "2",
-  "url": "sec_projection.html#fig_orth_proj2",
-  "type": "Figure",
-  "number": "59",
-  "title": "",
-  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta       "
-},
-{
-  "id": "sec_projection-3",
-  "level": "2",
-  "url": "sec_projection.html#sec_projection-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "orthogonal projection "
-},
-{
-  "id": "sec_projection-8",
-  "level": "2",
-  "url": "sec_projection.html#sec_projection-8",
-  "type": "Definition",
-  "number": "60",
-  "title": "Orthogonal Projection of One Vector Onto Another.",
-  "body": " Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.   "
-},
-{
-  "id": "sec_dot_prod_practical",
-  "level": "1",
-  "url": "sec_dot_prod_practical.html",
-  "type": "Worksheet",
-  "number": "4.10.4",
-  "title": "Practical Application of the Dot Product",
-  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .      Express the movement from the start of the ramp to the end of the ramp as a vector, .      Calculate .      Calculate .      Verify that , and therefore they are perpendicular to each other.      Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.    "
-},
-{
-  "id": "fig_ramp",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#fig_ramp",
-  "type": "Figure",
-  "number": "61",
-  "title": "",
-  "body": " A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                    "
-},
-{
-  "id": "sec_dot_prod_practical-5",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-5",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.1",
-  "title": "",
-  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .   "
-},
-{
-  "id": "sec_dot_prod_practical-6",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-6",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.2",
-  "title": "",
-  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .   "
-},
-{
-  "id": "sec_dot_prod_practical-7",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-7",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.3",
-  "title": "",
-  "body": "  Calculate .   "
-},
-{
-  "id": "sec_dot_prod_practical-8",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-8",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.4",
-  "title": "",
-  "body": "  Calculate .   "
-},
-{
-  "id": "sec_dot_prod_practical-9",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-9",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.5",
-  "title": "",
-  "body": "  Verify that , and therefore they are perpendicular to each other.   "
-},
-{
-  "id": "sec_dot_prod_practical-10",
-  "level": "2",
-  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-10",
-  "type": "Worksheet Exercise",
-  "number": "4.10.4.6",
-  "title": "",
-  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.   "
 },
 {
   "id": "progress_check_1",

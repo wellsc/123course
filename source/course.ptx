@@ -45,11 +45,11 @@
       <xi:include href='./activities/UsingSineAndCosine/practical_sine.ptx'/>
       <xi:include href='./activities/Transformations/Transformations.ptx'/>
       <xi:include href='./activities/OscillatoryMotion/OscillatoryMotion.ptx'/>
-      <xi:include href='./activities/TriangleTrig/TriangleTrig.ptx'/>
       <xi:include href='./activities/OtherTrigFunctions/OtherTrig.ptx'/>
-      <xi:include href='./activities/InverseTrig/InverseTrig.ptx'/>
+      <xi:include href='./activities/TriangleTrig/TriangleTrig.ptx'/>
       <xi:include href='./activities/Identities/Identities.ptx'/>
       <xi:include href='./activities/DotProduct/DotProdAndProj.ptx'/>
+      <xi:include href='./activities/InverseTrig/InverseTrig.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">
