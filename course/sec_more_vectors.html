@@ -130,7 +130,7 @@ eBookConfig.enable_chatcodes =  false;
       \newcommand{\suchthat}{\colon}
       \newcommand{\Abs}[1]{\left\lvert{}{#1}\right\rvert{}}
       \newcommand{\Avec}[1]{\left\langle{}{#1}\right\rangle{}}
-      \newcommand{\Bvec}[1]{\begin{bmatrix} { #1 } \end{bmatrix}}
+      \newcommand{\Bvec}[1]{\left[\begin{array}{r} { #1 } \end{array}\right]}
       \newcommand{\Cos}{\operatorname{Cos}}
       \newcommand{\Sin}{\operatorname{Sin}}
       \newcommand{\Tan}{\operatorname{Tan}}
@@ -337,96 +337,100 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_practical_sine.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Practical Applications of Sine and Cosine</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Transformations of Sine and Cosine</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Oscillatory Motion</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="triangle_sine_cosine.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sine, Cosine, and Triangles</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="wksht_other_trig_functions.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Other Trigonometric Functions</span></a></div></li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="wksht_inverse_trig.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Vectors and Inverse Trigonometric Functions</span></a></div>
-<ul id="ptx-toc-group-wksht_inverse_trig" class="structural toc-item-list">
-<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_direction_to_coords.html" class="internal"><span class="codenumber">4.8.1</span> <span class="title">From Direction and Magnitude to Coordinates</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec_inverse_cosine.html" class="internal"><span class="codenumber">4.8.2</span> <span class="title">The Inverse Cosine Function</span></a></div>
-<ul id="ptx-toc-group-sec_inverse_cosine" class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_principle_branch_cosine" class="internal"><span class="codenumber">4.8.2.1</span> <span class="title">The Principle Branch of Cosine</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_un_cos" class="internal"><span class="codenumber">4.8.2.2</span> <span class="title">The “Un-Cosine”</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_arc_and_inv_cos" class="internal"><span class="codenumber">4.8.2.3</span> <span class="title">Notation</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec_inverse_sine.html" class="internal"><span class="codenumber">4.8.3</span> <span class="title">The Inverse Sine Function</span></a></div>
-<ul id="ptx-toc-group-sec_inverse_sine" class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_principle_branch_sine" class="internal"><span class="codenumber">4.8.3.1</span> <span class="title">The Principle Branch of Sine</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_un_sin" class="internal"><span class="codenumber">4.8.3.2</span> <span class="title">The “Un-Sine”</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_arc_and_inv_sin" class="internal"><span class="codenumber">4.8.3.3</span> <span class="title">Notation</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html" class="internal"><span class="codenumber">4.8.4</span> <span class="title">The Tangent and the Inverse Tangent</span></a></div>
-<ul id="ptx-toc-group-sec_tan_and_inverse_tan" class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_graph_of_tan" class="internal"><span class="codenumber">4.8.4.1</span> <span class="title">The Graph of the Tangent Function</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_principle_branch_tangent" class="internal"><span class="codenumber">4.8.4.2</span> <span class="title">The Principle Branch of Tangent</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_un_tan" class="internal"><span class="codenumber">4.8.4.3</span> <span class="title">The “Un-Tangent”</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_arc_and_inv_tan" class="internal"><span class="codenumber">4.8.4.4</span> <span class="title">Notation</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Trigonometric Identities</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="wksht_other_trig_functions.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Other Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="triangle_sine_cosine.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sine, Cosine, and Triangles</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Trigonometric Identities</span></a></div></li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="dot_prod_proj.html" class="internal"><span class="codenumber">4.10</span> <span class="title">The Dot Product, Angles, and Projection</span></a></div>
+<div class="toc-title-box"><a href="dot_prod_proj.html" class="internal"><span class="codenumber">4.9</span> <span class="title">The Dot Product, Angles, and Projection</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-dot_prod_proj">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="sec_dot_prod_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-subsection active"><div class="toc-title-box"><a href="sec_more_vectors.html" class="internal"><span class="codenumber">4.10.1</span> <span class="title">More Vectors</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_dotprod.html" class="internal"><span class="codenumber">4.10.2</span> <span class="title">The Dot Product</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_projection.html" class="internal"><span class="codenumber">4.10.3</span> <span class="title">Orthogonal Projection</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_dot_prod_practical.html" class="internal"><span class="codenumber">4.10.4</span> <span class="title">Practical Application of the Dot Product</span></a></div></li>
+<li class="toc-item toc-subsection active"><div class="toc-title-box"><a href="sec_more_vectors.html" class="internal"><span class="codenumber">4.9.1</span> <span class="title">More Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_dotprod.html" class="internal"><span class="codenumber">4.9.2</span> <span class="title">The Dot Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_projection.html" class="internal"><span class="codenumber">4.9.3</span> <span class="title">Orthogonal Projection</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_dot_prod_practical.html" class="internal"><span class="codenumber">4.9.4</span> <span class="title">Practical Application of the Dot Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="wksht_inverse_trig.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Vectors and Inverse Trigonometric Functions</span></a></div>
+<ul id="ptx-toc-group-wksht_inverse_trig" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_direction_to_coords.html" class="internal"><span class="codenumber">4.10.1</span> <span class="title">From Direction and Magnitude to Coordinates</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_inverse_cosine.html" class="internal"><span class="codenumber">4.10.2</span> <span class="title">The Inverse Cosine Function</span></a></div>
+<ul id="ptx-toc-group-sec_inverse_cosine" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_principle_branch_cosine" class="internal"><span class="codenumber">4.10.2.1</span> <span class="title">The Principle Branch of Cosine</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_un_cos" class="internal"><span class="codenumber">4.10.2.2</span> <span class="title">The “Un-Cosine”</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_cosine.html#ssec_arc_and_inv_cos" class="internal"><span class="codenumber">4.10.2.3</span> <span class="title">Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_inverse_sine.html" class="internal"><span class="codenumber">4.10.3</span> <span class="title">The Inverse Sine Function</span></a></div>
+<ul id="ptx-toc-group-sec_inverse_sine" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_principle_branch_sine" class="internal"><span class="codenumber">4.10.3.1</span> <span class="title">The Principle Branch of Sine</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_un_sin" class="internal"><span class="codenumber">4.10.3.2</span> <span class="title">The “Un-Sine”</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_inverse_sine.html#ssec_arc_and_inv_sin" class="internal"><span class="codenumber">4.10.3.3</span> <span class="title">Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html" class="internal"><span class="codenumber">4.10.4</span> <span class="title">The Tangent and the Inverse Tangent</span></a></div>
+<ul id="ptx-toc-group-sec_tan_and_inverse_tan" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_graph_of_tan" class="internal"><span class="codenumber">4.10.4.1</span> <span class="title">The Graph of the Tangent Function</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_principle_branch_tangent" class="internal"><span class="codenumber">4.10.4.2</span> <span class="title">The Principle Branch of Tangent</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_un_tan" class="internal"><span class="codenumber">4.10.4.3</span> <span class="title">The “Un-Tangent”</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_tan_and_inverse_tan.html#ssec_arc_and_inv_tan" class="internal"><span class="codenumber">4.10.4.4</span> <span class="title">Notation</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">5</span> <span class="title">Class Handouts</span></a></div>
-<ul id="ptx-toc-group-handouts" class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="codenumber">5.1</span> <span class="title">An Introduction to Problem Solving</span></a></div></li></ul>
+<div class="toc-title-box"><a href="progress_checks.html" class="internal"><span class="codenumber">5</span> <span class="title">Progress Checks</span></a></div>
+<ul id="ptx-toc-group-progress_checks" class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="progress_check_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Progress Check 1</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">6</span> <span class="title">Class Handouts</span></a></div>
+<ul id="ptx-toc-group-handouts" class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="codenumber">6.1</span> <span class="title">An Introduction to Problem Solving</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="subsection" id="sec_more_vectors">
 <h1 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.10.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">More Vectors</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">More Vectors</span>
 </h1>
-<div class="para" id="sec_more_vectors-2">So far, we have limited our study of vectors to vectors such as <span class="process-math">\(\vec{v }=\begin{bmatrix*}[r]3\\5\end{bmatrix*}\text{.}\)</span> We have discussed them in relation to points in the <span class="process-math">\(xy\)</span>-plane. However, we live in a three dimensional world<details class="ptx-footnote" aria-live="polite" id="fn_physical_dimensions"><summary class="ptx-footnote__number" title="Footnote 3"><sup> 3 </sup></summary>
+<div class="para" id="sec_more_vectors-2">So far, we have limited our study of vectors to vectors such as <span class="process-math">\(\vec{v }=\left[\begin{array}{r}[r]3\\5\end{array}\right]\text{.}\)</span> We have discussed them in relation to points in the <span class="process-math">\(xy\)</span>-plane. However, we live in a three dimensional world<details class="ptx-footnote" aria-live="polite" id="fn_physical_dimensions"><summary class="ptx-footnote__number" title="Footnote 3"><sup> 3 </sup></summary>
 <div class="ptx-footnote__contents" id="fn_physical_dimensions">Physicists actually use models that describe the number of physical dimensions as more than three, but that’s beyond the scope of this course.
 </div></details>. We can describe points using <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> coordinates, like <span class="process-math">\(P=(3,5,2)\text{.}\)</span> Typically we visualize this by thinking of rotating the <span class="process-math">\(xy\)</span>-plane so that it is horizontal (like a sheet of paper on a desk) and using the <span class="process-math">\(z\)</span>-coordinate to describe how far above or below the plane a point is. Thus, <span class="process-math">\((3,5,2)\)</span> is the point that is exactly <span class="process-math">\(2\)</span> units directly above the point <span class="process-math">\((3,5)\)</span> in the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_more_vectors-3">Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as <span class="process-math">\(\begin{bmatrix*}[r]3\\5\\ 2 \end{bmatrix*}\text{.}\)</span> However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_more_vectors-3">Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as <span class="process-math">\(\left[\begin{array}{r}[r]3\\5\\ 2 \end{array}\right]\text{.}\)</span> However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_vectors_rn"><h2 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
 <div class="para logical" id="def_vectors_rn-1-1">
 <div class="para">For any positive integer, <span class="process-math">\(n\text{,}\)</span> the set of all vectors consisting of an array of <span class="process-math">\(n\)</span> real numbers is referred to as <span class="process-math">\(\R^{n}\text{.}\)</span> Any vector in this set is called an <dfn class="terminology"><span class="process-math">\(n\)</span>-vector</dfn>. That is,</div>
 <div class="displaymath process-math" id="def_vectors_rn-1-1-5">
 \begin{equation*}
-\R^{n}=\left\{\begin{bmatrix*}[r]a_{1}\\a_{2}\\\vdots\\a_{n}\end{bmatrix*}\suchthat a_{1}, a_{2},\ldots,a_{n}\in\R\right\}
+\R^{n}=\left\{\left[\begin{array}{r}[r]a_{1}\\a_{2}\\\vdots\\a_{n}\end{array}\right]\suchthat a_{1}, a_{2},\ldots,a_{n}\in\R\right\}
 \end{equation*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def_vectors_rn-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 51"><a tabindex="-1" href="#def_vectors_rn" title="Copy heading and permalink for Definition 51" aria-label="Copy heading and permalink for Definition 51">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 35"><a tabindex="-1" href="#def_vectors_rn" title="Copy heading and permalink for Definition 35" aria-label="Copy heading and permalink for Definition 35">🔗</a></div>
 </article>
-<div class="para" id="sec_more_vectors-5">So, for example, we would say that <span class="process-math">\(\begin{bmatrix*}[r]3\\5\\ 2 \end{bmatrix*}\)</span> is a <span class="process-math">\(3\)</span>-vector, the set of all <span class="process-math">\(3\)</span>-vectors is <span class="process-math">\(\R^{3}\text{,}\)</span> <span class="process-math">\(\begin{bmatrix*}[r]3\\-5\\ 2\\ -2 \end{bmatrix*}\)</span> is a <span class="process-math">\(4\)</span>-vector, and the set of all <span class="process-math">\(4\)</span>-vectors is <span class="process-math">\(\R^{4}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_more_vectors-5">So, for example, we would say that <span class="process-math">\(\left[\begin{array}{r}[r]3\\5\\ 2 \end{array}\right]\)</span> is a <span class="process-math">\(3\)</span>-vector, the set of all <span class="process-math">\(3\)</span>-vectors is <span class="process-math">\(\R^{3}\text{,}\)</span> <span class="process-math">\(\left[\begin{array}{r}[r]3\\-5\\ 2\\ -2 \end{array}\right]\)</span> is a <span class="process-math">\(4\)</span>-vector, and the set of all <span class="process-math">\(4\)</span>-vectors is <span class="process-math">\(\R^{4}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_vector_arithmetic"><h2 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector Arithmetic.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector Arithmetic.</span>
 </h2>
 <div class="para" id="def_vector_arithmetic-2-1">For any <span class="process-math">\(n\)</span>-vectors <span class="process-math">\(\vec{a}\)</span> and <span class="process-math">\(\vec{b}\text{,}\)</span> the <dfn class="terminology">vector sum</dfn> <span class="process-math">\(\vec{a}+\vec{b}\)</span> is the <span class="process-math">\(n\)</span>-vector obtained by adding the entries of <span class="process-math">\(\vec{a}\)</span> and <span class="process-math">\(\vec{b}\)</span> in corresponding positions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def_vector_arithmetic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="para" id="def_vector_arithmetic-2-2">For any <span class="process-math">\(n\)</span>-vector <span class="process-math">\(\vec{a}\)</span> and and real number <span class="process-math">\(b\text{,}\)</span> the <dfn class="terminology">scalar product</dfn> <span class="process-math">\(b\vec{a}\)</span> is the <span class="process-math">\(n\)</span>-vector obtained by multiplying all the entries of <span class="process-math">\(\vec{a}\)</span> by <span class="process-math">\({b}\text{,}\)</span> and <span class="process-math">\(b\vec{a}\)</span> is said to be a <dfn class="terminology">scalar multiple</dfn> of <span class="process-math">\(\vec{a}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def_vector_arithmetic-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 52: Vector Arithmetic"><a tabindex="-1" href="#def_vector_arithmetic" title="Copy heading and permalink for Definition 52: Vector Arithmetic" aria-label="Copy heading and permalink for Definition 52: Vector Arithmetic">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 36: Vector Arithmetic"><a tabindex="-1" href="#def_vector_arithmetic" title="Copy heading and permalink for Definition 36: Vector Arithmetic" aria-label="Copy heading and permalink for Definition 36: Vector Arithmetic">🔗</a></div>
 </article>
 <article class="theorem theorem-like" id="sec_more_vectors-7"><h2 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
 <div class="para logical" id="sec_more_vectors-7-1-1">
 <div class="para">For any <span class="process-math">\(n\)</span>-vector, <span class="process-math">\(\vec{v}\text{,}\)</span> the dot product of the vector with itself is the square of its magnitude. That is,</div>
@@ -437,8 +441,8 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_more_vectors-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 53"><a tabindex="-1" href="#sec_more_vectors-7" title="Copy heading and permalink for Theorem 53" aria-label="Copy heading and permalink for Theorem 53">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.10.1: More Vectors"><a tabindex="-1" href="#sec_more_vectors" title="Copy heading and permalink for Subsection 4.10.1: More Vectors" aria-label="Copy heading and permalink for Subsection 4.10.1: More Vectors">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 37"><a tabindex="-1" href="#sec_more_vectors-7" title="Copy heading and permalink for Theorem 37" aria-label="Copy heading and permalink for Theorem 37">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection 4.9.1: More Vectors"><a tabindex="-1" href="#sec_more_vectors" title="Copy heading and permalink for Subsection 4.9.1: More Vectors" aria-label="Copy heading and permalink for Subsection 4.9.1: More Vectors">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
