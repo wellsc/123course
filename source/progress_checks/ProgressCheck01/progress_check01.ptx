@@ -59,6 +59,7 @@
                           </statement>
                           <solution>
                                   <p>
+                                                  Because there are 32 pods, the distance between one pod and the next is <m>\frac{1}{32}</m> times the circumference. That means that it will take <m>\frac{1}{32}</m> of the period to get from one pod to the next. Thus, the time between pods is
                                                   <md>
                                                           <mrow>
                                                           \frac{1631.21157\text{s}}{32}&amp;\approx 50.98\text{s}
@@ -220,7 +221,7 @@
                           </statement>
                           <solution>
                                   <p>
-                                                  Because <m>\vec{F}_{R}</m> is pointing in the same direction as the pendulum string, we know that <m>\theta_{2}=\pi/3</m>, and because <m>\theta_{1}</m> and <m>\theta_{2}</m> are perpendicular to each other, <m>\theta_{1}+\theta_{2}=\pi/2</m>, so we know that <m>\theta_{2}=\pi/6</m>.
+                                                  Because <m>\vec{F}_{R}</m> is pointing in the same direction as the pendulum string, we know that <m>\theta_{2}=\pi/3</m>, and because <m>\vec{F}_{R}</m> and <m>\vec{F}_{T}</m> are perpendicular to each other, <m>\theta_{1}+\theta_{2}=\pi/2</m>, so we know that <m>\theta_{2}=\pi/6</m>.
                                   </p>
                           </solution>
                   </task>
