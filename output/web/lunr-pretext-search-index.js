@@ -298,11 +298,65 @@ var ptx_lunr_docs = [
   "body": " Thursday, Sept. 3  Discussion of measures of success, very brief launch of ideas that lead to circular functions.  We will re-launch Ferris Wheels and Circular Functions on Tuesday.  "
 },
 {
+  "id": "ssec_moves",
+  "level": "1",
+  "url": "ssec_moves.html",
+  "type": "Subsection",
+  "number": "4.1.1",
+  "title": "A Knight’s Moves",
+  "body": " A Knight's Moves  In chess, the knight is one of the most misunderstood, under-utilized, and powerful pieces on the board. All of these traits are due to the way the knight moves. Two possible moves for a knight are shown in . If we place Start at , the origin of a coordinate system, then Move 1 is associated with the point and Move 2 is associated with the point .   Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).     "
+},
+{
+  "id": "fig_moves",
+  "level": "2",
+  "url": "ssec_moves.html#fig_moves",
+  "type": "Figure",
+  "number": "10",
+  "title": "",
+  "body": " Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).    "
+},
+{
+  "id": "ssec_vectors",
+  "level": "1",
+  "url": "ssec_vectors.html",
+  "type": "Subsection",
+  "number": "4.1.2",
+  "title": "Vectors",
+  "body": " Vectors  Because Move 1 and Move 2 are motions, it is probably more correct to say that they are associated with moving from   to  and from   to  , respectively.  Using vectors , we can represent Move 1 by the vector and Move 2 by . (We generally don't bother writing , though. Instead, a positive value is a motion right or up, and a negative value is left or down.)  However, we don't really have an easy way to represent performing Move 1 twice, or Move 1 followed by Move 2, and so forth. What we can do, though is think of vectors as relative position or motion . Thus, we can think of the vector representing a move unit to the right and units up from any point , and similarly, the vector representing a move units to the right and unit up from any point.  Now, we can think about combining the vectors. Starting from Start , , we can first perform Move 1, , arriving at , and then perform Move 2, , arriving at . We write this combination of moves as    Adding Vectors Graphically.   A visual representation of vector addition.     Graphically, we generally represent vectors as arrows from their starting point, called the tail , to their ending point, called the head . Since vectors represent relative motion, the vector from to and the vector from to are exactly the same vector . Because of this, we can represent adding vectors by placing them head-to-tail, as shown in where the resultant vector of the addition is shown with a thick arrow.    How do you think you would represent a motion two units right and one unit down, graphically and symbolically?  How do you think you would represent a motion two units left and one unit up, graphically and symbolically?  What vector is the result of performing Move 1 twice?  What do you think the notation means?    "
+},
+{
+  "id": "fig_combining",
+  "level": "2",
+  "url": "ssec_vectors.html#fig_combining",
+  "type": "Figure",
+  "number": "11",
+  "title": "",
+  "body": " Adding Vectors Graphically.   A visual representation of vector addition.    "
+},
+{
+  "id": "ssec_combining",
+  "level": "1",
+  "url": "ssec_combining.html",
+  "type": "Subsection",
+  "number": "4.1.3",
+  "title": "Combining Moves",
+  "body": " Combining Moves  An interesting (and rather difficult) set of mathematical problems arise from considering which squares on different sized chess boards can be reached by a cohort of several knights. In this activity we will consider a slightly different but related idea: how can we reach various squares using linear combinations of and ?  For this activity, you can use the blank grid in if you find it helpful. (Place the origin wherever you want!)  We know that allows you to reach . Will any other combination of and allow you to reach the same point? Explain.  Is it possible to reach using some combination of and ? How (or why not)?  Is it possible to reach ? How (or why not)?  What do you think the notation means?  What do you think the notation means?  What do you think the notation means?  Would your responses to any of the above questions change in light of your answers to , , and ?  Would your responses to any of the above questions change if you could Move a fractional part of and ? (Say , for example.)  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, which squares can you reach? Explain.  Now let's do away with the idea that we have to land on a corner of a square and think about points in the plane more generally. How could you reach the point using a combination of and ?  More generally, what is the process to reach a given a point in the plane using combinations of and ?     A Blank Grid.   A blank grid.     "
+},
+{
+  "id": "fig_grid",
+  "level": "2",
+  "url": "ssec_combining.html#fig_grid",
+  "type": "Figure",
+  "number": "12",
+  "title": "",
+  "body": " A Blank Grid.   A blank grid.    "
+},
+{
   "id": "ssec_explore_heights",
   "level": "1",
   "url": "ssec_explore_heights.html",
   "type": "Worksheet",
-  "number": "4.1.1",
+  "number": "4.2.1",
   "title": "Height of a Ferris Wheel Car",
   "body": " Height of a Ferris Wheel Car    shows the height of a Ferris wheel car as a function of the distance the car has travelled from the bottom. A full animation is available from the National Council of Teachers of Mathematics [NCTM] Illuminations classroom resources, Investigating Functions with a Ferris Wheel: Distance vs. Height ( ).   Height of a Ferris Wheel Car   Screenshot from https:\/\/www.nctm.org\/Classroom-Resources\/Illuminations\/Interactives\/Investigating-Functions-with-a-Ferris-Wheel-Distance-vs-Height\/       For the calculations in this exercise, assume that the circumference of the Ferris wheel is m, and recall that the circumference, , of a circle is given by , where is the radius of the circle.  We will refer to the height as and the distance travelled as .     Find the total height of the Ferris wheel (in meters).     m    The total height is twice the radius. Since the radius is , the total height is m.      When m, find the value of . That is, when the car when has travelled m, how high is it?     m    When the car has travelled m, it has travelled one quarter of the way around, or half-way to the top. Thus its height is half the total height, approximately m.      Find when m.     m    When the car has travelled m, it has travelled half of the way around, so it is at the top. Thus its height is the same as the total height, approximately m.      How much distance along the circle has the cab traversed at the moment it first reaches a height of m?     m.    We know that is the radius, which is also half the diameter, and so the height is half of the total height. The first time the car reaches this height is when it has travelled of the way around, which is m.      How much distance along the circle has the cab traversed at the moment it reaches a height of m for the second time?     m.    The second time the car reaches a height of is when it has travelled of the way around, which is m.      Can we express as a function of ?    Yes.    Every distance travelled corresponds to exactly one position on the circular path of the Ferris wheel car, and each position has a particular height. Since there is always exactly one value of for each value of , we can express as a function of .      Can we express as a function of ?    No.    As the Ferris wheel car travels around its circular path, it passes through each height multiple times. Since there is not always exactly one value of for each value of , we cannot express as a function of .     An important idea in setting up mathematical models that is often assumed or overlooked is the fact that you get to choose where you measure from . Sometimes the choice of your referece point is the difference between straight-forward calculations and much more complicated ones. With that in mind, we will revisit the Ferris wheel problem, but with a couple of slight twists.  First, instead of measuring height above the ground, we will measure the height, , as the vertical distance from a horizontal line through the center of the Ferris wheel. Of course, we will need to indicate whether a given height is above the center or below the center, so we will use positive values of to indicate distance above the center line, and negative values to indicate distance below the center line.  Second, we will measure the distance the Ferris wheel car has travelled relative to the point where it is farthest to the right. In other words, when it is on the center line.  Here, distances that are before reaching the line will be negative, and distances after will be positive.    For this problem, we will consider a Ferris wheel whose total height is m.  Recall that we are measuring distance travelled, , relative to the point on the circle to the extreme right, and we are measuring the height, , relative to the center of the Ferris wheel, so, for example, when m, m.     How high is the center of the Ferris wheel above the ground?     m.    The total height is m, so the center is half that distance above the ground, which is m.      What is the circumference of the Ferris wheel?     m.    We will call the radius of the Ferris wheel and the circumference . Since the total height is twice the radius, we have m, and thus m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at its highest point. Since we are measuring from the center of the Ferris wheel, that means that m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at the extreme left. Since we are measuring from the center of the Ferris wheel and we are back at the original height, that means that m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at the bottom of its path, so it is m below the center, and therefore m.     "
 },
@@ -311,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_explore_heights.html#fig_ferris",
   "type": "Figure",
-  "number": "10",
+  "number": "13",
   "title": "",
   "body": " Height of a Ferris Wheel Car   Screenshot from https:\/\/www.nctm.org\/Classroom-Resources\/Illuminations\/Interactives\/Investigating-Functions-with-a-Ferris-Wheel-Distance-vs-Height\/   "
 },
@@ -320,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_explore_heights.html#heights",
   "type": "Worksheet Exercise",
-  "number": "4.1.1.1",
+  "number": "4.2.1.1",
   "title": "",
   "body": "  For the calculations in this exercise, assume that the circumference of the Ferris wheel is m, and recall that the circumference, , of a circle is given by , where is the radius of the circle.  We will refer to the height as and the distance travelled as .     Find the total height of the Ferris wheel (in meters).     m    The total height is twice the radius. Since the radius is , the total height is m.      When m, find the value of . That is, when the car when has travelled m, how high is it?     m    When the car has travelled m, it has travelled one quarter of the way around, or half-way to the top. Thus its height is half the total height, approximately m.      Find when m.     m    When the car has travelled m, it has travelled half of the way around, so it is at the top. Thus its height is the same as the total height, approximately m.      How much distance along the circle has the cab traversed at the moment it first reaches a height of m?     m.    We know that is the radius, which is also half the diameter, and so the height is half of the total height. The first time the car reaches this height is when it has travelled of the way around, which is m.      How much distance along the circle has the cab traversed at the moment it reaches a height of m for the second time?     m.    The second time the car reaches a height of is when it has travelled of the way around, which is m.      Can we express as a function of ?    Yes.    Every distance travelled corresponds to exactly one position on the circular path of the Ferris wheel car, and each position has a particular height. Since there is always exactly one value of for each value of , we can express as a function of .      Can we express as a function of ?    No.    As the Ferris wheel car travels around its circular path, it passes through each height multiple times. Since there is not always exactly one value of for each value of , we cannot express as a function of .    "
 },
@@ -329,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_explore_heights.html#circ_func",
   "type": "Worksheet Exercise",
-  "number": "4.1.1.2",
+  "number": "4.2.1.2",
   "title": "",
   "body": "  For this problem, we will consider a Ferris wheel whose total height is m.  Recall that we are measuring distance travelled, , relative to the point on the circle to the extreme right, and we are measuring the height, , relative to the center of the Ferris wheel, so, for example, when m, m.     How high is the center of the Ferris wheel above the ground?     m.    The total height is m, so the center is half that distance above the ground, which is m.      What is the circumference of the Ferris wheel?     m.    We will call the radius of the Ferris wheel and the circumference . Since the total height is twice the radius, we have m, and thus m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at its highest point. Since we are measuring from the center of the Ferris wheel, that means that m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at the extreme left. Since we are measuring from the center of the Ferris wheel and we are back at the original height, that means that m.      What is the value of when m?     m.    When the car has travelled m, it has travelled of the circumference. Because we are measuring from the point on the extreme right, this means that the Ferris wheel car is at the bottom of its path, so it is m below the center, and therefore m.    "
 },
@@ -338,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ssec_distance_and_angles.html",
   "type": "Worksheet",
-  "number": "4.1.2",
+  "number": "4.2.2",
   "title": "Distance and Angles",
   "body": " Distance and Angles   In , we know that the Ferris wheel is m tall, so it has a radius of m. We also know that the circumference is m. Said another way, the radius would fit times around the circle. Given two points on a circle, the part of the circle between them is called an arc , and its length is, appropriately, called the arc length . So, there are radii of arc length in a circle.  It's not too much of a stretch to wonder how many radii of arc length lie between two points on a circle, and in fact, it gives a very natural way to measure angles, because given any angle, the arc length determined by the angle depends on the radius of the circle, and if an angle has an arc length of one radius on one circle, that same angle has one radius of arc length on any circle!   One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.     An angle that has one radius of arc length has a measure of radian . Both of the angles shown in , and , have a measure of 1 radian, which we will often abbreviate as .     In this problem, we again consider a circle (a Ferris wheel) with a radius of m.     When the car has travelled through rad of angle, how much distance (arc length) has it travelled?   20m   When the car has travelled one radian, it has travelled a distance (arc length) equal to its radius. Since the radius is m, the car has travelled m.      When the car has travelled through an angle of rad, how much arc length has it travelled?    50m.    When the car has travelled rad, it has travelled an arc length that is times its radius, so it has travelled an arc length of m.      When the car has travelled through m of arc length, what angle (in radians) has it travelled through?     rad.    When when the car has travelled through rad, it has travelled a distance of m, so we can solve m to get rad. It is worth noting here that if we do unit analysis of , we see that the units cancel out. Therefore, technically radians are unitless .       What is the arc length of one quarter of the circle?     m    The total circumference is m, so one quarter of the circumference is m.      What is the radian measure of one quarter of a revolution (the angle for one fourth of a circle)?     rad.    There are two ways we could approach this. We could use our previous result for the arc length of a quarter circle is approximately m and divide by the radius to find the angle, or we could realize that there are radii in the circumference, and thus a total revolution is radians. Then, we get that one quarter of that is radians.      What is the radian measure of one eighth of a revolution?     rad.    Since there are radii in the circumference, and thus a total revolution is rad, we get that one eighth of that is rad.      What fraction of the distance around the circle is rad?    One eighth.     A couple of important things about radians before we move on.   As we noted in the solution to , radians are unitless from a dimensional\/unit analysis point of view.    One full revolution, what we are used to thinking of as , is rad. This means that , and a right angle is . In general, the conversions between degrees and radians are     Some important angles to become familiar with are:      "
 },
@@ -356,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_distance_and_angles.html#fig_radian",
   "type": "Figure",
-  "number": "11",
+  "number": "14",
   "title": "",
   "body": " One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.    "
 },
@@ -374,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_distance_and_angles.html#exer_radians_vs_dist",
   "type": "Worksheet Exercise",
-  "number": "4.1.2.1",
+  "number": "4.2.2.1",
   "title": "",
   "body": "  In this problem, we again consider a circle (a Ferris wheel) with a radius of m.     When the car has travelled through rad of angle, how much distance (arc length) has it travelled?   20m   When the car has travelled one radian, it has travelled a distance (arc length) equal to its radius. Since the radius is m, the car has travelled m.      When the car has travelled through an angle of rad, how much arc length has it travelled?    50m.    When the car has travelled rad, it has travelled an arc length that is times its radius, so it has travelled an arc length of m.      When the car has travelled through m of arc length, what angle (in radians) has it travelled through?     rad.    When when the car has travelled through rad, it has travelled a distance of m, so we can solve m to get rad. It is worth noting here that if we do unit analysis of , we see that the units cancel out. Therefore, technically radians are unitless .       What is the arc length of one quarter of the circle?     m    The total circumference is m, so one quarter of the circumference is m.      What is the radian measure of one quarter of a revolution (the angle for one fourth of a circle)?     rad.    There are two ways we could approach this. We could use our previous result for the arc length of a quarter circle is approximately m and divide by the radius to find the angle, or we could realize that there are radii in the circumference, and thus a total revolution is radians. Then, we get that one quarter of that is radians.      What is the radian measure of one eighth of a revolution?     rad.    Since there are radii in the circumference, and thus a total revolution is rad, we get that one eighth of that is rad.      What fraction of the distance around the circle is rad?    One eighth.    "
 },
@@ -392,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ssec_sine_cosine.html",
   "type": "Worksheet",
-  "number": "4.1.3",
+  "number": "4.2.3",
   "title": "The Sine and Cosine Functions",
   "body": " The Sine and Cosine Functions   Probably the two most important functions in trigonometry are defined based on angles and the coordinates of points on a circle of radius , which we refer to as the unit circle .  For any point, , on the unit circle, we measure the angle for  in radians from the positive -axis counter-clockwise to . Negative angles and angles greater than are allowed: negative angles are measured counter-clockwise from the positive -axis, and angles greater than (or less than ) start around the circle again.   The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown      shows the unit circle with a point and its angle, .  Now that we have the unit circle and have explained how we measure angles on the unit circle, we are ready to define the circular functions sine and cosine .   The Sine and Cosine Functions   For any real number , define the point on the unit circle whose angle (measured from the positive -axis) is rad. Then the cosine of is the -coordinate of and the sine of is the -coordinate of . That is,       We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .       In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.        The Unit Circle with Important Angles   The Unit Circle with Important Angles     "
 },
@@ -410,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#fig_unit_circle_theta",
   "type": "Figure",
-  "number": "12",
+  "number": "15",
   "title": "",
   "body": " The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown    "
 },
@@ -428,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#ssec_sine_cosine-2-6",
   "type": "Definition",
-  "number": "13",
+  "number": "16",
   "title": "The Sine and Cosine Functions.",
   "body": " The Sine and Cosine Functions   For any real number , define the point on the unit circle whose angle (measured from the positive -axis) is rad. Then the cosine of is the -coordinate of and the sine of is the -coordinate of . That is,    "
 },
@@ -437,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#example_45deg",
   "type": "Example",
-  "number": "14",
+  "number": "17",
   "title": "",
   "body": "  We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .   "
 },
@@ -446,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#ssec_sine_cosine-3",
   "type": "Worksheet Exercise",
-  "number": "4.1.3.1",
+  "number": "4.2.3.1",
   "title": "",
   "body": "  In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.      "
 },
@@ -455,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#fig_unit_circle",
   "type": "Figure",
-  "number": "15",
+  "number": "18",
   "title": "",
   "body": " The Unit Circle with Important Angles   The Unit Circle with Important Angles    "
 },
@@ -464,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ssec_sim_tri_pyth_thm.html",
   "type": "Worksheet",
-  "number": "4.1.4",
+  "number": "4.2.4",
   "title": "Similar Triangles and the Pythagorean Theorem",
   "body": " Similar Triangles and the Pythagorean Theorem   An extremely important concept in physics, trigonometry, calculus, and even carpentry is the notion of similar triangles . We will briefly discuss how to recognize similar triangles and what properties they have before returning to the ideas we explored in .  Combining the definitions of sine and cosine with similar triangles and the Pythagorean theorem gives us tools that make these functions extremely useful in a variety of situations.   Similar Triangles   When two triangles have exactly the same three angles, we say that they are similar triangles or that the triangles are similar .     An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.     The triangles shown in are similar because angle is the same as angle ( ), angle is the same as angle ( ), and angle is the same as angle ( ).  We say that and , and , and are corresponding angles , and similarly, we say that sides and , sides and , sides and are corresponding sides .  Furthermore, we say that , and the order matters!   Corresponding Sides of Similar Triangles   Given two triangles, and , when the triangles are similar , the lengths of the corresponding sides are proportional.    Applying to , for example, we have that and, equivalently,    The Pythagorean Theorem   For any positive numbers, , , and , if and are the lengths of two legs of a right triangle and is the length of the hypoteneuse, then .  Furthermore, for any triangle with side lengths , , and , if , then the triangle is a right triangle, the sides with lengths and are the legs, and the side with length is the hypotenuse.       In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.        Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m     "
 },
@@ -473,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#def_similar_triangles",
   "type": "Definition",
-  "number": "16",
+  "number": "19",
   "title": "Similar Triangles.",
   "body": " Similar Triangles   When two triangles have exactly the same three angles, we say that they are similar triangles or that the triangles are similar .   "
 },
@@ -482,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#fig_sim_tri_example",
   "type": "Figure",
-  "number": "17",
+  "number": "20",
   "title": "",
   "body": " An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.    "
 },
@@ -491,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#thm_corresponding_sides",
   "type": "Theorem",
-  "number": "18",
+  "number": "21",
   "title": "Corresponding Sides of Similar Triangles.",
   "body": " Corresponding Sides of Similar Triangles   Given two triangles, and , when the triangles are similar , the lengths of the corresponding sides are proportional.   "
 },
@@ -500,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#thm_pythagorean",
   "type": "Theorem",
-  "number": "19",
+  "number": "22",
   "title": "The Pythagorean Theorem.",
   "body": " The Pythagorean Theorem   For any positive numbers, , , and , if and are the lengths of two legs of a right triangle and is the length of the hypoteneuse, then .  Furthermore, for any triangle with side lengths , , and , if , then the triangle is a right triangle, the sides with lengths and are the legs, and the side with length is the hypotenuse.   "
 },
@@ -509,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#exer_ratios",
   "type": "Worksheet Exercise",
-  "number": "4.1.4.1",
+  "number": "4.2.4.1",
   "title": "",
   "body": "  In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.        Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m    "
 },
@@ -518,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec_practical_sine.html",
   "type": "Worksheet",
-  "number": "4.2",
+  "number": "4.3",
   "title": "Practical Applications of Sine and Cosine",
   "body": " Practical Applications of Sine and Cosine     We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.     Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle     We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have         Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.       The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have         Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.        "
 },
@@ -527,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_practical_sine.html#sec_practical_sine-2-1",
   "type": "Example",
-  "number": "21",
+  "number": "24",
   "title": "",
   "body": "  We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.     Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle     We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have    "
 },
@@ -536,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_practical_sine.html#exer_tree_height",
   "type": "Worksheet Exercise",
-  "number": "4.2.1",
+  "number": "4.3.1",
   "title": "",
   "body": "  Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.       The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have    "
 },
@@ -545,27 +599,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_practical_sine.html#exer_train_dist",
   "type": "Worksheet Exercise",
-  "number": "4.2.2",
+  "number": "4.3.2",
   "title": "",
   "body": "  Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.      "
-},
-{
-  "id": "activities-4",
-  "level": "1",
-  "url": "activities-4.html",
-  "type": "Handout",
-  "number": "4.3",
-  "title": "Oscillatory Motion",
-  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum  We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time.   A Pendulum   A drawing of a pendulum.      "
-},
-{
-  "id": "fig_pendulum",
-  "level": "2",
-  "url": "activities-4.html#fig_pendulum",
-  "type": "Figure",
-  "number": "26",
-  "title": "",
-  "body": " A Pendulum   A drawing of a pendulum.    "
 },
 {
   "id": "activities-5",
@@ -574,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.4",
   "title": "Transformations of Sine and Cosine",
-  "body": " Transformations of Sine and Cosine   In this activity we will first review transformations of functions using Desmos, and then we will apply what we notice to graphs of the sine and cosine.    Review of Transformations of a Graph   Open the Desmos activity Review of Transformations , .  This graph shows a function, , in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      "
+  "body": " Transformations of Sine and Cosine   In this activity we will first review transformations of functions using Desmos, and then we will apply what we notice to graphs of the sine and cosine.    Review of Transformations of a Graph   Open the Desmos activity Review of Transformations , .  This graph shows a function, , in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Transformations Sine   Open the Desmos activity Transformations of Sine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Transformations Cosine   Open the Desmos activity Transformations of Cosine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?       Functions of the form and are called sinusoidal functions or simply sinusoids .  For the graphs of sinusoidal functions, the various sliders affect aspects of the graphs that we define below with specific names.   Midline, Amplitude, Period, and Phase Shift of Sinusoids     The midline of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is . For the functions and , the midline is .  The amplitude of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is . For the functions and , the amplitude is .  The period of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is . For the functions and , the period is .  The phase shift of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is . Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between and the period or with a shift that is between times the period and times the period. For the functions and , the phase shift is .      In some cases, rather than specifying the period , we may specify the frequency of the sinusoid. The frequency of a sinusoid is the number of periods per unit time. Thus, if is the frequency and is the period, we have or . In relation to the sliders in this activity, we have .   "
 },
 {
   "id": "activities-5-3",
@@ -586,13 +622,688 @@ var ptx_lunr_docs = [
   "body": " Review of Transformations of a Graph   Open the Desmos activity Review of Transformations , .  This graph shows a function, , in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
 },
 {
+  "id": "activities-5-4",
+  "level": "2",
+  "url": "activities-5.html#activities-5-4",
+  "type": "Worksheet Exercise",
+  "number": "4.4.2",
+  "title": "Transformations Sine.",
+  "body": " Transformations Sine   Open the Desmos activity Transformations of Sine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
+},
+{
+  "id": "activities-5-5",
+  "level": "2",
+  "url": "activities-5.html#activities-5-5",
+  "type": "Worksheet Exercise",
+  "number": "4.4.3",
+  "title": "Transformations Cosine.",
+  "body": " Transformations Cosine   Open the Desmos activity Transformations of Cosine , .  This graph shows the function, in blue, and the function in red, and has a set of sliders, one for each of the parameters , , , and .    The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?      The Effect of    Move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      Now move the slider for to . How does the transformed graph (red) compare to the original (blue).      How would you describe the effect of on the graph?     "
+},
+{
+  "id": "activities-5-6-1",
+  "level": "2",
+  "url": "activities-5.html#activities-5-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sinusoidal functions sinusoids "
+},
+{
+  "id": "activities-5-6-3",
+  "level": "2",
+  "url": "activities-5.html#activities-5-6-3",
+  "type": "Definition",
+  "number": "29",
+  "title": "Midline, Amplitude, Period, and Phase Shift of Sinusoids.",
+  "body": " Midline, Amplitude, Period, and Phase Shift of Sinusoids     The midline of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is . For the functions and , the midline is .  The amplitude of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is . For the functions and , the amplitude is .  The period of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is . For the functions and , the period is .  The phase shift of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is . Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between and the period or with a shift that is between times the period and times the period. For the functions and , the phase shift is .     "
+},
+{
+  "id": "activities-5-6-4",
+  "level": "2",
+  "url": "activities-5.html#activities-5-6-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "frequency "
+},
+{
+  "id": "activities-6",
+  "level": "1",
+  "url": "activities-6.html",
+  "type": "Worksheet",
+  "number": "4.5",
+  "title": "Oscillatory Motion",
+  "body": " Oscillatory Motion   In this activity, we will use transformations of sine and cosine graphs to model the motion of a pendulum.    Modeling the Motion of a Pendulum   We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model sinusoidal that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time using a sinusoidal function.   A Pendulum   A drawing of a pendulum.    f(x)=2.5-x^2\/2  a = 1                    Modeling the Horizontal Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the maximum value of ? That is, what is the maximum horizontal distance of the pendulum from the wall?     .      What is the minimum value of ? That is, what is the minimum horizontal distance of the pendulum from the wall?     .      Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the wall is the pendulum and is it moving toward or away from the wall?      How long does it take for the distance from the wall of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .      Assume that at time , the pendulum is at its nearest point to the wall.  Find parameters , , , and so that the function fits all our information.     .      Modeling the Vertical Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the minimum value of ? That is, what is the minimum vertical distance of the pendulum from the floor?     .      Note that when the pendulum is closest to the wall, this corresponds to a point of maximum height. In , if we draw a horizontal line through the position of the pendulum when it is closest to the wall, we form a right triangle with the vertical line and the string. The string (which has length ) is the hypotenuse of this right triangle.     What is the length of the horizontal leg of the right triangle?           Use the Pythagorean theorem to find the length of the other (vertical) leg of the right triangle.         Since the hypotenuse is and one leg is , if we let the length of the other leg be , we have , so . Since distance is positive, we have . Thus, the length of the leg is .      Calculate the maximum value of . That is, find the minimum vertical distance of the pendulum from the floor.    The distance from the floor to the pivot point is and you found the vertical distance from the pivot point to highest point of the pendulum's path in .            Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the floor is the pendulum and is it moving toward or away from the floor?      How long does it take for the distance from the floor of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .      "
+},
+{
+  "id": "exer_pendulum",
+  "level": "2",
+  "url": "activities-6.html#exer_pendulum",
+  "type": "Worksheet Exercise",
+  "number": "4.5.1",
+  "title": "Modeling the Motion of a Pendulum.",
+  "body": " Modeling the Motion of a Pendulum   We have a pendulum suspended from a point (on a stand) cm away from a wall and cm above the table top. At its farthest from the wall, it is cm away from the wall and at its closest it is cm away from the wall (see ).  Every two seconds, it completes one swing, from farthest point back to farthest point.  We want to find a model sinusoidal that will give us the pendulum bob's distance away from the wall as a function of time.  As a stretch goal, we want to model the pendulum bob's distance away from the table top as a function of time using a sinusoidal function.   A Pendulum   A drawing of a pendulum.    f(x)=2.5-x^2\/2  a = 1                    Modeling the Horizontal Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the maximum value of ? That is, what is the maximum horizontal distance of the pendulum from the wall?     .      What is the minimum value of ? That is, what is the minimum horizontal distance of the pendulum from the wall?     .      Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the wall is the pendulum and is it moving toward or away from the wall?      How long does it take for the distance from the wall of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .      Assume that at time , the pendulum is at its nearest point to the wall.  Find parameters , , , and so that the function fits all our information.     .      Modeling the Vertical Motion   For this exercise, let give the horizontal distance of the pendulum from the wall, in centimeters, at time seconds. (We will decide on what time means later.)     What is the minimum value of ? That is, what is the minimum vertical distance of the pendulum from the floor?     .      Note that when the pendulum is closest to the wall, this corresponds to a point of maximum height. In , if we draw a horizontal line through the position of the pendulum when it is closest to the wall, we form a right triangle with the vertical line and the string. The string (which has length ) is the hypotenuse of this right triangle.     What is the length of the horizontal leg of the right triangle?           Use the Pythagorean theorem to find the length of the other (vertical) leg of the right triangle.         Since the hypotenuse is and one leg is , if we let the length of the other leg be , we have , so . Since distance is positive, we have . Thus, the length of the leg is .      Calculate the maximum value of . That is, find the minimum vertical distance of the pendulum from the floor.    The distance from the floor to the pivot point is and you found the vertical distance from the pivot point to highest point of the pendulum's path in .            Use the maximum and minimum values to calculate the midline for .     .      Use the maximum and minimum values to calculate the amplitude for .     .      Sketch a graph of a sinusoidal function that fits your previous answers.  In your sketch, what is the pendulum doing at time , specifically, how far from the floor is the pendulum and is it moving toward or away from the floor?      How long does it take for the distance from the floor of the pendulum to return to the same position and direction?     .      Assume that at time , the pendulum is at its farthest point from the wall.  Find parameters , , , and so that the function fits all our information.     .     "
+},
+{
+  "id": "triangle_sine_cosine",
+  "level": "1",
+  "url": "triangle_sine_cosine.html",
+  "type": "Worksheet",
+  "number": "4.6",
+  "title": "Sine, Cosine, and Triangles",
+  "body": " Sine, Cosine, and Triangles   In this activity, we will use the unit circle and similar triangle to investigate how sine and cosine can be used with triangles.     Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .       Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?     "
+},
+{
+  "id": "exer_rt_triangles",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles",
+  "type": "Worksheet Exercise",
+  "number": "4.6.1",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Length OM is labeled 1. Angle QOP is labeled theta.    O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    M  N   \\theta             Explain why and are similar triangles.    Both and are right triangles with right angles and , respectively, so .  Next, and are the same angle, so .  Finally, because the sum of the measures of the three angles in a triangle is always radians (or ), we must have .  Because , , and , we have .      What is the value of the ratio ? What does this (and the fact that the triangles are similar) tell you about the ratios and ?     Because corresponding sides of similar triangles have proportional lengths,        What is the value of in terms of ?    Use the fact that is a point on the unit circle.           What is the value of in terms of ?            Use your conclusions in and to express and in terms of and .    Notice, for example, that .    We know that and . By similar triangles, so, .  Multiplying both sides by gives us .  Similarly, , and , so .    "
+},
+{
+  "id": "exer_rt_triangles2",
+  "level": "2",
+  "url": "triangle_sine_cosine.html#exer_rt_triangles2",
+  "type": "Worksheet Exercise",
+  "number": "4.6.2",
+  "title": "",
+  "body": "  Investigate the following questions using .   Two Triangles   Two right triangles: triangle OQP, with sides Q to the right of O and P vertically above Q, so that OQP is the right angle, with length OQ labeled as x, length QP labeled y, and OP labeled r; and triangle ONM with N on the segment OQ and M on segment OP directly above N. Lenght OM is labeled 1. Angle QOP is labeled theta. Point P has coordinates (4,3).     O=(0,0)  P=6*(4,3)  Q=6*(4,0)  M=6*(8\/5,6\/5)  N=6*(8\/5,0)  opp=(-3,4)  one=(M)\/2  are=P\/2      x  y  1  r    =(4,3)  M  N   \\theta             Explain why and are similar triangles.    This is essentially the same argument as in .      Use the Pythagorean theorem to calculate , the length of .           Find the coordinates for .           Use your results from and to answer the following questions.     What is the value of ?           What is the value of ?            Use the your result from to find the coordinates of and .    Using similar triangles, we know that and , so . We also know that and , so . This means that and .    Using vectors, we know that is associated with the vector , and is associated with a unit vector, call it , in the same direction. Since , we know that , so Thus, , and is directly below it on the -axis, so .      Use the fact that is on the unit circle to answer the following questions.     What is the value of ?           What is the value of ?            What do you notice about your results from and ?    "
+},
+{
+  "id": "wksht_other_trig_functions",
+  "level": "1",
+  "url": "wksht_other_trig_functions.html",
+  "type": "Worksheet",
+  "number": "4.7",
+  "title": "Other Trigonometric Functions",
+  "body": " Other Trigonometric Functions   In addition to sine ( ) and cosine ( ) there are four other trigonometric functions, each based on one or both or sine and cosine. They are:  Tangent  Cotangent  Secant  Cosecant    In terms of the unit circle, recall that is the -coordinate of the point, let's call it , on the unit circle at an angle counter-clockwise from the point and is the -coordinate of . That is, .  With this in mind, we see that so can be thought of as the slope of the line through and .   The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a           In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .      Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     "
+},
+{
+  "id": "fig_tan_unit_circle",
+  "level": "2",
+  "url": "wksht_other_trig_functions.html#fig_tan_unit_circle",
+  "type": "Figure",
+  "number": "33",
+  "title": "",
+  "body": " The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a       "
+},
+{
+  "id": "exer_tangent",
+  "level": "2",
+  "url": "wksht_other_trig_functions.html#exer_tangent",
+  "type": "Worksheet Exercise",
+  "number": "4.7.1",
+  "title": "",
+  "body": "  In this problem, we will assume that the point on the unit circle at angle is and that the point is obtained by rotating through radians ( ), as shown in .     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?     We have just discovered three trigonometric identities :for any real number ,   ;    ; and    .     We actually know a couple more identities, we just don't realize it yet! Because of the periodicity of sine and cosine, we have: for any real number , and .   "
+},
+{
+  "id": "exer_cotangent",
+  "level": "2",
+  "url": "wksht_other_trig_functions.html#exer_cotangent",
+  "type": "Worksheet Exercise",
+  "number": "4.7.2",
+  "title": "",
+  "body": "  Although they are not used nearly as often as sine, cosine, and tangent, the functions cotangent, secant, and cosecant do occasionally show up, so it's important to know them. We will again use in this activity.     In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?      In , what is the value of ?    "
+},
+{
+  "id": "sec_direction_to_coords",
+  "level": "1",
+  "url": "sec_direction_to_coords.html",
+  "type": "Subsection",
+  "number": "4.8.1",
+  "title": "From Direction and Magnitude to Coordinates",
+  "body": " From Direction and Magnitude to Coordinates    Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).        Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .      "
+},
+{
+  "id": "exer_dir_to_coords",
+  "level": "2",
+  "url": "sec_direction_to_coords.html#exer_dir_to_coords",
+  "type": "Checkpoint",
+  "number": "34",
+  "title": "",
+  "body": "  Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).    "
+},
+{
+  "id": "exer_coords_to_dir",
+  "level": "2",
+  "url": "sec_direction_to_coords.html#exer_coords_to_dir",
+  "type": "Checkpoint",
+  "number": "36",
+  "title": "",
+  "body": "   Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .     "
+},
+{
+  "id": "sec_inverse_cosine",
+  "level": "1",
+  "url": "sec_inverse_cosine.html",
+  "type": "Subsection",
+  "number": "4.8.2",
+  "title": "The Inverse Cosine Function",
+  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized       The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
+},
+{
+  "id": "ssec_principle_branch_cosine-2",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#ssec_principle_branch_cosine-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "restricting the domain principle branch "
+},
+{
+  "id": "fig_cosine",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#fig_cosine",
+  "type": "Figure",
+  "number": "37",
+  "title": "",
+  "body": " The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    "
+},
+{
+  "id": "def_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#def_uncos",
+  "type": "Definition",
+  "number": "38",
+  "title": "The “Un-Cosine” Function.",
+  "body": " The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#example_uncos",
+  "type": "Example",
+  "number": "39",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .     "
+},
+{
+  "id": "exer_uncos",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#exer_uncos",
+  "type": "Checkpoint",
+  "number": "40",
+  "title": "",
+  "body": "       Find .      Find .      Find .    "
+},
+{
+  "id": "ssec_arc_and_inv_cos-2",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#ssec_arc_and_inv_cos-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-cosine inverse cosine "
+},
+{
+  "id": "sec_inverse_sine",
+  "level": "1",
+  "url": "sec_inverse_sine.html",
+  "type": "Subsection",
+  "number": "4.8.3",
+  "title": "The Inverse Sine Function",
+  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized       The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
+},
+{
+  "id": "sec_inverse_sine-2-1",
+  "level": "2",
+  "url": "sec_inverse_sine.html#sec_inverse_sine-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "branch "
+},
+{
+  "id": "exer_find_branch_sine",
+  "level": "2",
+  "url": "sec_inverse_sine.html#exer_find_branch_sine",
+  "type": "Checkpoint",
+  "number": "41",
+  "title": "",
+  "body": "  Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .   "
+},
+{
+  "id": "fig_sine",
+  "level": "2",
+  "url": "sec_inverse_sine.html#fig_sine",
+  "type": "Figure",
+  "number": "42",
+  "title": "",
+  "body": " The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    "
+},
+{
+  "id": "def_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#def_unsin",
+  "type": "Definition",
+  "number": "43",
+  "title": "The “Un-Sine” Function.",
+  "body": " The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#example_unsin",
+  "type": "Example",
+  "number": "44",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
+},
+{
+  "id": "exer_unsin",
+  "level": "2",
+  "url": "sec_inverse_sine.html#exer_unsin",
+  "type": "Checkpoint",
+  "number": "45",
+  "title": "",
+  "body": "       Find .      Find .      Find .    "
+},
+{
+  "id": "ssec_arc_and_inv_sin-2",
+  "level": "2",
+  "url": "sec_inverse_sine.html#ssec_arc_and_inv_sin-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-sine inverse sine "
+},
+{
+  "id": "sec_tan_and_inverse_tan",
+  "level": "1",
+  "url": "sec_tan_and_inverse_tan.html",
+  "type": "Subsection",
+  "number": "4.8.4",
+  "title": "The Tangent and the Inverse Tangent",
+  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized       The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
+},
+{
+  "id": "ssec_graph_of_tan-2",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_graph_of_tan-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integer "
+},
+{
+  "id": "ssec_graph_of_tan-3",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_graph_of_tan-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "discontinuities "
+},
+{
+  "id": "fig_tan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#fig_tan",
+  "type": "Figure",
+  "number": "46",
+  "title": "",
+  "body": " The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    "
+},
+{
+  "id": "exer_find_branch_tangent",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#exer_find_branch_tangent",
+  "type": "Checkpoint",
+  "number": "47",
+  "title": "",
+  "body": "  Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .   "
+},
+{
+  "id": "def_untan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#def_untan",
+  "type": "Definition",
+  "number": "48",
+  "title": "The “Un-Tangent” Function.",
+  "body": " The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .     "
+},
+{
+  "id": "example_untan",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#example_untan",
+  "type": "Example",
+  "number": "49",
+  "title": "",
+  "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
+},
+{
+  "id": "ssec_arc_and_inv_tan-2",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#ssec_arc_and_inv_tan-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc-tangent inverse tangent "
+},
+{
+  "id": "activities-10",
+  "level": "1",
+  "url": "activities-10.html",
+  "type": "Worksheet",
+  "number": "4.9",
+  "title": "Trigonometric Identities",
+  "body": " Trigonometric Identities   In this activity, we will investigate some important trigonometric identities . These are relationships among trigonometric functions that are universally true.    The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .     Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .      Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?      Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .     Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .     "
+},
+{
+  "id": "activities-10-2-1",
+  "level": "2",
+  "url": "activities-10.html#activities-10-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "identities "
+},
+{
+  "id": "activities-10-3",
+  "level": "2",
+  "url": "activities-10.html#activities-10-3",
+  "type": "Worksheet Exercise",
+  "number": "4.9.1",
+  "title": "The Pythagorean Identity for Sine and Cosine.",
+  "body": " The Pythagorean Identity for Sine and Cosine   Recall that sine and cosine are defined in terms of points on the unit circle. Explain why this means that for any angle , .   "
+},
+{
+  "id": "exercise_sine_cosine_symmetry",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_symmetry",
+  "type": "Worksheet Exercise",
+  "number": "4.9.2",
+  "title": "Symmetry Identities for Sine and Cosine.",
+  "body": " Symmetry Identities for Sine and Cosine    Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle ,       Examine the graph of . Explain why, in terms of transformations of graphs and symmetry, for any angle , .    "
+},
+{
+  "id": "activities-10-5",
+  "level": "2",
+  "url": "activities-10.html#activities-10-5",
+  "type": "Worksheet Exercise",
+  "number": "4.9.3",
+  "title": "Co-Function Identities for Sine and Cosine.",
+  "body": " Co-Function Identities for Sine and Cosine   Sine and Cosine, Tangent and Cotangent, and Secant and Cosecant are called co-function pairs, or simply co-functions. The co- in co-function (and in cosine, cotangent, and cosecant) comes from complementary angles. Recall that complementary angles are angles that add up to a right angle. Thus, if and are complementary angles, , or equivalently or .     Use Desmos or a graphing calculator to graph and and describe their relationship.      Explain, based on previous exercises in this worksheet, why .   .     Substitute in the identity . Simplify . What identity do you now have for ?    "
+},
+{
+  "id": "exercise_sine_cosine_angle_sum",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_angle_sum",
+  "type": "Worksheet Exercise",
+  "number": "4.9.4",
+  "title": "Angle Sum Identities for Sine and Cosine.",
+  "body": " Angle Sum Identities for Sine and Cosine   For this exercise, we will use . This figure begins with the unit circle with center and the - and -axes, with point at angle and point at angle on the unit circle. We then draw the following constructions.  Draw segment ;  draw segment ;  draw a perpendicular line from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a vertical line from to the -axis, intersecting at ;  draw a horizontal segment from to , intersecting at ;  draw a vertical line from to the -axis, intersecting at .  We have highlighted in blue and in green.   The Unit Circle with Points at Angles and    The Unit Circle with a point with angle theta and another point at angle theta+phi.     theta=0.7  phi=1.05  sum=theta+phi  O=(0,0)  A=(cos(sum),sin(sum))  B=(cos(theta),sin(theta))  C=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B)  D=(cos(sum)*cos(theta)+sin(sum)*sin(theta))*(B[0],0)  E=(A[0],C[1])  F=(cos(sum),0)  G=(B[0],0)                \\theta    \\phi    \\alpha    \\alpha    \\theta      O  A  B  C  D  E  F  G           Explain why .      Explain why .      Explain why and .   Rotate the unit circle and all points so that lies on the -axis.     Explain why and       Explain why and       Note that and . Use Part to express in terms of , , , and .      Note that and . Use Part to express in terms of , , , and .  (Note that in this figure, is in the second quadrant, so .)     The specific geometric arguments in this activity are only valid when , , and , but similar arguments can be made, making note of when values of sine and cosine are negative, for other cases, and the angle sum identities are valid for all values of and .   "
+},
+{
+  "id": "exercise_sine_cosine_angle_diff",
+  "level": "2",
+  "url": "activities-10.html#exercise_sine_cosine_angle_diff",
+  "type": "Worksheet Exercise",
+  "number": "4.9.5",
+  "title": "Angle Difference Identities for Sine and Cosine.",
+  "body": " Angle Difference Identities for Sine and Cosine    Rewriting as and using , express in terms of , , , and .      Rewriting as and using , express in terms of , , , and .    "
+},
+{
+  "id": "sec_more_vectors",
+  "level": "1",
+  "url": "sec_more_vectors.html",
+  "type": "Subsection",
+  "number": "4.10.1",
+  "title": "More Vectors",
+  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     "
+},
+{
+  "id": "def_vectors_rn",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vectors_rn",
+  "type": "Definition",
+  "number": "51",
+  "title": "",
+  "body": "  For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,    "
+},
+{
+  "id": "def_vector_arithmetic",
+  "level": "2",
+  "url": "sec_more_vectors.html#def_vector_arithmetic",
+  "type": "Definition",
+  "number": "52",
+  "title": "Vector Arithmetic.",
+  "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
+},
+{
+  "id": "sec_more_vectors-7",
+  "level": "2",
+  "url": "sec_more_vectors.html#sec_more_vectors-7",
+  "type": "Theorem",
+  "number": "53",
+  "title": "",
+  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
+},
+{
+  "id": "sec_dotprod",
+  "level": "1",
+  "url": "sec_dotprod.html",
+  "type": "Subsection",
+  "number": "4.10.2",
+  "title": "The Dot Product",
+  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
+},
+{
+  "id": "sec_dotprod-2",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dot product "
+},
+{
+  "id": "def_dot_prod",
+  "level": "2",
+  "url": "sec_dotprod.html#def_dot_prod",
+  "type": "Definition",
+  "number": "54",
+  "title": "The Dot Product.",
+  "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
+},
+{
+  "id": "sec_dotprod-4",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-4",
+  "type": "Checkpoint",
+  "number": "55",
+  "title": "",
+  "body": "  Calculate the dot product for each given pair of vectors.                                                               "
+},
+{
+  "id": "exercise_dot_product_orthogonal",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_dot_product_orthogonal",
+  "type": "Checkpoint",
+  "number": "56",
+  "title": "",
+  "body": "  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                      "
+},
+{
+  "id": "exercise_geometric_dot_product",
+  "level": "2",
+  "url": "sec_dotprod.html#exercise_geometric_dot_product",
+  "type": "Checkpoint",
+  "number": "57",
+  "title": "",
+  "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
+},
+{
+  "id": "sec_dotprod-7",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal "
+},
+{
+  "id": "sec_projection",
+  "level": "1",
+  "url": "sec_projection.html",
+  "type": "Subsection",
+  "number": "4.10.3",
+  "title": "Orthogonal Projection",
+  "body": " Orthogonal Projection    Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta         Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta         An important use of the dot product is in orthogonal projection of one vector onto another. This allows us to easily decompose a vector into a part that points in the direction of (or in the direction opposite to) another vector. We denote the projection of onto by .  For vectors that point more or less in the same direction, as shown in , the projection of onto points in the direction of , but its length is determined by the angle between the vectors as well as the length of the vector .  Referring to , let . We can see that , so . The direction of is the direction of , which can be expressed as the unit vector .  Since a vector is determined by its magnitude and its direction, we see that   In the case that the angle between the vectors is greater than , the cosine will be negative, but the direction will be , so that the same formula applies. Thus, we have the following definition.   Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.    "
+},
+{
+  "id": "fig_orth_proj",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj",
+  "type": "Figure",
+  "number": "58",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta       "
+},
+{
+  "id": "fig_orth_proj2",
+  "level": "2",
+  "url": "sec_projection.html#fig_orth_proj2",
+  "type": "Figure",
+  "number": "59",
+  "title": "",
+  "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta       "
+},
+{
+  "id": "sec_projection-3",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal projection "
+},
+{
+  "id": "sec_projection-8",
+  "level": "2",
+  "url": "sec_projection.html#sec_projection-8",
+  "type": "Definition",
+  "number": "60",
+  "title": "Orthogonal Projection of One Vector Onto Another.",
+  "body": " Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.   "
+},
+{
+  "id": "sec_dot_prod_practical",
+  "level": "1",
+  "url": "sec_dot_prod_practical.html",
+  "type": "Worksheet",
+  "number": "4.10.4",
+  "title": "Practical Application of the Dot Product",
+  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .      Express the movement from the start of the ramp to the end of the ramp as a vector, .      Calculate .      Calculate .      Verify that , and therefore they are perpendicular to each other.      Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.    "
+},
+{
+  "id": "fig_ramp",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#fig_ramp",
+  "type": "Figure",
+  "number": "61",
+  "title": "",
+  "body": " A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                    "
+},
+{
+  "id": "sec_dot_prod_practical-5",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-5",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.1",
+  "title": "",
+  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-6",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-6",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.2",
+  "title": "",
+  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .   "
+},
+{
+  "id": "sec_dot_prod_practical-7",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-7",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.3",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-8",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-8",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.4",
+  "title": "",
+  "body": "  Calculate .   "
+},
+{
+  "id": "sec_dot_prod_practical-9",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-9",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.5",
+  "title": "",
+  "body": "  Verify that , and therefore they are perpendicular to each other.   "
+},
+{
+  "id": "sec_dot_prod_practical-10",
+  "level": "2",
+  "url": "sec_dot_prod_practical.html#sec_dot_prod_practical-10",
+  "type": "Worksheet Exercise",
+  "number": "4.10.4.6",
+  "title": "",
+  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.   "
+},
+{
+  "id": "progress_check_1",
+  "level": "1",
+  "url": "progress_check_1.html",
+  "type": "Worksheet",
+  "number": "5.1",
+  "title": "Progress Check 1",
+  "body": " Progress Check 1     The London Eye is a cantilevered observation wheel (not quite the same as a Ferris wheel, but close) that stands on the South Bank of the Thames in London, England. Here are some facts about the London Eye, and some questions for you to answer.   A Clipart image of the London Eye    A Clipart image of the London Eye       The London Eye is designed so that it turns slowly enough that riders can get on and off without the wheel ever having to stop.  The London Eye has 32 passenger pods , numbered 1 12, 14 33, skipping unlucky 13.  The London Eye has a diameter of meters.  The London Eye rotates so that the speed with which the pods move around the Eye is .       How long does it take the wheel to make one complete revolution? Give your answer in seconds and in terms that are meaningful for the average person (for example, the average person would not say that it takes them 3600 seconds to drive to Kalamazoo).    The circumference is meters, and the speed the wheel travels is , so the time it takes for one revolution is       If you miss one pod, how long do you have to wait for the next one?           Assume that you get on the Eye at time .     Find a sinusoidal model of the form , that gives your height, in meters, as a function of time, in seconds.    We know that the London Eye is m tall, and we can assume the bottom is at ground level, so and , which gives us   We also know that the period is , so   Finally, we want the sinusoid to start at its minimum ( m), but sine starts at the midline (increasing). To move the minimum to , we need to either shift left by of the period or shift right by of the period. Thus, we can choose either or . We will use . So, our sinusoid is       How high will you be after 5 minutes? After 10 minutes? After 15 minutes?    First, we note that , , and . So, we can evaluate our function, at each of these times to get the height:           You can see a plane in the air coming toward you. You know (somehow) that the plane is flying at a cruising altitude of . depicts the plane at two different times along with angles of elevation for each position.   A Plane at Height 5km at Two Different Times    A diagram showing the height and angles of elevation of a plane. The height is constant 5km and the angles of elevation are theta 1 = 0.785 radians and theta 2 = 0.968 radians.     theta1=0.785  theta2=0.968  plane1=(5\/tan(theta1),5)  plane2=(5\/tan(theta2),5)  obs=(0,0)  ground=(5,0)      \\theta_1     \\theta_2   5 km            When you first notice the plane, it has an angle of elevation of radians. How far away, horizontally, is the plane from you at that time?    Let be the horizontal distance for the first measurement. Then from the unit circle and similar triangles, we know that so,       When you look at the plane five seconds later, it has an angle of elevation of radians. How far away, horizontally, is the plane from you at that time?    Let be the horizontal distance for the second measurement. Then from the unit circle and similar triangles, we know that so,       Based on your previous calculations, how fast, in meters per second, is the plane flying?    The distance travelled was , and the elapsed time was , so the speed was .          shows a pendulum along with vectors representing forces acting on the pendulum bob. The vector represents the force due to gravity of pounds in the downward direction, while the vectors and represent the radial and tangential components of , respectively. That is, represents the part of the force from gravity that pulls against the pendulum string (and is balanced by an equal and opposite force that the string exerts) and is the part of the force from gravity that tends to move the pendulum along its path, and .   Force Vectors Acting on a Pendulum    A diagram showing a pendulum at an angle of pi \/ 3 left from vertical, and three force vectors drawn with their tails at the pendulum bob. They are the force vector F sub g pointing downward from the pendulum bob, the force vector F sub T perpendicular to the pendulum's string and thus pointing right and downwards and the force vector F sub R pointing in the direction opposite of the pendulum's pivot point. The vectors F sub R and F sub T are the radial and tangential components of F sub g.     g=7  pivot=(20,20)  below=(20,0)  pfrac=28\/24  d_frac=(3\/2-pfrac)  p_ang=pi*pfrac  d_ang=(pi*d_frac)  ddir=((cos(p_ang),sin(p_ang)))  tdir=((-sin(p_ang),cos(p_ang)))  FR=g*cos(d_ang)*ddir  FT=g*sin(d_ang)*tdir  displacement=15*ddir  bob=pivot+displacement  Fg=(0,-g)         \\frac{\\pi}{3}   \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-32\\end{array}\\right]   \\vec{F}_{R}    \\vec{F}_{T}   \\theta_{1}  \\theta_{2}             Use geometry and the fact that and are perpendicular to find angles and .    Because is pointing in the same direction as the pendulum string, we know that , and because and are perpendicular to each other, , so we know that .      Draw a copy of with its tail at the head of to form a right triangle and use trigonometry to find the lengths of and . Call these lengths and .    We can see that , so , and similarly, , so .      Use your knowledge of the unit circle to find a vector of length pointing in the direction of . Call this vector .    You can draw the unit circle with its center at the pendulum bob.    If we put the origin at the pendulum bob, then the angle from the positive -axis to the is , but the angle is clockwise, so the point on the unit circle at that angle would be       Use geometry and your knowledge of the unit circle to find a vector of length pointing in the direction of . Call this vector .    If we again put the origin at the pendulum bob, then the angle from the positive -axis to the is , so the point on the unit circle at that angle would be       Using the lengths and that you found in Part and the unit vectors and that you found in Part and Part , find and . Be sure to verify that !     We then verify that :       "
+},
+{
+  "id": "pc1_london_eye",
+  "level": "2",
+  "url": "progress_check_1.html#pc1_london_eye",
+  "type": "Worksheet Exercise",
+  "number": "5.1.1",
+  "title": "",
+  "body": "  The London Eye is a cantilevered observation wheel (not quite the same as a Ferris wheel, but close) that stands on the South Bank of the Thames in London, England. Here are some facts about the London Eye, and some questions for you to answer.   A Clipart image of the London Eye    A Clipart image of the London Eye       The London Eye is designed so that it turns slowly enough that riders can get on and off without the wheel ever having to stop.  The London Eye has 32 passenger pods , numbered 1 12, 14 33, skipping unlucky 13.  The London Eye has a diameter of meters.  The London Eye rotates so that the speed with which the pods move around the Eye is .       How long does it take the wheel to make one complete revolution? Give your answer in seconds and in terms that are meaningful for the average person (for example, the average person would not say that it takes them 3600 seconds to drive to Kalamazoo).    The circumference is meters, and the speed the wheel travels is , so the time it takes for one revolution is       If you miss one pod, how long do you have to wait for the next one?           Assume that you get on the Eye at time .     Find a sinusoidal model of the form , that gives your height, in meters, as a function of time, in seconds.    We know that the London Eye is m tall, and we can assume the bottom is at ground level, so and , which gives us   We also know that the period is , so   Finally, we want the sinusoid to start at its minimum ( m), but sine starts at the midline (increasing). To move the minimum to , we need to either shift left by of the period or shift right by of the period. Thus, we can choose either or . We will use . So, our sinusoid is       How high will you be after 5 minutes? After 10 minutes? After 15 minutes?    First, we note that , , and . So, we can evaluate our function, at each of these times to get the height:      "
+},
+{
+  "id": "pc1_plane",
+  "level": "2",
+  "url": "progress_check_1.html#pc1_plane",
+  "type": "Worksheet Exercise",
+  "number": "5.1.2",
+  "title": "",
+  "body": "  You can see a plane in the air coming toward you. You know (somehow) that the plane is flying at a cruising altitude of . depicts the plane at two different times along with angles of elevation for each position.   A Plane at Height 5km at Two Different Times    A diagram showing the height and angles of elevation of a plane. The height is constant 5km and the angles of elevation are theta 1 = 0.785 radians and theta 2 = 0.968 radians.     theta1=0.785  theta2=0.968  plane1=(5\/tan(theta1),5)  plane2=(5\/tan(theta2),5)  obs=(0,0)  ground=(5,0)      \\theta_1     \\theta_2   5 km            When you first notice the plane, it has an angle of elevation of radians. How far away, horizontally, is the plane from you at that time?    Let be the horizontal distance for the first measurement. Then from the unit circle and similar triangles, we know that so,       When you look at the plane five seconds later, it has an angle of elevation of radians. How far away, horizontally, is the plane from you at that time?    Let be the horizontal distance for the second measurement. Then from the unit circle and similar triangles, we know that so,       Based on your previous calculations, how fast, in meters per second, is the plane flying?    The distance travelled was , and the elapsed time was , so the speed was .    "
+},
+{
+  "id": "progress_check_1-4-1",
+  "level": "2",
+  "url": "progress_check_1.html#progress_check_1-4-1",
+  "type": "Worksheet Exercise",
+  "number": "5.1.3",
+  "title": "",
+  "body": "   shows a pendulum along with vectors representing forces acting on the pendulum bob. The vector represents the force due to gravity of pounds in the downward direction, while the vectors and represent the radial and tangential components of , respectively. That is, represents the part of the force from gravity that pulls against the pendulum string (and is balanced by an equal and opposite force that the string exerts) and is the part of the force from gravity that tends to move the pendulum along its path, and .   Force Vectors Acting on a Pendulum    A diagram showing a pendulum at an angle of pi \/ 3 left from vertical, and three force vectors drawn with their tails at the pendulum bob. They are the force vector F sub g pointing downward from the pendulum bob, the force vector F sub T perpendicular to the pendulum's string and thus pointing right and downwards and the force vector F sub R pointing in the direction opposite of the pendulum's pivot point. The vectors F sub R and F sub T are the radial and tangential components of F sub g.     g=7  pivot=(20,20)  below=(20,0)  pfrac=28\/24  d_frac=(3\/2-pfrac)  p_ang=pi*pfrac  d_ang=(pi*d_frac)  ddir=((cos(p_ang),sin(p_ang)))  tdir=((-sin(p_ang),cos(p_ang)))  FR=g*cos(d_ang)*ddir  FT=g*sin(d_ang)*tdir  displacement=15*ddir  bob=pivot+displacement  Fg=(0,-g)         \\frac{\\pi}{3}   \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-32\\end{array}\\right]   \\vec{F}_{R}    \\vec{F}_{T}   \\theta_{1}  \\theta_{2}             Use geometry and the fact that and are perpendicular to find angles and .    Because is pointing in the same direction as the pendulum string, we know that , and because and are perpendicular to each other, , so we know that .      Draw a copy of with its tail at the head of to form a right triangle and use trigonometry to find the lengths of and . Call these lengths and .    We can see that , so , and similarly, , so .      Use your knowledge of the unit circle to find a vector of length pointing in the direction of . Call this vector .    You can draw the unit circle with its center at the pendulum bob.    If we put the origin at the pendulum bob, then the angle from the positive -axis to the is , but the angle is clockwise, so the point on the unit circle at that angle would be       Use geometry and your knowledge of the unit circle to find a vector of length pointing in the direction of . Call this vector .    If we again put the origin at the pendulum bob, then the angle from the positive -axis to the is , so the point on the unit circle at that angle would be       Using the lengths and that you found in Part and the unit vectors and that you found in Part and Part , find and . Be sure to verify that !     We then verify that :     "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
   "type": "Handout",
-  "number": "5.1",
+  "number": "6.1",
   "title": "An Introduction to Problem Solving",
-  "body": " An Introduction to Problem Solving   In his book, How To Solve It , mathematician George Polya formulated four steps that apply to any type of problem solving. These steps are Understand the Problem , Make a Plan , Carry Out the Plan , and Look Back .  Sometimes it feels like math classes give almost all their attention to carrying out a plan with little attention paid to the other three steps. Often, instructors give students the plan rather than asking them to work on understanding and formulating a plan for themselves, and almost no time is given to looking back .  This handout gives more information on each of the four steps, and in future problems we will attempt to apply all four.    Understanding the Problem   First. you have to understand the problem.   What is the unknown? What are the data? What is the condition? Is it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or is it insufficient? Or redundant? Or contradictory?  Draw a figure. Introduce suitable notation. Separate the various parts of the condition. Can you write them down?      Devising a Plan   Second. Find the connection between the data and the unknown.  You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.  Have you seen it before? Or have you seen the same problem in a slightly different form?   Do you know a related problem? Do you know a theorem that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown.   Here is a problem related to yours and solved before. Could you use it? Could you use its result? Could you use its method? Should you introduce some auxiliary element in order to make its use possible?  Could you restate the problem? Could you restate it still differently? Go back to definitions.    If you cannot solve the proposed problem try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other?  Did you use all the data? Did you use the whole condition? Have you taken into account all essential notions involved in the problem?    Carrying Out the Plan   Third.  Carry out your plan.  Carrying out your plan of the solution, check each step . Can you see clearly that the step is correct? Can you prove that it is correct?   LOOKING BACK Fourth. Examine the solution obtained. Can you check the result? Can you check the argument? Can you derive the result differently? Can you see it at a glance? Can you use the result, or the method, for some other problem?    Looking Back   Fourth.  Examine the solution obtained.  Can you check the result? Can you check the argument?  Can you derive the result differently? Can you see it at a glance?  Can you use the result, or the method, for some other problem?   "
+  "body": " An Introduction to Problem Solving   In his book, How To Solve It , mathematician George Polya formulated four steps that apply to any type of problem solving. These steps are Understand the Problem , Make a Plan , Carry Out the Plan , and Look Back .  Sometimes it feels like math classes give almost all their attention to carrying out a plan with little attention paid to the other three steps. Often, instructors give students the plan rather than asking them to work on understanding and formulating a plan for themselves, and almost no time is given to looking back .  This handout gives more information on each of the four steps, and in future problems we will attempt to apply all four.    Understanding the Problem   First. you have to understand the problem.   What is the unknown? What are the data? What is the condition? Is it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or is it insufficient? Or redundant? Or contradictory?  Draw a figure. Introduce suitable notation. Separate the various parts of the condition. Can you write them down?      Devising a Plan   Second. Find the connection between the data and the unknown.  You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.  Have you seen it before? Or have you seen the same problem in a slightly different form?   Do you know a related problem? Do you know a theorem that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown.   Here is a problem related to yours and solved before. Could you use it? Could you use its result? Could you use its method? Should you introduce some auxiliary element in order to make its use possible?  Could you restate the problem? Could you restate it still differently? Go back to definitions.    If you cannot solve the proposed problem try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other?  Did you use all the data? Did you use the whole condition? Have you taken into account all essential notions involved in the problem?    Carrying Out the Plan   Third.  Carry out your plan.  Carrying out your plan of the solution, check each step . Can you see clearly that the step is correct? Can you prove that it is correct?    Looking Back   Fourth.  Examine the solution obtained.  Can you check the result? Can you check the argument?  Can you derive the result differently? Can you see it at a glance?  Can you use the result, or the method, for some other problem?   "
 }
 ]
 

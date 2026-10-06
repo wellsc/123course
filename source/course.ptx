@@ -52,6 +52,10 @@
       <xi:include href='./activities/DotProduct/DotProdAndProj.ptx'/>
     </chapter>
 
+    <chapter xml:id="progress_checks">
+            <title>Progress Checks</title>
+            <xi:include href="./progress_checks/ProgressCheck01/progress_check01.ptx"/>
+    </chapter>
     <chapter xml:id="handouts">
       <title>Class Handouts</title>
 
