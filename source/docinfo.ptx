@@ -18,7 +18,7 @@
           \newcommand{\suchthat}{\colon}
           \newcommand{\Abs}[1]{\left\lvert{}{#1}\right\rvert{}}
           \newcommand{\Avec}[1]{\left\langle{}{#1}\right\rangle{}}
-          \newcommand{\Bvec}[1]{\begin{bmatrix} { #1 } \end{bmatrix}}
+          \newcommand{\Bvec}[1]{\left[\begin{array}{r} { #1 } \end{array}\right]}
           \newcommand{\Cos}{\operatorname{Cos}}
           \newcommand{\Sin}{\operatorname{Sin}}
           \newcommand{\Tan}{\operatorname{Tan}}

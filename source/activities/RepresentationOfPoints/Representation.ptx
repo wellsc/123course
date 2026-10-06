@@ -40,19 +40,19 @@ way the knight moves.  Two possible moves for a knight are
         </p>
                                                 <p>
                                                         Using <em>vectors</em>, we can represent 
-                                                        <em>Move</em><nbsp/>1 by the vector <m>\vec{k}_1=\begin{bmatrix}+1\\+2\end{bmatrix}</m> and <em>Move</em><nbsp/>2 by <m>\vec{k}_2=\begin{bmatrix}+2\\+1\end{bmatrix}</m>. (We generally don't bother writing <q><m>+</m></q>, though. Instead, a positive value is a motion right or up, and a negative value is left or down.)
+                                                        <em>Move</em><nbsp/>1 by the vector <m>\vec{k}_1=\left[\begin{array}{r}+1\\+2\end{array}\right]</m> and <em>Move</em><nbsp/>2 by <m>\vec{k}_2=\left[\begin{array}{r}+2\\+1\end{array}\right]</m>. (We generally don't bother writing <q><m>+</m></q>, though. Instead, a positive value is a motion right or up, and a negative value is left or down.)
           </p>
                                 <p>
                                                 However, we don't really have an easy way to represent performing <em>Move</em><nbsp/>1 twice, or <em>Move</em><nbsp/>1 followed by <em>Move</em><nbsp/>2, and so forth. What we can do, though is think of vectors as <em>relative</em> position or <em>motion</em>.
-                                                        Thus, we can think of the vector <m>\vec{k}_{1}=\begin{bmatrix}1\\2\end{bmatrix}</m> representing a move<nbsp/><m>1</m><nbsp/>unit to the right and<nbsp/><m>2</m><nbsp/>units up <em>from any point</em>,
-                          and similarly, the vector <m>\vec{k}_{2}=\begin{bmatrix}2\\1\end{bmatrix}</m> representing a move<nbsp/><m>2</m><nbsp/>units to the right and<nbsp/><m>1</m><nbsp/>unit up from any point.
+                                                        Thus, we can think of the vector <m>\vec{k}_{1}=\left[\begin{array}{r}1\\2\end{array}\right]</m> representing a move<nbsp/><m>1</m><nbsp/>unit to the right and<nbsp/><m>2</m><nbsp/>units up <em>from any point</em>,
+                          and similarly, the vector <m>\vec{k}_{2}=\left[\begin{array}{r}2\\1\end{array}\right]</m> representing a move<nbsp/><m>2</m><nbsp/>units to the right and<nbsp/><m>1</m><nbsp/>unit up from any point.
           </p>
           <p>
-                  Now, we can think about combining the vectors. Starting from <em>Start</em>, <m>(0,0)</m>, we can first perform <em>Move</em><nbsp/>1, <m>\begin{bmatrix}1\\2\end{bmatrix}</m>, arriving at <m>(1,2)</m>, and then perform <em>Move</em><nbsp/>2, <m>\begin{bmatrix}2\\1\end{bmatrix}</m>, arriving at <m>(3,3)</m>. We write this combination of moves as 
+                  Now, we can think about combining the vectors. Starting from <em>Start</em>, <m>(0,0)</m>, we can first perform <em>Move</em><nbsp/>1, <m>\left[\begin{array}{r}1\\2\end{array}\right]</m>, arriving at <m>(1,2)</m>, and then perform <em>Move</em><nbsp/>2, <m>\left[\begin{array}{r}2\\1\end{array}\right]</m>, arriving at <m>(3,3)</m>. We write this combination of moves as 
                   <md>
-                          <mrow>\vec{k}_{1}+\vec{k}_{2} &amp;= \begin{bmatrix}1\\2\end{bmatrix}+\begin{bmatrix}2\\1\end{bmatrix}</mrow>
-                          <mrow> &amp;= \begin{bmatrix}1+2\\2+1\end{bmatrix}</mrow>
-                          <mrow> &amp;= \begin{bmatrix}3\\3\end{bmatrix}</mrow>
+                          <mrow>\vec{k}_{1}+\vec{k}_{2} &amp;= \left[\begin{array}{r}1\\2\end{array}\right]+\left[\begin{array}{r}2\\1\end{array}\right]</mrow>
+                          <mrow> &amp;= \left[\begin{array}{r}1+2\\2+1\end{array}\right]</mrow>
+                          <mrow> &amp;= \left[\begin{array}{r}3\\3\end{array}\right]</mrow>
                   </md>
           </p>
           <figure xml:id='fig_combining'>

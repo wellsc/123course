@@ -300,12 +300,12 @@
                                 </solution>
                                 <solution>
                                         <p>
-                                                Using vectors, we know that <m>P=(4,3)</m> is associated with the vector <m>\vec{p}=\begin{bmatrix}4\\3\end{bmatrix}</m>, and <m>M</m> is associated with a unit vector, call it <m>\vec{u}</m>, in the same direction. Since <m>\Abs{\vec{p}}=5</m>, we know that <m>\vec{p}=5\vec{u}</m>, so
+                                                Using vectors, we know that <m>P=(4,3)</m> is associated with the vector <m>\vec{p}=\left[\begin{array}{r}4\\3\end{array}\right]</m>, and <m>M</m> is associated with a unit vector, call it <m>\vec{u}</m>, in the same direction. Since <m>\Abs{\vec{p}}=5</m>, we know that <m>\vec{p}=5\vec{u}</m>, so
                                                 <md>
                                                         <mrow>\vec{u}&amp;=\frac{1}{\Abs{\vec{p}}}\vec{p}</mrow>
                                                         <mrow>       &amp;=\frac{1}{5}\vec{p}</mrow>
-                                                        <mrow>       &amp;=\frac{1}{5}\begin{bmatrix}4\\3\end{bmatrix}</mrow>
-                                                        <mrow>       &amp;=\begin{bmatrix}\frac{4}{5}\\\frac{3}{5}\end{bmatrix}.</mrow>
+                                                        <mrow>       &amp;=\frac{1}{5}\left[\begin{array}{r}4\\3\end{array}\right]</mrow>
+                                                        <mrow>       &amp;=\left[\begin{array}{r}\frac{4}{5}\\\frac{3}{5}\end{array}\right].</mrow>
                                                 </md>
                                                         Thus, <m>M=\left(\frac{4}{5},\frac{3}{5}\right)</m>, and <m>N</m> is directly below it on the <m>x</m>-axis, so <m>N=\left(\frac{4}{5},0\right)</m>.
                                         </p>

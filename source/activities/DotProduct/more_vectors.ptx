@@ -2,21 +2,21 @@
 	<subsection xml:id="sec_more_vectors" xmlns:xi="http://www.w3.org/2001/XInclude">
 		<title>More Vectors</title>
 		<p>
-                        So far, we have limited our study of vectors to vectors such as <m>\vec{v }=\begin{bmatrix*}[r]3\\5\end{bmatrix*}</m>. We have discussed them in relation to points in the <m>xy</m>-plane. However, we live in a three dimensional world<fn xml:id='fn_physical_dimensions'>Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course.</fn>. We can describe points using <m>x</m>, <m>y</m>, and <m>z</m> coordinates, like <m>P=(3,5,2)</m>. Typically we visualize this by thinking of rotating the <m>xy</m>-plane so that it is horizontal (like a sheet of paper on a desk) and using the <m>z</m>-coordinate to describe how far above or below the plane a point is. Thus, <m>(3,5,2)</m> is the point that is exactly <m>2</m> units directly above the point <m>(3,5)</m> in the <m>xy</m>-plane.
+                        So far, we have limited our study of vectors to vectors such as <m>\vec{v }=\left[\begin{array}{r}[r]3\\5\end{array}\right]</m>. We have discussed them in relation to points in the <m>xy</m>-plane. However, we live in a three dimensional world<fn xml:id='fn_physical_dimensions'>Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course.</fn>. We can describe points using <m>x</m>, <m>y</m>, and <m>z</m> coordinates, like <m>P=(3,5,2)</m>. Typically we visualize this by thinking of rotating the <m>xy</m>-plane so that it is horizontal (like a sheet of paper on a desk) and using the <m>z</m>-coordinate to describe how far above or below the plane a point is. Thus, <m>(3,5,2)</m> is the point that is exactly <m>2</m> units directly above the point <m>(3,5)</m> in the <m>xy</m>-plane.
 		</p>
                 <p>
-                                Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as <m>\begin{bmatrix*}[r]3\\5\\ 2 \end{bmatrix*}</m>. However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.
+                                Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as <m>\left[\begin{array}{r}[r]3\\5\\ 2 \end{array}\right]</m>. However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.
                 </p>
                 <definition xml:id='def_vectors_rn'>
                         <statement>
                                 <p>
                                 For any positive integer, <m>n</m>, the set of all vectors consisting of an array of <m>n</m> real numbers is referred to as <m>\R^{n}</m>. Any vector in this set is called an <term><m>n</m>-vector</term>. That is,
-                                <md>\R^{n}=\left\{\begin{bmatrix*}[r]a_{1}\\a_{2}\\\vdots\\a_{n}\end{bmatrix*}\suchthat a_{1}, a_{2},\ldots,a_{n}\in\R\right\}</md>
+                                <md>\R^{n}=\left\{\left[\begin{array}{r}[r]a_{1}\\a_{2}\\\vdots\\a_{n}\end{array}\right]\suchthat a_{1}, a_{2},\ldots,a_{n}\in\R\right\}</md>
                                 </p>
                         </statement>
                 </definition>
                 <p>
-                                So, for example, we would say that <m>\begin{bmatrix*}[r]3\\5\\ 2 \end{bmatrix*}</m> is a <m>3</m>-vector, the set of all <m>3</m>-vectors is <m>\R^{3}</m>, <m>\begin{bmatrix*}[r]3\\-5\\ 2\\ -2 \end{bmatrix*}</m> is a <m>4</m>-vector, and the set of all <m>4</m>-vectors is <m>\R^{4}</m>.
+                                So, for example, we would say that <m>\left[\begin{array}{r}[r]3\\5\\ 2 \end{array}\right]</m> is a <m>3</m>-vector, the set of all <m>3</m>-vectors is <m>\R^{3}</m>, <m>\left[\begin{array}{r}[r]3\\-5\\ 2\\ -2 \end{array}\right]</m> is a <m>4</m>-vector, and the set of all <m>4</m>-vectors is <m>\R^{4}</m>.
                 </p>
                 <definition xml:id='def_vector_arithmetic'>
                         <title>Vector Arithmetic</title>

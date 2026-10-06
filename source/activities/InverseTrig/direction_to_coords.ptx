@@ -156,7 +156,7 @@
                         <task>
                                 <introduction>
                                         <p>
-                                                        Let <m>\vec{V}=\begin{bmatrix}{\sqrt{3}}\\ {-1}\end{bmatrix}</m>.
+                                                        Let <m>\vec{V}=\left[\begin{array}{r}{\sqrt{3}}\\ {-1}\end{array}\right]</m>.
                                         </p>
                                 </introduction>
                                 <task>
@@ -176,7 +176,7 @@
                                 <task xml:id='task_find_zeta'>
                                 <statement>
                                         <p>
-                                                        Find an angle, <m>\zeta</m> (<q>zeta</q>) so that <m>\vec{U}=\begin{bmatrix}\cos(\zeta)\\\sin(\zeta)\end{bmatrix}</m>.
+                                                        Find an angle, <m>\zeta</m> (<q>zeta</q>) so that <m>\vec{U}=\left[\begin{array}{r}\cos(\zeta)\\\sin(\zeta)\end{array}\right]</m>.
                                         </p>
                                 </statement>
                                 </task>

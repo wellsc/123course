@@ -252,10 +252,10 @@
                                           If we put the origin at the pendulum bob, then the angle from the positive <m>x</m>-axis to the <m>\vec{F}_{R}</m> is <m>\pi/2+\pi/3=5\pi/6</m>, but the angle is clockwise, so the point on the unit circle at that angle would be
                                           <md>
                                                   <mrow>
-                                                          \vec{u}_{R}&amp;=\begin{bmatrix}\cos\left(\frac{-5\pi}{6}\right)\\[1.5ex]\sin\left(\frac{-5\pi}{6}\right)\end{bmatrix}
+                                                          \vec{u}_{R}&amp;=\left[\begin{array}{r}\cos\left(\frac{-5\pi}{6}\right)\\[1.5ex]\sin\left(\frac{-5\pi}{6}\right)\end{array}\right]
                                                   </mrow>
                                                   <mrow>
-                                                                  &amp;=\begin{bmatrix}\frac{-\sqrt{3}}{2}\\[1.5ex]\frac{-1}{2}\end{bmatrix}
+                                                                  &amp;=\left[\begin{array}{r}\frac{-\sqrt{3}}{2}\\[1.5ex]\frac{-1}{2}\end{array}\right]
                                                   </mrow>
                                           </md>
                                   </p>
@@ -272,10 +272,10 @@
                                           If we again put the origin at the pendulum bob, then the angle from the positive <m>x</m>-axis to the <m>\vec{F}_{T}</m> is <m>-\pi/2+\pi/6=-\pi/3</m>, so the point on the unit circle at that angle would be
                                           <md>
                                                   <mrow>
-                                                          \vec{u}_{T}&amp;=\begin{bmatrix}\cos\left(\frac{-\pi}{3}\right)\\[1.5ex]\sin\left(\frac{-\pi}{3}\right)\end{bmatrix}
+                                                          \vec{u}_{T}&amp;=\left[\begin{array}{r}\cos\left(\frac{-\pi}{3}\right)\\[1.5ex]\sin\left(\frac{-\pi}{3}\right)\end{array}\right]
                                                   </mrow>
                                                   <mrow>
-                                                                  &amp;=\begin{bmatrix}\frac{1}{2}\\[1.5ex]\frac{-\sqrt{3}}{2}\end{bmatrix}
+                                                                  &amp;=\left[\begin{array}{r}\frac{1}{2}\\[1.5ex]\frac{-\sqrt{3}}{2}\end{array}\right]
                                                   </mrow>
                                           </md>
                                   </p>
@@ -296,14 +296,14 @@
                                                           \vec{F}_{T}&amp;=\ell_{R}\vec{u}_{R}
                                                   </mrow>
                                                   <mrow>
-                                                                  &amp;=16\begin{bmatrix} \frac{-\sqrt{3}}{2}\\ \frac{-1}{2}\end{bmatrix}
+                                                                  &amp;=16\left[\begin{array}{r} \frac{-\sqrt{3}}{2}\\ \frac{-1}{2}\end{array}\right]
                                                           &amp;
-                                                                  &amp;=16\sqrt{3}\begin{bmatrix} \frac{1}{2}\\\frac{-\sqrt{3}}{2}\end{bmatrix}
+                                                                  &amp;=16\sqrt{3}\left[\begin{array}{r} \frac{1}{2}\\\frac{-\sqrt{3}}{2}\end{array}\right]
                                                   </mrow>
                                                   <mrow>
-                                                                     &amp;=\begin{bmatrix} -8\sqrt{3}\\ -8\end{bmatrix}
+                                                                     &amp;=\left[\begin{array}{r} -8\sqrt{3}\\ -8\end{array}\right]
                                                           &amp;
-                                                                     &amp;=\begin{bmatrix} 8\sqrt{3}\\-24\end{bmatrix}
+                                                                     &amp;=\left[\begin{array}{r} 8\sqrt{3}\\-24\end{array}\right]
                                                   </mrow>
                                           </md>
                                                   We then verify that <m>\vec{F}_{R}+\vec{F}_{T}=\vec{F}_{g}</m>:
@@ -311,22 +311,22 @@
                                                           <mrow>
                                                                   \vec{F}_{R}+\vec{F}_{T}
                                                           &amp;=
-                                                          \begin{bmatrix} -8\sqrt{3}\\ -8\end{bmatrix}
-                                                          +\begin{bmatrix}-8\sqrt{3}\\-24\end{bmatrix}
+                                                          \left[\begin{array}{r} -8\sqrt{3}\\ -8\end{array}\right]
+                                                          +\left[\begin{array}{r}-8\sqrt{3}\\-24\end{array}\right]
                                                           </mrow>
                                                           <mrow>
                                                           &amp;=
-                                                                  \begin{bmatrix}
+                                                                  \left[\begin{array}{r}
                                                                   -8\sqrt{3}+8\sqrt{3} \\
                                                                   -8-24
-                                                                  \end{bmatrix}
+                                                                  \end{array}\right]
                                                           </mrow>
                                                           <mrow>
                                                           &amp;=
-                                                                  \begin{bmatrix}
+                                                                  \left[\begin{array}{r}
                                                                   0 \\
                                                                   -32
-                                                                  \end{bmatrix}
+                                                                  \end{array}\right]
                                                           </mrow>
                                                           <mrow>
                                                           &amp;=\vec{F}_{g}

@@ -57,7 +57,7 @@
                                 <p>
                                         Let <m>\vec{F}_{h}</m> be the horizontal pulling force, given by 
                                         <md>
-                                                \vec{F}_{h}=\begin{bmatrix}\alpha \\ 0\end{bmatrix}
+                                                \vec{F}_{h}=\left[\begin{array}{r}\alpha \\ 0\end{array}\right]
                                         </md>
                                                 where the parameter <m>\alpha</m> is an unspecified quantity.
                                 </p>

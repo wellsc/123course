@@ -36,18 +36,18 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\2\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\2\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
                                 <answer>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\2\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\2\end{array}\right]
                                                         =2.
                                                 </m>
                                         </p>
@@ -57,18 +57,18 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\3\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
                                 <answer>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\3\end{array}\right]
                                                         =0.
                                                 </m>
                                         </p>
@@ -78,18 +78,18 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\\4\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\3\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\3\\4\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
                                 <answer>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\\4\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\3\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\3\\4\end{array}\right]
                                                         =16.
                                                 </m>
                                         </p>
@@ -99,18 +99,18 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \left[\begin{array}{r}1\\0\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                        \left[\begin{array}{r}0\\1\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
                                 <answer>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \left[\begin{array}{r}1\\0\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                        \left[\begin{array}{r}0\\1\end{array}\right]
                                                         =0.
                                                 </m>
                                         </p>
@@ -120,18 +120,18 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\4\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                        \left[\begin{array}{r}4\\-3\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
                                 <answer>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\4\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                        \left[\begin{array}{r}4\\-3\end{array}\right]
                                                         =0.
                                                 </m>
                                         </p>
@@ -148,9 +148,9 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\-2\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\-2\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}2\\3\end{bmatrix}
+                                                        \left[\begin{array}{r}2\\3\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
@@ -159,9 +159,9 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}5\\7\end{bmatrix}
+                                                        \left[\begin{array}{r}5\\7\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}7\\-5\end{bmatrix}
+                                                        \left[\begin{array}{r}7\\-5\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
@@ -170,9 +170,9 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}1\\-1\end{bmatrix}
+                                                        \left[\begin{array}{r}1\\-1\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}1\\1\end{bmatrix}
+                                                        \left[\begin{array}{r}1\\1\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
@@ -181,9 +181,9 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}1\\0\end{bmatrix}
+                                                        \left[\begin{array}{r}1\\0\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}0\\1\end{bmatrix}
+                                                        \left[\begin{array}{r}0\\1\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
@@ -192,9 +192,9 @@
                                 <statement>
                                         <p>
                                                 <m>
-                                                        \begin{bmatrix}3\\4\end{bmatrix}
+                                                        \left[\begin{array}{r}3\\4\end{array}\right]
                                                         \cdot
-                                                        \begin{bmatrix}4\\-3\end{bmatrix}
+                                                        \left[\begin{array}{r}4\\-3\end{array}\right]
                                                 </m>
                                         </p>
                                 </statement>
@@ -203,17 +203,17 @@
                 <exercise xml:id="exercise_geometric_dot_product">
                         <statement>
                                 <p>
-                                        Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form <m>\begin{bmatrix}\cos(\theta)\\ \sin(\theta)\end{bmatrix}</m>. So, let  <m>\vec{v}_{2}</m> and <m>\vec{v}_{2}</m> be any vectors, and we can write
+                                        Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form <m>\left[\begin{array}{r}\cos(\theta)\\ \sin(\theta)\end{array}\right]</m>. So, let  <m>\vec{v}_{2}</m> and <m>\vec{v}_{2}</m> be any vectors, and we can write
                                         <md>
                                                 <mrow>
-                                                        \vec{v}_{1}&amp;=\ell_{1}\begin{bmatrix}\cos\left(\theta_{1}\right)\\ \sin\left(\theta_{1}\right)\end{bmatrix}
+                                                        \vec{v}_{1}&amp;=\ell_{1}\left[\begin{array}{r}\cos\left(\theta_{1}\right)\\ \sin\left(\theta_{1}\right)\end{array}\right]
                                                         &amp;
-                                                        \vec{v}_{2}&amp;=\ell_{2}\begin{bmatrix}\cos\left(\theta_{2}\right)\\ \sin\left(\theta_{2}\right)\end{bmatrix}
+                                                        \vec{v}_{2}&amp;=\ell_{2}\left[\begin{array}{r}\cos\left(\theta_{2}\right)\\ \sin\left(\theta_{2}\right)\end{array}\right]
                                                 </mrow>
                                                 <mrow>
-                                                                   &amp;=\begin{bmatrix}\ell_{1}\cos\left(\theta_{1}\right)\\ \ell_{1}\sin\left(\theta_{1}\right)\end{bmatrix}
+                                                                   &amp;=\left[\begin{array}{r}\ell_{1}\cos\left(\theta_{1}\right)\\ \ell_{1}\sin\left(\theta_{1}\right)\end{array}\right]
                                                         &amp;
-                                                                   &amp;=\begin{bmatrix}\ell_{2}\cos\left(\theta_{2}\right)\\ \ell_{2}\sin\left(\theta_{2}\right)\end{bmatrix}
+                                                                   &amp;=\left[\begin{array}{r}\ell_{2}\cos\left(\theta_{2}\right)\\ \ell_{2}\sin\left(\theta_{2}\right)\end{array}\right]
                                                 </mrow>
                                         </md>
                                                 where <m>\ell_{1}=\Abs{\vec{v}_{1}}</m> and <m>\ell_{2}=\Abs{\vec{v}_{2}}</m>.
