@@ -3,29 +3,25 @@
         <title>The Law of Sines</title>
         <figure xml:id='fig_laws_triangle'>
                 <caption>An Arbitrary Triangle</caption>
-                <image>
-                        <latex-image>
-                                \begin{tikzpicture}[scale=1]
-                                \coordinate (A) at (-3,0);
-                                \coordinate (B) at ( 3,0);
-                                \coordinate (C) at (1.333,1.5);
-                                \draw
-                                let \p1 = (C) in
-                                coordinate (H) at (\x1,0);
-                                ;
-
-                                \draw[thick] (A) node[left] {\(A\)} 
-                                -- node[midway, below] {\(c\)} (B) node[right] {\(B\)} 
-                                -- node[midway,right] {\(a\)} (C) node[above] {\(C\)} 
-                                -- node[midway,above left] {\(b\)} cycle;
-
-                                \draw[dashed]
-                                (C) -- node[midway,right]{\(h\)} (H);
-                                ;
-                                \node[above] at ($(H)!0.5!(A)$) {\(c-x\)};
-                                \node[above] at ($(H)!0.5!(B)$) {\(x\)};
-                                \end{tikzpicture}
-                        </latex-image>
+                <image width="50%">
+                        <description>
+                                <p>
+                                        An arbitrary triangle with vertices A B and C, with A on the
+                                        far left, B on the far right horizontally even with A, and C
+                                        above and between A and B.
+                                </p>
+                                <p>
+                                        The sides opposite each angle are labeled a, b, and c
+                                        respectively.
+                                </p>
+                                <p>
+                                        A perpendicular dashed line, labeled h, descends from C to point D on segment A B.
+                                </p>
+                                <p>
+                                        Segment A D is labeled c-x and segment D B is labeled x.
+                                </p>
+                        </description>
+                        <xi:include href="./law_of_sines_image.xml" />
                 </image>
         </figure>
 

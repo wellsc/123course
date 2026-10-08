@@ -296,31 +296,28 @@
         </proof>
         <figure xml:id='fig_exterior_alt'>
                 <caption>An Triangle with an Exterior Altitude</caption>
-                <image>
-                        <latex-image>
-                                \begin{tikzpicture}[scale=1]
-                                \coordinate (A) at (-3,0);
-                                \coordinate (B) at ( 1,0);
-                                \coordinate (C) at (2.333,1.5);
-                                \draw
-                                let \p1 = (C) in
-                                coordinate (H) at (\x1,0);
-                                ;
-
-                                \draw[stealth-stealth,dashed] ($(A)+(0,-.6)$) --  node[midway,below] {\(c+x\)} ($(H)+(0,-.6)$);
-                                \draw[dashed] (B) --(H) node[right] {\(H\)};
-                                \draw[thick] (A) node[left] {\(A\)} 
-                                -- (B) node[below right] {\(B\)} 
-                                -- node[midway,right] {\(a\)} (C) node[above] {\(C\)} 
-                                -- node[midway,above left] {\(b\)} cycle;
-
-                                \draw[dashed]
-                                (C) -- node[midway,right]{\(h\)} (H);
-                                ;
-                                \node[above] at ($(H)!0.5!(A)$) {\(c\)};
-                                \node[above] at ($(H)!0.5!(B)$) {\(x\)};
-                                \end{tikzpicture}
-                        </latex-image>
+                <image width="50%">
+                        <description>
+                                <p>
+                                        An arbitrary triangle with an external altitude.
+                                                </p>
+                                        <p>
+                                                The vertices are A B and C, with A on the
+                                        far left, B on the far right, horizontally even with A, and C
+                                        above and to the right of B.
+                                </p>
+                                <p>
+                                        The sides opposite each angle are labeled a, b, and c
+                                        respectively.
+                                </p>
+                                <p>
+                                        A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.
+                                </p>
+                                <p>
+                                        Segment A D is labeled c+x and segment B D is labeled x.
+                                </p>
+                        </description>
+                        <xi:include href="./law_of_cosines_image.xml" />
                 </image>
         </figure>
 </subsection>

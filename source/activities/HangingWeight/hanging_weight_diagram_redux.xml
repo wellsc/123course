@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="hanging_weight_redux" >
+<diagram dimensions="(600, 600)" margins="15">
+<definition>g=(0,-9.8)</definition>
+<definition>Fg=20*g</definition>
+<definition>P1=(0,0)</definition>
+<definition>P2=(60,0)</definition>
+<definition>rad1=30</definition>
+<definition>rad2=50</definition>
+
+<definition>c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)</definition>
+<definition>c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)</definition>
+<definition>a=intersect((c1,c2),20)</definition>
+<definition>crux=(a,c1(a))</definition>
+<definition>weight=crux-(0,25)</definition>
+<definition>u1=normalize(P1-crux)</definition> 
+<definition>u2=normalize(P2-crux)</definition>
+<definition>l1=91*sqrt(14)/2</definition>
+<definition>l2=175*sqrt(14)/6</definition>
+<definition>v1=l1*u1</definition>
+<definition>v2=l2*u2</definition>
+<definition>right=(crux[0]+40,crux[1])</definition>
+<definition>phi=atan(v1[1]/v1[0])</definition>
+
+<coordinates bbox="(0,-55,60,5)">
+  <vector v="(crux[0],crux[1]+30)-crux" tail="crux" thickness="1" ><m>y</m></vector>
+  <vector v="right-crux" tail="crux" thickness="1" ><m>x</m></vector>
+  <line endpoints="((crux[0]-15,crux[1]),crux)"  thickness="1" ></line>
+  <line endpoints="(P1,crux)" thickness="1" alignment="s" ><m>30</m>cm</line>
+  <line endpoints="(crux,P2)" thickness="1" alignment="s" ><m>50</m>cm</line>
+  <line endpoints="(crux,weight)" ></line>
+  <line endpoints="(P1,P2)" ><m>60</m>cm</line>
+  <angle-marker points="(crux,P1,P2)"><m>\theta_{1}</m></angle-marker>
+  <angle-marker points="(P1,P2,crux)"><m>\theta_{2}</m></angle-marker>
+  <vector v="v1/20" tail="crux" ><m>\vec{F}_{1}</m></vector>
+  <vector v="v2/20" tail="crux" ><m>\vec{F}_{2}</m></vector>
+  <vector v="Fg/20" tail="crux" alignment="e" ><m>\vec{F}_{g}=\left[\begin{array}{r}0\\-196\end{array}\right]</m></vector>
+  
+  
+  <point p="P1" fill="black" />
+  <point p="P2" fill="black" />
+  
+  <point p="weight" style="box" size="20" stroke="blue" fill="blue" />
+
+  <angle-marker points="(right,crux,P1)" radius="30" arrow="yes" alignment="n"><m>\phi_{1}</m></angle-marker>
+  <angle-marker points="(right,crux,P2)" radius="80" arrow="yes" ><m>\phi_{2}</m></angle-marker>
+</coordinates>
+</diagram>
+</prefigure>

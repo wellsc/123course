@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="law_of_sines_example" >
+<diagram dimensions="(600, 600)" margins="15">
+  <definition>A=(0,0)</definition>
+  <definition>theta=40*pi/180</definition>
+  <definition>B=(2*cos(theta),2*sin(theta))</definition>
+  <definition>C=(2,0)</definition>
+  <definition>H=(B[0],0)</definition>
+  <coordinates bbox="(-1,-1,3,3)" >
+    <line endpoints="(A,B)"><m>2\text{m}</m></line>
+    <line endpoints="(B,H)" rotate="90" alignment="n" offset="(0,5)" dash="4 4" ><m>a</m></line>
+    <line endpoints="(A,1.2*C)" dash="4 4" ></line>
+    <line endpoints="(B,C)" dash="4 4"><m>1.7\text{m?}</m></line>
+    <point p="A" alignment="sw" size="0" ><m>A</m></point>
+    <point p="B" alignment="n" size="0" ><m>B</m></point>
+    <point p="C" alignment="se" size="0" ><m>C</m></point>
+    <point p="H" alignment="s" size="0" ><m>H</m></point>
+    <angle-marker points="(C,A,B)"><m>40^{\circ}</m></angle-marker>
+  </coordinates>
+</diagram>
+</prefigure>

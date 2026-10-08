@@ -9,7 +9,7 @@
         </p>
         <figure xml:id='fig_suspended_wt'>
                 <caption>A Weight Suspended Asymmetrically</caption>
-                <image>
+                <image width="50%">
                         <description><p>A diagram showing a weight suspended from two wires</p></description>
                         <xi:include href="./hanging_weight_diagram.xml" />
                 </image>

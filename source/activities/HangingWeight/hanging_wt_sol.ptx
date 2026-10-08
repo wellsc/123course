@@ -8,52 +8,9 @@
         </p>
         <figure xml:id='fig_suspended_wt_redux'>
                 <caption>A Weight Suspended Asymmetrically with Axes Imposed</caption>
-                <image>
-                        <latex-image>
-                                \begin{tikzpicture}[scale=1]
-                                \coordinate (A1) at (-3,0);
-                                \coordinate (A2) at ( 3,0);
-                                \coordinate (M) at (-1.333,-1.5);
-                                \coordinate (W) at (-1.333,-4.5);
-
-                                \draw[-stealth,thin] (-1.33,-4) -- (-1.33,0.5) node[above] {\(y\)};
-                                \draw[-stealth,thin] (-4.2,-1.5) -- (4.2,-1.5) node[right]{\(x\)};
-                                \draw (A1) --node[midway,above right] {\(30\)cm} (M) --node[midway,above left] {\(50\)cm} (A2);
-                                \draw[dashed] ($(A1)!-0.2!(A2)$) --  node[midway,above] {\(60\)cm} ($(A1)!1.2!(A2)$);
-                                \draw (M) -- (W);
-                                \draw[-stealth,thick] (M) -- ($(M)!0.8!(W)$) node[right] {\(\vec{F}_{g}\)};
-                                \draw[-stealth,thick] (M) -- node[midway,below left] {\(\vec{F}_{1}\)} ($(M)!0.75!(A1)$);
-                                \draw[-stealth,thick] (M) -- node[midway,below right] {\(\vec{F}_{2}\)} ($(M)!0.75!(A2)$);
-                                \fill (A1) circle (0.04);
-                                \fill (A2) circle (0.04);
-                                \fill ($(W)+(-0.2,-0.4)$) rectangle ($(W)+(0.2,0.0)$);
-
-                                \draw[-stealth]
-                                let
-                                \p1 = (A2),
-                                \p2 = (M),
-                                in
-                                ($(M)+(1,0)$) arc[start angle=0,end angle={atan2(\y1-\y2,\x1-\x2)}, radius=1] node[midway,right]{\(\phi_2\)};
-                                \draw[-stealth]
-                                let
-                                \p1 = (A1),
-                                \p2 = (M),
-                                in
-                                ($(M)+(0.8,0)$) arc[start angle=0,end angle={atan2(\y1-\y2,\x1-\x2)}, radius=0.8] node[midway,right]{\(\phi_1\)};
-                                \draw[]
-                                let
-                                \p1 = (A2),
-                                \p2 = (M),
-                                in
-                                ($(A2)+(-1,0)$) arc[start angle=180,end angle={180+atan2(\y1-\y2,\x1-\x2)}, radius=1] node[midway,left]{\(\theta_2\)};
-                                \draw[]
-                                let
-                                \p1 = (A1),
-                                \p2 = (M),
-                                in
-                                ($(A1)+(0.6,0)$) arc[start angle=0,end angle={-atan2(\y1-\y2,-\x1+\x2)}, radius=0.6] node[midway,right]{\(\theta_1\)};
-                                \end{tikzpicture}
-                        </latex-image>
+                <image width="50%">
+                        <description><p>A diagram showing a weight suspended from two wires with axes imposed</p></description>
+                        <xi:include href="./hanging_weight_diagram_redux.xml" />
                 </image>
         </figure>
         <p>
@@ -450,25 +407,7 @@
 A triangle with one side length and one angle known.  side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.
 </p>
                                                 </description>
-                                                <latex-image>
-                                                        \begin{tikzpicture}[scale=2.0]
-                                                        \coordinate (Z) at (0,0);
-                                                        \coordinate (B) at (40:2);
-                                                        \coordinate (C) at (2,0);
-                                                        \draw
-                                                        let
-                                                        \p1 = (B)
-                                                        in
-                                                        coordinate (H) at (\x1,0);
-                                                        \draw (Z) node[below left] {\(A\)};
-                                                        \draw (B) node[above] {\(B\)};
-                                                        \draw[dashed] (3,0) -- (Z);
-                                                        \draw(0,0) -- node[midway,above left]{\(2\)m} (B);
-                                                        \draw (0.3,0) arc[start angle=0, end angle=40, radius=0.3] node[midway,right] {\(40^{\circ}\)};
-                                                        \draw[dotted] (B) -- node[midway,right] {\(1.7\)m?} (C) node[below] {\(C\)};
-                                                        \draw[dotted] (B) -- node[midway,left] {\(a\)} (H) node[below] {\(H\)};
-                                                        \end{tikzpicture}
-                                                </latex-image>
+                                                <xi:include href="./law_of_sines_example.xml" />
                                         </image>
                                 </figure>
                                 <p>

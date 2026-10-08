@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="law_of_sines_triangle" >
+<diagram dimensions="(300,240)" margins="5">
+  <definition>A=(0,0)</definition>
+  <definition>B=(8,0)</definition>
+  <definition>C=(6,5)</definition>
+  <definition>D=(6,0)</definition>
+  <coordinates bbox="(-1,-1,9,7)">
+    
+    <line endpoints="(A,B)" alignment="s" ><m>c</m></line>
+    <line endpoints="(C,B)" alignment="n" ><m>a</m></line>
+    <line endpoints="(A,C)" alignment="n" ><m>b</m></line>
+    <line endpoints="(C,D)" dash="4 4" alignment="n" offset="(0,6)" rotate="90" ><m>h</m></line>
+    <line endpoints="(A,D)" alignment="n"><m>c-x</m></line>
+    <line endpoints="(D,B)" alignment="n"><m>x</m></line>
+    <angle-marker points="(C,D,A)" radius="10" />
+    <point p="A" size="0" alignment="w" ><m>A</m></point>
+    <point p="B" size="0" alignment="e" ><m>B</m></point>
+    <point p="C" size="0" alignment="n" ><m>C</m></point>
+    <point p="D" size="0" alignment="s" ><m>D</m></point>
+    
+  </coordinates>
+
+</diagram>
+</prefigure>
