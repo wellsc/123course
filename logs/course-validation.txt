@@ -85,4 +85,30 @@ previous section is clean, this inventory is exact.
 Messages: PreTeXt "validation-plus" stylesheet
 ======================================================================
 
-(no messages)
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: activities/HangingWeight/law_of_sines.ptx
+    path: /pretext/book/chapter[4]/section[5]/subsection[2]/figure/image
+    line: 5267
+    text: <image>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: activities/HangingWeight/law_of_cosines.ptx
+    path: /pretext/book/chapter[4]/section[5]/subsection[3]/figure/image
+    line: 5642
+    text: <image>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: activities/HangingWeight/hanging_wt_sol.ptx
+    path: /pretext/book/chapter[4]/section[5]/subsection[4]/subsubsection[1]/figure/image
+    line: 5679
+    text: <image>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: activities/HangingWeight/hanging_wt_sol.ptx
+    path: /pretext/book/chapter[4]/section[5]/subsection[4]/subsubsection[5]/example/statement/figure/image
+    line: 6115
+    text: <image width="65%">
+    check: image-description-missing

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Finding Forces for an Asymmetric Hanging Weight</title>
+        <xi:include href='./hanging_wt_intro.ptx'/>
+        <xi:include href='./law_of_sines.ptx'/>
+        <xi:include href='./law_of_cosines.ptx'/>
+        <xi:include href='./hanging_wt_sol.ptx'/>
+</section>

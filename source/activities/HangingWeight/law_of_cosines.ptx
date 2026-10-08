@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="law_of_cosines" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>The Law of Cosines</title>
+        <p>
+                        There is another important identity for general triangles called the <em>law of cosines</em>. It is simple to state, but it is a bit harder to derive, so we will state it first, set up the machinery we need to derive it, and then go through the whole derivation.
+        </p>
+        <theorem xml:id='thm_law_of_cosines'>
+                <title>The Law of Cosines</title>
+                <statement>
+                        <p>
+                                        For any triangle with angles
+                                <m>A</m>,
+                                <m>B</m>,
+                                and
+                                <m>C</m>,
+                                and with side lengths opposite each angle given by 
+                                <m>a</m>,
+                                <m>b</m>,
+                                and
+                                <m>c</m>, respectively,
+                        <md number="yes" xml:id='eq_law_of_cosines'>
+                                c^{2}=a^{2}+b^{2}-2ab\cos(C).
+                        </md>
+                        </p>
+                </statement>
+        </theorem>
+        <p>
+                In order to derive this identity, we need to recall a few identities we have already developed and apply them to the situation here.
+        </p>
+        <p>
+                        First, we need the Pythagorean identity for sine and cosine: for any (real number) angle <m>\theta</m>,
+                        <md number="yes" xml:id='eq_pythag_id'>
+                                \sin^{2}\left(\theta\right)
+                                +
+                                \cos^{2}\left(\theta\right)
+                                =1.
+                        </md>
+                                Note that this equation also means that
+                        <m>\cos^{2}\left(\theta\right)=\left(1-\sin^{2}\left(\theta\right)\right)</m>
+                        and 
+                        <m>\sin^{2}\left(\theta\right)=\left(1-\cos^{2}\left(\theta\right)\right)</m>.
+        </p>
+        <p>
+                Next, we will state the angle sum identities (although we will only use the identity for cosine). For any (real number) angles <m>\theta_{1}</m> and <m>\theta_{2}</m>,
+                <md number="yes">
+                        <mrow number='yes' xml:id='eq_cosine_sum'>
+                                \cos\left(\theta_{1}+\theta_{2}\right)&amp;=
+                                \cos\left(\theta_{1}\right)
+                                \cos\left(\theta_{2}\right)
+                                -
+                                \sin\left(\theta_{1}\right)
+                                \sin\left(\theta_{2}\right)
+                        </mrow>
+                        <mrow number='yes'  xml:id='eq_sine_sum'>
+                                \sin\left(\theta_{1}+\theta_{2}\right)&amp;=
+                                \cos\left(\theta_{1}\right)
+                                \sin\left(\theta_{2}\right)
+                                +
+                                \sin\left(\theta_{1}\right)
+                                \cos\left(\theta_{2}\right).
+                        </mrow>
+                </md>
+                        Also, recall that for any angle <m>\theta</m>, <m>\cos(-1\cdot\theta)=\cos(\theta)</m> and <m>\sin(-1\cdot\theta)=-1\cdot\sin(\theta)</m>. Thus, 
+                <md number="yes">
+                        <mrow xml:id='eq_cosine_diff'>
+                                \cos\left(\theta_{1}-\theta_{2}\right)&amp;=
+                                \cos\left(\theta_{1}\right)
+                                \cos\left(-\theta_{2}\right)
+                                -
+                                \sin\left(\theta_{1}\right)
+                                \sin\left(-\theta_{2}\right)
+                        </mrow>
+                        <mrow number='no'>
+                                &amp;=
+                                \cos\left(\theta_{1}\right)
+                                \cos\left(\theta_{2}\right)
+                                +
+                                \sin\left(\theta_{1}\right)
+                                \sin\left(\theta_{2}\right)
+                        </mrow>
+                        <mrow xml:id='eq_sine_diff'>
+                                \sin\left(\theta_{1}+\theta_{2}\right)&amp;=
+                                \cos\left(\theta_{1}\right)
+                                \sin\left(-\theta_{2}\right)
+                                +
+                                \sin\left(\theta_{1}\right)
+                                \cos\left(-\theta_{2}\right).
+                        </mrow>
+                        <mrow number='no'>
+                                &amp;=
+                                -\cos\left(\theta_{1}\right)
+                                \sin\left(\theta_{2}\right)
+                                +
+                                \sin\left(\theta_{1}\right)
+                                \cos\left(\theta_{2}\right).
+                        </mrow>
+                </md>
+                        Finally, a special case of the angle sum formula for cosine, using the facts that <m>\cos(\pi)=-1</m> and <m>\sin(\pi)=0</m>, for any angle <m>\theta</m>
+                        <md number="yes">
+                                <mrow number='yes' xml:id='eq_diff_pi'>
+                                \cos\left(\pi-\theta\right)
+                                        &amp;=
+                                \cos\left(\pi\right)
+                                \cos\left(\theta\right)
+                                +
+                                \sin\left(\pi\right)
+                                \sin\left(\theta\right)
+                                </mrow>
+                                <mrow number='no'>
+                                        &amp;=
+                                -1\cdot
+                                \cos\left(\theta\right)
+                                +
+                                0\cdot
+                                \sin\left(\theta\right)
+                                </mrow>
+                                <mrow number='no'>
+                                        &amp;=
+                                -\cos\left(\theta\right)
+                                </mrow>
+                        </md>
+        </p>
+        <proof>
+                <title>Proof of <xref ref='thm_law_of_cosines'/></title>
+                <p>
+                                We need to deal with two different cases. In one case, we have an interior altitude, as shown in <xref ref='fig_laws_triangle'/>, and in the other case, we have an exterior altitude, as shown in <xref ref='fig_exterior_alt'/>.
+                </p>
+                <p>
+                        Referring to <xref ref='fig_laws_triangle'/>, we see that 
+                        <md>
+                                <mrow>
+                                         \cos(A)&amp;=\frac{c-x}{b}&amp;
+                                                &amp;\text{ and }  &amp;
+                                         \cos(B)&amp;=\frac{x}{a},
+                                </mrow>
+                        </md>
+                        so
+                        <md>
+                                <mrow>
+                                        c &amp;= (c-x)+x
+                                </mrow>
+                                <mrow>
+                                          &amp;= b\cos(A)+a\cos(B),
+                                </mrow>
+                        </md>
+                        which means that 
+                        <md>
+                                <mrow>
+                                        c^{2}
+                                        &amp;=
+                                        \left(b\cos(A)+a\cos(B)\right)^{2}
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}\cos^{2}(A)+2b\cos(A)a\cos(B)+a^{2}\cos^{2}(B)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}\cos^{2}(A)+2ab\cos(A)\cos(B)+a^{2}\cos^{2}(B).
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                        Using the (rearranged) Pythagorean identity twice, we have
+                        <md>
+                                <mrow>
+                                        c^{2}
+                                        &amp;=
+                                        b^{2}\cos^{2}(A)+2ab\cos(A)\cos(B)+a^{2}\cos^{2}(B).
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}\left(1-\sin^{2}(A)\right)+2ab\cos(A)\cos(B)+a^{2}\left(1-\sin^{2}(B)\right).
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}-b^{2}\sin^{2}(A)+2ab\cos(A)\cos(B)+a^{2}-a^{2}\sin^{2}(B)
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                        Rearranging <xref ref='eq_cosine_sum'/>, we see that 
+                        <m>
+                                \cos\left(\theta_{1}\right)
+                                \cos\left(\theta_{2}\right)
+                                        =
+                                \cos\left(\theta_{1}+\theta_{2}\right)
+                                +
+                                \sin\left(\theta_{1}\right)
+                                \sin\left(\theta_{2}\right)
+                        </m>
+                        so
+                        <m>
+                                \cos\left(A\right)
+                                \cos\left(B\right)
+                                        =
+                                \cos\left(A+B\right)
+                                +
+                                \sin\left(A\right)
+                                \sin\left(B\right).
+                        </m>
+                                Substituting this into our equation for <m>c^{2}</m> gives
+                        <md>
+                                <mrow>
+                                        c^{2}
+                                        &amp;=
+                                        b^{2}-b^{2}\sin^{2}(A)+2ab\left(\cos(A)\cos(B)\right)+a^{2}-a^{2}\sin^{2}(B)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}-b^{2}\sin^{2}(A)+2ab\left(\cos\left(A+B\right) + \sin\left(A\right) \sin\left(B\right)\right)+a^{2}-a^{2}\sin^{2}(B)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        b^{2}+2ab\cos\left(A+B\right) + 2ab \sin\left(A\right)\sin\left(B\right)
+                                        +a^{2}-a^{2}\sin^{2}(B)-b^{2}\sin^{2}(A)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        +\left(2ab \sin\left(A\right)\sin\left(B\right)
+                                        -a^{2}\sin^{2}(B)-b^{2}\sin^{2}(A)\right)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        -\left(a^{2}\sin^{2}(B)-2ab\sin\left(A\right)\sin\left(B\right)
+                                        -b^{2}\sin^{2}(A)\right)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        -\left(\left(a\sin(B)\right)^{2}-2\left(a\sin\left(B\right)\right)\left(b\sin\left(A\right)\right)
+                                        -\left(b\sin(A)\right)^{2}\right)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        -\left(
+                                        \left(a\sin(B)\right)
+                                        -\left(b\sin(A)\right)
+                                        \right)^{2}.
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                                Next, we note that <m>\sin(A)=\frac{h}{b}</m> and <m>\sin(B)=\frac{h}{a}</m>, so <m>b\sin(A)=h</m> and <m>a\sin(B)=h</m>, so we have
+                        <md>
+                                <mrow>
+                                        c^{2}
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        -\left(
+                                        \left(a\sin(B)\right)
+                                        -\left(b\sin(A)\right)
+                                        \right)^{2}.
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                        -\left(
+                                        h
+                                        -h
+                                        \right)^{2}
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        a^{2}+b^{2}+2ab\cos\left(A+B\right).
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                        Finally, we know that the angle sum for any triangle is <m>180^{\circ}=\pi</m>, so in particular, <m>A+B+C=\pi</m>, which means that <m>A+B=\pi-C</m>. Thus, using <xref ref='eq_diff_pi'/>,
+                        <md>
+                                <mrow>
+                                        c^{2}
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(A+B\right)\right)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        \left(a^{2}+b^{2}+2ab\cos\left(\pi-C\right)\right)
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        a^{2}+b^{2}-2ab\cos\left(C\right).
+                                </mrow>
+                        </md>
+                </p>
+                <p>
+                        In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.
+                </p>
+                <p>
+                                Referring to <xref ref='fig_exterior_alt'/>, let <m>B'</m> be the measure of <m>\angle{}HBC</m>, so <m>B+B'=\pi</m>, and so <m>B'=\pi-B</m>. Then we see that <m>\cos(A)=\frac{c+x}{b}</m> and <m>\cos(B')=\frac{x}{a}</m>, <m>c=(c+x)-x=b\cos(A)-a\cos(B')</m>. However, <m>\cos(B')=\cos(\pi-B)=-\cos(B)</m>. This means that <m>c=b\cos(A)-a\cos(B')=b\cos(A)-a(-\cos(B))=b\cos(A)+a\cos(B)</m>, and the rest of the proof continues in the same way.
+                </p>
+        </proof>
+        <figure xml:id='fig_exterior_alt'>
+                <caption>An Triangle with an Exterior Altitude</caption>
+                <image>
+                        <latex-image>
+                                \begin{tikzpicture}[scale=1]
+                                \coordinate (A) at (-3,0);
+                                \coordinate (B) at ( 1,0);
+                                \coordinate (C) at (2.333,1.5);
+                                \draw
+                                let \p1 = (C) in
+                                coordinate (H) at (\x1,0);
+                                ;
+
+                                \draw[stealth-stealth,dashed] ($(A)+(0,-.6)$) --  node[midway,below] {\(c+x\)} ($(H)+(0,-.6)$);
+                                \draw[dashed] (B) --(H) node[right] {\(H\)};
+                                \draw[thick] (A) node[left] {\(A\)} 
+                                -- (B) node[below right] {\(B\)} 
+                                -- node[midway,right] {\(a\)} (C) node[above] {\(C\)} 
+                                -- node[midway,above left] {\(b\)} cycle;
+
+                                \draw[dashed]
+                                (C) -- node[midway,right]{\(h\)} (H);
+                                ;
+                                \node[above] at ($(H)!0.5!(A)$) {\(c\)};
+                                \node[above] at ($(H)!0.5!(B)$) {\(x\)};
+                                \end{tikzpicture}
+                        </latex-image>
+                </image>
+        </figure>
+</subsection>

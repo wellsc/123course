@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="hanging_wt_soln">
+        <title>Solution to the Motivating Problem</title>
+        <subsection xml:id='ssec_understand'>
+                <title>Understanding the Problem</title>
+        <p>
+                Looking again at <xref ref='fig_suspended_wt'/>, let's label the figure and assign variables.
+        </p>
+        <figure xml:id='fig_suspended_wt_redux'>
+                <caption>A Weight Suspended Asymmetrically with Axes Imposed</caption>
+                <image>
+                        <latex-image>
+                                \begin{tikzpicture}[scale=1]
+                                \coordinate (A1) at (-3,0);
+                                \coordinate (A2) at ( 3,0);
+                                \coordinate (M) at (-1.333,-1.5);
+                                \coordinate (W) at (-1.333,-4.5);
+
+                                \draw[-stealth,thin] (-1.33,-4) -- (-1.33,0.5) node[above] {\(y\)};
+                                \draw[-stealth,thin] (-4.2,-1.5) -- (4.2,-1.5) node[right]{\(x\)};
+                                \draw (A1) --node[midway,above right] {\(30\)cm} (M) --node[midway,above left] {\(50\)cm} (A2);
+                                \draw[dashed] ($(A1)!-0.2!(A2)$) --  node[midway,above] {\(60\)cm} ($(A1)!1.2!(A2)$);
+                                \draw (M) -- (W);
+                                \draw[-stealth,thick] (M) -- ($(M)!0.8!(W)$) node[right] {\(\vec{F}_{g}\)};
+                                \draw[-stealth,thick] (M) -- node[midway,below left] {\(\vec{F}_{1}\)} ($(M)!0.75!(A1)$);
+                                \draw[-stealth,thick] (M) -- node[midway,below right] {\(\vec{F}_{2}\)} ($(M)!0.75!(A2)$);
+                                \fill (A1) circle (0.04);
+                                \fill (A2) circle (0.04);
+                                \fill ($(W)+(-0.2,-0.4)$) rectangle ($(W)+(0.2,0.0)$);
+
+                                \draw[-stealth]
+                                let
+                                \p1 = (A2),
+                                \p2 = (M),
+                                in
+                                ($(M)+(1,0)$) arc[start angle=0,end angle={atan2(\y1-\y2,\x1-\x2)}, radius=1] node[midway,right]{\(\phi_2\)};
+                                \draw[-stealth]
+                                let
+                                \p1 = (A1),
+                                \p2 = (M),
+                                in
+                                ($(M)+(0.8,0)$) arc[start angle=0,end angle={atan2(\y1-\y2,\x1-\x2)}, radius=0.8] node[midway,right]{\(\phi_1\)};
+                                \draw[]
+                                let
+                                \p1 = (A2),
+                                \p2 = (M),
+                                in
+                                ($(A2)+(-1,0)$) arc[start angle=180,end angle={180+atan2(\y1-\y2,\x1-\x2)}, radius=1] node[midway,left]{\(\theta_2\)};
+                                \draw[]
+                                let
+                                \p1 = (A1),
+                                \p2 = (M),
+                                in
+                                ($(A1)+(0.6,0)$) arc[start angle=0,end angle={-atan2(\y1-\y2,-\x1+\x2)}, radius=0.6] node[midway,right]{\(\theta_1\)};
+                                \end{tikzpicture}
+                        </latex-image>
+                </image>
+        </figure>
+        <p>
+                        First, let's place our origin at the point where the two wires connect, let <m>\vec{F}_{g}</m> be the vector representing the force due to gravity, let <m>\vec{F}_{1}</m> be the force along the wire of length <m>30</m>cm, and let <m>\vec{F}_{2}</m> be the force along the wire of length <m>50</m>cm. 
+                        </p>
+                        <p>
+                                        Our goal is to find <m>\Abs{\vec{F}_{1}}</m> and <m>\Abs{\vec{F}_{2}}</m>, given that <m>\vec{F}_{g}+\vec{F}_{1}+\vec{F}_{2}=\begin{bmatrix}0\\0\end{bmatrix}</m>,
+                        so let our unknowns be <m>X=\Abs{\vec{F}_{1}}</m> and <m>Y=\Abs{\vec{F}_{2}}</m>.
+                        </p>
+                        <p>
+                                Next, let <m>\phi_{1}</m> be the angle from the positive <m>x</m> axis to <m>\vec{F}_{1}</m> and <m>\phi_{2}</m> be the angle from the positive <m>x</m> axis to <m>\vec{F}_{2}</m>. Then the unit vector <m>\vec{u}_{1}</m> in the direction of <m>\vec{F}_{1}</m> and the unit vector <m>\vec{u}_{2}</m> in the direction of <m>\vec{F}_{2}</m> are given by
+                                <md>
+                                        <mrow>
+                                                \vec{u}_{1}
+                                                        &amp;=
+                                                \begin{bmatrix}
+                                                \cos(\phi_{1})\\
+                                                \sin(\phi_{1})\\
+                                                \end{bmatrix}
+                                                &amp;
+                                                \vec{u}_{2}
+                                                        &amp;=
+                                                \begin{bmatrix}
+                                                \cos(\phi_{2})\\
+                                                \sin(\phi_{2})\\
+                                                \end{bmatrix},
+                                        </mrow>
+                                        </md> 
+                                        and thus <m>\vec{F}_{1}=X\vec{u}_{1}</m> and <m>\vec{F}_{2}=Y\vec{u}_{2}</m>.
+        </p>
+        <p>
+                        Let <m>\theta_{1}</m> be the (acute) angle that <m>\vec{F}_{1}</m> makes with the ceiling,
+                                and let <m>\theta_{2}</m> be the (acute) angle that <m>\vec{F}_{2}</m> makes with the ceiling. We note that because our <m>x</m>-axis is parallel to the ceiling, by alternate interior angles <m>\theta_{2}=\phi_{2}</m>. Furthermore, the angle between <m>\vec{F}_{1}</m> and the negative <m>x</m>-axis is <m>\pi-\phi_{1}</m>, and so by alternate interior angles again, <m>\theta_{1}=\pi-\phi_{1}</m>, and so <m>\phi_{1}=\pi-\theta_{1}</m>.
+        </p>
+        </subsection>
+        <subsection xml:id='ssec_make_a_plan'>
+                <title>Making a Plan</title>
+        <p>
+                        Because <m>X=\Abs{\vec{F}_{1}}</m> and <m>Y=\Abs{\vec{F}_{2}}</m>, <m>\vec{F}_{1}=X\vec{u}_{1}</m> and <m>\vec{F}_{2}=Y\vec{u}_{2}</m>.
+        </p>
+        <p>
+                Because our mass is <m>20</m>kg, acceleration due to gravity is <m>9.8\frac{\text{m}}{\text{s}^{2}}</m>, and because gravity is acting in downward (so in the direction of the unit vector <m>\vec{u}_{g}=\begin{bmatrix}0\\-1\end{bmatrix}</m>), we have 
+                        <md>
+                                <mrow>
+                                \vec{F}_{g}&amp;=
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                -196\text{N}
+                                \end{bmatrix}
+                                                &amp;
+                                                &amp;\text{ and }
+                                                &amp;
+                                        \vec{F}_{1}+\vec{F}_{2}+
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                -196\text{N}
+                                \end{bmatrix}
+                                        &amp;=
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                0\text{N}
+                                \end{bmatrix}.
+                                </mrow>
+                        </md>
+                        Therefore, 
+                        <md>
+                                <mrow>
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                0\text{N}
+                                \end{bmatrix}
+                                        &amp;=
+                                        \vec{F}_{1}+\vec{F}_{2}+
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                -196\text{N}
+                                \end{bmatrix}
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        X\vec{u}_{1}+Y\vec{u}_{2}+
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                -196\text{N}
+                                \end{bmatrix}
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                        X
+                                                \begin{bmatrix}
+                                                \cos(\phi_{1})\\
+                                                \sin(\phi_{1})\\
+                                                \end{bmatrix}
+                                        +Y
+                                                \begin{bmatrix}
+                                                \cos(\phi_{2})\\
+                                                \sin(\phi_{2})\\
+                                                \end{bmatrix}
+                                        +
+                                \begin{bmatrix}
+                                0\text{N}\\
+                                -196\text{N}
+                                \end{bmatrix}
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                                \begin{bmatrix}   
+                                                X\cos(\phi_{1})+Y\cos(\phi_{2}) + 0\text{N}\\
+                                                X\sin(\phi_{1})+Y\sin(\phi_{2}) + -196\text{N}  
+                                                \end{bmatrix}      
+                                </mrow>
+                                <mrow>
+                                        &amp;=
+                                                \begin{bmatrix}   
+                                                X\cos(\phi_{1})+Y\cos(\phi_{2})\\
+                                                X\sin(\phi_{1})+Y\sin(\phi_{2})-196\text{N}  
+                                                \end{bmatrix}.
+                                </mrow>
+                        </md>
+                        which means that we have two equations:
+                        <md>
+                                <mrow number='yes' xml:id='eq_system_1'>
+                                                X\cos(\phi_{1})+Y\cos(\phi_{2})&amp;=0
+                                </mrow>
+                                <mrow number='yes' xml:id='eq_system_2'>
+                                                X\sin(\phi_{1})+Y\sin(\phi_{2})&amp;=196\text{N}  
+                                </mrow>
+                        </md>
+        </p>
+        <p>
+                        Now, our plan is to first calculate <m>\cos(\phi_{1})</m>, <m>\sin(\phi_{2})</m>, <m>\cos(\phi_{1})</m>, and <m>\sin(\phi_{2})</m>, and then substitute those values into <xref ref='eq_system_1'/> and <xref ref='eq_system_2'/>. Then, we can solve those equations for <m>X</m> and <m>Y</m>.
+        </p>
+        </subsection>
+        <subsection xml:id='ssec_carry_out'>
+                <title>Carrying Out the Plan</title>
+        <p>
+                        We will use the law of cosines to learn more about the angles <m>\theta_{1}</m> and <m>\theta_{2}</m>.
+        </p>
+        <p>
+                        If we let <m>\theta_{1}</m> take the role of the angle <m>C</m> in the law of cosines, the we have <m>c=50\text{cm}</m>. It doesn't matter which of the other two sides of the triangle is <m>a</m> and which is <m>b</m>, so let's let <m>a=30\text{cm}</m> and <m>b=60\text{cm}</m>. Then 
+                        <m>c^{2}=a^{2}+b^{2}-2ab\cos(C)</m> becomes
+                        <me>
+                                        (50\text{cm})^{2}=(30\text{cm})^{2}+(60\text{cm})^{2}-2(30\text{cm})(60\text{cm})\cos(\theta_{1}).
+                        </me>
+                                To make the next step easier, let's replace <m>\cos(\theta_{1})</m> by <m>w</m>. Then we have 
+                        <me>
+                                (2500\text{cm}^{2})=(900\text{cm}^{2})+(3600\text{cm}^{2})-(3600\text{cm}^{2})w.
+                        </me>
+                                Solving this equation for <m>w</m> gives
+                                <md>
+                                        <mrow>
+                                                        w&amp;=
+                                                \frac{(900\text{cm}^{2})+(3600\text{cm}^{2})-(2500\text{cm}^{2})}{(3600\text{cm}^{2})}
+                                        </mrow>
+                                        <mrow>
+                                                        &amp;=
+                                                \frac{(2000\text{cm}^{2})}{(3600\text{cm}^{2})}
+                                        </mrow>
+                                        <mrow>
+                                                        &amp;=
+                                                \frac{5}{9}.
+                                        </mrow>
+                                </md>
+                                        Thus, we now know that <m>\cos(\theta_{1})=\frac{5}{9}</m>.
+        </p>
+        <p>
+                        If we let <m>\theta_{2}</m> take the role of the angle <m>C</m> in the law of cosines, the we have <m>c=30\text{cm}</m>. It doesn't matter which of the other two sides of the triangle is <m>a</m> and which is <m>b</m>, so let's let <m>a=50\text{cm}</m> and <m>b=60\text{cm}</m>. Then 
+                        <m>c^{2}=a^{2}+b^{2}-2ab\cos(C)</m> becomes
+                        <me>
+                                        (30\text{cm})^{2}=(50\text{cm})^{2}+(60\text{cm})^{2}-2(50\text{cm})(60\text{cm})\cos(\theta_{2}).
+                        </me>
+                                To make the next step easier, let's again replace the cosine by <m>w</m>. Then we have 
+                        <me>
+                                (900\text{cm}^{2})=(2500\text{cm}^{2})+(3600\text{cm}^{2})-(6000\text{cm}^{2})w.
+                        </me>
+                                Solving this equation for <m>w</m> gives
+                                <md>
+                                        <mrow>
+                                                        w&amp;=
+                                                \frac{(2500\text{cm}^{2})+(3600\text{cm}^{2})-(900\text{cm}^{2})}{(6000\text{cm}^{2})}
+                                        </mrow>
+                                        <mrow>
+                                                        &amp;=
+                                                \frac{13}{15}.
+                                        </mrow>
+                                </md>
+                                        Thus, we now know that <m>\cos(\theta_{2})=\frac{13}{15}</m>.
+        </p>
+        <p>
+                Using the Pythagorean identity for sine and cosine, we find
+                <md>
+                        <mrow>
+                                \sin(\theta_{1})&amp;=\sqrt{1-\cos^{2}(\theta_{1})}
+                                &amp;
+                                \sin(\theta_{2})&amp;=\sqrt{1-\cos^{2}(\theta_{2})}
+                        </mrow>
+                        <mrow>
+                                        &amp;=\sqrt{1-\left(\frac{5}{9}\right)^{2}}
+                                &amp;
+                                        &amp;=\sqrt{1-\left(\frac{13}{15}\right)^{2}}
+                        </mrow>
+                        <mrow>
+                                        &amp;=\sqrt{\frac{81}{81}-\frac{25}{81}}
+                                &amp;
+                                        &amp;=\sqrt{\frac{225}{225}-\frac{169}{225}}
+                        </mrow>
+                        <mrow>
+                                        &amp;=\sqrt{\frac{56}{81}}
+                                &amp;
+                                        &amp;=\sqrt{\frac{56}{225}}
+                        </mrow>
+                        <mrow>
+                                        &amp;=\frac{2\sqrt{14}}{9}
+                                &amp;
+                                        &amp;=\frac{2\sqrt{14}}{15}
+                        </mrow>
+                </md>
+        </p>
+        <p>
+                        Realizing that <m>\cos(\pi-\theta)=-\cos(\theta)</m> and <m>\sin(\pi-\theta)=\sin(\theta)</m>, we have
+                <md>
+                        <mrow>
+                                \cos(\phi_{1})&amp;=-\cos(\theta_{1})
+                                &amp;
+                                \cos(\phi_{2})&amp;=\cos(\theta_{2})
+                        </mrow>
+                        <mrow>
+                                        &amp;=-{}\frac{5}{9}
+                                &amp;
+                                        &amp;=\frac{13}{15}
+                        </mrow>
+                        <mrow>
+                                \sin(\phi_{1})&amp;=\frac{2\sqrt{14}}{9}
+                                &amp;
+                                \sin(\phi_{2})&amp;=\frac{2\sqrt{14}}{15}.
+                        </mrow>
+                </md>
+        </p>
+        <p>
+                Substituting these values into <xref ref='eq_system_1'/> and <xref ref='eq_system_2'/> gives us
+                        <md>
+                                <mrow number='yes' xml:id='eq_system_1_cons'>
+                                                \frac{-5}{9}X+\frac{13}{15}Y&amp;=0
+                                </mrow>
+                                <mrow number='yes' xml:id='eq_system_2_cons'>
+                                        \frac{2\sqrt{14}}{9}X+\frac{2\sqrt{14}}{15}Y&amp;=196\text{N}  .
+                                </mrow>
+                        </md>
+        </p>
+        <p>
+                There are several ways to solve <xref ref='eq_system_1_cons'/> and <xref ref='eq_system_2_cons'/>, including solving one equation for one of the variables and  substituting it into the other, or using a technique called elimination. However, in this particular case, because the right hand side of the first equation is <m>0</m>, we can find any values of <m>X</m> and <m>Y</m> that make the first equation true, and if we multiply both of those values by any constant, we will still have a solution. We can then use the solution with an arbitrary constant to solve the second equation.
+        </p>
+        <p>
+                For example, it is pretty quickly clear that if we set <m>X=\frac{13}{15}</m> and <m>Y=\frac{5}{9}</m>we get
+                <md>
+                        <mrow>
+                                                \frac{-5}{9}X+\frac{13}{15}Y&amp;=
+                                        \frac{-5}{9}\frac{13}{15}+\frac{13}{15}\frac{5}{9}
+                        </mrow>
+                        <mrow>
+                                &amp;=
+                                        \frac{-65}{135}+\frac{65}{135}
+                        </mrow>
+                        <mrow>
+                                &amp;=0.
+                        </mrow>
+                </md>
+                On the other hand, if we set <m>X=3\frac{13}{15}=\frac{39}{15}</m> and <m>Y=3\frac{5}{9}=\frac{15}{9}</m>we get
+                <md>
+                        <mrow>
+                                                \frac{-5}{9}X+\frac{13}{15}Y&amp;=
+                                        \frac{-5}{9}\frac{39}{15}+\frac{13}{15}\frac{15}{9}
+                        </mrow>
+                        <mrow>
+                                &amp;=
+                                        \frac{-195}{135}+\frac{195}{135}
+                        </mrow>
+                        <mrow>
+                                &amp;=0.
+                        </mrow>
+                </md>
+                In general, if we set <m>X=k\frac{13}{15}</m> and <m>Y=k\frac{5}{9}</m>, we get
+                <md>
+                        <mrow>
+                                                \frac{-5}{9}X+\frac{13}{15}Y&amp;=
+                                        \frac{-5}{9}k\frac{13}{15}+\frac{13}{15}k\frac{5}{9}
+                        </mrow>
+                        <mrow>
+                                &amp;=
+                                        -k\frac{65}{135}+k\frac{65}{135}
+                        </mrow>
+                        <mrow>
+                                &amp;=
+                                        k\left(-\frac{65}{135}+\frac{65}{135}\right)
+                        </mrow>
+                        <mrow>
+                                &amp;=
+                                k\cdot{}0
+                        </mrow>
+                        <mrow>
+                                &amp;=0.
+                        </mrow>
+                </md>
+                Substituting <m>X=k\frac{13}{15}</m> and <m>Y=k\frac{5}{9}</m> into <xref ref='eq_system_2_cons'/>, we have
+                <md>
+                        <mrow>
+                                       196\text{N} &amp;= \frac{2\sqrt{14}}{9}X+\frac{2\sqrt{14}}{15}Y
+                        </mrow>
+                        <mrow>
+                                       &amp;= k\frac{13}{15}\frac{2\sqrt{14}}{9}+k\frac{5}{9}\frac{2\sqrt{14}}{15}
+                        </mrow>
+                        <mrow>
+                                       &amp;= k\frac{26\sqrt{14}}{135}+k\frac{10\sqrt{14}}{135}
+                        </mrow>
+                        <mrow>
+                                       &amp;= k\left(\frac{26\sqrt{14}}{135}+\frac{10\sqrt{14}}{135}\right)
+                        </mrow>
+                        <mrow>
+                                       &amp;= k\left(\frac{36\sqrt{14}}{135}\right)
+                        </mrow>
+                        <mrow>
+                                       &amp;= k\left(\frac{4\sqrt{14}}{15}\right).
+                        </mrow>
+                </md>
+        </p>
+        <p>
+                        Solving <m>k\left(\frac{4\sqrt{14}}{15}\right)=196\text{N}</m> for <m>k</m> gives
+                        <md>
+                                <mrow>
+                                        k&amp;=196\text{N }\cdot{}\frac{15}{4\sqrt{14}}
+                                </mrow>
+                                <mrow>
+                                         &amp;=196\text{N }\cdot{}\frac{15\sqrt{14}}{4\cdot{14}}
+                                </mrow>
+                                <mrow>
+                                         &amp;=\frac{105\sqrt{14}}{2}\text{N}.
+                                </mrow>
+                        </md>
+                        Thus, we have
+                        <md>
+                                <mrow>
+                                        \Abs{\vec{F}_{1}} &amp;=X
+                                        &amp;
+                                        \Abs{\vec{F}_{2}} &amp;=Y
+                                </mrow>
+                                <mrow>
+                                                &amp;=\frac{13}{15}k
+                                        &amp;
+                                                &amp;=\frac{5}{9}k
+                                </mrow>
+                                <mrow>
+                                                &amp;=\frac{13}{15}\frac{105\sqrt{14}}{2}\text{N}
+                                        &amp;
+                                                &amp;=\frac{5}{9}\frac{105\sqrt{14}}{2}\text{N}
+                                </mrow>
+                                <mrow>
+                                                &amp;=\frac{91\sqrt{14}}{2}\text{N}
+                                        &amp;
+                                                &amp;=\frac{175\sqrt{14}}{6}\text{N}
+                                </mrow>
+                                <mrow>
+                                                &amp;\approx170.2454\text{N}
+                                        &amp;
+                                                &amp;\approx109.1317\text{N}.
+                                </mrow>
+                        </md>
+        </p>
+        <p>
+                        Interpreting these results in the context of the problem, we have that the force along the short wire is approximately <m>170.2454\text{N}</m> and the force along the long wire is approximately <m>109.1317\text{N}</m>.
+        </p>
+        </subsection>
+        <subsection xml:id='ssec_look_back'>
+                <title>Looking Back</title>
+        <p>
+                        Looking back on this problem, we see that the case where the wires are the same length is a special case where <m>\theta_{1}=\theta_{2}=\theta</m>. Then our first equation becomes <m>0=-X\cos(\theta_{1})+Y\cos(\theta_{2})=\left(-X+Y\right)\cos(\theta)</m>, so we have to have <m>X=Y</m>, and then our second equation will be <m>X\sin(\theta)+X\sin(\theta)=2X\sin(\theta)=W</m> where <m>W</m> is the magnitude of the force due to gravity, which yields <m>X=\frac{W}{2\sin(\theta)}</m>. Also, from the co-function identities, <m>\cos(\pi/2-\theta)=\sin(\theta)</m>, so if <m>\phi</m> is the complementary angle to <m>\theta</m> then we have <m>X=\frac{W}{2\cos(\phi)}</m>.
+        </p>
+        <p>
+                        Another thing we might notice is that another way to obtain the values for 
+                <m>\cos(\theta_{1})</m>,
+                <m>\sin(\theta_{1})</m>,
+                <m>\cos(\theta_{2})</m>, and
+                <m>\sin(\theta_{2})</m> would be for the angles to be given. In this case, we would not need to use the law of cosines.
+        </p>
+        </subsection>
+        <subsection xml:id='ssec_using_law_of_sines'>
+                <title>Using the Law of Sines</title>
+                <example xml:id='example_law_of_sines'>
+                        <statement>
+                                <figure xml:id='fig_law_of_sines_example'>
+                                        <caption>Is This Triangle Possible?</caption>
+                                        <image width='65%'>
+                                                <latex-image>
+                                                        \begin{tikzpicture}[scale=2.0]
+                                                        \coordinate (Z) at (0,0);
+                                                        \coordinate (B) at (40:2);
+                                                        \coordinate (C) at (2,0);
+                                                        \draw
+                                                        let
+                                                        \p1 = (B)
+                                                        in
+                                                        coordinate (H) at (\x1,0);
+                                                        \draw (Z) node[below left] {\(A\)};
+                                                        \draw (B) node[above] {\(B\)};
+                                                        \draw[dashed] (3,0) -- (Z);
+                                                        \draw(0,0) -- node[midway,above left]{\(2\)m} (B);
+                                                        \draw (0.3,0) arc[start angle=0, end angle=40, radius=0.3] node[midway,right] {\(40^{\circ}\)};
+                                                        \draw[dotted] (B) -- node[midway,right] {\(1.7\)m?} (C) node[below] {\(C\)};
+                                                        \draw[dotted] (B) -- node[midway,left] {\(a\)} (H) node[below] {\(H\)};
+                                                        \end{tikzpicture}
+                                                </latex-image>
+                                        </image>
+                                </figure>
+                                <p>
+                                        <xref ref='fig_law_of_sines_example'/> shows a triangle with one side length and one angle known. The side, side <m>AB</m> in the figure, is <m>2</m>m long, and one of the angles adjacent to that side is <m>40^{\circ}</m>, at the point labeled <m>A</m> in the figure.
+                                        </p>
+                                        <p>
+                                                We want to know: 
+                                                <ul>
+                                                        <li>
+                                                                Is it possible for the side opposite the <m>40^{\circ}</m> angle, that is, side <m>BC</m>, to be <m>1.7</m>m long?  If it is possible, 
+                                                        </li> 
+                                                        <li>
+                                                                what will the length of the third side be? And
+                                                        </li>
+                                                        <li>
+                                                                what will the measures of the other two angles be?
+                                                        </li>
+                                                </ul>
+                                </p>
+                                <p>
+                                                To answer the first question, we can find out what the shortest possible length is for the side opposite the <m>40^{\circ}</m> angle and see if it is less than <m>1.7</m>m.
+                                </p>
+                                <p>
+                                        The shortest possible side opposite the <m>40^{\circ}</m> angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is <m>a</m> and the point where it intersects the horizontal side is <m>H</m>. Then because we have a right triangle, we would have
+                                        <me>\sin\left(40^{\circ}\right)=\frac{a}{2\text{m}}.</me>
+                                </p>
+                                <p>
+                                        Solving for <m>m</m>, we have
+                                        <md>
+                                                <mrow>
+                                                        a
+                                                                &amp;=
+                                                        2\text{m}\cdot\sin\left(40^{\circ}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        2\text{m}\cdot\sin\left(40^{\circ}\frac{\pi}{180^{\circ}}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        2\text{m}\cdot\sin\left(\frac{2\pi}{9}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                        2\text{m}\cdot\sin\left(0.698131700798\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                        1.28557521937\text{m}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                Since <m>a\gt 1.7\text{m}</m>, it is possible to have the side opposite the <m>40^{\circ}</m> angle be <m>1.7\text{m}</m> in length. However, the picture is a little misleading, because the point where the <m>1.7\text{m}</m> side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.
+                                </p>
+                                <p>
+                                        From the Law of Sines, if we label the angle at <m>C</m> as <m>\theta</m>, then 
+                                        <me>\frac{\sin(\theta)}{2\text{m}}=\frac{\sin\left(40^{\circ}\right)}{1.7\text{m}},</me>
+                                        so
+                                        <md>
+                                                <mrow>
+                                                        {\sin(\theta)}
+                                                                &amp;=
+                                                        \frac{{2\text{m}}}{1.7\text{m}}\sin\left(40^{\circ}\right)
+                                                </mrow>
+                                                <mrow>
+                                                        &amp;\approx
+                                                         0.756220717278282.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                This is where we have to be careful. We know we are dealing with triangles, and so we know that <m>0\le\theta\le\pi</m>, but there are two angles in that range whose sine is <m>\approx0.756220717278282</m>, one in the first quadrant and one in the second quadrant.
+                                </p>
+                                <p>
+                                        If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of <m>H</m> from <m>A</m>, then the angle at that point will be acute, and so we have 
+                                        <md>
+                                                <mrow>
+                                                        \theta
+                                                                &amp;=
+                                                        \arcsin\left(\frac{{2}}{1.7}\sin\left(40^{\circ}\right)\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                         0.857517750568782
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                        49.1321479651432^{\circ}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                In this case, the third angle will be <m>180^{\circ}-40^{\circ}-49.1321479651432^{\circ}\approx 90.8678520348568^{\circ}.</m>
+                                </p>
+                                <p>
+                                                Then, again using law of sines, if we say the length of <m>AC</m> is <m>c</m>, then
+                                                <md>
+                                                        <mrow>
+                                                                c
+                                                                        &amp;=
+                                                                \sin\left(90.8678520348568^{\circ}\right)\frac{2\text{m}}{\sin\left(40^{\circ}\right)}
+                                                        </mrow>
+                                                        <mrow>
+                                                                        &amp;\approx
+                                                                2.64442712406576\text{m}.
+                                                        </mrow>
+                                                </md>
+                                </p>
+                                <p>
+                                        On the other hand, if the corner of the triangle on the near side of <m>H</m> from <m>A</m>, then the angle at that point will be obtuse, and so we will have 
+                                        <md>
+                                                <mrow>
+                                                        \theta
+                                                                &amp;=
+                                                        \pi-
+                                                        \arcsin\left(\frac{{2}}{1.7}\sin\left(40^{\circ}\right)\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                        2.284074903
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx
+                                                        130.867852^{\circ}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                In this case, the third angle will be <m>180^{\circ}-40^{\circ}-130.867852^{\circ}\approx9.132147965^{\circ}.</m>
+                                </p>
+                                <p>
+                                                Then, again using law of sines, if we say the length of <m>AC</m> is <m>c</m>, then
+                                                <md>
+                                                        <mrow>
+                                                                c
+                                                                        &amp;=
+                                                                \sin\left(9.132147965^{\circ}\right)\frac{2\text{m}}{\sin\left(40^{\circ}\right)}
+                                                        </mrow>
+                                                        <mrow>
+                                                                        &amp;\approx
+                                                                0.4197506484\text{m}.
+                                                        </mrow>
+                                                </md>
+                                </p>
+                        </statement>
+                </example>
+        </subsection>
+</section>

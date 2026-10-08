@@ -50,6 +50,7 @@
       <xi:include href='./activities/Identities/Identities.ptx'/>
       <xi:include href='./activities/DotProduct/DotProdAndProj.ptx'/>
       <xi:include href='./activities/InverseTrig/InverseTrig.ptx'/>
+      <xi:include href='./activities/HangingWeight/HangingWeight.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">

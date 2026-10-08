@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="law_of_sines">
+        <title>The Law of Sines</title>
+        <figure xml:id='fig_laws_triangle'>
+                <caption>An Arbitrary Triangle</caption>
+                <image>
+                        <latex-image>
+                                \begin{tikzpicture}[scale=1]
+                                \coordinate (A) at (-3,0);
+                                \coordinate (B) at ( 3,0);
+                                \coordinate (C) at (1.333,1.5);
+                                \draw
+                                let \p1 = (C) in
+                                coordinate (H) at (\x1,0);
+                                ;
+
+                                \draw[thick] (A) node[left] {\(A\)} 
+                                -- node[midway, below] {\(c\)} (B) node[right] {\(B\)} 
+                                -- node[midway,right] {\(a\)} (C) node[above] {\(C\)} 
+                                -- node[midway,above left] {\(b\)} cycle;
+
+                                \draw[dashed]
+                                (C) -- node[midway,right]{\(h\)} (H);
+                                ;
+                                \node[above] at ($(H)!0.5!(A)$) {\(c-x\)};
+                                \node[above] at ($(H)!0.5!(B)$) {\(x\)};
+                                \end{tikzpicture}
+                        </latex-image>
+                </image>
+        </figure>
+
+        <p>
+                        In <m>\triangle{}ABC</m> shown in <xref ref='fig_laws_triangle'/>, let the angles at points <m>A</m>,  <m>B</m>, and <m>C</m> as <m>\alpha</m>,  <m>\beta</m>,  and <m>\gamma</m>, respectively, and the lengths of the sides <em>opposite</em> those points as <m>a</m>, <m>b</m>, and <m>c</m>.
+        </p>
+        <p>
+                We draw the altitude from <m>C</m> to the line <m>\overline{AB}</m> (that is, the  segment from <m>C</m> perpendicular to <m>\overline{AB}</m>). We will refer to the length of the altitude as <m>h</m>, and we will let the altitude split <m>\overline{AB}</m> into as segment of length <m>x</m> (between the altitude and <m>B</m>) and <m>c-x</m>  (between the altitude and <m>A</m>).
+        </p>
+        <p>
+                        Although it is not labeled in the figure, we will refer to the point where the altitude intersects <m>\overline{AB}</m> as <m>H</m>.
+                        </p>
+                        <p>
+                                        Since the altitude is perpendicular to <m>\overline{AB}</m>, we have divided the original triangle into two right triangles, <m>\triangle{}AHC</m> and <m>\triangle{}BHC</m>.
+        </p>
+        <p>
+                        We know from applying trigonometry to right triangles that
+                        <md>
+                                <mrow>
+                                        \sin(A)&amp;=\frac{h}{b}&amp;\text{ and }&amp;&amp; \sin(B)&amp;=\frac{h}{a}.
+                                </mrow>
+                        </md>
+                                Solving each of these equations for <m>h</m>, we have
+                        <md>
+                                <mrow>
+                                       h &amp;=b\sin(A)&amp;\text{ and }&amp;&amp; h&amp;={a}\sin(B),
+                                </mrow>
+                        </md>
+                        This means that <m>b\sin(A)=a\sin(B)</m>, which we can rearrange to give
+                        <me>
+                                \frac{\sin(A)}{a}=\frac{\sin(B)}{b}.
+                        </me>
+                        Note that by drawing a different altitude, we would also have <m>\frac{\sin(A)}{a}=\frac{\sin(C)}{c}</m>. This says that for any triangle, the ratio of the sine of an angle to the length of the opposite side will be a constant. More formally, this gives us the <term>law of sines</term>. 
+        </p>
+        <theorem xml:id='thm_law_of_sines'>
+                <title>The Law of Sines</title>
+                <statement>
+                        <p>
+                                        For any triangle with angles
+                                <m>A</m>,
+                                <m>B</m>,
+                                and
+                                <m>C</m>,
+                                and with side lengths opposite each angle given by 
+                                <m>a</m>,
+                                <m>b</m>,
+                                and
+                                <m>c</m>, respectively,
+                        <men xml:id='eq_law_of_sines'>
+                                \frac{\sin(A)}{a}=\frac{\sin(B)}{b}=\frac{\sin(C)}{c}.
+                        </men>
+                        </p>
+                </statement>
+        </theorem>
+</section>

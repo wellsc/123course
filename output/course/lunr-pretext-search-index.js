@@ -1261,6 +1261,132 @@ var ptx_lunr_docs = [
   "body": "arc-tangent inverse tangent "
 },
 {
+  "id": "hanging_wt_intro",
+  "level": "1",
+  "url": "hanging_wt_intro.html",
+  "type": "Subsection",
+  "number": "4.11.1",
+  "title": "Motivating Problem",
+  "body": " Motivating Problem  A weight with a mass of 20kg is suspended from from the ceiling using two wires. One wire is 30cm long, the other is 50cm long, and the points on the ceiling where they are anchored are 60cm apart.  We want to find the magnitudes of the force along each wire.   A Weight Suspended Asymmetrically   A diagram showing a weight suspended from two wires    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]            We could use the algebra and the trigonometric identities we have learned so far to solve this particular problem, but in mathematics there is a strong drive to solve a category of problem once rather than many problems that fit the category individually. Toward that end, we will now develop two important trigonometric identities: the law of sines and the law of cosines . Both apply to arbitrary triangles, such as the one shown in .  "
+},
+{
+  "id": "fig_suspended_wt",
+  "level": "2",
+  "url": "hanging_wt_intro.html#fig_suspended_wt",
+  "type": "Figure",
+  "number": "62",
+  "title": "",
+  "body": " A Weight Suspended Asymmetrically   A diagram showing a weight suspended from two wires    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]           "
+},
+{
+  "id": "hanging_wt_intro-5",
+  "level": "2",
+  "url": "hanging_wt_intro.html#hanging_wt_intro-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "law of sines law of cosines "
+},
+{
+  "id": "law_of_sines",
+  "level": "1",
+  "url": "law_of_sines.html",
+  "type": "Subsection",
+  "number": "4.11.2",
+  "title": "The Law of Sines",
+  "body": " The Law of Sines   An Arbitrary Triangle      In shown in , let the angles at points , , and as , , and , respectively, and the lengths of the sides opposite those points as , , and .  We draw the altitude from to the line (that is, the segment from perpendicular to ). We will refer to the length of the altitude as , and we will let the altitude split into as segment of length (between the altitude and ) and (between the altitude and ).  Although it is not labeled in the figure, we will refer to the point where the altitude intersects as .  Since the altitude is perpendicular to , we have divided the original triangle into two right triangles, and .  We know from applying trigonometry to right triangles that Solving each of these equations for , we have This means that , which we can rearrange to give Note that by drawing a different altitude, we would also have . This says that for any triangle, the ratio of the sine of an angle to the length of the opposite side will be a constant. More formally, this gives us the law of sines .   The Law of Sines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,     "
+},
+{
+  "id": "fig_laws_triangle",
+  "level": "2",
+  "url": "law_of_sines.html#fig_laws_triangle",
+  "type": "Figure",
+  "number": "63",
+  "title": "",
+  "body": " An Arbitrary Triangle     "
+},
+{
+  "id": "law_of_sines-7",
+  "level": "2",
+  "url": "law_of_sines.html#law_of_sines-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "law of sines "
+},
+{
+  "id": "thm_law_of_sines",
+  "level": "2",
+  "url": "law_of_sines.html#thm_law_of_sines",
+  "type": "Theorem",
+  "number": "64",
+  "title": "The Law of Sines.",
+  "body": " The Law of Sines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
+},
+{
+  "id": "law_of_cosines",
+  "level": "1",
+  "url": "law_of_cosines.html",
+  "type": "Subsection",
+  "number": "4.11.3",
+  "title": "The Law of Cosines",
+  "body": " The Law of Cosines  There is another important identity for general triangles called the law of cosines . It is simple to state, but it is a bit harder to derive, so we will state it first, set up the machinery we need to derive it, and then go through the whole derivation.   The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,     In order to derive this identity, we need to recall a few identities we have already developed and apply them to the situation here.  First, we need the Pythagorean identity for sine and cosine: for any (real number) angle , Note that this equation also means that and .  Next, we will state the angle sum identities (although we will only use the identity for cosine). For any (real number) angles and , Also, recall that for any angle , and . Thus, Finally, a special case of the angle sum formula for cosine, using the facts that and , for any angle     Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.    An Triangle with an Exterior Altitude      "
+},
+{
+  "id": "thm_law_of_cosines",
+  "level": "2",
+  "url": "law_of_cosines.html#thm_law_of_cosines",
+  "type": "Theorem",
+  "number": "65",
+  "title": "The Law of Cosines.",
+  "body": " The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
+},
+{
+  "id": "law_of_cosines-7",
+  "level": "2",
+  "url": "law_of_cosines.html#law_of_cosines-7",
+  "type": "Proof",
+  "number": "4.11.3.1",
+  "title": "Proof of Theorem 65.",
+  "body": " Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.  "
+},
+{
+  "id": "fig_exterior_alt",
+  "level": "2",
+  "url": "law_of_cosines.html#fig_exterior_alt",
+  "type": "Figure",
+  "number": "66",
+  "title": "",
+  "body": " An Triangle with an Exterior Altitude     "
+},
+{
+  "id": "hanging_wt_soln",
+  "level": "1",
+  "url": "hanging_wt_soln.html",
+  "type": "Subsection",
+  "number": "4.11.4",
+  "title": "Solution to the Motivating Problem",
+  "body": " Solution to the Motivating Problem   Understanding the Problem  Looking again at , let's label the figure and assign variables.   A Weight Suspended Asymmetrically with Axes Imposed      First, let's place our origin at the point where the two wires connect, let be the vector representing the force due to gravity, let be the force along the wire of length cm, and let be the force along the wire of length cm.  Our goal is to find and , given that , so let our unknowns be and .  Next, let be the angle from the positive axis to and be the angle from the positive axis to . Then the unit vector in the direction of and the unit vector in the direction of are given by and thus and .  Let be the (acute) angle that makes with the ceiling, and let be the (acute) angle that makes with the ceiling. We note that because our -axis is parallel to the ceiling, by alternate interior angles . Furthermore, the angle between and the negative -axis is , and so by alternate interior angles again, , and so .    Making a Plan  Because and , and .  Because our mass is kg, acceleration due to gravity is , and because gravity is acting in downward (so in the direction of the unit vector ), we have Therefore, which means that we have two equations:   Now, our plan is to first calculate , , , and , and then substitute those values into and . Then, we can solve those equations for and .    Carrying Out the Plan  We will use the law of cosines to learn more about the angles and .  If we let take the role of the angle in the law of cosines, the we have . It doesn't matter which of the other two sides of the triangle is and which is , so let's let and . Then becomes To make the next step easier, let's replace by . Then we have Solving this equation for gives Thus, we now know that .  If we let take the role of the angle in the law of cosines, the we have . It doesn't matter which of the other two sides of the triangle is and which is , so let's let and . Then becomes To make the next step easier, let's again replace the cosine by . Then we have Solving this equation for gives Thus, we now know that .  Using the Pythagorean identity for sine and cosine, we find   Realizing that and , we have   Substituting these values into and gives us   There are several ways to solve and , including solving one equation for one of the variables and substituting it into the other, or using a technique called elimination. However, in this particular case, because the right hand side of the first equation is , we can find any values of and that make the first equation true, and if we multiply both of those values by any constant, we will still have a solution. We can then use the solution with an arbitrary constant to solve the second equation.  For example, it is pretty quickly clear that if we set and we get On the other hand, if we set and we get In general, if we set and , we get Substituting and into , we have   Solving for gives Thus, we have   Interpreting these results in the context of the problem, we have that the force along the short wire is approximately and the force along the long wire is approximately .    Looking Back  Looking back on this problem, we see that the case where the wires are the same length is a special case where . Then our first equation becomes , so we have to have , and then our second equation will be where is the magnitude of the force due to gravity, which yields . Also, from the co-function identities, , so if is the complementary angle to then we have .  Another thing we might notice is that another way to obtain the values for , , , and would be for the angles to be given. In this case, we would not need to use the law of cosines.    Using the Law of Sines     Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.       shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then      "
+},
+{
+  "id": "fig_suspended_wt_redux",
+  "level": "2",
+  "url": "hanging_wt_soln.html#fig_suspended_wt_redux",
+  "type": "Figure",
+  "number": "67",
+  "title": "",
+  "body": " A Weight Suspended Asymmetrically with Axes Imposed     "
+},
+{
+  "id": "example_law_of_sines",
+  "level": "2",
+  "url": "hanging_wt_soln.html#example_law_of_sines",
+  "type": "Example",
+  "number": "68",
+  "title": "",
+  "body": "   Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.       shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then    "
+},
+{
   "id": "progress_check_1",
   "level": "1",
   "url": "progress_check_1.html",
