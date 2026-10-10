@@ -12,16 +12,7 @@
                 <caption>One radius of arc length on two different circles</caption>
                 <image width="50%">
                         <description><p>One radius of arc length on two circles of different radius with the same center.</p></description>
-                        <latex-image>
-                                \begin{tikzpicture}
-                                \draw (-3.3,0) -- (3.3,0) (0,-3.3) -- (0,3.3);
-                                \draw (0,0) node[below left] {\(O\)} circle (3);
-                                \draw (0,0) circle (1);
-                                \draw[very thick] (0,0) -- (3,0) node[below right] {\(A\)} arc[start angle=0, end angle=57.296, radius=3] -- (57.296:3) node[above right] {\(B\)} -- cycle;
-                                \draw[very thick] (1,0) node[below right] {\(a\)} arc[start angle=0, end angle=57.296, radius=1];
-                                \draw (57.296:1) node[above ] {\(b\)};
-                                \end{tikzpicture}
-                        </latex-image>
+                        <xi:include href="./one_radian.xml" /> 
                 </image>
         </figure>
         <p>

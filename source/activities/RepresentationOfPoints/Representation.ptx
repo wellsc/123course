@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id='sec_represent' xmlns:xi="http://www.w3.org/2001/XInclude">
         <title>Representing Points and Motion</title>
-<subsection xml:id='ssec_moves' xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id='ssec_moves'>
         <title>A Knight's Moves</title>
         <p>
 In chess, the knight is one of the most misunderstood, under-utilized,
@@ -17,19 +17,7 @@ way the knight moves.  Two possible moves for a knight are
             <caption>Two of a knight's possible moves in chess.</caption>
             <image xml:id='img_tour' width='65%'>
                     <description><p>A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).</p></description>
-                    <latex-image>
-                        \begin{tikzpicture}[scale=0.75, every edge/.style={draw,thick,-stealth}]
-                            \draw[color=black!15] (-3,-3) grid[step=1] (4,4);
-                            \coordinate (start) at (0,0);
-                            \coordinate (m1) at (1,2);
-                            \coordinate (m2) at (2,1);
-                            \fill (start) circle (0.05) node[below] {\emph{Start}};
-                            \fill (m1) circle (0.05) node[above] {\emph{Move~1}};
-                            \fill (m2) circle (0.05) node[right] {\emph{Move~2}};
-                            \draw[dotted] (start) -- (0,2) -- (m1);
-                            \draw[dotted] (start) -- (2,0) -- (m2);
-                        \end{tikzpicture}
-                    </latex-image>
+                    <xi:include href="./moves.xml"/>
             </image>
           </figure>
 </subsection>
@@ -59,24 +47,7 @@ way the knight moves.  Two possible moves for a knight are
             <caption>Adding Vectors Graphically.</caption>
             <image xml:id='img_combining' width='65%'>
                     <description><p>A visual representation of vector addition.</p></description>
-                    <latex-image>
-                        \begin{tikzpicture}[scale=0.75, every edge/.style={draw,thick,-stealth}]
-                            \draw[color=black!15] (-2,-2) grid[step=1] (5,5);
-                            \coordinate (start) at (0,0);
-                            \coordinate (k1) at (1,2);
-                            \coordinate (k2) at (2,1);
-                            \coordinate (k3) at (3,3);
-                            \fill (start) circle (0.05);
-                            \fill (k1) circle (0.05);
-                            \fill (k2) circle (0.05);
-                            \fill (k3) circle (0.05);
-                            \draw[->] (start) -- node[midway,above left] {\(\vec{k}_{1}\)} (k1);
-                            \draw[->] (start) -- node[midway,below right] {\(\vec{k}_{2}\)} (k2);
-                            \draw[dashed,->] (k1) -- node[midway,above] {\(\vec{k}_{2}\)} (k3);
-                            \draw[dashed,->] (k2) -- node[midway,right] {\(\vec{k}_{1}\)} (k3);
-                            \draw[thick,->] (start) -- (k3) node[right] {\(\vec{k}_{1}+\vec{k}_{2}\)};
-                        \end{tikzpicture}
-                    </latex-image>
+                    <xi:include href="./vector_add.xml" />
             </image>
           </figure>
           <p>
@@ -111,7 +82,6 @@ various squares using linear combinations of
 <m>\vec{k}_2</m>? 
 </p>
 <p>
-        For this activity, you can use the blank grid in <xref ref='fig_grid'/> if you find it helpful. (Place the origin wherever you want!)
 <ol>
 <li> We know that  
 <m>\vec{k}_1+\vec{k}_2</m> allows
@@ -161,17 +131,6 @@ are allowed, which squares can you reach?  Explain.
 </li>
 </ol>
         </p>
-          <figure xml:id='fig_grid'>
-            <caption>A Blank Grid.</caption>
-            <image xml:id='img_grid' width='100%'>
-                    <description><p>A blank grid.</p></description>
-                    <latex-image>
-                        \begin{tikzpicture}[scale=0.75, every edge/.style={draw,thick,-stealth}]
-                            \draw[color=black!35] (-10,-10) grid[step=1] (10,10);
-                        \end{tikzpicture}
-                    </latex-image>
-            </image>
-          </figure>
 
 </subsection>
 </section>

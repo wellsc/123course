@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="principle_sine">
+<diagram dimensions="(500,100)" margins="20">
+  <definition>f(x)=sin(x)</definition>
+  <coordinates bbox="(-2.25*pi,-1.5,2.25*pi,1.5)">
+    <axes 
+      arrows="0" 
+      thickness="1" 
+      h-pi-format="yes" 
+      hticks="(-2*pi,pi/4,2*pi)" 
+      hlabels="(-2*pi,pi/2,2*pi)" 
+      vticks="(-3/2,1/2,3/2)"
+    />
+    <graph function="f" thickness="1" />
+    <graph function="f" domain="(-pi/2,pi/2)" thickness="4" />
+  </coordinates>
+
+</diagram>
+</prefigure>

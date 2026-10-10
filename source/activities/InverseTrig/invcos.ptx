@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<subsection xml:id="sec_inverse_cosine">
+	<subsection xml:id="sec_inverse_cosine" xmlns:xi="http://www.w3.org/2001/XInclude">
 		<title>The Inverse Cosine Function</title>
                 <introduction>
                 <p>
@@ -15,49 +15,7 @@
                         <caption>The Cosine Function and its Principle Branch</caption>
                         <image width="50%">
                                 <description><p>The graph of cosine with its principle branch, from 0 to pi, emphasized</p></description>
-                                <latex-image>
-                                        \begin{tikzpicture}[scale=1]
-                            \begin{scope}
-                                        \draw (0,-1.75) -- (0,1.75);
-                                        \draw (0.1,1) -- (-0.1,1) node[left] {\(1\)};
-                                        \draw (0.1,0.5) -- (-0.1,0.5) node[left] {\(\frac{1}{2}\)};
-                                        \draw (0.1,1.5) -- (-0.1,1.5) node[left] {\(\frac{3}{2}\)};
-                                        \draw (0.1,-1) -- (-0.1,-1) node[left] {\(-1\)};
-                                        \draw (0.1,-0.5) -- (-0.1,-0.5) node[left] {\(-{}{}\frac{1}{2}\)};
-                                        \draw (0.1,-1.5) -- (-0.1,-1.5) node[left] {\(-{}{}\frac{3}{2}\)};
-                                        \draw
-                                                let
-                                                        \n1 = {180},
-                                                        \n2 = {3.14159},
-                                                in
-                                        ({-2.2*\n2},0) -- ({2.2*\n2},0) 
-                                        \foreach \x in {-7/4,-5/4,-3/4,-1/4,7/4,5/4,3/4,1/4}{
-                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1)
-                                        }
-                                        \foreach \x in {-2,-3/2,-1/2,1/2,3/2,2}{
-                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1) node[below=0.25] {\(\x\pi\)}
-                                        }
-                                        ({-1*\n2},0.1) -- ({-1*\n2},-0.1) node[below=0.25] {\(-\pi\)}
-                                        ({\n2},0.1)    --    ({\n2},-0.1) node[below=0.25] {\(\pi\)}
-                                        ;
-                                        \draw
-                                                let
-                                                        \n1 = {180},
-                                                        \n2 = {3.14159},
-                                                in
-                                                        plot[domain={-2*\n1}:{2*\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{cos(\t)})
-                                        ;
-                                        \draw[line width=2]
-                                                let
-                                                        \n1 = {180},
-                                                        \n2 = {3.14159},
-                                                in
-                                                        plot[domain={0}:{\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{cos(\t)})
-                                                        ({3*\n2/4},1) node {\(y=\cos(t)\)}
-                                        ;
-                            \end{scope}
-                                        \end{tikzpicture}
-                                </latex-image>
+                                <xi:include href="./principle_cosine.xml" />
                         </image>
                 </figure>
                 </subsubsection>

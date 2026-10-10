@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="vectors_and_unit_circle">
+<diagram dimensions="(400,300)" margins="20">
+  <definition>O=(0,0)</definition>
+  <definition>theta=pi/6</definition>
+  <definition>phi=3*pi/4</definition>
+  <definition>u1=(cos(theta),sin(theta))</definition>
+  <definition>u2=(cos(phi),sin(phi))</definition>
+  <definition>v1=4*u1</definition>
+  <definition>v2=3*u2</definition>
+  <coordinates bbox="(-4,-2,4,4)">
+    <axes arrows="1" decorations="no" thickness="1" />
+    <circle center="O" radius="1" thickness="1" />
+    <vector v="u1" thickness="2" alignment="w" offset="(-2,4)"><m>\vec{u}_{1}</m></vector>
+    <vector v="u2" thickness="2" alignment="s"><m>\vec{u}_{2}</m></vector>
+    <vector v="v1" thickness="2" alignment="n"><m>\vec{v}_{1}=4\vec{u}_{1}</m></vector>
+    <vector v="v2" thickness="2" alignment="w"><m>\vec{v}_{2}=3\vec{u}_{2}</m></vector>
+
+    <line endpoints="((cos(5*pi/4),sin(5*pi/4)),O)" dash="2 4" ><m>\small{}1\text{cm}</m></line>
+  
+    <label anchor="0.75*v1" alignment="e" offset="(0,-5)"><m>4\text{cm}</m></label>
+    <label anchor="0.55*v2" alignment="w" offset="(0,-5)"><m>3\text{cm}</m></label>
+
+    <angle-marker points="((1,0),(0,0),v1)" radius="60" arrow="yes">
+      <m>\theta=\frac{\pi}{6}</m>
+    </angle-marker>
+    <angle-marker points="((1,0),(0,0),v2)" radius="90" arrow="yes">
+      <m>\phi=\frac{3\pi}{4}</m>
+    </angle-marker>
+  </coordinates>
+
+</diagram>
+</prefigure>

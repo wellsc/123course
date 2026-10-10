@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="tree_height">
+<diagram dimensions="(400,600)" margins="5">
+  <definition>Inaya=(0,0)</definition>
+  <definition>Base=(10,0)</definition>
+  <definition>th=1.15251</definition>
+  <definition>off=1</definition>
+  <definition>h=10*tan(th)</definition>
+  <definition>r=2</definition>
+  <definition>Top=(10,h)</definition>
+  <coordinates bbox="(-5,-5,15,25)">
+
+    <line endpoints="(Inaya,Base)" infinite="yes" />
+    <line endpoints="(Inaya-(0,off),Base-(0,off))" infinite="no" arrows="2" alignment="s"><m>10\text{m}</m></line>
+    <line endpoints="(Inaya,Top)" dash="2 4"/>
+    <line endpoints="(Top+(2*off,0),Base+(2*off,0))" alignment="n"
+            offset="(0,5)" rotate="90"
+            dash="2 4" arrows="2">
+            <m>d</m>
+    </line>
+         <angle-marker points="(Base,Inaya,Top)" arrow="yes" radius="35" >
+              <m>\theta\approx${th}\text{rad}</m>
+         </angle-marker>
+
+    <repeat parameter="k=0..9">
+      <definition>tip=(10,(k+1)*h/10)</definition>
+      <definition>left=(10-(10-k)/10*r,k*h/10)</definition>
+      <definition>right=(10+(10-k)/10*r,k*h/10)</definition>
+        <triangle vertices="(left,tip,right)" fill="green"/>
+    </repeat>
+
+    <point p="Inaya" alignment="nw" >Inaya</point>
+    
+  </coordinates>
+
+</diagram>
+</prefigure>

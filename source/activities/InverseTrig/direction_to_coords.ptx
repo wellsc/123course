@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<subsection xml:id="sec_direction_to_coords">
+	<subsection xml:id="sec_direction_to_coords" xmlns:xi="http://www.w3.org/2001/XInclude">
 		<title>From Direction and Magnitude to Coordinates</title>
                 <exercise xml:id='exer_dir_to_coords'>
                         <introduction>
@@ -10,37 +10,7 @@
                         <caption>Vectors and the Unit Circle</caption>
                         <image width='50%'>
                                 <description><p>The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle  3 pi over 4, and v2 from the origin in the same direction with length 3.</p></description>
-                                <latex-image>
-                                        \begin{tikzpicture}[scale=1]
-                                        \coordinate (O) at (0,0);
-                                        \coordinate (v1) at (30:4);
-                                        \coordinate (u1) at (30:1);
-                                        \coordinate (v2) at (135:3);
-                                        \coordinate (u2) at (135:1);
-                                        \draw[-stealth] (-3.7,0) -- (3.7,0);
-                                        \draw[-stealth] (0,-1.7) -- (0,3.7);
-                                        \draw (O) circle (1);
-                                        \draw[dotted] (O) -- node[midway] {\(1\)cm} (225:1);
-
-                                        % Draw v1 and u1, labeling length and angle
-                                        \draw[thick,-stealth] (O) -- node[near end,right] {\(4\)cm} (v1) node[right] {\(\vec{v}_{1}\)};
-                                        \draw[very thick,-stealth] (O) -- (u1) node[above] {\(\vec{u}_{1}\)};
-                                        \draw[-stealth,color=black!50] 
-                                        let
-                                        \n1 = {0.6},
-                                        in
-                                        (\n1,0) arc[start angle=0, end angle=30,radius=\n1] node[midway,right] {\(\theta=\frac{\pi}{6}\)};
-
-                                        % Draw v2 and u2, labeling length and angle
-                                        \draw[thick,-stealth] (O) -- node[midway,left] {\(3\)cm} (v2) node[right] {\(\vec{v}_{2}\)};
-                                        \draw[very thick,-stealth] (O) -- (u2) node[below] {\(\vec{u}_{2}\)};
-                                        \draw[-stealth,color=black!50] 
-                                        let
-                                        \n1 = {2.3},
-                                        in
-                                        (\n1,0) arc[start angle=0, end angle=135,radius=\n1] node[near end,above] {\(\phi=\frac{3\pi}{4}\)};
-                                        \end{tikzpicture}
-                                </latex-image>
+                                <xi:include href="./vectors_and_unit_circle.xml"/>
                         </image>
                 </figure>
                         </introduction>

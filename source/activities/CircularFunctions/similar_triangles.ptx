@@ -20,35 +20,7 @@
                         <caption>An Example of Similar Triangles</caption>
                         <image>
                                 <description><p>An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.</p></description>
-                                <latex-image>
-                                        \begin{tikzpicture}
-                                        \begin{scope}[rotate=-25]
-                                        \draw[thick] (0,0) node[left] {\(C\)}
-                                        -- (30:2) node[midway,above] {\(a\)} node[above] {\(B\)}
-                                        -- (0:3.4641) node[midway,above] {\(c\)}  node[right] {\(A\)}
-                                        -- cycle node[midway,below] {\(b\)} ;
-                                        \draw (0:0.5) arc[start angle=0, end angle=30, radius=0.5];
-                                        \draw (0:0.6) arc[start angle=0, end angle=30, radius=0.6];
-                                        \draw (0:0.7) arc[start angle=0, end angle=30, radius=0.7];
-                                        \draw (0:2.9641) arc[start angle=180, delta angle=-30, radius=0.5];
-                                        \draw (0:3.0641) arc[start angle=180, delta angle=-30, radius=0.4];
-                                        \draw (0,0) -- (0:0.5) arc[start angle=0, end angle=30] (30:0.5);
-                                        \draw (30:1.8) arc[start angle=210, delta angle=120,radius=0.2];
-                                        \end{scope}
-                                        \begin{scope}[xshift=8cm, rotate=10]
-                                        \draw[thick] (0,0) node[left] {\(D\)}
-                                        -- (30:4) node[midway,above] {\(f\)} node[above] {\(E\)}
-                                        -- (0:6.9282) node[midway,above] {\(d\)} node[right] {\(F\)}
-                                        -- cycle node[midway,above] {\(e\)};
-                                        \draw (0:0.5) arc[start angle=0, end angle=30, radius=0.5];
-                                        \draw (0:0.6) arc[start angle=0, end angle=30, radius=0.6];
-                                        \draw (0:0.7) arc[start angle=0, end angle=30, radius=0.7];
-                                        \draw (0:6.4282) arc[start angle=180, delta angle=-30, radius=0.5];
-                                        \draw (0:6.5282) arc[start angle=180, delta angle=-30, radius=0.4];
-                                        \draw (30:3.8) arc[start angle=210, delta angle=120,radius=0.2];
-                                        \end{scope}
-                                        \end{tikzpicture}
-                                </latex-image>
+                                <xi:include href="./similar_triangles.xml"/>
                         </image>
                 </figure>
                 <p>
@@ -113,25 +85,7 @@
                                                 <caption>Circles with Similar Triangles</caption>
                                                 <image width='60%'>
                                                         <description><p>Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.</p></description>
-                                                        <latex-image>
-                                                                \begin{tikzpicture}
-                                                                \draw (0,0) circle (2);
-                                                                \draw (0,0) circle (6);
-                                                                \draw (-6.2,0) -- (6.2,0) 
-                                                                      (0,-6.2) -- (0,6.2);
-                                                                \draw[thick] let \p1 = (60:2)
-                                                                in
-                                                                (\x1,0) node[below] {\(A\)} 
-                                                                -- (\p1)node[above] {\(B\)} 
-                                                                ($(\x1,0)+(-0.2,0)$)--($(\x1,0)+(-0.2,0.2)$)--(\x1,0.2);
-                                                                \draw[thick] let \p1 = (60:6)
-                                                                in
-                                                                (\x1,0)  node[below] {\(C\)} 
-                                                                -- (\p1) node[above] {\(D\)}
-                                                                -- (0,0) node[below left] {\(O\)} 
-                                                                ($(\x1,0)+(-0.2,0)$)--($(\x1,0)+(-0.2,0.2)$)--(\x1,0.2);
-                                                                \end{tikzpicture}
-                                                        </latex-image>
+                                <xi:include href="./similar_triangles_circles.xml"/>
                                                 </image>
                                         </figure>
                                 </introduction>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="unit_circle_theta_x">
+<diagram dimensions="(600,600)" margins="15">
+  <definition>O=(0,0)</definition>
+  <definition>theta=pi/4</definition>
+  <definition>P=(cos(theta),sin(theta))</definition>
+  <definition>Q=(cos(theta),0)</definition>
+  <definition>A=(1,0)</definition>
+  <coordinates bbox="(-1.3,-1.3,1.3,1.3)">
+    <axes decorations="no" xlabel="x" ylabel="y" />
+    <circle center="O" radius="1" />
+    <line endpoints="(O,P)" ></line>
+    <line endpoints="(P,Q)" thickness="1" dash="4 4" />
+    <line endpoints="(P,Q)" thickness="1" dash="4 4" rotate="90" alignment="n" offset="(0,5)">
+      <m>a</m>
+    </line>
+    <line endpoints="(O,Q)" thickness="0" alignment="s" offset="(0,-2)" >
+      <m>a</m>
+    </line>
+    <angle-marker points="(A,O,P)" thickness="2" radius="55" arrow="yes"  ><m>\frac{\pi}{4}</m></angle-marker>      
+    <angle-marker points="(P,Q,O)" arrow="no" radius="10" ></angle-marker>      
+    <point p="P" alignment="ne" size="3" fill="black" offset="(0,3)" >
+      <m>P</m>
+    </point>
+    <point p="O" alignment="sw" size="3" fill="black" offset="(0,0)" >
+      <m>(0,0)</m>
+    </point>
+    <point p="A" alignment="se" size="3" fill="black" offset="(0,0)" >
+      <m>(1,0)</m>
+    </point>
+    
+  </coordinates>
+</diagram>
+</prefigure>

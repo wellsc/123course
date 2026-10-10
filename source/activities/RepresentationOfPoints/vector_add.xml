@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="vector_add">
+<diagram dimensions="(600,600)" margins="15" >
+  <definition>start=(0,0)</definition>
+  <definition>k1=(1,2)</definition>
+  <definition>i1=(0,2)</definition>
+  <definition>k2=(2,1)</definition>
+  <definition>i2=(2,0)</definition>
+
+  <coordinates bbox="(-3,-3,6,6)">
+    <grid spacings="((-3,1,6),(-3,1,6))"/>
+    <point p="start" size="2" alignment="s" ></point>
+    <point p="k1" size="2" alignment="n" ></point>
+    <point p="k2" size="2" alignment="e" ></point>
+    <line endpoints="(start,k1)" arrows="1" ><m>\vec{k}_{1}</m></line>
+    <line endpoints="(start,k2)" arrows="1" alignment="s" ><m>\vec{k}_{2}</m></line>
+
+    <line endpoints="(k2,k1+k2)"  dash="4 4" alignment="s" ><m>\vec{k}_{1}</m></line>
+    <line endpoints="(k1,k1+k2)"  alignment="n" dash="4 4" ><m>\vec{k}_{2}</m></line>    <vector v="k1+k2" thickness="4" alignment="e" ><m>\vec{k}_{1}+\vec{k}_{2}</m></vector>
+  </coordinates>
+</diagram>
+</prefigure>

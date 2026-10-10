@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="similar_triangles_circles">
+<diagram dimensions="(600,600)" margins="15" >
+  <definition>O=(0,0)</definition>
+  <definition>th=pi/3</definition>
+  <definition>scale=3</definition>
+  <definition>B=(cos(th),sin(th))</definition>
+  <definition>A=(cos(th),0)</definition>
+  <definition>C=scale*A</definition>
+  <definition>D=scale*B</definition>
+  <coordinates bbox="(-scale-1,-scale-1,scale+1,scale+1)">
+    <axes decorations="no" />
+      <circle center="O" radius="1" />  
+      <circle center="O" radius="scale" />  
+      <line endpoints="(O,D)"/>
+      <line endpoints="(C,D)"/>
+      <line endpoints="(A,B)"/>
+      <point p="O" alignment="sw" size="0" ><m>O</m></point>
+      <point p="B" alignment="nw" offset="(0,4)" size="0" ><m>B</m></point>
+      <point p="D" alignment="nw" offset="(0,4)" size="0" ><m>D</m></point>
+      <point p="A" alignment="s" size="0" ><m>A</m></point>
+      <point p="C" alignment="s" size="0" ><m>C</m></point>
+      <angle-marker points="(B,A,O)" />
+      <angle-marker points="(D,C,O)" />
+  </coordinates>
+</diagram>
+</prefigure>
+

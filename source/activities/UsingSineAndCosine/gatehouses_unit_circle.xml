@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="gatehouses_unit_circle">
+<diagram dimensions="(600,600)" margins="15" >
+  <definition>O=(0,0)</definition>
+  <definition>th=0.69474</definition>
+  <definition>h=30</definition>
+  <definition>w=h*tan(th)</definition>
+  <definition>H1=(h,0)</definition>
+  <definition>H2=(h,w)</definition>
+  <definition>Ow=(0,w)</definition>
+
+  <coordinates bbox="(-0.3*h,-0.3*h,1.1*h,1.1*h)">
+    <line endpoints="(O,H1)" infinite="yes" />
+    <line endpoints="(Ow,H2)" infinite="yes" />
+    <line endpoints="(O-(0,2),H1-(0,2))" infinite="no" arrows="2" ><m>30\text{m}</m></line>
+    <line endpoints="(O,H2)" dash="2 4" />
+    <line endpoints="(H1,H2)" dash="2 4" alignment="s" rotate="-90" offset="(0,-8)"><m>d</m></line>
+    <line endpoints="(O,(0,1))" infinite="yes" dash="4 4"/>
+    <circle center="O" radius="8" />
+
+    <angle-marker points="(H2,H1,O)" radius="30" />
+    <angle-marker points="(H1,O,H2)" ><m>\theta\approx ${th}</m></angle-marker>
+
+    <point p="O"/>
+    <rectangle center="H1" dimensions="(2,1)" fill="black" />
+    <rectangle center="H2" dimensions="(2,1)" fill="black" />
+    
+  </coordinates>
+</diagram>
+</prefigure>

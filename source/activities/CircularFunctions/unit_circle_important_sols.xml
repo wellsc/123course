@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="unit_circle_important_sols">
+<diagram dimensions="(420,420)" margins="15">
+  <definition>O=(0,0)</definition>
+  <definition>theta=pi/4</definition>
+  <definition>angles=[pi/6,pi/4,pi/3,pi/2,
+                      2*pi/3,3*pi/4,5*pi/6,pi,
+                      7*pi/6,5*pi/4,4*pi/3,3*pi/2,
+                      5*pi/3,7*pi/4,11*pi/6]
+  </definition>
+    <definition>
+    anglabs=[pi/6]
+  </definition>
+
+  <definition>P=(cos(theta),sin(theta))</definition>
+  <definition>Q=(cos(theta),0)</definition>
+  <definition>A=(1,0)</definition>
+  <coordinates bbox="(-1.4,-1.4,1.4,1.4)">
+    <axes decorations="no" xlabel="x" ylabel="y" />
+    <circle center="O" radius="1" />
+    
+    <repeat parameter="k=0..14" >
+      <!--
+      <line endpoints="(0.95*(cos(angles[k]),sin(angles[k])),1.05*(cos(angles[k]),sin(angles[k])))" />
+      -->
+      <point p="(cos(angles[k]),sin(angles[k]))" fill="black" size="2" />
+    </repeat>
+    <label anchor="0.85*(cos(pi/6),sin(pi/6))"       ><m>\frac{\pi}{6}</m></label>
+    <label anchor="0.85*(cos(pi/4),sin(pi/4))"       ><m>\frac{\pi}{4}</m></label>
+    <label anchor="0.85*(cos(pi/3),sin(pi/3))"              ><m>\frac{\pi}{3}</m></label>
+    <label anchor="0.85*(cos(pi/2),sin(pi/2))" alignment="e"><m>\frac{\pi}{2}</m></label>
+    <label anchor="0.85*(cos(2*pi/3),sin(2*pi/3))"   ><m>\frac{2\pi}{3}</m></label>
+    <label anchor="0.85*(cos(3*pi/4),sin(3*pi/4))"   ><m>\frac{3\pi}{4}</m></label>
+    <label anchor="0.85*(cos(5*pi/6),sin(5*pi/6))"   ><m>\frac{5\pi}{6}</m></label>
+    <label anchor="0.85*(cos(pi),sin(pi))" alignment="n"         ><m>\pi</m></label>
+    <label anchor="0.85*(cos(7*pi/6),sin(7*pi/6))"   ><m>\frac{7\pi}{6}</m></label>
+    <label anchor="0.85*(cos(5*pi/4),sin(5*pi/4))"   ><m>\frac{5\pi}{4}</m></label>
+    <label anchor="0.85*(cos(4*pi/3),sin(4*pi/3))"   ><m>\frac{4\pi}{3}</m></label>
+    <label anchor="0.85*(cos(3*pi/2),sin(3*pi/2))" alignment="e"  ><m>\frac{3\pi}{2}</m></label>
+    <label anchor="0.85*(cos(5*pi/3),sin(5*pi/3))"   ><m>\frac{5\pi}{3}</m></label>
+    <label anchor="0.85*(cos(7*pi/4),sin(7*pi/4))"   ><m>\frac{7\pi}{4}</m></label>
+    <label anchor="0.85*(cos(11*pi/6),sin(11*pi/6))" ><m>\frac{11\pi}{6}</m></label>
+
+    <label anchor="1.3*(cos(pi/6),sin(pi/6))"       ><m>\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m></label>
+    <label anchor="1.3*(cos(pi/4),sin(pi/4))"       ><m>\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(pi/3),sin(pi/3))"       ><m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(pi/2),sin(pi/2))" alignment="se"><m>(0,1)</m></label>
+    <label anchor="1.3*(cos(2*pi/3),sin(2*pi/3))"   ><m>\left(\frac{-1}{2},\frac{\sqrt{3}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(3*pi/4),sin(3*pi/4))"   ><m>\left(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(5*pi/6),sin(5*pi/6))"   ><m>\left(\frac{-\sqrt{3}}{2},\frac{1}{2}\right)</m></label>
+    <label anchor="1.3*(cos(pi),sin(pi))" alignment="n"         ><m>(-1,0)</m></label>
+    <label anchor="1.3*(cos(7*pi/6),sin(7*pi/6))"   ><m>\left(\frac{-\sqrt{3}}{2},\frac{-1}{2}\right)</m></label>
+    <label anchor="1.3*(cos(5*pi/4),sin(5*pi/4))"   ><m>\left(\frac{-\sqrt{2}}{2},\frac{-\sqrt{2}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(4*pi/3),sin(4*pi/3))"   ><m>\left(\frac{-1}{2},\frac{-\sqrt{3}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(3*pi/2),sin(3*pi/2))" alignment="e"  ><m>(0,-1)</m></label>
+    <label anchor="1.3*(cos(5*pi/3),sin(5*pi/3))"   ><m>\left(\frac{1}{2},\frac{-\sqrt{3}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(7*pi/4),sin(7*pi/4))"   ><m>\left(\frac{\sqrt{2}}{2},\frac{-\sqrt{2}}{2}\right)</m></label>
+    <label anchor="1.3*(cos(11*pi/6),sin(11*pi/6))" ><m>\left(\frac{\sqrt{3}}{2},\frac{-1}{2}\right)</m></label>
+  </coordinates>
+</diagram>
+</prefigure>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="train">
+<diagram dimensions="(500,400)" margins="20">
+  <definition>h=10</definition>
+  <definition>th2=0.89594</definition>
+  <definition>th1=1.05</definition>
+  <definition>Micah=(0,0)</definition>
+  <definition>Base=(0,h)</definition>
+  <definition>T1=(-h*tan(th1),h)</definition>
+  <definition>T2=(-h*tan(th2),h)</definition>
+  
+  <definition>off=1</definition>
+  <coordinates bbox="(-20,-5,6,15)">
+
+    <line endpoints="(Base,Micah)" infinite="no"  arrows="2"><m>10\text{m}</m></line>
+    <line endpoints="(T1,T2)"      infinite="yes" arrows="0"></line>
+    <line endpoints="(Micah,T1)" infinite="no" alignment="s" dash="2 4" ></line>
+    <line endpoints="(Micah,T2)" infinite="no" alignment="s" dash="2 4" ></line>
+
+    <rectangle center="T1" dimensions="(2,1)" fill="black"/>
+    <rectangle center="T1-(2.2,0)" dimensions="(2,1)" fill="black"/>
+  
+    <angle-marker points="(Base,Micah,T1)" arrow="yes" radius="80" >
+      <m>\theta_{1}</m>
+    </angle-marker>
+    <angle-marker points="(Base,Micah,T2)" arrow="yes" radius="35" >
+      <m>\theta_{2}</m>
+    </angle-marker>
+
+    <point p="Micah" alignment="s" >Micah</point>
+    <label anchor="(-0.5,13)" alignment="e" ><m>\theta_{1}\approx 0.98273\text{ rad}</m></label>
+    <label anchor="(-0.5,11.5)" alignment="e" ><m>\theta_{2}\approx 0.89594\text{ rad}</m></label>
+    
+  </coordinates>
+
+</diagram>
+</prefigure>

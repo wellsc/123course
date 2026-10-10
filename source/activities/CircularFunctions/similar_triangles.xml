@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="similar_triangles">
+<diagram dimensions="(840,280)" margins="15">
+  <definition>A=(3.4641,0)</definition>
+  <definition>B=2*(cos(pi/6),sin(pi/6))</definition>
+  <definition>C=(0,0)</definition>
+  <definition>T1=(C,B,A)</definition>
+  <coordinates bbox="(-1,-1,14,4)">
+    <transform>
+      <translate by="(0,2)" />
+      <rotate by="-25" about="C" />
+      <triangle vertices="T1" labels="C,B,A"/>
+      <angle-marker points="T1" />
+      
+      <angle-marker points="roll(T1)" radius="20" />
+      <angle-marker points="roll(T1)" radius="25" />
+      <angle-marker points="roll(T1)" radius="30" />
+
+      <angle-marker points="roll(roll(T1))" radius="20" />
+      <angle-marker points="roll(roll(T1))" radius="25" />
+      
+    </transform>
+    <transform>
+      <rotate by="10" about="C" />
+      <translate by="(6,-1)" />
+      <scale by="2.1" />
+      <triangle vertices="T1" angle-markers="no" labels="D,E,F"/>
+      <angle-marker points="T1" />
+      
+      <angle-marker points="roll(T1)" radius="20" />
+      <angle-marker points="roll(T1)" radius="25" />
+      <angle-marker points="roll(T1)" radius="30" />
+
+
+      <angle-marker points="roll(roll(T1))" radius="20" />
+      <angle-marker points="roll(roll(T1))" radius="25" />
+    </transform>
+  </coordinates>
+</diagram>
+</prefigure>

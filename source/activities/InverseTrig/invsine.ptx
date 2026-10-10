@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<subsection xml:id="sec_inverse_sine">
+	<subsection xml:id="sec_inverse_sine" xmlns:xi="http://www.w3.org/2001/XInclude">
 		<title>The Inverse Sine Function</title>
                 <introduction>
                 <p>
@@ -24,41 +24,7 @@
                         <caption>The Sine Function</caption>
                         <image width="50%">
                                 <description><p>The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized</p></description>
-                                <latex-image>
-                                        \begin{tikzpicture}[scale=1]
-                            \begin{scope}
-                                        \draw (0,-1.75) -- (0,1.75);
-                                        \draw (0.1,1) -- (-0.1,1) node[left] {\(1\)};
-                                        \draw (0.1,0.5) -- (-0.1,0.5) node[left] {\(\frac{1}{2}\)};
-                                        \draw (0.1,1.5) -- (-0.1,1.5) node[left] {\(\frac{3}{2}\)};
-                                        \draw (0.1,-1) -- (-0.1,-1) node[left] {\(-1\)};
-                                        \draw (0.1,-0.5) -- (-0.1,-0.5) node[left] {\(-{}{}\frac{1}{2}\)};
-                                        \draw (0.1,-1.5) -- (-0.1,-1.5) node[left] {\(-{}{}\frac{3}{2}\)};
-                                        \draw
-                                                let
-                                                        \n1 = {180},
-                                                        \n2 = {3.14159},
-                                                in
-                                        ({-2.2*\n2},0) -- ({2.2*\n2},0) 
-                                        \foreach \x in {-7/4,-5/4,-3/4,-1/4,7/4,5/4,3/4,1/4}{
-                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1)
-                                        }
-                                        \foreach \x in {-2,-3/2,-1/2,1/2,3/2,2}{
-                                        ({\x*\n2},0.1) -- ({\x*\n2},-0.1) node[below=0.25] {\(\x\pi\)}
-                                        }
-                                        ({-1*\n2},0.1) -- ({-1*\n2},-0.1) node[below=0.25] {\(-\pi\)}
-                                        ({\n2},0.1)    --    ({\n2},-0.1) node[below=0.25] {\(\pi\)}
-                                        ;
-                                        \draw
-                                                let
-                                                        \n1 = {180},
-                                                        \n2 = {3.14159},
-                                                in
-                                                        plot[domain={-2*\n1}:{2*\n1},samples=90,smooth,variable=\t] ({\t/\n1*\n2},{sin(\t)})
-                                        ;
-                            \end{scope}
-                                        \end{tikzpicture}
-                                </latex-image>
+                                <xi:include href="./principle_sine.xml"/>
                         </image>
                 </figure>
                 </subsubsection>
