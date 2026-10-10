@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="similar_triangles_circles-figure" width="630" height="630" viewBox="0 0 630 630">
+  <defs>
+    <clipPath id="similar_triangles_circles-__clipPath-0">
+      <rect x="15.0" y="15.0" width="600.0" height="600.0"/>
+    </clipPath>
+    <clipPath id="similar_triangles_circles-__clipPath-1">
+      <rect x="15.0" y="15.0" width="600.0" height="600.0"/>
+    </clipPath>
+  </defs>
+  <g id="similar_triangles_circles-axes" stroke="black" stroke-width="2">
+    <line id="similar_triangles_circles-__line-0" x1="15.0" y1="315.0" x2="615.0" y2="315.0" stroke="black" stroke-width="2"/>
+    <line id="similar_triangles_circles-__line-1" x1="315.0" y1="615.0" x2="315.0" y2="15.0" stroke="black" stroke-width="2"/>
+  </g>
+  <path id="similar_triangles_circles-__path-0" d="M 390.0 315.0 L 389.9 310.3 L 389.4 305.6 L 388.7 300.9 L 387.6 296.3 L 386.3 291.8 L 384.7 287.4 L 382.9 283.1 L 380.7 278.9 L 378.3 274.8 L 375.7 270.9 L 372.8 267.2 L 369.7 263.7 L 366.3 260.3 L 362.8 257.2 L 359.1 254.3 L 355.2 251.7 L 351.1 249.3 L 346.9 247.1 L 342.6 245.3 L 338.2 243.7 L 333.7 242.4 L 329.1 241.3 L 324.4 240.6 L 319.7 240.1 L 315.0 240.0 L 310.3 240.1 L 305.6 240.6 L 300.9 241.3 L 296.3 242.4 L 291.8 243.7 L 287.4 245.3 L 283.1 247.1 L 278.9 249.3 L 274.8 251.7 L 270.9 254.3 L 267.2 257.2 L 263.7 260.3 L 260.3 263.7 L 257.2 267.2 L 254.3 270.9 L 251.7 274.8 L 249.3 278.9 L 247.1 283.1 L 245.3 287.4 L 243.7 291.8 L 242.4 296.3 L 241.3 300.9 L 240.6 305.6 L 240.1 310.3 L 240.0 315.0 L 240.1 319.7 L 240.6 324.4 L 241.3 329.1 L 242.4 333.7 L 243.7 338.2 L 245.3 342.6 L 247.1 346.9 L 249.3 351.1 L 251.7 355.2 L 254.3 359.1 L 257.2 362.8 L 260.3 366.3 L 263.7 369.7 L 267.2 372.8 L 270.9 375.7 L 274.8 378.3 L 278.9 380.7 L 283.1 382.9 L 287.4 384.7 L 291.8 386.3 L 296.3 387.6 L 300.9 388.7 L 305.6 389.4 L 310.3 389.9 L 315.0 390.0 L 319.7 389.9 L 324.4 389.4 L 329.1 388.7 L 333.7 387.6 L 338.2 386.3 L 342.6 384.7 L 346.9 382.9 L 351.1 380.7 L 355.2 378.3 L 359.1 375.7 L 362.8 372.8 L 366.3 369.7 L 369.7 366.3 L 372.8 362.8 L 375.7 359.1 L 378.3 355.2 L 380.7 351.1 L 382.9 346.9 L 384.7 342.6 L 386.3 338.2 L 387.6 333.7 L 388.7 329.1 L 389.4 324.4 L 389.9 319.7 L 390.0 315.0 Z" stroke="black" stroke-width="2" fill="none"/>
+  <path id="similar_triangles_circles-__path-1" d="M 540.0 315.0 L 539.6 300.9 L 538.2 286.8 L 536.0 272.8 L 532.9 259.0 L 529.0 245.5 L 524.2 232.2 L 518.6 219.2 L 512.2 206.6 L 505.0 194.4 L 497.0 182.7 L 488.4 171.6 L 479.0 161.0 L 469.0 151.0 L 458.4 141.6 L 447.3 133.0 L 435.6 125.0 L 423.4 117.8 L 410.8 111.4 L 397.8 105.8 L 384.5 101.0 L 371.0 97.1 L 357.2 94.0 L 343.2 91.8 L 329.1 90.4 L 315.0 90.0 L 300.9 90.4 L 286.8 91.8 L 272.8 94.0 L 259.0 97.1 L 245.5 101.0 L 232.2 105.8 L 219.2 111.4 L 206.6 117.8 L 194.4 125.0 L 182.7 133.0 L 171.6 141.6 L 161.0 151.0 L 151.0 161.0 L 141.6 171.6 L 133.0 182.7 L 125.0 194.4 L 117.8 206.6 L 111.4 219.2 L 105.8 232.2 L 101.0 245.5 L 97.1 259.0 L 94.0 272.8 L 91.8 286.8 L 90.4 300.9 L 90.0 315.0 L 90.4 329.1 L 91.8 343.2 L 94.0 357.2 L 97.1 371.0 L 101.0 384.5 L 105.8 397.8 L 111.4 410.8 L 117.8 423.4 L 125.0 435.6 L 133.0 447.3 L 141.6 458.4 L 151.0 469.0 L 161.0 479.0 L 171.6 488.4 L 182.7 497.0 L 194.4 505.0 L 206.6 512.2 L 219.2 518.6 L 232.2 524.2 L 245.5 529.0 L 259.0 532.9 L 272.8 536.0 L 286.8 538.2 L 300.9 539.6 L 315.0 540.0 L 329.1 539.6 L 343.2 538.2 L 357.2 536.0 L 371.0 532.9 L 384.5 529.0 L 397.8 524.2 L 410.8 518.6 L 423.4 512.2 L 435.6 505.0 L 447.3 497.0 L 458.4 488.4 L 469.0 479.0 L 479.0 469.0 L 488.4 458.4 L 497.0 447.3 L 505.0 435.6 L 512.2 423.4 L 518.6 410.8 L 524.2 397.8 L 529.0 384.5 L 532.9 371.0 L 536.0 357.2 L 538.2 343.2 L 539.6 329.1 L 540.0 315.0 Z" stroke="black" stroke-width="2" fill="none"/>
+  <line id="similar_triangles_circles-__line-2" x1="315.0" y1="315.0" x2="427.5" y2="120.1" stroke="black" stroke-width="2" fill="none"/>
+  <line id="similar_triangles_circles-__line-3" x1="427.5" y1="315.0" x2="427.5" y2="120.1" stroke="black" stroke-width="2" fill="none"/>
+  <line id="similar_triangles_circles-__line-4" x1="352.5" y1="315.0" x2="352.5" y2="250.0" stroke="black" stroke-width="2" fill="none"/>
+  <g id="similar_triangles_circles-__g-0">
+    <g id="similar_triangles_circles-__label-0" transform="translate(314.0,316.0) translate(-13.8,-0.0)">
+      <g id="similar_triangles_circles-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.808px" height="13.144px" role="img" focusable="false" viewBox="0 -704 763 726" x="0.0" y="0.0">
+          <defs>
+            <path id="similar_triangles_circles-MJX-2-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper O">
+                <use data-c="1D442" xlink:href="#similar_triangles_circles-MJX-2-TEX-I-1D442"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <circle cx="315.0" cy="315.0" r="0" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <g id="similar_triangles_circles-__g-1">
+    <g id="similar_triangles_circles-__label-1" transform="translate(351.5,241.1) translate(-13.7,-12.4)">
+      <g id="similar_triangles_circles-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.736px" height="12.360px" role="img" focusable="false" viewBox="0 -683 759 683" x="0.0" y="0.0">
+          <defs>
+            <path id="similar_triangles_circles-MJX-3-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper B">
+                <use data-c="1D435" xlink:href="#similar_triangles_circles-MJX-3-TEX-I-1D435"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <circle cx="352.5" cy="250.0" r="0" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <g id="similar_triangles_circles-__g-2">
+    <g id="similar_triangles_circles-__label-2" transform="translate(426.5,111.1) translate(-15.0,-12.4)">
+      <g id="similar_triangles_circles-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="14.984px" height="12.360px" role="img" focusable="false" viewBox="0 -683 828 683" x="0.0" y="0.0">
+          <defs>
+            <path id="similar_triangles_circles-MJX-4-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper D">
+                <use data-c="1D437" xlink:href="#similar_triangles_circles-MJX-4-TEX-I-1D437"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <circle cx="427.5" cy="120.1" r="0" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <g id="similar_triangles_circles-__g-3">
+    <g id="similar_triangles_circles-__label-3" transform="translate(352.5,319.0) translate(-6.8,-0.0)">
+      <g id="similar_triangles_circles-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.576px" height="12.960px" role="img" focusable="false" viewBox="0 -716 750 716" x="0.0" y="0.0">
+          <defs>
+            <path id="similar_triangles_circles-MJX-5-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper A">
+                <use data-c="1D434" xlink:href="#similar_triangles_circles-MJX-5-TEX-I-1D434"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <circle cx="352.5" cy="315.0" r="0" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <g id="similar_triangles_circles-__g-4">
+    <g id="similar_triangles_circles-__label-4" transform="translate(427.5,319.0) translate(-6.9,-0.0)">
+      <g id="similar_triangles_circles-__g-9">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.752px" height="13.160px" role="img" focusable="false" viewBox="0 -705 760 727" x="0.0" y="0.0">
+          <defs>
+            <path id="similar_triangles_circles-MJX-6-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper C">
+                <use data-c="1D436" xlink:href="#similar_triangles_circles-MJX-6-TEX-I-1D436"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <circle cx="427.5" cy="315.0" r="0" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <path id="similar_triangles_circles-__path-2" stroke="black" stroke-width="2" fill="none" d="M 352.5 298.0 L 335.5 298.0 L 335.5 315.0"/>
+  <path id="similar_triangles_circles-__path-3" stroke="black" stroke-width="2" fill="none" d="M 427.5 298.0 L 410.5 298.0 L 410.5 315.0"/>
+</svg>

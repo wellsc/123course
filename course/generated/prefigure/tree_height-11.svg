@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="tree_height-figure" width="410" height="610" viewBox="0 0 410 610">
+  <defs>
+    <clipPath id="tree_height-__clipPath-0">
+      <rect x="5.0" y="5.0" width="400.0" height="600.0"/>
+    </clipPath>
+    <clipPath id="tree_height-__clipPath-1">
+      <rect x="5.0" y="5.0" width="400.0" height="600.0"/>
+    </clipPath>
+    <marker id="tree_height-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="tree_height-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="tree_height-arrow-head-start-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="tree_height-arrow-head-start-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <line id="tree_height-__line-0" x1="5.0" y1="505.0" x2="405.0" y2="505.0" stroke="black" stroke-width="2" fill="none"/>
+  <g id="tree_height-__line-1">
+    <g transform="translate(105.0,525.0) rotate(0.0)">
+      <g id="tree_height-__label-0" transform="translate(100.0,4.0) translate(-16.6,-0.0)">
+        <g id="tree_height-__g-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="33.176px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1833 688" x="0.0" y="0.0">
+            <defs>
+              <path id="tree_height-MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+              <path id="tree_height-MJX-2-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+              <path id="tree_height-MJX-2-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-annotation="clearspeak:unit" data-semantic-id="3" data-semantic-children="0,1" data-semantic-collapsed="(3 (c 2) 0 1)" data-semantic-speech="10 m">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="10">
+                  <use data-c="31" xlink:href="#tree_height-MJX-2-TEX-N-31"/>
+                  <use data-c="30" xlink:href="#tree_height-MJX-2-TEX-N-30" transform="translate(500,0)"/>
+                </g>
+                <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="latinletter" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="1" data-semantic-parent="3" data-semantic-speech="m" transform="translate(1000,0)">
+                  <use data-c="6D" xlink:href="#tree_height-MJX-2-TEX-N-6D"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <line x1="107.4" y1="525.0" x2="302.6" y2="525.0" stroke="black" stroke-width="2" fill="none" marker-end="url(#tree_height-arrow-head-end-2_None_24_60-black)" marker-start="url(#tree_height-arrow-head-start-2_None_24_60-black)"/>
+  </g>
+  <line id="tree_height-__line-2" x1="105.0" y1="505.0" x2="305.0" y2="55.1" stroke="black" stroke-width="2" stroke-dasharray="2 4" fill="none"/>
+  <g id="tree_height-__line-3">
+    <g transform="translate(345.0,55.1) rotate(90.0)">
+      <g id="tree_height-__label-1" transform="translate(224.9,-9.0) rotate(-90.0) translate(-4.7,-12.7)">
+        <g id="tree_height-__g-3">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="9.408px" height="12.744px" role="img" focusable="false" viewBox="0 -694 520 704" x="0.0" y="0.0">
+            <defs>
+              <path id="tree_height-MJX-3-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="d">
+                  <use data-c="1D451" xlink:href="#tree_height-MJX-3-TEX-I-1D451"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <line x1="345.0" y1="57.5" x2="345.0" y2="502.6" stroke="black" stroke-width="2" stroke-dasharray="2 4" fill="none" marker-end="url(#tree_height-arrow-head-end-2_None_24_60-black)" marker-start="url(#tree_height-arrow-head-start-2_None_24_60-black)"/>
+  </g>
+  <g id="tree_height-__g-0">
+    <g id="tree_height-__label-2" transform="translate(138.3,481.9) translate(0.0,-13.2)">
+      <g id="tree_height-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="118.160px" height="13.160px" role="img" focusable="false" viewBox="0 -705 6528.6 727" x="0.0" y="0.0">
+          <defs>
+            <path id="tree_height-MJX-4-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+            <path id="tree_height-MJX-4-TEX-N-2248" d="M55 319Q55 360 72 393T114 444T163 472T205 482Q207 482 213 482T223 483Q262 483 296 468T393 413L443 381Q502 346 553 346Q609 346 649 375T694 454Q694 465 698 474T708 483Q722 483 722 452Q722 386 675 338T555 289Q514 289 468 310T388 357T308 404T224 426Q164 426 125 393T83 318Q81 289 69 289Q55 289 55 319ZM55 85Q55 126 72 159T114 210T163 238T205 248Q207 248 213 248T223 249Q262 249 296 234T393 179L443 147Q502 112 553 112Q609 112 649 141T694 220Q694 249 708 249T722 217Q722 153 675 104T555 55Q514 55 468 76T388 123T308 170T224 192Q164 192 125 159T83 84Q80 55 69 55Q55 55 55 85Z"/>
+            <path id="tree_height-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="tree_height-MJX-4-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="tree_height-MJX-4-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+            <path id="tree_height-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="tree_height-MJX-4-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+            <path id="tree_height-MJX-4-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+            <path id="tree_height-MJX-4-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="6" data-semantic-children="4,3" data-semantic-collapsed="(6 (c 5) 4 3)" data-semantic-speech="theta almost equals 1.15251 rad">
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="4" data-semantic-children="0,2" data-semantic-content="1" data-semantic-parent="6" data-semantic-speech="theta almost equals 1.15251">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="4" data-semantic-speech="theta">
+                  <use data-c="1D703" xlink:href="#tree_height-MJX-4-TEX-I-1D703"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="4" data-semantic-operator="relseq,≈" data-semantic-speech="almost equals" transform="translate(746.8,0)">
+                  <use data-c="2248" xlink:href="#tree_height-MJX-4-TEX-N-2248"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="1.15251" transform="translate(1802.6,0)">
+                  <use data-c="31" xlink:href="#tree_height-MJX-4-TEX-N-31"/>
+                  <use data-c="2E" xlink:href="#tree_height-MJX-4-TEX-N-2E" transform="translate(500,0)"/>
+                  <use data-c="31" xlink:href="#tree_height-MJX-4-TEX-N-31" transform="translate(778,0)"/>
+                  <use data-c="35" xlink:href="#tree_height-MJX-4-TEX-N-35" transform="translate(1278,0)"/>
+                  <use data-c="32" xlink:href="#tree_height-MJX-4-TEX-N-32" transform="translate(1778,0)"/>
+                  <use data-c="35" xlink:href="#tree_height-MJX-4-TEX-N-35" transform="translate(2278,0)"/>
+                  <use data-c="31" xlink:href="#tree_height-MJX-4-TEX-N-31" transform="translate(2778,0)"/>
+                </g>
+              </g>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="3" data-semantic-parent="6" data-semantic-speech="rad" transform="translate(5080.6,0)">
+                <use data-c="72" xlink:href="#tree_height-MJX-4-TEX-N-72"/>
+                <use data-c="61" xlink:href="#tree_height-MJX-4-TEX-N-61" transform="translate(392,0)"/>
+                <use data-c="64" xlink:href="#tree_height-MJX-4-TEX-N-64" transform="translate(892,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" marker-start="url(#tree_height-arrow-head-start-2_None_24_60-black)" d="M 121.4 474.1 L 121.7 474.3 L 122.1 474.5 L 122.4 474.6 L 122.7 474.8 L 123.1 475.0 L 123.4 475.2 L 123.7 475.4 L 124.0 475.6 L 124.3 475.8 L 124.7 476.0 L 125.0 476.3 L 125.3 476.5 L 125.6 476.7 L 125.9 476.9 L 126.2 477.1 L 126.5 477.4 L 126.8 477.6 L 127.1 477.9 L 127.4 478.1 L 127.7 478.3 L 128.0 478.6 L 128.2 478.8 L 128.5 479.1 L 128.8 479.3 L 129.1 479.6 L 129.4 479.9 L 129.6 480.1 L 129.9 480.4 L 130.2 480.7 L 130.4 480.9 L 130.7 481.2 L 130.9 481.5 L 131.2 481.8 L 131.4 482.1 L 131.7 482.4 L 131.9 482.6 L 132.2 482.9 L 132.4 483.2 L 132.6 483.5 L 132.9 483.8 L 133.1 484.1 L 133.3 484.4 L 133.5 484.7 L 133.8 485.1 L 134.0 485.4 L 134.2 485.7 L 134.4 486.0 L 134.6 486.3 L 134.8 486.6 L 135.0 487.0 L 135.2 487.3 L 135.4 487.6 L 135.6 487.9 L 135.7 488.3 L 135.9 488.6 L 136.1 489.0 L 136.3 489.3 L 136.4 489.6 L 136.6 490.0 L 136.8 490.3 L 136.9 490.7 L 137.1 491.0 L 137.2 491.4 L 137.4 491.7 L 137.5 492.1 L 137.7 492.4 L 137.8 492.8 L 137.9 493.1 L 138.0 493.5 L 138.2 493.8 L 138.3 494.2 L 138.4 494.6 L 138.5 494.9 L 138.6 495.3 L 138.7 495.6 L 138.8 496.0 L 138.9 496.4 L 139.0 496.7 L 139.1 497.1 L 139.2 497.5 L 139.3 497.9 L 139.3 498.2 L 139.4 498.6 L 139.5 499.0 L 139.5 499.3 L 139.6 499.7 L 139.7 500.1 L 139.7 500.5 L 139.8 500.8 L 139.8 501.2 L 139.8 501.6 L 139.9 502.0 L 139.9 502.4 L 139.9 502.7 L 139.9 503.1 L 140.0 503.5 L 140.0 503.9 L 140.0 504.2 L 140.0 504.6 L 140.0 505.0"/>
+  </g>
+  <g id="tree_height-__group-0">
+    <g id="tree_height-__group-1-k_0">
+      <path id="tree_height-__path-0-k_0" d="M 265.0 505.0 L 305.0 460.0 L 345.0 505.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-2-k_1">
+      <path id="tree_height-__path-1-k_1" d="M 269.0 460.0 L 305.0 415.0 L 341.0 460.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-3-k_2">
+      <path id="tree_height-__path-2-k_2" d="M 273.0 415.0 L 305.0 370.0 L 337.0 415.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-4-k_3">
+      <path id="tree_height-__path-3-k_3" d="M 277.0 370.0 L 305.0 325.0 L 333.0 370.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-5-k_4">
+      <path id="tree_height-__path-4-k_4" d="M 281.0 325.0 L 305.0 280.0 L 329.0 325.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-6-k_5">
+      <path id="tree_height-__path-5-k_5" d="M 285.0 280.0 L 305.0 235.0 L 325.0 280.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-7-k_6">
+      <path id="tree_height-__path-6-k_6" d="M 289.0 235.0 L 305.0 190.1 L 321.0 235.0 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-8-k_7">
+      <path id="tree_height-__path-7-k_7" d="M 293.0 190.1 L 305.0 145.1 L 317.0 190.1 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-9-k_8">
+      <path id="tree_height-__path-8-k_8" d="M 297.0 145.1 L 305.0 100.1 L 313.0 145.1 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+    <g id="tree_height-__group-10-k_9">
+      <path id="tree_height-__path-9-k_9" d="M 301.0 100.1 L 305.0 55.1 L 309.0 100.1 Z" stroke="black" stroke-width="2" fill="green" clip-path="url(#tree_height-__clipPath-1)"/>
+    </g>
+  </g>
+  <g id="tree_height-__g-1">
+    <g id="tree_height-__label-3" transform="translate(100.0,500.0) translate(-37.2,-13.4)">
+      <g id="tree_height-__g-5">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.0">Inaya</text>
+      </g>
+    </g>
+    <circle cx="105.0" cy="505.0" r="4" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+</svg>

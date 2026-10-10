@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.1.1",
   "title": "A Knight’s Moves",
-  "body": " A Knight's Moves  In chess, the knight is one of the most misunderstood, under-utilized, and powerful pieces on the board. All of these traits are due to the way the knight moves. Two possible moves for a knight are shown in . If we place Start at , the origin of a coordinate system, then Move 1 is associated with the point and Move 2 is associated with the point .   Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).     "
+  "body": " A Knight's Moves  In chess, the knight is one of the most misunderstood, under-utilized, and powerful pieces on the board. All of these traits are due to the way the knight moves. Two possible moves for a knight are shown in . If we place Start at , the origin of a coordinate system, then Move 1 is associated with the point and Move 2 is associated with the point .   Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).    start=(0,0)  m1=(1,2)  i1=(0,2)  m2=(2,1)  i2=(2,0)    \\textit{Start}  \\textit{Move 1}  \\textit{Move 2}         "
 },
 {
   "id": "fig_moves",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "10",
   "title": "",
-  "body": " Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).    "
+  "body": " Two of a knight's possible moves in chess.   A grid showing move one as a move from (0,0) to (1,2) and move two as a move from (0,0) to (2,1).    start=(0,0)  m1=(1,2)  i1=(0,2)  m2=(2,1)  i2=(2,0)    \\textit{Start}  \\textit{Move 1}  \\textit{Move 2}        "
 },
 {
   "id": "ssec_vectors",
@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.1.2",
   "title": "Vectors",
-  "body": " Vectors  Because Move 1 and Move 2 are motions, it is probably more correct to say that they are associated with moving from   to  and from   to  , respectively.  Using vectors , we can represent Move 1 by the vector and Move 2 by . (We generally don't bother writing , though. Instead, a positive value is a motion right or up, and a negative value is left or down.)  However, we don't really have an easy way to represent performing Move 1 twice, or Move 1 followed by Move 2, and so forth. What we can do, though is think of vectors as relative position or motion . Thus, we can think of the vector representing a move unit to the right and units up from any point , and similarly, the vector representing a move units to the right and unit up from any point.  Now, we can think about combining the vectors. Starting from Start , , we can first perform Move 1, , arriving at , and then perform Move 2, , arriving at . We write this combination of moves as    Adding Vectors Graphically.   A visual representation of vector addition.     Graphically, we generally represent vectors as arrows from their starting point, called the tail , to their ending point, called the head . Since vectors represent relative motion, the vector from to and the vector from to are exactly the same vector . Because of this, we can represent adding vectors by placing them head-to-tail, as shown in where the resultant vector of the addition is shown with a thick arrow.    How do you think you would represent a motion two units right and one unit down, graphically and symbolically?  How do you think you would represent a motion two units left and one unit up, graphically and symbolically?  What vector is the result of performing Move 1 twice?  What do you think the notation means?    "
+  "body": " Vectors  Because Move 1 and Move 2 are motions, it is probably more correct to say that they are associated with moving from   to  and from   to  , respectively.  Using vectors , we can represent Move 1 by the vector and Move 2 by . (We generally don't bother writing , though. Instead, a positive value is a motion right or up, and a negative value is left or down.)  However, we don't really have an easy way to represent performing Move 1 twice, or Move 1 followed by Move 2, and so forth. What we can do, though is think of vectors as relative position or motion . Thus, we can think of the vector representing a move unit to the right and units up from any point , and similarly, the vector representing a move units to the right and unit up from any point.  Now, we can think about combining the vectors. Starting from Start , , we can first perform Move 1, , arriving at , and then perform Move 2, , arriving at . We write this combination of moves as    Adding Vectors Graphically.   A visual representation of vector addition.    start=(0,0)  k1=(1,2)  i1=(0,2)  k2=(2,1)  i2=(2,0)       \\vec{k}_{1}  \\vec{k}_{2}  \\vec{k}_{1}  \\vec{k}_{2}  \\vec{k}_{1}+\\vec{k}_{2}       Graphically, we generally represent vectors as arrows from their starting point, called the tail , to their ending point, called the head . Since vectors represent relative motion, the vector from to and the vector from to are exactly the same vector . Because of this, we can represent adding vectors by placing them head-to-tail, as shown in where the resultant vector of the addition is shown with a thick arrow.    How do you think you would represent a motion two units right and one unit down, graphically and symbolically?  How do you think you would represent a motion two units left and one unit up, graphically and symbolically?  What vector is the result of performing Move 1 twice?  What do you think the notation means?    "
 },
 {
   "id": "fig_combining",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "11",
   "title": "",
-  "body": " Adding Vectors Graphically.   A visual representation of vector addition.    "
+  "body": " Adding Vectors Graphically.   A visual representation of vector addition.    start=(0,0)  k1=(1,2)  i1=(0,2)  k2=(2,1)  i2=(2,0)       \\vec{k}_{1}  \\vec{k}_{2}  \\vec{k}_{1}  \\vec{k}_{2}  \\vec{k}_{1}+\\vec{k}_{2}      "
 },
 {
   "id": "ssec_combining",
@@ -340,16 +340,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.1.3",
   "title": "Combining Moves",
-  "body": " Combining Moves  An interesting (and rather difficult) set of mathematical problems arise from considering which squares on different sized chess boards can be reached by a cohort of several knights. In this activity we will consider a slightly different but related idea: how can we reach various squares using linear combinations of and ?  For this activity, you can use the blank grid in if you find it helpful. (Place the origin wherever you want!)  We know that allows you to reach . Will any other combination of and allow you to reach the same point? Explain.  Is it possible to reach using some combination of and ? How (or why not)?  Is it possible to reach ? How (or why not)?  What do you think the notation means?  What do you think the notation means?  What do you think the notation means?  Would your responses to any of the above questions change in light of your answers to , , and ?  Would your responses to any of the above questions change if you could Move a fractional part of and ? (Say , for example.)  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, which squares can you reach? Explain.  Now let's do away with the idea that we have to land on a corner of a square and think about points in the plane more generally. How could you reach the point using a combination of and ?  More generally, what is the process to reach a given a point in the plane using combinations of and ?     A Blank Grid.   A blank grid.     "
-},
-{
-  "id": "fig_grid",
-  "level": "2",
-  "url": "ssec_combining.html#fig_grid",
-  "type": "Figure",
-  "number": "12",
-  "title": "",
-  "body": " A Blank Grid.   A blank grid.    "
+  "body": " Combining Moves  An interesting (and rather difficult) set of mathematical problems arise from considering which squares on different sized chess boards can be reached by a cohort of several knights. In this activity we will consider a slightly different but related idea: how can we reach various squares using linear combinations of and ?    We know that allows you to reach . Will any other combination of and allow you to reach the same point? Explain.  Is it possible to reach using some combination of and ? How (or why not)?  Is it possible to reach ? How (or why not)?  What do you think the notation means?  What do you think the notation means?  What do you think the notation means?  Would your responses to any of the above questions change in light of your answers to , , and ?  Would your responses to any of the above questions change if you could Move a fractional part of and ? (Say , for example.)  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, can you reach the point ? Explain.  If any real number multiples of and are allowed, which squares can you reach? Explain.  Now let's do away with the idea that we have to land on a corner of a square and think about points in the plane more generally. How could you reach the point using a combination of and ?  More generally, what is the process to reach a given a point in the plane using combinations of and ?    "
 },
 {
   "id": "ssec_explore_heights",
@@ -365,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_explore_heights.html#fig_ferris",
   "type": "Figure",
-  "number": "13",
+  "number": "12",
   "title": "",
   "body": " Height of a Ferris Wheel Car   Screenshot from https:\/\/www.nctm.org\/Classroom-Resources\/Illuminations\/Interactives\/Investigating-Functions-with-a-Ferris-Wheel-Distance-vs-Height\/   "
 },
@@ -394,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.2.2",
   "title": "Distance and Angles",
-  "body": " Distance and Angles   In , we know that the Ferris wheel is m tall, so it has a radius of m. We also know that the circumference is m. Said another way, the radius would fit times around the circle. Given two points on a circle, the part of the circle between them is called an arc , and its length is, appropriately, called the arc length . So, there are radii of arc length in a circle.  It's not too much of a stretch to wonder how many radii of arc length lie between two points on a circle, and in fact, it gives a very natural way to measure angles, because given any angle, the arc length determined by the angle depends on the radius of the circle, and if an angle has an arc length of one radius on one circle, that same angle has one radius of arc length on any circle!   One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.     An angle that has one radius of arc length has a measure of radian . Both of the angles shown in , and , have a measure of 1 radian, which we will often abbreviate as .     In this problem, we again consider a circle (a Ferris wheel) with a radius of m.     When the car has travelled through rad of angle, how much distance (arc length) has it travelled?   20m   When the car has travelled one radian, it has travelled a distance (arc length) equal to its radius. Since the radius is m, the car has travelled m.      When the car has travelled through an angle of rad, how much arc length has it travelled?    50m.    When the car has travelled rad, it has travelled an arc length that is times its radius, so it has travelled an arc length of m.      When the car has travelled through m of arc length, what angle (in radians) has it travelled through?     rad.    When when the car has travelled through rad, it has travelled a distance of m, so we can solve m to get rad. It is worth noting here that if we do unit analysis of , we see that the units cancel out. Therefore, technically radians are unitless .       What is the arc length of one quarter of the circle?     m    The total circumference is m, so one quarter of the circumference is m.      What is the radian measure of one quarter of a revolution (the angle for one fourth of a circle)?     rad.    There are two ways we could approach this. We could use our previous result for the arc length of a quarter circle is approximately m and divide by the radius to find the angle, or we could realize that there are radii in the circumference, and thus a total revolution is radians. Then, we get that one quarter of that is radians.      What is the radian measure of one eighth of a revolution?     rad.    Since there are radii in the circumference, and thus a total revolution is rad, we get that one eighth of that is rad.      What fraction of the distance around the circle is rad?    One eighth.     A couple of important things about radians before we move on.   As we noted in the solution to , radians are unitless from a dimensional\/unit analysis point of view.    One full revolution, what we are used to thinking of as , is rad. This means that , and a right angle is . In general, the conversions between degrees and radians are     Some important angles to become familiar with are:      "
+  "body": " Distance and Angles   In , we know that the Ferris wheel is m tall, so it has a radius of m. We also know that the circumference is m. Said another way, the radius would fit times around the circle. Given two points on a circle, the part of the circle between them is called an arc , and its length is, appropriately, called the arc length . So, there are radii of arc length in a circle.  It's not too much of a stretch to wonder how many radii of arc length lie between two points on a circle, and in fact, it gives a very natural way to measure angles, because given any angle, the arc length determined by the angle depends on the radius of the circle, and if an angle has an arc length of one radius on one circle, that same angle has one radius of arc length on any circle!   One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.    O=(0,0)  a=(1,0)  b=(cos(1),sin(1))  A=3*a  B=3*b     A    B    a    b             An angle that has one radius of arc length has a measure of radian . Both of the angles shown in , and , have a measure of 1 radian, which we will often abbreviate as .     In this problem, we again consider a circle (a Ferris wheel) with a radius of m.     When the car has travelled through rad of angle, how much distance (arc length) has it travelled?   20m   When the car has travelled one radian, it has travelled a distance (arc length) equal to its radius. Since the radius is m, the car has travelled m.      When the car has travelled through an angle of rad, how much arc length has it travelled?    50m.    When the car has travelled rad, it has travelled an arc length that is times its radius, so it has travelled an arc length of m.      When the car has travelled through m of arc length, what angle (in radians) has it travelled through?     rad.    When when the car has travelled through rad, it has travelled a distance of m, so we can solve m to get rad. It is worth noting here that if we do unit analysis of , we see that the units cancel out. Therefore, technically radians are unitless .       What is the arc length of one quarter of the circle?     m    The total circumference is m, so one quarter of the circumference is m.      What is the radian measure of one quarter of a revolution (the angle for one fourth of a circle)?     rad.    There are two ways we could approach this. We could use our previous result for the arc length of a quarter circle is approximately m and divide by the radius to find the angle, or we could realize that there are radii in the circumference, and thus a total revolution is radians. Then, we get that one quarter of that is radians.      What is the radian measure of one eighth of a revolution?     rad.    Since there are radii in the circumference, and thus a total revolution is rad, we get that one eighth of that is rad.      What fraction of the distance around the circle is rad?    One eighth.     A couple of important things about radians before we move on.   As we noted in the solution to , radians are unitless from a dimensional\/unit analysis point of view.    One full revolution, what we are used to thinking of as , is rad. This means that , and a right angle is . In general, the conversions between degrees and radians are     Some important angles to become familiar with are:      "
 },
 {
   "id": "ssec_distance_and_angles-2-1",
@@ -410,9 +401,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_distance_and_angles.html#fig_radian",
   "type": "Figure",
-  "number": "14",
+  "number": "13",
   "title": "",
-  "body": " One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.    "
+  "body": " One radius of arc length on two different circles   One radius of arc length on two circles of different radius with the same center.    O=(0,0)  a=(1,0)  b=(cos(1),sin(1))  A=3*a  B=3*b     A    B    a    b            "
 },
 {
   "id": "ssec_distance_and_angles-2-4",
@@ -448,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.2.3",
   "title": "The Sine and Cosine Functions",
-  "body": " The Sine and Cosine Functions   Probably the two most important functions in trigonometry are defined based on angles and the coordinates of points on a circle of radius , which we refer to as the unit circle .  For any point, , on the unit circle, we measure the angle for  in radians from the positive -axis counter-clockwise to . Negative angles and angles greater than are allowed: negative angles are measured counter-clockwise from the positive -axis, and angles greater than (or less than ) start around the circle again.   The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown      shows the unit circle with a point and its angle, .  Now that we have the unit circle and have explained how we measure angles on the unit circle, we are ready to define the circular functions sine and cosine .   The Sine and Cosine Functions   For any real number , define the point on the unit circle whose angle (measured from the positive -axis) is rad. Then the cosine of is the -coordinate of and the sine of is the -coordinate of . That is,       We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .       In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.        The Unit Circle with Important Angles   The Unit Circle with Important Angles     "
+  "body": " The Sine and Cosine Functions   Probably the two most important functions in trigonometry are defined based on angles and the coordinates of points on a circle of radius , which we refer to as the unit circle .  For any point, , on the unit circle, we measure the angle for  in radians from the positive -axis counter-clockwise to . Negative angles and angles greater than are allowed: negative angles are measured counter-clockwise from the positive -axis, and angles greater than (or less than ) start around the circle again.   The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown    O=(0,0)  theta=pi\/3  P=(cos(theta),sin(theta))  A=(1,0)     P    (0,0)    (1,0)    1  \\theta        shows the unit circle with a point and its angle, .  Now that we have the unit circle and have explained how we measure angles on the unit circle, we are ready to define the circular functions sine and cosine .   The Sine and Cosine Functions   For any real number , define the point on the unit circle whose angle (measured from the positive -axis) is rad. Then the cosine of is the -coordinate of and the sine of is the -coordinate of . That is,       We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    O=(0,0)  theta=pi\/4  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)        a    a   \\frac{\\pi}{4}    P    (0,0)    (1,0)       From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .       In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.    O=(0,0)  theta=pi\/4  angles=[pi\/6,pi\/4,pi\/3,pi\/2, 2*pi\/3,3*pi\/4,5*pi\/6,pi, 7*pi\/6,5*pi\/4,4*pi\/3,3*pi\/2, 5*pi\/3,7*pi\/4,11*pi\/6]  anglabs=[pi\/6]  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)         \\frac{\\pi}{6}  \\frac{\\pi}{4}  \\frac{\\pi}{3}  \\frac{\\pi}{2}  \\frac{2\\pi}{3}  \\frac{3\\pi}{4}  \\frac{5\\pi}{6}  \\pi  \\frac{7\\pi}{6}  \\frac{5\\pi}{4}  \\frac{4\\pi}{3}  \\frac{3\\pi}{2}  \\frac{5\\pi}{3}  \\frac{7\\pi}{4}  \\frac{11\\pi}{6}  \\left(\\frac{\\sqrt{3}}{2},\\frac{1}{2}\\right)  \\left(\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2}\\right)  \\left(\\frac{1}{2},\\frac{\\sqrt{3}}{2}\\right)  (0,1)  \\left(\\frac{-1}{2},\\frac{\\sqrt{3}}{2}\\right)  \\left(\\frac{-\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2}\\right)  \\left(\\frac{-\\sqrt{3}}{2},\\frac{1}{2}\\right)  (-1,0)  \\left(\\frac{-\\sqrt{3}}{2},\\frac{-1}{2}\\right)  \\left(\\frac{-\\sqrt{2}}{2},\\frac{-\\sqrt{2}}{2}\\right)  \\left(\\frac{-1}{2},\\frac{-\\sqrt{3}}{2}\\right)  (0,-1)  \\left(\\frac{1}{2},\\frac{-\\sqrt{3}}{2}\\right)  \\left(\\frac{\\sqrt{2}}{2},\\frac{-\\sqrt{2}}{2}\\right)  \\left(\\frac{\\sqrt{3}}{2},\\frac{-1}{2}\\right)          The Unit Circle with Important Angles   The Unit Circle with Important Angles    O=(0,0)  theta=pi\/4  angles=[pi\/6,pi\/4,pi\/3,pi\/2, 2*pi\/3,3*pi\/4,5*pi\/6,pi, 7*pi\/6,5*pi\/4,4*pi\/3,3*pi\/2, 5*pi\/3,7*pi\/4,11*pi\/6]  anglabs=[pi\/6]  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)         \\frac{\\pi}{6}  \\frac{\\pi}{4}  \\frac{\\pi}{3}  \\frac{\\pi}{2}  \\frac{2\\pi}{3}  \\frac{3\\pi}{4}  \\frac{5\\pi}{6}  \\pi  \\frac{7\\pi}{6}  \\frac{5\\pi}{4}  \\frac{4\\pi}{3}  \\frac{3\\pi}{2}  \\frac{5\\pi}{3}  \\frac{7\\pi}{4}  \\frac{11\\pi}{6}       "
 },
 {
   "id": "ssec_sine_cosine-2-1",
@@ -464,9 +455,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#fig_unit_circle_theta",
   "type": "Figure",
-  "number": "15",
+  "number": "14",
   "title": "",
-  "body": " The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown    "
+  "body": " The Unit Circle with an Angle Shown   The Unit Circle with an Angle and a Point Shown    O=(0,0)  theta=pi\/3  P=(cos(theta),sin(theta))  A=(1,0)     P    (0,0)    (1,0)    1  \\theta      "
 },
 {
   "id": "ssec_sine_cosine-2-5",
@@ -482,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#ssec_sine_cosine-2-6",
   "type": "Definition",
-  "number": "16",
+  "number": "15",
   "title": "The Sine and Cosine Functions.",
   "body": " The Sine and Cosine Functions   For any real number , define the point on the unit circle whose angle (measured from the positive -axis) is rad. Then the cosine of is the -coordinate of and the sine of is the -coordinate of . That is,    "
 },
@@ -491,9 +482,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sine_cosine.html#example_45deg",
   "type": "Example",
-  "number": "17",
+  "number": "16",
   "title": "",
-  "body": "  We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .   "
+  "body": "  We will find and .  We know that is , so we start by drawing a point on the unit circle that makes an angle of with the positive -axis and drop a perpendicular from the point to the -axis.  Because we now have a triangle, we know the - and -coordinates of will be the same size, and because we are in the first quadrant, they will both be positive. So, let , where , and we will find the value of , and therefore the sine and cosine of .   The Unit Circle with an Angle, a Point, and a Segment to the x-axis Shown    O=(0,0)  theta=pi\/4  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)        a    a   \\frac{\\pi}{4}    P    (0,0)    (1,0)       From the Pythagorean theorem, since the unit circle has radius and the radius of the unit circle is the hypotenuse of the right triangle, we have so   Dividing by gives us and then taking the (positive) square root give us If we want to rationalize the denominator, we can multiply both the numerator and denominator by to get   Therefore, we now know that and .   "
 },
 {
   "id": "ssec_sine_cosine-3",
@@ -502,16 +493,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.2.3.1",
   "title": "",
-  "body": "  In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.      "
+  "body": "  In the following explorations, use symmetry, the Pythagorean theorem, and geometry to relate angles and the values of sine and cosine.  One geometry fact you may not know is the following: in a triangle with angles , , and (a 30-60-90 triangle) , the shortest side (opposite the angle) is half the length of the hypotenuse (longest side).     Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since we know that , we know that . Thus, .      Find and .    Use symmetry and the previous problem.            Find and .          Dropping a perpendicular from the point at on the unit circle creates a 30-60-90 triangle with the perpendicular being the shortest side. Since the hypotenuse has length , that means that the -coordinate of the point is , and so . Then, from the Pythagorean theorem, if we let the -coordinate of the point be , we have so and therefore . Since the point is in the second quadrant, we know that , so we know that . Thus, .      Use symmetry to find the coordinates of each of the points at the important angles shown in .     The Unit Circle with an angle and associated point shown.    O=(0,0)  theta=pi\/4  angles=[pi\/6,pi\/4,pi\/3,pi\/2, 2*pi\/3,3*pi\/4,5*pi\/6,pi, 7*pi\/6,5*pi\/4,4*pi\/3,3*pi\/2, 5*pi\/3,7*pi\/4,11*pi\/6]  anglabs=[pi\/6]  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)         \\frac{\\pi}{6}  \\frac{\\pi}{4}  \\frac{\\pi}{3}  \\frac{\\pi}{2}  \\frac{2\\pi}{3}  \\frac{3\\pi}{4}  \\frac{5\\pi}{6}  \\pi  \\frac{7\\pi}{6}  \\frac{5\\pi}{4}  \\frac{4\\pi}{3}  \\frac{3\\pi}{2}  \\frac{5\\pi}{3}  \\frac{7\\pi}{4}  \\frac{11\\pi}{6}  \\left(\\frac{\\sqrt{3}}{2},\\frac{1}{2}\\right)  \\left(\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2}\\right)  \\left(\\frac{1}{2},\\frac{\\sqrt{3}}{2}\\right)  (0,1)  \\left(\\frac{-1}{2},\\frac{\\sqrt{3}}{2}\\right)  \\left(\\frac{-\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2}\\right)  \\left(\\frac{-\\sqrt{3}}{2},\\frac{1}{2}\\right)  (-1,0)  \\left(\\frac{-\\sqrt{3}}{2},\\frac{-1}{2}\\right)  \\left(\\frac{-\\sqrt{2}}{2},\\frac{-\\sqrt{2}}{2}\\right)  \\left(\\frac{-1}{2},\\frac{-\\sqrt{3}}{2}\\right)  (0,-1)  \\left(\\frac{1}{2},\\frac{-\\sqrt{3}}{2}\\right)  \\left(\\frac{\\sqrt{2}}{2},\\frac{-\\sqrt{2}}{2}\\right)  \\left(\\frac{\\sqrt{3}}{2},\\frac{-1}{2}\\right)        "
 },
 {
   "id": "fig_unit_circle",
   "level": "2",
   "url": "ssec_sine_cosine.html#fig_unit_circle",
   "type": "Figure",
-  "number": "18",
+  "number": "17",
   "title": "",
-  "body": " The Unit Circle with Important Angles   The Unit Circle with Important Angles    "
+  "body": " The Unit Circle with Important Angles   The Unit Circle with Important Angles    O=(0,0)  theta=pi\/4  angles=[pi\/6,pi\/4,pi\/3,pi\/2, 2*pi\/3,3*pi\/4,5*pi\/6,pi, 7*pi\/6,5*pi\/4,4*pi\/3,3*pi\/2, 5*pi\/3,7*pi\/4,11*pi\/6]  anglabs=[pi\/6]  P=(cos(theta),sin(theta))  Q=(cos(theta),0)  A=(1,0)         \\frac{\\pi}{6}  \\frac{\\pi}{4}  \\frac{\\pi}{3}  \\frac{\\pi}{2}  \\frac{2\\pi}{3}  \\frac{3\\pi}{4}  \\frac{5\\pi}{6}  \\pi  \\frac{7\\pi}{6}  \\frac{5\\pi}{4}  \\frac{4\\pi}{3}  \\frac{3\\pi}{2}  \\frac{5\\pi}{3}  \\frac{7\\pi}{4}  \\frac{11\\pi}{6}      "
 },
 {
   "id": "ssec_sim_tri_pyth_thm",
@@ -520,14 +511,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.2.4",
   "title": "Similar Triangles and the Pythagorean Theorem",
-  "body": " Similar Triangles and the Pythagorean Theorem   An extremely important concept in physics, trigonometry, calculus, and even carpentry is the notion of similar triangles . We will briefly discuss how to recognize similar triangles and what properties they have before returning to the ideas we explored in .  Combining the definitions of sine and cosine with similar triangles and the Pythagorean theorem gives us tools that make these functions extremely useful in a variety of situations.   Similar Triangles   When two triangles have exactly the same three angles, we say that they are similar triangles or that the triangles are similar .     An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.     The triangles shown in are similar because angle is the same as angle ( ), angle is the same as angle ( ), and angle is the same as angle ( ).  We say that and , and , and are corresponding angles , and similarly, we say that sides and , sides and , sides and are corresponding sides .  Furthermore, we say that , and the order matters!   Corresponding Sides of Similar Triangles   Given two triangles, and , when the triangles are similar , the lengths of the corresponding sides are proportional.    Applying to , for example, we have that and, equivalently,    The Pythagorean Theorem   For any positive numbers, , , and , if and are the lengths of two legs of a right triangle and is the length of the hypoteneuse, then .  Furthermore, for any triangle with side lengths , , and , if , then the triangle is a right triangle, the sides with lengths and are the legs, and the side with length is the hypotenuse.       In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.        Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m     "
+  "body": " Similar Triangles and the Pythagorean Theorem   An extremely important concept in physics, trigonometry, calculus, and even carpentry is the notion of similar triangles . We will briefly discuss how to recognize similar triangles and what properties they have before returning to the ideas we explored in .  Combining the definitions of sine and cosine with similar triangles and the Pythagorean theorem gives us tools that make these functions extremely useful in a variety of situations.   Similar Triangles   When two triangles have exactly the same three angles, we say that they are similar triangles or that the triangles are similar .     An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.    A=(3.4641,0)  B=2*(cos(pi\/6),sin(pi\/6))  C=(0,0)  T1=(C,B,A)                               The triangles shown in are similar because angle is the same as angle ( ), angle is the same as angle ( ), and angle is the same as angle ( ).  We say that and , and , and are corresponding angles , and similarly, we say that sides and , sides and , sides and are corresponding sides .  Furthermore, we say that , and the order matters!   Corresponding Sides of Similar Triangles   Given two triangles, and , when the triangles are similar , the lengths of the corresponding sides are proportional.    Applying to , for example, we have that and, equivalently,    The Pythagorean Theorem   For any positive numbers, , , and , if and are the lengths of two legs of a right triangle and is the length of the hypoteneuse, then .  Furthermore, for any triangle with side lengths , , and , if , then the triangle is a right triangle, the sides with lengths and are the legs, and the side with length is the hypotenuse.       In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.    O=(0,0)  th=pi\/3  scale=3  B=(cos(th),sin(th))  A=(cos(th),0)  C=scale*A  D=scale*B         O  B  D  A  C            Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m     "
 },
 {
   "id": "def_similar_triangles",
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#def_similar_triangles",
   "type": "Definition",
-  "number": "19",
+  "number": "18",
   "title": "Similar Triangles.",
   "body": " Similar Triangles   When two triangles have exactly the same three angles, we say that they are similar triangles or that the triangles are similar .   "
 },
@@ -536,16 +527,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#fig_sim_tri_example",
   "type": "Figure",
-  "number": "20",
+  "number": "19",
   "title": "",
-  "body": " An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.    "
+  "body": " An Example of Similar Triangles   An image of two similar triangles. That is, two triangles of different sizes but with the same angle measurements.    A=(3.4641,0)  B=2*(cos(pi\/6),sin(pi\/6))  C=(0,0)  T1=(C,B,A)                              "
 },
 {
   "id": "thm_corresponding_sides",
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#thm_corresponding_sides",
   "type": "Theorem",
-  "number": "21",
+  "number": "20",
   "title": "Corresponding Sides of Similar Triangles.",
   "body": " Corresponding Sides of Similar Triangles   Given two triangles, and , when the triangles are similar , the lengths of the corresponding sides are proportional.   "
 },
@@ -554,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ssec_sim_tri_pyth_thm.html#thm_pythagorean",
   "type": "Theorem",
-  "number": "22",
+  "number": "21",
   "title": "The Pythagorean Theorem.",
   "body": " The Pythagorean Theorem   For any positive numbers, , , and , if and are the lengths of two legs of a right triangle and is the length of the hypoteneuse, then .  Furthermore, for any triangle with side lengths , , and , if , then the triangle is a right triangle, the sides with lengths and are the legs, and the side with length is the hypotenuse.   "
 },
@@ -565,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.2.4.1",
   "title": "",
-  "body": "  In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.        Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m    "
+  "body": "  In , has length m, has length m, and has length m.   Circles with Similar Triangles   Two concentric circles showing the same angle, with perpendiculars to the x-axis making similar right-angle triangles.    O=(0,0)  th=pi\/3  scale=3  B=(cos(th),sin(th))  A=(cos(th),0)  C=scale*A  D=scale*B         O  B  D  A  C            Explain why is similar to .    Both triangles share , and and are both right angles. Because the measures of the three angles of any triangle add to radians, we must have .  Since all three angles of are congruent to the respective angles of , the two triangles are similar, .      Use the fact that to find the length of .     m.    We will represent the length of a segment as the two endpoints, so, for example, we will say that m.  We know that m, m, and m.  Because , we know that , so substituting the known lengths, we have       Use the Pythagorean theorem to find , the length of .     m.    From the Pythagorean theorem, since is a right triangle, we have , so , so so       Find the length of .     m    "
 },
 {
   "id": "sec_practical_sine",
@@ -574,16 +565,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.3",
   "title": "Practical Applications of Sine and Cosine",
-  "body": " Practical Applications of Sine and Cosine     We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.     Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle     We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have         Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.       The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have         Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.        "
+  "body": " Practical Applications of Sine and Cosine     We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.    O=(0,0)  th=0.69474  h=30  w=h*tan(th)  H1=(h,0)  H2=(h,w)  Ow=(0,w)     30\\text{m}     \\theta\\approx ${th}          Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle    O=(0,0)  th=0.69474  h=30  w=h*tan(th)  H1=(h,0)  H2=(h,w)  Ow=(0,w)     30\\text{m}   d     \\theta\\approx ${th}          We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have         Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.    Inaya=(0,0)  Base=(10,0)  th=1.15251  off=1  h=10*tan(th)  r=2  Top=(10,h)    10\\text{m}    d    \\theta\\approx${th}\\text{rad}    tip=(10,(k+1)*h\/10)  left=(10-(10-k)\/10*r,k*h\/10)  right=(10+(10-k)\/10*r,k*h\/10)    Inaya         The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have         Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.    h=10  th2=0.89594  th1=1.05  Micah=(0,0)  Base=(0,h)  T1=(-h*tan(th1),h)  T2=(-h*tan(th2),h)  off=1   10\\text{m}        \\theta_{1}    \\theta_{2}   Micah  \\theta_{1}\\approx 0.98273\\text{ rad}  \\theta_{2}\\approx 0.89594\\text{ rad}          "
 },
 {
   "id": "sec_practical_sine-2-1",
   "level": "2",
   "url": "sec_practical_sine.html#sec_practical_sine-2-1",
   "type": "Example",
-  "number": "24",
+  "number": "23",
   "title": "",
-  "body": "  We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.     Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle     We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have    "
+  "body": "  We will show how to use sine, cosine, and similar triangles to solve a practical problem.   Two Gatehouses on a Canal Lock   An image showing a canal lock with a gatehouse on each side.    O=(0,0)  th=0.69474  h=30  w=h*tan(th)  H1=(h,0)  H2=(h,w)  Ow=(0,w)     30\\text{m}     \\theta\\approx ${th}          Amir is standing at the edge of a canal lock. There are gatehouses on each side of the lock. The gatehouse on the same side as Amir is located m from them. Amir wants to find out how wide the lock is by finding how far one gatehouse is from the other. Amir measures the angle from the near gatehouse to the far gatehouse and finds that it is .  How wide is the lock?  We start by drawing a copy of the unit circle centered on Amir's position, and we will assign the distance between the two gatehouses to the variable . Then, by dropping a perpendicular from the point, , where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.   Canal Lock with Unit Circle   Canal Lock with Unit Circle    O=(0,0)  th=0.69474  h=30  w=h*tan(th)  H1=(h,0)  H2=(h,w)  Ow=(0,w)     30\\text{m}   d     \\theta\\approx ${th}          We know that has coordinates (which we will leave unevaluated until the end). Furthermore, we know from similar triangles that corresponding parts are proportional, so we have   Multiplying both sides by , we have    "
 },
 {
   "id": "exer_tree_height",
@@ -592,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.3.1",
   "title": "",
-  "body": "  Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.       The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have    "
+  "body": "  Inaya wants to use trigonometry to measure the height of a tree. She walks m away from the base of the tree and measures the angle to the top of the tree as shown in .  To the nearest tenth of a meter, how tall is the tree? That is, what is the value of in meters?   An Observer and a Tree   Image of a tree and an observer 10m away.    Inaya=(0,0)  Base=(10,0)  th=1.15251  off=1  h=10*tan(th)  r=2  Top=(10,h)    10\\text{m}    d    \\theta\\approx${th}\\text{rad}    tip=(10,(k+1)*h\/10)  left=(10-(10-k)\/10*r,k*h\/10)  right=(10+(10-k)\/10*r,k*h\/10)    Inaya         The tree is approximately m tall.    Draw a circle that represents the unit circle around the point representing Inaya and set your coordinate axes so that this is the origin.  Drop a perpendicular from where the circle intersects the line from Inaya to the top of the tree. We then have a small triangle with corners at the origin, on the unit circle, and on the -axis. This triangle is similar to the triangle from the origin to the top of the tree to the -axis because the share the angle and they both have right angles on the -axis.  We know the coordinates of the point on the unit circle are , and we know that the sides of the small triangle are proportional to the sides of the big triangle. Thus, , so we have    "
 },
 {
   "id": "exer_train_dist",
@@ -601,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.3.2",
   "title": "",
-  "body": "  Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.      "
+  "body": "  Micah is watching a train as it approaches. He is m from the closest point on the track.   He observes that the train makes an angle of approximately radians, and then one second later an angle of approximately radians. How fast is the train travelling?   A Train on a Track   Image of a train on a horizontal track with an observer vertically 10m below the track.    h=10  th2=0.89594  th1=1.05  Micah=(0,0)  Base=(0,h)  T1=(-h*tan(th1),h)  T2=(-h*tan(th2),h)  off=1   10\\text{m}        \\theta_{1}    \\theta_{2}   Micah  \\theta_{1}\\approx 0.98273\\text{ rad}  \\theta_{2}\\approx 0.89594\\text{ rad}        "
 },
 {
   "id": "activities-5",
@@ -653,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-5.html#activities-5-6-3",
   "type": "Definition",
-  "number": "29",
+  "number": "28",
   "title": "Midline, Amplitude, Period, and Phase Shift of Sinusoids.",
   "body": " Midline, Amplitude, Period, and Phase Shift of Sinusoids     The midline of a sinusoidal graph (that is, sine or cosine) is the vertical position that is halfway between the maxima and minima of the graph. For an untransformed sine or cosine the midline is . For the functions and , the midline is .  The amplitude of a sinusoidal graph is the vertical distance between the midline and the maxima, or half the distance between the minima and maxima. For an untransformed sine or cosine the amplitude is . For the functions and , the amplitude is .  The period of a sinusoidal graph is the minimum horizontal distance between repeats (also called cycles or periods). For an untransformed sine or cosine the period is . For the functions and , the period is .  The phase shift of a sinusoidal graph the horizontal shift of the sinusoid (relative to the untransformed function). For an untransformed sine or cosine the phase shift is . Note that because sinusoids are periodic, the phase shift can always be described with either a positive (rightward) shift that is between and the period or with a shift that is between times the period and times the period. For the functions and , the phase shift is .     "
 },
@@ -698,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "wksht_other_trig_functions.html#fig_tan_unit_circle",
   "type": "Figure",
-  "number": "31",
+  "number": "30",
   "title": "",
   "body": " The unit circle showing , , and .   The Unit Circle showing a point at angle .    O=(0,0)  Z=(1,0)  P=(-4\/5,3\/5)  Q=-1*P  Y1=(-2,3\/5)  Y2=(2,3\/5)  X1=(-4\/5,-2)  X2=(-4\/5,2)  PE=3*P  QE=-3*P    1        \\theta    \\pi   P=(a,b)  Q=(-a,-b)  y=b  x=a       "
 },
@@ -824,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_more_vectors.html#def_vectors_rn",
   "type": "Definition",
-  "number": "35",
+  "number": "34",
   "title": "",
   "body": "  For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,    "
 },
@@ -833,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_more_vectors.html#def_vector_arithmetic",
   "type": "Definition",
-  "number": "36",
+  "number": "35",
   "title": "Vector Arithmetic.",
   "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
 },
@@ -842,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_more_vectors.html#sec_more_vectors-7",
   "type": "Theorem",
-  "number": "37",
+  "number": "36",
   "title": "",
   "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
 },
@@ -869,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dotprod.html#def_dot_prod",
   "type": "Definition",
-  "number": "38",
+  "number": "37",
   "title": "The Dot Product.",
   "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
 },
@@ -878,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dotprod.html#sec_dotprod-4",
   "type": "Checkpoint",
-  "number": "39",
+  "number": "38",
   "title": "",
   "body": "  Calculate the dot product for each given pair of vectors.                                                               "
 },
@@ -887,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dotprod.html#exercise_dot_product_orthogonal",
   "type": "Checkpoint",
-  "number": "40",
+  "number": "39",
   "title": "",
   "body": "  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                      "
 },
@@ -896,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dotprod.html#exercise_geometric_dot_product",
   "type": "Checkpoint",
-  "number": "41",
+  "number": "40",
   "title": "",
   "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
 },
@@ -923,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_projection.html#fig_orth_proj",
   "type": "Figure",
-  "number": "42",
+  "number": "41",
   "title": "",
   "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=(3,1)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})   \\theta       "
 },
@@ -932,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_projection.html#fig_orth_proj2",
   "type": "Figure",
-  "number": "43",
+  "number": "42",
   "title": "",
   "body": " Orthogonal Projection of onto   An image of vector v1 projected onto vector v2.    O=(0,0)  v1=3\/4*(-3,5)  v2=(4,-1)  l1=length(v1)  u1=normalize(v1)  l2=length(v2)  u2=normalize(v2)  d12=dot(v1,v2)  d22=dot(v2,v2)  pro12=d12\/d22*v2  diff=v1-pro12    \\vec{v}_{1}    \\vec{v}_{2}   \\operatorname{proj}_{\\vec{v}_{2}}(\\vec{v}_{1})    \\theta       "
 },
@@ -950,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_projection.html#sec_projection-8",
   "type": "Definition",
-  "number": "44",
+  "number": "43",
   "title": "Orthogonal Projection of One Vector Onto Another.",
   "body": " Orthogonal Projection of One Vector Onto Another   Given any vector, and any non-zero vector , the orthogonal projection of onto is given by   If , then is perpendicular to , and is as small as possible.   "
 },
@@ -968,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dot_prod_practical.html#fig_ramp",
   "type": "Figure",
-  "number": "45",
+  "number": "44",
   "title": "",
   "body": " A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                    "
 },
@@ -1033,23 +1024,23 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.10.1",
   "title": "From Direction and Magnitude to Coordinates",
-  "body": " From Direction and Magnitude to Coordinates    Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).        Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .      "
+  "body": " From Direction and Magnitude to Coordinates    Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.    O=(0,0)  theta=pi\/6  phi=3*pi\/4  u1=(cos(theta),sin(theta))  u2=(cos(phi),sin(phi))  v1=4*u1  v2=3*u2     \\vec{u}_{1}  \\vec{u}_{2}  \\vec{v}_{1}=4\\vec{u}_{1}  \\vec{v}_{2}=3\\vec{u}_{2}  \\small{}1\\text{cm}  4\\text{cm}  3\\text{cm}   \\theta=\\frac{\\pi}{6}    \\phi=\\frac{3\\pi}{4}            The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).        Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .      "
 },
 {
   "id": "exer_dir_to_coords",
   "level": "2",
   "url": "sec_direction_to_coords.html#exer_dir_to_coords",
   "type": "Checkpoint",
-  "number": "46",
+  "number": "45",
   "title": "",
-  "body": "  Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.         The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).    "
+  "body": "  Investigate the following questions using .   Vectors and the Unit Circle   The unit circle with vectors u1, from the origin to a point on the unit circle with angle pi over 6, v1 from the origin in the same direction with length 4, u2, from the origin to a point on the unit circle with angle 3 pi over 4, and v2 from the origin in the same direction with length 3.    O=(0,0)  theta=pi\/6  phi=3*pi\/4  u1=(cos(theta),sin(theta))  u2=(cos(phi),sin(phi))  v1=4*u1  v2=3*u2     \\vec{u}_{1}  \\vec{u}_{2}  \\vec{v}_{1}=4\\vec{u}_{1}  \\vec{v}_{2}=3\\vec{u}_{2}  \\small{}1\\text{cm}  4\\text{cm}  3\\text{cm}   \\theta=\\frac{\\pi}{6}    \\phi=\\frac{3\\pi}{4}            The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.    The tip of is on the unit circle.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.    How is related to ?        The vector has length cm and makes an angle of radians ( phi radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.        Find the coordinates of the unit vector, that makes an angle of radians ( alpha ) with the positive -axis.      Find the coordinates of the vector, that has length and makes an angle of radians with the positive -axis.        Given any angle, ( beta ), explain how to find the coordinates of the unit vector that makes that angle with the positive -axis.      Given any angle, , and any positive length, , explain how to find the coordinates of the vector of that length that makes that angle with the positive -axis.        The vector has length cm and makes an angle of radians ( theta radians) with the positive -axis. Find its coordinates.      The vector has length cm and makes an angle of radians with the positive -axis. Find its coordinates.      Compare your results from and . What do you notice?       Using a calculator, find (approximately) the coordinates of the vector that has length and makes an angle rad ( gamma ).    "
 },
 {
   "id": "exer_coords_to_dir",
   "level": "2",
   "url": "sec_direction_to_coords.html#exer_coords_to_dir",
   "type": "Checkpoint",
-  "number": "48",
+  "number": "47",
   "title": "",
   "body": "   Let .     What is the magnitude (length) of ? (In other words, calculate .)      What are the coordinates of a unit vector, call it , that points in the same direction as ?      Find an angle, ( zeta ) so that .      Find at least one other valid answer for .    What happens if you go completely around the unit circle before getting to where is?      Explain why, given coordinates for a vector, we cannot say the angle that it makes with the positive -axis, but must instead say an angle .     "
 },
@@ -1060,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.10.2",
   "title": "The Inverse Cosine Function",
-  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized       The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
+  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    f(x)=cos(x)             The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
 },
 {
   "id": "ssec_principle_branch_cosine-2",
@@ -1076,16 +1067,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#fig_cosine",
   "type": "Figure",
-  "number": "49",
+  "number": "48",
   "title": "",
-  "body": " The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    "
+  "body": " The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    f(x)=cos(x)          "
 },
 {
   "id": "def_uncos",
   "level": "2",
   "url": "sec_inverse_cosine.html#def_uncos",
   "type": "Definition",
-  "number": "50",
+  "number": "49",
   "title": "The “Un-Cosine” Function.",
   "body": " The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -1094,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#example_uncos",
   "type": "Example",
-  "number": "51",
+  "number": "50",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .     "
 },
@@ -1103,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_cosine.html#exer_uncos",
   "type": "Checkpoint",
-  "number": "52",
+  "number": "51",
   "title": "",
   "body": "       Find .      Find .      Find .    "
 },
@@ -1123,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.10.3",
   "title": "The Inverse Sine Function",
-  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized       The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
+  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=sin(x)             The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
 },
 {
   "id": "sec_inverse_sine-2-1",
@@ -1139,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_find_branch_sine",
   "type": "Checkpoint",
-  "number": "53",
+  "number": "52",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .   "
 },
@@ -1148,16 +1139,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#fig_sine",
   "type": "Figure",
-  "number": "54",
+  "number": "53",
   "title": "",
-  "body": " The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    "
+  "body": " The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=sin(x)          "
 },
 {
   "id": "def_unsin",
   "level": "2",
   "url": "sec_inverse_sine.html#def_unsin",
   "type": "Definition",
-  "number": "55",
+  "number": "54",
   "title": "The “Un-Sine” Function.",
   "body": " The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -1166,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#example_unsin",
   "type": "Example",
-  "number": "56",
+  "number": "55",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -1175,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_unsin",
   "type": "Checkpoint",
-  "number": "57",
+  "number": "56",
   "title": "",
   "body": "       Find .      Find .      Find .    "
 },
@@ -1195,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.10.4",
   "title": "The Tangent and the Inverse Tangent",
-  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized       The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
+  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=tan(x)                   The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
 },
 {
   "id": "ssec_graph_of_tan-2",
@@ -1220,16 +1211,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#fig_tan",
   "type": "Figure",
-  "number": "58",
+  "number": "57",
   "title": "",
-  "body": " The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    "
+  "body": " The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=tan(x)                "
 },
 {
   "id": "exer_find_branch_tangent",
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#exer_find_branch_tangent",
   "type": "Checkpoint",
-  "number": "59",
+  "number": "58",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .   "
 },
@@ -1238,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#def_untan",
   "type": "Definition",
-  "number": "60",
+  "number": "59",
   "title": "The “Un-Tangent” Function.",
   "body": " The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -1247,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#example_untan",
   "type": "Example",
-  "number": "61",
+  "number": "60",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -1274,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_intro.html#fig_suspended_wt",
   "type": "Figure",
-  "number": "62",
+  "number": "61",
   "title": "",
   "body": " A Weight Suspended Asymmetrically   A diagram showing a weight suspended from two wires    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]           "
 },
@@ -1301,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_sines.html#fig_laws_triangle",
   "type": "Figure",
-  "number": "63",
+  "number": "62",
   "title": "",
   "body": " An Arbitrary Triangle    An arbitrary triangle with vertices A B and C, with A on the far left, B on the far right horizontally even with A, and C above and between A and B.  The sides opposite each angle are labeled a, b, and c respectively.  A perpendicular dashed line, labeled h, descends from C to point D on segment A B.  Segment A D is labeled c-x and segment D B is labeled x.     A=(0,0)  B=(8,0)  C=(6,5)  D=(6,0)   c  a  b  h  c-x  x   A  B  C  D      "
 },
@@ -1319,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_sines.html#thm_law_of_sines",
   "type": "Theorem",
-  "number": "64",
+  "number": "63",
   "title": "The Law of Sines.",
   "body": " The Law of Sines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
 },
@@ -1337,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_cosines.html#thm_law_of_cosines",
   "type": "Theorem",
-  "number": "65",
+  "number": "64",
   "title": "The Law of Cosines.",
   "body": " The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
 },
@@ -1347,7 +1338,7 @@ var ptx_lunr_docs = [
   "url": "law_of_cosines.html#law_of_cosines-7",
   "type": "Proof",
   "number": "4.11.3.1",
-  "title": "Proof of Theorem 65.",
+  "title": "Proof of Theorem 64.",
   "body": " Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.  "
 },
 {
@@ -1355,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_cosines.html#fig_exterior_alt",
   "type": "Figure",
-  "number": "66",
+  "number": "65",
   "title": "",
   "body": " An Triangle with an Exterior Altitude    An arbitrary triangle with an external altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     A=(0,0)  B=(6,0)  C=(8,5)  D=(8,0)    c+x  a  b  h  c  x   A  B  C  D      "
 },
@@ -1373,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#fig_suspended_wt_redux",
   "type": "Figure",
-  "number": "67",
+  "number": "66",
   "title": "",
   "body": " A Weight Suspended Asymmetrically with Axes Imposed   A diagram showing a weight suspended from two wires with axes imposed    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2  right=(crux[0]+40,crux[1])  phi=atan(v1[1]\/v1[0])   y  x   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]     \\phi_{1}  \\phi_{2}      "
 },
@@ -1382,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#example_law_of_sines",
   "type": "Example",
-  "number": "68",
+  "number": "67",
   "title": "",
   "body": "   Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.     A=(0,0)  theta=40*pi\/180  B=(2*cos(theta),2*sin(theta))  C=(2,0)  H=(B[0],0)   2\\text{m}  a   1.7\\text{m?}  A  B  C  H  40^{\\circ}        shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then    "
 },
