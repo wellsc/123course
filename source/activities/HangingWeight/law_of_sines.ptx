@@ -32,7 +32,7 @@
                 We draw the altitude from <m>C</m> to the line <m>\overline{AB}</m> (that is, the  segment from <m>C</m> perpendicular to <m>\overline{AB}</m>). We will refer to the length of the altitude as <m>h</m>, and we will let the altitude split <m>\overline{AB}</m> into as segment of length <m>x</m> (between the altitude and <m>B</m>) and <m>c-x</m>  (between the altitude and <m>A</m>).
         </p>
         <p>
-                        Although it is not labeled in the figure, we will refer to the point where the altitude intersects <m>\overline{AB}</m> as <m>H</m>.
+                        We will refer to the point where the altitude intersects <m>\overline{AB}</m> as <m>H</m>.
                         </p>
                         <p>
                                         Since the altitude is perpendicular to <m>\overline{AB}</m>, we have divided the original triangle into two right triangles, <m>\triangle{}AHC</m> and <m>\triangle{}BHC</m>.
