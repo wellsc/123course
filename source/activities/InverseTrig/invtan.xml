@@ -16,7 +16,6 @@
     <vector v="P" alignment="se" ><m>\vec{v}=\left[\begin{array}{r}-4\\-1\end{array}\right]</m></vector>
     <vector v="u" alignment="se" ><m>\vec{u}</m></vector>
     <line endpoints="(P_star,P)" dash="2 4" />
-    <point p="(0,s)" size="1" alignment="sw" ><m>y=${s}</m></point>
     
     <angle-marker points="((1,0),(0,0),P_star)" arrow="yes" radius="100" ><m>\theta_{*}\approx{}${round(th_star,5)}</m></angle-marker>
     <angle-marker points="((1,0),(0,0),P)" arrow="yes" radius="200" ><m>\theta</m></angle-marker>

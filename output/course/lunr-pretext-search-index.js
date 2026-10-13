@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.9.1",
   "title": "More Vectors",
-  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     "
+  "body": " More Vectors  So far, we have limited our study of vectors to vectors such as . We have discussed them in relation to points in the -plane. However, we live in a three dimensional world Physicists actually use models that describe the number of physical dimensions as more than three, but that's beyond the scope of this course. . We can describe points using , , and coordinates, like . Typically we visualize this by thinking of rotating the -plane so that it is horizontal (like a sheet of paper on a desk) and using the -coordinate to describe how far above or below the plane a point is. Thus, is the point that is exactly units directly above the point in the -plane.  Since we can have points in three dimensions, it makes sense that we could have vectors with three entries, too, such as . However, there are situations where it makes sense to have vectors that have 4, 5, and even more entries. This leads us to the following definition.    For any positive integer, , the set of all vectors consisting of an array of real numbers is referred to as . Any vector in this set is called an -vector . That is,     So, for example, we would say that is a -vector, the set of all -vectors is , is a -vector, and the set of all -vectors is .   Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .    "
 },
 {
   "id": "def_vectors_rn",
@@ -829,22 +829,13 @@ var ptx_lunr_docs = [
   "body": " Vector Arithmetic   For any -vectors and , the vector sum  is the -vector obtained by adding the entries of and in corresponding positions.  For any -vector and and real number , the scalar product  is the -vector obtained by multiplying all the entries of by , and is said to be a scalar multiple of .   "
 },
 {
-  "id": "sec_more_vectors-7",
-  "level": "2",
-  "url": "sec_more_vectors.html#sec_more_vectors-7",
-  "type": "Theorem",
-  "number": "36",
-  "title": "",
-  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,    "
-},
-{
   "id": "sec_dotprod",
   "level": "1",
   "url": "sec_dotprod.html",
   "type": "Subsection",
   "number": "4.9.2",
   "title": "The Dot Product",
-  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
+  "body": " The Dot Product  We will now define the dot product of two vectors.   The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .      For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     We will prove this only for the case of 2-vectors.  Let be any 2-vector. That is, let and in the definition of be any real numbers. We will show that .  First, we note from the definition of magnitude of a vector that , and so .  Using the definition of dot product, we have as was to be shown.      Calculate the dot product for each given pair of vectors.                                                                  For each of the given pairs of vectors, find the direction of each vector in terms of slope. Then, calculate the dot product of the vectors. What pattern do you notice about the slopes? What pattern do you notice about the dot products?                                         Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that      gives us a geometric interpretation of the dot product: the dot product of two vectors is the product of the lengths of the vectors multiplied by the cosine of the angle between them. We also saw, in , that when two vectors are perpendicular (or more generally, orthogonal ) to each other, their dot product is zero. This is consistent, since .  If the angle between two vectors is greater than , then the cosine of the angle is negative. Thus, the dot product gives us an indication of how much two vectors point in the same general direction versus or in generally opposite directions.  "
 },
 {
   "id": "sec_dotprod-2",
@@ -860,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_dotprod.html#def_dot_prod",
   "type": "Definition",
-  "number": "37",
+  "number": "36",
   "title": "The Dot Product.",
   "body": " The Dot Product   Given a positive integer , the dot product of two -vectors, and obtained by multiplying corresponding entries of the vectors and adding the results. That is,   The dot product is also sometimes called the inner product and written as or .   "
 },
@@ -868,6 +859,15 @@ var ptx_lunr_docs = [
   "id": "sec_dotprod-4",
   "level": "2",
   "url": "sec_dotprod.html#sec_dotprod-4",
+  "type": "Theorem",
+  "number": "37",
+  "title": "",
+  "body": "  For any -vector, , the dot product of the vector with itself is the square of its magnitude. That is,     We will prove this only for the case of 2-vectors.  Let be any 2-vector. That is, let and in the definition of be any real numbers. We will show that .  First, we note from the definition of magnitude of a vector that , and so .  Using the definition of dot product, we have as was to be shown.   "
+},
+{
+  "id": "sec_dotprod-5",
+  "level": "2",
+  "url": "sec_dotprod.html#sec_dotprod-5",
   "type": "Checkpoint",
   "number": "38",
   "title": "",
@@ -892,9 +892,9 @@ var ptx_lunr_docs = [
   "body": "  Recall that any vector can be expressed in terms of its length and a unit vector, and that every unit vector has the form . So, let and be any vectors, and we can write where and .  Calculate and use algebra and trigonometric identities to verify that    "
 },
 {
-  "id": "sec_dotprod-7",
+  "id": "sec_dotprod-8",
   "level": "2",
-  "url": "sec_dotprod.html#sec_dotprod-7",
+  "url": "sec_dotprod.html#sec_dotprod-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1051,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.10.2",
   "title": "The Inverse Cosine Function",
-  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    f(x)=cos(x)             The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .   "
+  "body": " The Inverse Cosine Function   As we saw in (particularly ), given a value with , we can't find the angle so that , be we can find an angle. This isn't really a huge problem in general, but it is a problem if we want to have a function , a sort of un-cosine , that takes as its input and gives an angle, because a function must have one unique output for each input . So, if we want to undo the cosine function, we need to make a decision on how to choose the angle.    The Principle Branch of Cosine   shows the graph , and a subsection of the graph is shown in bold, from to , so that every value of from to occurs exactly once. By restricting the domain of cosine to we get what is called the principle branch of cosine, and it is sometimes written with a capital C as .   The Cosine Function and its Principle Branch   The graph of cosine with its principle branch, from 0 to pi, emphasized    f(x)=cos(x)             The Un-Cosine  Now, we can find a function that undoes this branch of cosine: the un-cosine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Cosine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the cosine. The points where the -coordinate is are at and at . Since , .             Find .      Find .      Find .       Notation  The name we chose for our function, un-cosine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-cosine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse cosine , which is confusingly written as .    Using Inverse Cosine    We will use the inverse cosine\/arc-cosine to find the angle in the third quadrant so that .  Using a calculator, let . We note that , so we see that is in the second quadrant, as shown in . This is because always gives an angle in either the first or second quadrant.  Instead, to get an angle in the third quadrant with the same cosine, we need , or equivalently, .   The Unit Circle Showing Points with .   The unit circle, showing two points on the unit circle with x coordinate -0.3, one in the second quadrant and one in the third quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the second quadrant, theta from the positive x axis counter clockwise to the line through the point in the third quadrant, and minus theta sub star from the positive x axis clockwise to the line through the point in the third quadrant.    c=-0.3  th_star=acos(c)  P_star=(c,sin(th_star))  P=(c,-sin(th_star))        x=-0.3  \\theta_{*}  \\theta  -\\theta_{*}         We check with our calculator that , and , and thus is in the third quadrant, as desired.     "
 },
 {
   "id": "ssec_principle_branch_cosine-2",
@@ -1108,13 +1108,22 @@ var ptx_lunr_docs = [
   "body": "arc-cosine inverse cosine "
 },
 {
+  "id": "sec_inverse_cosine-6-2",
+  "level": "2",
+  "url": "sec_inverse_cosine.html#sec_inverse_cosine-6-2",
+  "type": "Example",
+  "number": "52",
+  "title": "",
+  "body": "  We will use the inverse cosine\/arc-cosine to find the angle in the third quadrant so that .  Using a calculator, let . We note that , so we see that is in the second quadrant, as shown in . This is because always gives an angle in either the first or second quadrant.  Instead, to get an angle in the third quadrant with the same cosine, we need , or equivalently, .   The Unit Circle Showing Points with .   The unit circle, showing two points on the unit circle with x coordinate -0.3, one in the second quadrant and one in the third quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the second quadrant, theta from the positive x axis counter clockwise to the line through the point in the third quadrant, and minus theta sub star from the positive x axis clockwise to the line through the point in the third quadrant.    c=-0.3  th_star=acos(c)  P_star=(c,sin(th_star))  P=(c,-sin(th_star))        x=-0.3  \\theta_{*}  \\theta  -\\theta_{*}         We check with our calculator that , and , and thus is in the third quadrant, as desired.   "
+},
+{
   "id": "sec_inverse_sine",
   "level": "1",
   "url": "sec_inverse_sine.html",
   "type": "Subsection",
   "number": "4.10.3",
   "title": "The Inverse Sine Function",
-  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=sin(x)             The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .   "
+  "body": " The Inverse Sine Function   Just like with cosine, we can't find the angle so that , be we can find an angle. So, to find an un-sine function that takes between and as its input and gives an angle, we again need to find a branch .    The Principle Branch of Sine    Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .     The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=sin(x)             The Un-Sine  Now, we can find a function that undoes this branch of sine: the un-sine of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .             Find .      Find .      Find .       Notation  The name we chose for our function, un-sine , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-sine , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse sine , which is confusingly written as .    Using the Inverse Sine    We will find an angle in the second quadrant whose sine is .  We start by finding points on the unit circle with -coordinate as shown in .   The Unit Circle Showing Points with .   The unit circle, showing two points on the unit circle with y coordinate 0.6, one in the first quadrant and one in the second quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the first quadrant, and theta from the positive x axis counter clockwise to the line through the point in the second quadrant.    s=0.6  th_star=asin(s)  P_star=(cos(th_star),sin(th_star))  P=(-cos(th_star),sin(th_star))        y=${s}  \\theta_{*}  \\theta         The inverse sine always returns an angle between and , so when we calculate we get , which is in the first quadrant. This is our reference angle . The angle, , that we want will be . We verify that , and , so the angle is in the second quadrant, as desired.     "
 },
 {
   "id": "sec_inverse_sine-2-1",
@@ -1130,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_find_branch_sine",
   "type": "Checkpoint",
-  "number": "52",
+  "number": "54",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every value of from to occurs exactly once in that range of values.    One choice is . This is called the principle branch of sine, sometimes written with a capital S, .   "
 },
@@ -1139,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#fig_sine",
   "type": "Figure",
-  "number": "53",
+  "number": "55",
   "title": "",
   "body": " The Sine Function   The graph of sine with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=sin(x)          "
 },
@@ -1148,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#def_unsin",
   "type": "Definition",
-  "number": "54",
+  "number": "56",
   "title": "The “Un-Sine” Function.",
   "body": " The Un-Sine Function   For any value with , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -1157,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#example_unsin",
   "type": "Example",
-  "number": "55",
+  "number": "57",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Since , .  To find , we first locate points where the -coordinate is , because -coordinates correspond to the sine. The points where the -coordinate is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -1166,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_inverse_sine.html#exer_unsin",
   "type": "Checkpoint",
-  "number": "56",
+  "number": "58",
   "title": "",
   "body": "       Find .      Find .      Find .    "
 },
@@ -1180,13 +1189,22 @@ var ptx_lunr_docs = [
   "body": "arc-sine inverse sine "
 },
 {
+  "id": "sec_inverse_sine-6-2",
+  "level": "2",
+  "url": "sec_inverse_sine.html#sec_inverse_sine-6-2",
+  "type": "Example",
+  "number": "59",
+  "title": "",
+  "body": "  We will find an angle in the second quadrant whose sine is .  We start by finding points on the unit circle with -coordinate as shown in .   The Unit Circle Showing Points with .   The unit circle, showing two points on the unit circle with y coordinate 0.6, one in the first quadrant and one in the second quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the first quadrant, and theta from the positive x axis counter clockwise to the line through the point in the second quadrant.    s=0.6  th_star=asin(s)  P_star=(cos(th_star),sin(th_star))  P=(-cos(th_star),sin(th_star))        y=${s}  \\theta_{*}  \\theta         The inverse sine always returns an angle between and , so when we calculate we get , which is in the first quadrant. This is our reference angle . The angle, , that we want will be . We verify that , and , so the angle is in the second quadrant, as desired.   "
+},
+{
   "id": "sec_tan_and_inverse_tan",
   "level": "1",
   "url": "sec_tan_and_inverse_tan.html",
   "type": "Subsection",
   "number": "4.10.4",
   "title": "The Tangent and the Inverse Tangent",
-  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=tan(x)                   The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .   "
+  "body": " The Tangent and the Inverse Tangent   The tangent function is a little bit different from sine and cosine, because not only do values of the tangent repeat, but there are points where the tangent is not defined at all.    The Graph of the Tangent Function  As shown in , the graph is undefined with vertical asymptotes at and so forth. In fact for any whole number (or integer ) , is undefined at .  As we come up on one of these discontinuities from the left side, values of the tangent grow larger and larger. We formally say that as , for example, from the left, the tangent increases without bound , and sometimes we write as .  Similarly, as we come up on one of these discontinuities from the right side, values of the tangent grow smaller and smaller, or more and more negative, and we say that as from the right, the tangent decreases without bound , and sometimes we write as .   The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=tan(x)                   The Principle Branch of Tangent    Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .      The Un-Tangent  Now, we can find a function that undoes this branch of tangent: the un-tangent of a number is the unique angle so that:  and  . For now, we will write and give the following definition.   The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .        We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .        Notation  The name we chose for our function, un-tangent , is intuitive, but it's not what the standard notational conventions are. Much more common are the arc-tangent , , named this because we finding the angle in the unit circle is the same as finding the arc, and inverse tangent , which is confusingly written as .    Using the Inverse Tangent    We will write the vector in terms of its magnitude and its angle.   shows the vector , the unit circle, and the unit vector , the unit vector that points in the direction of .  To find this unit vector, we calculate . So, and so    The vector represented as a point and the unit circle.    A set of axes with x from -4 to 4 and y from -2 to 4, with the unit circle, the point (-4, -1), with a line drawn through (-4,-1) and (0,0) and extended to (4,1). The angle theta sub star from the x axis counterclockwise to the segment from (0,0) to (4,1) and the angle theta from the x axis counterclockwise to the segment from (0,0) to (-4, -1) are shown.     P=(-4,-1)  u=normalize(P)  P_star=-P  th_star=atan(1\/4)      \\vec{v}=\\left[\\begin{array}{r}-4\\\\-1\\end{array}\\right]  \\vec{u}   \\theta_{*}\\approx{}${round(th_star,5)}  \\theta          Now we need to find the angle, , so that and . We will do this by noting that . It is worth noting for future reference that the tangent can be obtained directly from the original vector by dividing the second component by the first.  We calculate . This angle is in the first quadrant and is our reference angle . Because of the periodicity of tangent, the angle for our vector is .  We check our answer by calculating      "
 },
 {
   "id": "ssec_graph_of_tan-2",
@@ -1211,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#fig_tan",
   "type": "Figure",
-  "number": "57",
+  "number": "61",
   "title": "",
   "body": " The Tangent Function   The graph of tangent with its principle branch, from minus pi over two to pi over two, emphasized    f(x)=tan(x)                "
 },
@@ -1220,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#exer_find_branch_tangent",
   "type": "Checkpoint",
-  "number": "58",
+  "number": "62",
   "title": "",
   "body": "  Use the graph of in to find a subsection of the graph, , that every real number value of occurs exactly once in that range of values.    One choice is . This is called the principle branch of tangent, sometimes written with a capital T, .   "
 },
@@ -1229,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#def_untan",
   "type": "Definition",
-  "number": "59",
+  "number": "63",
   "title": "The “Un-Tangent” Function.",
   "body": " The Un-Tangent Function   For any real , saying means that is the (unique) angle so that  , and  .     "
 },
@@ -1238,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_tan_and_inverse_tan.html#example_untan",
   "type": "Example",
-  "number": "60",
+  "number": "64",
   "title": "",
   "body": "  We will find for several values of using the unit circle.    To find , we first locate points where the slope is , because . The points where the slope is are at and at . Since , .  To find , we first locate points where the slope is . The points where the slope is are at and at . Neither of these lie in the interval , though. Instead, we will look at negative angles. The point at is also at . This is in the correct range, so .     "
 },
@@ -1250,6 +1268,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "arc-tangent inverse tangent "
+},
+{
+  "id": "sec_tan_and_inverse_tan-7-2",
+  "level": "2",
+  "url": "sec_tan_and_inverse_tan.html#sec_tan_and_inverse_tan-7-2",
+  "type": "Example",
+  "number": "65",
+  "title": "",
+  "body": "  We will write the vector in terms of its magnitude and its angle.   shows the vector , the unit circle, and the unit vector , the unit vector that points in the direction of .  To find this unit vector, we calculate . So, and so    The vector represented as a point and the unit circle.    A set of axes with x from -4 to 4 and y from -2 to 4, with the unit circle, the point (-4, -1), with a line drawn through (-4,-1) and (0,0) and extended to (4,1). The angle theta sub star from the x axis counterclockwise to the segment from (0,0) to (4,1) and the angle theta from the x axis counterclockwise to the segment from (0,0) to (-4, -1) are shown.     P=(-4,-1)  u=normalize(P)  P_star=-P  th_star=atan(1\/4)      \\vec{v}=\\left[\\begin{array}{r}-4\\\\-1\\end{array}\\right]  \\vec{u}   \\theta_{*}\\approx{}${round(th_star,5)}  \\theta          Now we need to find the angle, , so that and . We will do this by noting that . It is worth noting for future reference that the tangent can be obtained directly from the original vector by dividing the second component by the first.  We calculate . This angle is in the first quadrant and is our reference angle . Because of the periodicity of tangent, the angle for our vector is .  We check our answer by calculating    "
 },
 {
   "id": "hanging_wt_intro",
@@ -1265,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_intro.html#fig_suspended_wt",
   "type": "Figure",
-  "number": "61",
+  "number": "67",
   "title": "",
   "body": " A Weight Suspended Asymmetrically   A diagram showing a weight suspended from two wires    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]           "
 },
@@ -1292,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_sines.html#fig_laws_triangle",
   "type": "Figure",
-  "number": "62",
+  "number": "68",
   "title": "",
   "body": " An Arbitrary Triangle    An arbitrary triangle with vertices A B and C, with A on the far left, B on the far right horizontally even with A, and C above and between A and B.  The sides opposite each angle are labeled a, b, and c respectively.  A perpendicular dashed line, labeled h, descends from C to point D on segment A B.  Segment A D is labeled c-x and segment D B is labeled x.     A=(0,0)  B=(8,0)  C=(6,5)  H=(6,0)   c  a  b  h  c-x  x   A  B  C  H      "
 },
@@ -1310,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_sines.html#thm_law_of_sines",
   "type": "Theorem",
-  "number": "63",
+  "number": "69",
   "title": "The Law of Sines.",
   "body": " The Law of Sines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
 },
@@ -1328,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_cosines.html#thm_law_of_cosines",
   "type": "Theorem",
-  "number": "64",
+  "number": "70",
   "title": "The Law of Cosines.",
   "body": " The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
 },
@@ -1338,7 +1365,7 @@ var ptx_lunr_docs = [
   "url": "law_of_cosines.html#law_of_cosines-7",
   "type": "Proof",
   "number": "4.11.3.1",
-  "title": "Proof of Theorem 64.",
+  "title": "Proof of Theorem 70.",
   "body": " Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.  "
 },
 {
@@ -1346,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "law_of_cosines.html#fig_exterior_alt",
   "type": "Figure",
-  "number": "65",
+  "number": "71",
   "title": "",
   "body": " An Triangle with an Exterior Altitude    An arbitrary triangle with an external altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     A=(0,0)  B=(6,0)  C=(8,5)  D=(8,0)    c+x  a  b  h  c  x   A  B  C  D      "
 },
@@ -1364,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#fig_suspended_wt_redux",
   "type": "Figure",
-  "number": "66",
+  "number": "72",
   "title": "",
   "body": " A Weight Suspended Asymmetrically with Axes Imposed   A diagram showing a weight suspended from two wires with axes imposed    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2  right=(crux[0]+40,crux[1])  phi=atan(v1[1]\/v1[0])   y  x   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]     \\phi_{1}  \\phi_{2}      "
 },
@@ -1373,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#example_law_of_sines",
   "type": "Example",
-  "number": "67",
+  "number": "73",
   "title": "",
   "body": "   Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.     A=(0,0)  theta=40*pi\/180  B=(2*cos(theta),2*sin(theta))  C=(2,0)  H=(B[0],0)   2\\text{m}  a   1.7\\text{m?}  A  B  C  H  40^{\\circ}        shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then    "
 },
