@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="inverse_tan">
+<diagram dimensions="(600,450)" margins="5">
+  <definition>P=(-4,-1)</definition>
+  <definition>u=normalize(P)</definition>
+  <definition>P_star=-P</definition>
+  <definition>th_star=atan(1/4)</definition>
+  <coordinates bbox="(-4.4, -2.2, 4.4, 4.4)">
+    
+    <circle center="(0,0)" radius="1" stroke="gray" />
+    
+    <line endpoints="((0,0), P_star)" dash="2 4" />
+    <!--
+    <line endpoints="((0,0), P)"  />
+    -->
+    <vector v="P" alignment="se" ><m>\vec{v}=\left[\begin{array}{r}-4\\-1\end{array}\right]</m></vector>
+    <vector v="u" alignment="se" ><m>\vec{u}</m></vector>
+    <line endpoints="(P_star,P)" dash="2 4" />
+    <point p="(0,s)" size="1" alignment="sw" ><m>y=${s}</m></point>
+    
+    <angle-marker points="((1,0),(0,0),P_star)" arrow="yes" radius="100" ><m>\theta_{*}\approx{}${round(th_star,5)}</m></angle-marker>
+    <angle-marker points="((1,0),(0,0),P)" arrow="yes" radius="200" ><m>\theta</m></angle-marker>
+    
+    <axes decorations="yes" stroke="gray" opacity="0.3" hticks="(-4,1,4)" vticks="(-4,1,4)" />
+    
+    <point p="P" alignment="se" ></point>
+    <point p="u" />
+    
+  </coordinates>
+</diagram>
+</prefigure>

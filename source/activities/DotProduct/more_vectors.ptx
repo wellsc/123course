@@ -29,12 +29,4 @@
                                 </p>
                         </statement>
                 </definition>
-                <theorem>
-                        <statement>
-                                <p>
-                                        For any <m>n</m>-vector, <m>\vec{v}</m>, the dot product of the vector with itself is the square of its magnitude. That is,
-                                        <md>\vec{v}\cdot\vec{v}=\Abs{\vec{v}}^{2}.</md>
-                                </p>
-                        </statement>
-                </theorem>
 	</subsection>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="inv_cosine">
+<diagram dimensions="(500,500)" margins="5">
+  <definition>c=-0.3</definition>
+  <definition>th_star=acos(c)</definition>
+  <definition>P_star=(c,sin(th_star))</definition>
+  <definition>P=(c,-sin(th_star))</definition>
+  <coordinates bbox="(-1.1, -1.1, 1.1, 1.1)">
+    <axes decorations="no" stroke="gray" opacity="0.3" />
+    <circle center="(0,0)" radius="1" />
+    <line endpoints="((0,0), P_star)" dash="2 4" />
+    <line endpoints="((0,0), P)"  />
+    <line endpoints="(P_star,P)" dash="2 4" />
+    <point p="(-0.3,0)" size="1" alignment="sw" ><m>x=-0.3</m></point>
+    
+    <angle-marker points="((1,0),(0,0),P_star)" arrow="yes" radius="35" ><m>\theta_{*}</m></angle-marker>
+    <angle-marker points="((1,0),(0,0),P)" arrow="yes" radius="60" ><m>\theta</m></angle-marker>
+    <angle-marker points="(P,(0,0),(1,0))" reverse="yes" arrow="yes" radius="60" dash="4 4"><m>-\theta_{*}</m></angle-marker>
+    <point p="P_star" />
+    <point p="P" />
+    
+  </coordinates>
+</diagram>
+</prefigure>
+

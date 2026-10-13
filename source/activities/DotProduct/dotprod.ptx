@@ -26,6 +26,41 @@
                                 </p>
                         </statement>
                 </definition>
+                <theorem>
+                        <statement>
+                                <p>
+                                        For any <m>n</m>-vector, <m>\vec{v}</m>, the dot product of the vector with itself is the square of its magnitude. That is,
+                                        <md>\vec{v}\cdot\vec{v}=\Abs{\vec{v}}^{2}.</md>
+                                </p>
+                        </statement>
+                        <proof>
+                                <p>
+                                        We will prove this only for the case of 2-vectors.
+                                </p>
+                                <p>
+                                                Let <m>\vec{v}=\begin{bmatrix}a\\ b\end{bmatrix}</m> be any 2-vector. That is, let <m>a</m> and <m>b</m> in the definition of <m>\vec{v}</m> be any real numbers. We will show that <m>\vec{v}\cdot{}\vec{v}=\Abs{\vec{v}}^{2}</m>.
+                                </p>
+                                <p>
+                                                First, we note from the definition of magnitude of a vector that <m>\Abs{\vec{v}}=\sqrt{a^{2}+b^{2}}</m>, and so <m>\Abs{\vec{v}}^{2}={a^{2}+b^{2}}</m>.
+                                </p>
+                                <p>
+                                        Using the definition of dot product, we have
+                                        <md>
+                                                <mrow>
+                                                        \vec{v}\cdot{}\vec{v}
+                                                        &amp;=a\cdot a + b\cdot b
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=a^{2} + b^{2}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\Abs{\vec{v}}^{2}
+                                                </mrow>
+                                        </md>
+                                        as was to be shown.
+                                </p>
+                        </proof>
+                </theorem>
                 <exercise>
                         <introduction>
                                 <p>

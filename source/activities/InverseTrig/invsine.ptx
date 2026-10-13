@@ -92,5 +92,30 @@
                                         The name we chose for our function, <q>un-sine</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-sine</term>, <m>\arcsin(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse sine</term>, which is confusingly written as <m>\sin^{-1}(x)</m>.
                         </p>
                 </subsubsection>
+                <subsubsection>
+                        <title>Using the Inverse Sine</title>
+                        <example>
+                                <statement>
+                                        <p>
+                                                We will find an angle in the second quadrant whose sine is <m>0.6</m>.
+                                        </p>
+                                        <p>
+                                                We start by finding points on  the unit circle with <m>y</m>-coordinate <m>0.6</m> as shown in <xref ref="fig_inv_sine" text="type-local" />.
+                                        </p>
+                                        <figure xml:id="fig_inv_sine">
+                                        <caption>
+                                                        The Unit Circle Showing Points with <m>y=0.6</m>.
+                                        </caption>
+                                                <image width="50%" >
+                                                <description><p>The unit circle, showing two points on the unit circle with y coordinate 0.6, one in the first quadrant and one in the second quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the first quadrant, and theta from the positive x axis counter clockwise to the line through the point in the second quadrant.</p></description>
+                                                <xi:include href="./invsin.xml" />
+                                                </image>
+                                        </figure>
+                                        <p>
+                                                        The inverse sine always returns an angle between <m>-\pi/2</m> and <m>\pi/2</m>, so when we calculate <m>\arccos(0.6)</m> we get <m>\theta_{*}\approx{}0.6435011</m>, which is in the first quadrant. This is our <term>reference angle</term>. The angle, <m>\theta</m>, that we want will be <m>\pi-\theta_{*}\approx{}2.49809</m>. We verify that <m>\sin(2.49809)=0.6</m>, and <m>\pi/2\lt 2.49809\lt\pi</m>, so the angle is in the second quadrant, as desired.
+                                        </p>
+                                </statement>
+                        </example>
+                </subsubsection>
 	</subsection>
 

@@ -83,4 +83,32 @@
                                         The name we chose for our function, <q>un-cosine</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-cosine</term>, <m>\arccos(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse cosine</term>, which is confusingly written as <m>\cos^{-1}(x)</m>.
                         </p>
                 </subsubsection>
+                <subsubsection>
+                        <title>Using Inverse Cosine</title>
+                <example>
+                        <statement>
+                                <p>
+                                                We will use the inverse cosine/arc-cosine to find the angle <m>\theta</m> in the third quadrant so that <m>\cos(\theta)=-0.3</m>.
+                                </p>
+                                <p>
+                                                Using a calculator, let <m>\theta_{*}=\arccos(-0.3)=1.875488981</m>. We note that <m>\pi/2\approx 1.570796327\lt 1.875488981 \lt 3.141592654\approx \pi </m>, so we see that <m>\theta_{*}</m> is in the <em>second</em> quadrant, as shown in <xref ref="fig_inv_cos" text="type-local"/>. This is because <m>\arccos(x)</m> always gives an angle in either the first or second quadrant.
+                                                </p>
+                                                <p>
+                                                        Instead, to get an angle in the third quadrant with the same cosine, we need <m>-\theta_{*}</m>, or equivalently, <m>\theta=2\pi-\theta_{*}=4.407696326</m>.
+                                </p>
+                                <figure xml:id="fig_inv_cos">
+                                        <caption>
+                                                        The Unit Circle Showing Points with <m>x=-0.3</m>.
+                                        </caption>
+                                        <image width="50%">
+                                                <description><p>The unit circle, showing two points on the unit circle with x coordinate -0.3, one in the second quadrant and one in the third quadrant, with lines from the center of the circle to each of the points. Also shown are angles theta sub star, from the positive x axis counter clockwise to the line through the point in the second quadrant, theta from the positive x axis counter clockwise to the line through the point in the third quadrant, and minus theta sub star from the positive x axis clockwise to the line through the point in the third quadrant.</p></description>
+                                                <xi:include href="./invcos.xml"/>
+                                        </image>
+                                </figure>
+                                <p>
+                                                We check with our calculator that <m>\cos(4.407696326)=-0.3</m>, and <m>\pi\lt 4.407696326\lt 3\pi/2</m>, and thus is in the third quadrant, as desired.
+                                </p>
+                        </statement>
+                </example>
+                </subsubsection>
 	</subsection>

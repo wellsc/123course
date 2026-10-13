@@ -77,5 +77,75 @@
                                         The name we chose for our function, <q>un-tangent</q>, is intuitive, but it's not what the standard notational conventions are. Much more common are the <term>arc-tangent</term>, <m>\arctan(x)</m>, named this because we finding the angle in the unit circle is the same as finding the arc, and <term>inverse tangent</term>, which is confusingly written as <m>\tan^{-1}(x)</m>.
                         </p>
                 </subsubsection>
+                <subsubsection>
+                        <title>Using the Inverse Tangent</title>
+                        <example>
+                                <statement>
+                                        <p>
+                                                We will write the vector <m>\vec{v}=\begin{bmatrix}-4\\-1\end{bmatrix}</m> in terms of its magnitude and its angle.
+                                        </p>
+                                        <p>
+                                                <xref ref="fig_inv_tan" text="type-local"/> shows the vector <m>\vec{v}</m>, the unit circle, and the unit vector <m>\vec{u}</m>, the unit vector that points in the direction of <m>\vec{v}</m>.
+                                                </p>
+                                                <p>
+                                                        To find this unit vector, we calculate <m>\vec{u}=\frac{1}{\Abs{\vec{v}}}\vec{v}</m>. So,
+                                                        <md>
+                                                                <mrow>
+                                                                        \Abs{\vec{v}}
+                                                                                &amp;=
+                                                                        \sqrt{(-4)^{2}+(-1)^{2}}
+                                                                </mrow>
+                                                                <mrow>
+                                                                                &amp;=
+                                                                        \sqrt{16+1}
+                                                                </mrow>
+                                                                <mrow>
+                                                                                &amp;=
+                                                                        \sqrt{17},
+                                                                </mrow>
+                                                        </md>
+                                                        and so
+                                                        <md>
+                                                                <mrow>
+                                                                        \vec{u}
+                                                                                &amp;=\frac{1}{\sqrt{17}}\begin{bmatrix}-4\\-1\end{bmatrix}
+                                                                </mrow>
+                                                                <mrow>
+                                                                                &amp;=\begin{bmatrix}\frac{-4}{\sqrt{17}}\\\frac{-1}{\sqrt{17}}\end{bmatrix}
+                                                                </mrow>
+                                                        </md>
+                                        </p>
+                                        <figure xml:id="fig_inv_tan">
+                                                <caption>The vector <m>\vec{v}</m> represented as a point and the unit circle.</caption>
+                                                <image width="50%">
+                                                        <description>
+                                                                <p>
+                                                                        A set of axes with x from -4 to 4 and y from -2 to 4, with the unit circle, the point (-4, -1), with a line drawn through (-4,-1) and (0,0) and extended to (4,1). The angle theta sub star from the x axis counterclockwise to the segment from (0,0) to (4,1) and the angle theta from the x axis counterclockwise to the segment from (0,0) to (-4, -1) are shown. 
+                                                                </p>
+                                                        </description>
+                                                        <xi:include href="./invtan.xml"/>
+                                                </image>
+                                        </figure>
+                                        <p>
+                                                        Now we need to find the angle, <m>\theta</m>, so that <m>\cos(\theta)=\frac{-4}{\sqrt{17}}</m> and <m>\sin(\theta)=\frac{-1}{\sqrt{17}}</m>. We will do this by noting that <m>\tan(\theta)=\left(\frac{-1}{\sqrt{17}}\right)/\left(\frac{-4}{\sqrt{17}}\right)=(-1)/(-4)=1/4</m>. It is worth noting for future reference that the tangent can be obtained directly from the original vector <m>\vec{v}</m> by dividing the second component by the first.
+                                        </p>
+                                        <p>
+                                                        We calculate <m>\theta_{*}=\arctan(1/4)\approx{}0.24498</m>. This angle is in the first quadrant and is our <term>reference angle</term>. Because of the periodicity of tangent, the angle for our vector is <m>\theta=\pi+\theta_{*}\approx{}3.38657</m>.
+                                        </p>
+                                        <p>
+                                                We check our answer by calculating 
+                                                <md>
+                                                        <mrow>
+                                                                \sqrt{17}\begin{bmatrix}\cos(3.38657)\\ \sin(3.38657)\end{bmatrix}
+                                                                &amp;=\begin{bmatrix}\sqrt{17}\cos(3.38657)\\ \sqrt{17}\sin(3.38657)\end{bmatrix}
+                                                        </mrow>
+                                                        <mrow>
+                                                                &amp;=\begin{bmatrix}-4\\ -1\end{bmatrix}
+                                                        </mrow>
+                                                </md>
+                                        </p>
+                                </statement>
+                        </example>
+                </subsubsection>
 	</subsection>
 
