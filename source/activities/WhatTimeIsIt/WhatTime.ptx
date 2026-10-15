@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>What Time Is It?</title>
+  <page>
+  <exercise workspace="2in">
+          <introduction>
+                  <p>
+                          An (analog) clock has a minute hand that is <m>5\text{in}</m> long. We begin observing at noon. We also have a digital clock that is synced with the analog clock.
+                  </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                              What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) <m>3\text{in}</m> horizontally to the left of the center of the clock? (That is, the tip of the minute hand is <m>3\text{in}</m> to the left of the line through the <m>12</m> and the <m>6</m> on the clock.)
+              </p>
+              <figure xml:id="fig_clock1">
+                      <caption>Minute Hand Position on an Analog Clock</caption>
+                      <image width="50%">
+                              <description><p>An image of an analog clock. The minute hand has a length of five inches. The tip of the minute hand is 3 inches to the left of a line from the 12 to the 6 on the clock, between the 7 and 8 on the clock.</p></description>
+                              <xi:include href="./clock1.xml"/>
+                      </image>
+              </figure>
+            </statement>
+          </task>
+          <task>
+                  <statement>
+                          <p>
+                              What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) <m>2\text{in}</m> vertically below the center of the clock? (That is, the tip of the minute hand is <m>2\text{in}</m> below the line through the <m>9</m> and the <m>12</m> on the clock.)
+                          </p>
+                  </statement>
+          </task>
+  </exercise>
+  </page>
+
+</worksheet>

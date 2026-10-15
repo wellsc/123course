@@ -23,6 +23,27 @@
                                                 Express the force from gravity as a vector, <m>\vec{F}_{g}</m>.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                                The magnitude is
+                                        <md>
+                                                9.8\text{m}/\text{s}^{2}\cdot{}15\text{kg}
+                                                        =147\text{N}
+                                        </md>
+                                        and the direction is directly downward, which is indicated by the unit vector <m>\left\langle{}0, -1\right\rangle{}</m>. Therefore, we have
+                                        <md>
+                                                <mrow>
+                                                        \vec{F}_{g}
+                                                                &amp;=
+                                                        147\begin{bmatrix}0\\ -1\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \begin{bmatrix}0\\ -147\end{bmatrix}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                        </solution>
                 </exercise>
                 <exercise>
                         <statement>
@@ -30,6 +51,14 @@
                                                 Express the movement from the start of the ramp to the end of the ramp as a vector, <m>\vec{R}</m>.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        The movement from the bottom of the ramp to the top is <m>3\text{m}</m> to the right and <m>0.2\text{m}</m> upward. Thus
+                                        <md>
+                                                \vec{R}=\begin{bmatrix}3\\0.2\end{bmatrix}.
+                                        </md>
+                                </p>
+                        </solution>
                 </exercise>
                 <exercise>
                         <statement>
@@ -37,6 +66,35 @@
                                                 Calculate <m>\vec{F}_{R}=\proj_{\vec{R}}(\vec{F}_{g})</m>.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        Using the formula for orthogonal projection, we have
+                                        <md>
+                                                <mrow>
+                                                        \vec{F}_{R}
+                                                                &amp;=\proj_{\vec{R}}(\vec{F}_{g})
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{\vec{F}_{g}\cdot{}\vec{R}}{\vec{R}\cdot{}\vec{R}}\vec{R}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{\begin{bmatrix}0\\-147\end{bmatrix}\cdot{}\begin{bmatrix}3\\0.2\end{bmatrix}}{\begin{bmatrix}3\\0.2\end{bmatrix}\cdot{}\begin{bmatrix}3\\0.2\end{bmatrix}}\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{0\cdot 3+0.2\cdot -147}{3\cdot 3+0.2\cdot 0.2}\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{-29.4}{9+0.04}\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=-3.25221239\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\begin{bmatrix}-9.7566\\ -0.65044\end{bmatrix}
+                                                </mrow>
+                                        </md>
+                                </p>
+                        </solution>
                 </exercise>
                 <exercise>
                         <statement>
@@ -44,6 +102,26 @@
                                                 Calculate <m>\vec{F}_{\perp}=\vec{F}_{g}-\vec{F}_{R}</m>.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        We have
+                                        <md>
+                                                <mrow>
+                                                        \vec{F}_{\perp}
+                                                                &amp;=
+                                                        \vec{F}_{g} - \vec{F}_{R}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \begin{bmatrix}0\\-147\end{bmatrix} - \begin{bmatrix}-9.7566\\ -0.65044\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \begin{bmatrix} 9.7566\\ -146.34955\end{bmatrix}
+                                                </mrow>
+                                        </md>
+                                </p>
+                        </solution>
                 </exercise>
                 <exercise>
                         <statement>
@@ -51,6 +129,23 @@
                                                 Verify that <m>\vec{F}_{\perp}\cdot{}\vec{F}_{R}=0</m>, and therefore they are perpendicular to each other.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                <mrow>
+                                                        \vec{F}_{\perp}\cdot{}\vec{F}_{R}
+                                                        &amp;=(9.7566)\cdot(-9.7566)+(-146.34955)( -0.65044)
+                                                </mrow>
+                                                <mrow>
+                                                        &amp;=(-95.19124)+(95.19124)
+                                                </mrow>
+                                                <mrow>
+                                                        &amp;=0.
+                                                </mrow>
+                                        </md>
+                                </p>
+                        </solution>
+
                 </exercise>
                 <exercise>
                         <statement>
@@ -68,5 +163,53 @@
                                                 Compare <m>\proj_{\vec{R}}(\vec{F}_{h})</m> to <m>\proj_{\vec{R}}(\vec{F}_{g})</m> to determine the value of <m>\alpha</m> needed to offset the effect of gravity.
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                <mrow>
+                                                        \proj_{\vec{R}}(\vec{F}_{h})
+                                                                &amp;=
+                                                        \frac{\vec{F}_{h}\cdot{}\vec{R}}{\vec{R}\cdot{}\vec{R}}\vec{R}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \frac{\begin{bmatrix}\alpha \\0\end{bmatrix}\cdot{}\begin{bmatrix}3\\0.2\end{bmatrix}}{\begin{bmatrix}3\\0.2\end{bmatrix}\cdot{}\begin{bmatrix}3\\0.2\end{bmatrix}}\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \frac{\alpha \cdot 3 + 0\cdot 0.2}{3\cdot 3+ 0.2\cdot 0.2}\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        0.331858\alpha\begin{bmatrix}3\\0.2\end{bmatrix}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=
+                                                        \begin{bmatrix}0.995575\alpha \\0.066372\alpha \end{bmatrix}
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                Comparing <m>\vec{F}_{R}</m> and <m>\proj_{\vec{R}}(\vec{F}_{h})</m>, in order to have <m>\proj_{\vec{R}}(\vec{F}_{h})=-\vec{F}_{R}</m>, we need <m>0.995575221238938\alpha=9.75663716814159</m>, which yields <m>\alpha=9.8</m>.
+                                </p>
+                                <p>
+                                        If we look back at our calculations, we might see that we are solving
+                                        <md>
+                                                <mrow>
+                                                        \proj_{\vec{R}}(\vec{F}_{g})=-\proj_{\vec{R}}(\vec{F}_{h})
+                                                </mrow>
+                                        </md>
+                                        which means we are finding
+                                        <md>
+                                                <mrow>
+                                                        \frac{\vec{F}_{g}\cdot\vec{R}}{\vec{R}\cdot\vec{R}}\vec{R}=-\frac{\vec{F}_{h}\cdot\vec{R}}{\vec{R}\cdot\vec{R}}\vec{R}.
+                                                </mrow>
+                                        </md>
+                                                Note that the only difference between the two sided of that equation is the use of <m>\vec{F}_{g}\cdot\vec{R}</m> on the left and <m>-\vec{F}_{h}\cdot\vec{R}</m> on the right. So, in effect, we are solving <m>\vec{F}_{g}\cdot\vec{R}=-\vec{F}_{h}\cdot\vec{R}</m>.
+                                </p>
+                                <p>
+                                                This equation becomes <m>3\alpha=0.2\cdot 147</m>, which gives <m>\alpha=(0.2\cdot 147/3)=(1/5)(147/3)=147/15=9.8</m>.
+                                </p>
+                        </solution>
                 </exercise>
 </worksheet>

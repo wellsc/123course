@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="clock1">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>rad=5</definition>
+  <definition>hhand=3</definition>
+  <definition>nums=1</definition>
+  <definition>border=1</definition>
+  <definition>total=rad+border+nums</definition>
+  <definition>dir(t)=(sin(t*pi/30),cos(t*pi/30))</definition>
+  <definition>time=30+(atan(3/4))*30/pi</definition>
+  <definition>tip=rad*dir(time)</definition>
+  <definition>htip=hhand*dir(time/12)</definition>
+  <coordinates bbox="(-total,-total,total,total)">
+    <line endpoints="((-total,0),(total,0))" opacity="0.2" />
+        <line endpoints="((0,-total),(0,total))" opacity="0.2" />    
+    <repeat parameter="k=1..12">
+      <label anchor="(rad+nums/2)*(sin(k*pi/6),cos(k*pi/6))" clear-background="yes" ><m>\scriptsize ${k}</m></label>
+    </repeat>
+
+    <circle center="(0,0)" radius="rad+nums" />
+    <circle center="(0,0)" radius="rad" />
+    
+    <vector v="tip" />
+    <label anchor="tip/2" alignment="nw"><m>${rad}\text{in}</m></label>
+    <vector v="htip" opacity="0.3" />
+    <line endpoints="(tip,(0,tip[1]))" dash="4 4" ><m>${round(abs(tip[0]))}\text{in}</m></line>
+
+  </coordinates>
+</diagram>
+</prefigure>

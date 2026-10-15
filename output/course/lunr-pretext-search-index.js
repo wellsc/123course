@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "4.9.4",
   "title": "Practical Application of the Dot Product",
-  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .      Express the movement from the start of the ramp to the end of the ramp as a vector, .      Calculate .      Calculate .      Verify that , and therefore they are perpendicular to each other.      Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.    "
+  "body": " Practical Application of the Dot Product  In this subsection, our goal is to solve the following problem.  A box with a mass of 15 kilograms is being pushed up a ramp. The ramp covers m horizontally and rises m. Ignoring friction, determine the minimum amount of force that must be applied to the box in the horizontal direction in order to overcome gravity and move the cart up the ramp.   A 3 Meter Ramp with a Object   An image showing a ramp with width 3 meters and height 0.2 meters with a rectangle representing an object sliding on the ramp. There is a horizontal arrow pointing from the center of the rectangle to the right representing a force vector.    rise=0.9  run=6.0  g=-9.8  m=15  Fg=(0,m*g)  lfg=3.2  f(x)=rise\/run*x  a=3  pt=(a,f(a))  par=normalize((run,rise))  perp=normalize((-rise,run))  dperp=(Fg[0]*perp[0]+Fg[1]*perp[1])  dpar=(Fg[0]*par[0]+Fg[1]*par[1])  vpar=-dpar*lfg*par\/(m*g)  vperp=-dperp*lfg*perp\/(m*g)  ctr=pt+2*perp\/10+par\/2     3\\text{m}    0.2\\text{m}      \\vec{F}_{h}     \\vec{F}_{g}                       The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .    The magnitude is and the direction is directly downward, which is indicated by the unit vector . Therefore, we have       Express the movement from the start of the ramp to the end of the ramp as a vector, .    The movement from the bottom of the ramp to the top is to the right and upward. Thus       Calculate .    Using the formula for orthogonal projection, we have       Calculate .    We have       Verify that , and therefore they are perpendicular to each other.           Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.       Comparing and , in order to have , we need , which yields .  If we look back at our calculations, we might see that we are solving which means we are finding Note that the only difference between the two sided of that equation is the use of on the left and on the right. So, in effect, we are solving .  This equation becomes , which gives .    "
 },
 {
   "id": "fig_ramp",
@@ -970,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.1",
   "title": "",
-  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .   "
+  "body": "  The object has a mass of , and from Newton's first law, force is equal to mass times acceleration. In this case, since we are using SI (metric) units, acceleration due to gravity is , and gravity accelerates objects straight down. (The SI unit of force is a Newton , defined to be .)  Express the force from gravity as a vector, .    The magnitude is and the direction is directly downward, which is indicated by the unit vector . Therefore, we have    "
 },
 {
   "id": "sec_dot_prod_practical-6",
@@ -979,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.2",
   "title": "",
-  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .   "
+  "body": "  Express the movement from the start of the ramp to the end of the ramp as a vector, .    The movement from the bottom of the ramp to the top is to the right and upward. Thus    "
 },
 {
   "id": "sec_dot_prod_practical-7",
@@ -988,7 +988,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.3",
   "title": "",
-  "body": "  Calculate .   "
+  "body": "  Calculate .    Using the formula for orthogonal projection, we have    "
 },
 {
   "id": "sec_dot_prod_practical-8",
@@ -997,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.4",
   "title": "",
-  "body": "  Calculate .   "
+  "body": "  Calculate .    We have    "
 },
 {
   "id": "sec_dot_prod_practical-9",
@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.5",
   "title": "",
-  "body": "  Verify that , and therefore they are perpendicular to each other.   "
+  "body": "  Verify that , and therefore they are perpendicular to each other.        "
 },
 {
   "id": "sec_dot_prod_practical-10",
@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4.9.4.6",
   "title": "",
-  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.   "
+  "body": "  Let be the horizontal pulling force, given by where the parameter is an unspecified quantity.  Find .  Compare to to determine the value of needed to offset the effect of gravity.       Comparing and , in order to have , we need , which yields .  If we look back at our calculations, we might see that we are solving which means we are finding Note that the only difference between the two sided of that equation is the use of on the left and on the right. So, in effect, we are solving .  This equation becomes , which gives .   "
 },
 {
   "id": "sec_direction_to_coords",
@@ -1403,6 +1403,24 @@ var ptx_lunr_docs = [
   "number": "73",
   "title": "",
   "body": "   Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.     A=(0,0)  theta=40*pi\/180  B=(2*cos(theta),2*sin(theta))  C=(2,0)  H=(B[0],0)   2\\text{m}  a   1.7\\text{m?}  A  B  C  H  40^{\\circ}        shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then    "
+},
+{
+  "id": "activities-13",
+  "level": "1",
+  "url": "activities-13.html",
+  "type": "Worksheet",
+  "number": "4.12",
+  "title": "What Time Is It?",
+  "body": " What Time Is It?     An (analog) clock has a minute hand that is long. We begin observing at noon. We also have a digital clock that is synced with the analog clock.     What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) horizontally to the left of the center of the clock? (That is, the tip of the minute hand is to the left of the line through the and the on the clock.)   Minute Hand Position on an Analog Clock   An image of an analog clock. The minute hand has a length of five inches. The tip of the minute hand is 3 inches to the left of a line from the 12 to the 6 on the clock, between the 7 and 8 on the clock.    rad=5  hhand=3  nums=1  border=1  total=rad+border+nums  dir(t)=(sin(t*pi\/30),cos(t*pi\/30))  time=30+(atan(3\/4))*30\/pi  tip=rad*dir(time)  htip=hhand*dir(time\/12)      \\scriptsize ${k}      ${rad}\\text{in}   ${round(abs(tip[0]))}\\text{in}           What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) vertically below the center of the clock? (That is, the tip of the minute hand is below the line through the and the on the clock.)      "
+},
+{
+  "id": "activities-13-2-1",
+  "level": "2",
+  "url": "activities-13.html#activities-13-2-1",
+  "type": "Worksheet Exercise",
+  "number": "4.12.1",
+  "title": "",
+  "body": "  An (analog) clock has a minute hand that is long. We begin observing at noon. We also have a digital clock that is synced with the analog clock.     What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) horizontally to the left of the center of the clock? (That is, the tip of the minute hand is to the left of the line through the and the on the clock.)   Minute Hand Position on an Analog Clock   An image of an analog clock. The minute hand has a length of five inches. The tip of the minute hand is 3 inches to the left of a line from the 12 to the 6 on the clock, between the 7 and 8 on the clock.    rad=5  hhand=3  nums=1  border=1  total=rad+border+nums  dir(t)=(sin(t*pi\/30),cos(t*pi\/30))  time=30+(atan(3\/4))*30\/pi  tip=rad*dir(time)  htip=hhand*dir(time\/12)      \\scriptsize ${k}      ${rad}\\text{in}   ${round(abs(tip[0]))}\\text{in}           What time is showing on the digital clock (including seconds) when the tip of the minute hand is first (after noon) vertically below the center of the clock? (That is, the tip of the minute hand is below the line through the and the on the clock.)    "
 },
 {
   "id": "progress_check_1",
