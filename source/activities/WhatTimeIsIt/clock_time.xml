@@ -1,0 +1,36 @@
+<diagram dimensions="(600,600)" margins="5">
+  <definition>O=(0,0)</definition>
+  <definition>up=(0,1)</definition>
+  <definition>rt=(1,0)</definition>
+
+  <definition>hrs=12</definition><!-- noon or midnight -->
+  <definition>min=38</definition>
+  <definition>sec=51.30102354156</definition>
+  
+  <definition>lmin=5</definition>
+  <definition>lhr=3</definition>
+  <definition>outer=lmin+1</definition>
+  
+  <definition>minutes=min+sec/60</definition>
+  <definition>min_ang=(minutes)*2*pi/60</definition>
+  <definition>h_ang=(hrs+(min/60)+(sec/3600))*(2*pi/12)</definition>
+
+  <definition>min_tip=lmin*(cos(pi/2-min_ang),sin(pi/2-min_ang))</definition>
+
+  <definition>h_tip=lhr*(cos(pi/2-h_ang),sin(pi/2-h_ang))</definition>
+
+  <coordinates bbox="(-(outer+0.5),-(outer+0.5),(outer+0.5),(outer+0.5))">
+    <circle at="bigC" center="O" radius="outer" stroke="black" />
+    <circle at="bigC" center="O" radius="lmin" stroke="black" />
+    <vector v="min_tip" label-location="0.6"><m>(${min_tip[0]},${min_tip[1]})</m></vector>
+    <vector v="h_tip" opacity="0.2" />
+    <line endpoints="(O,up)" infinite="yes" opacity="0.2" />
+    <line endpoints="(O,rt)" infinite="yes" opacity="0.2" />
+    <repeat parameter="k=1..12">
+      <label anchor="(outer+lmin)/2*(cos(pi/2-k*pi/6),sin(pi/2-k*pi/6))" clear-background="yes">
+        <m>${k}</m>
+      </label>
+    </repeat>
+  </coordinates>
+
+</diagram>
