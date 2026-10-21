@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="pc2_concert_fig" >
+<diagram dimensions="(550,450)" margins="10">
+  <definition>concert=(5,4)</definition>
+  <definition>trailDir=(1,2)</definition>
+
+  <coordinates bbox="(-2,-1,9,8)">
+    <grid-axes
+      spacings="((-2,1,9),(-1,1,8))"
+      hticks="(-2,1,9)"
+      hlabels="(-2,1,9)"
+      vticks="(0,1,8)"
+      vlabels="(0,1,8)"
+    />
+    <point p="concert" >Concert</point>
+    <line endpoints="((0,0),(1,2))" infinite="yes" >Trail</line>
+  </coordinates>
+</diagram>
+</prefigure>

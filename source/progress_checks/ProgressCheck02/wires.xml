@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="pc2_wires" >
+<diagram dimensions="(400, 350)" margins="15">
+  <definition>M=(0,0)</definition>
+  <definition>mount1=(-40,0)</definition>
+  <definition>mount2=(40,0)</definition>
+  <definition>object=(0,-30)</definition>
+  <definition>Fg=(0,-120)</definition>
+  
+  <definition>V1=object-mount1</definition>
+  <definition>V2=object-mount2</definition>
+  <definition>F1=-(V1@Fg)/(V1@V1)*V1</definition>
+  <definition>F2=-(V2@Fg)/(V2@V2)*V2</definition>
+  <coordinates bbox="(-40,-60,40,10)">
+    <line endpoints="(mount1,mount2)" alignment="n" ><m>80\text{cm}</m></line>
+    <line endpoints="(mount1,object)"><m>50\text{cm}</m></line>
+    
+    <line endpoints="(object,mount2)"><m>50\text{cm}</m></line>
+    <!--
+    <line endpoints="(M,object)" dash="4 4" />
+    <angle-marker points="(mount1,M,object)" />  
+    -->
+    <rectangle center="object" dimensions="(10,5)" stroke="black" />
+
+  
+    <vector at="gravity" v="Fg/5" tail="object" alignment="e" >
+        <m>\vec{F}_{g}=\left\langle ${Fg[0]},${Fg[1]}\text{N} \right\rangle </m>
+    </vector>
+    <vector at="wire1" v="F1/5" tail="object" alignment="sw" >
+        <m>\vec{F}_{1}</m>
+    </vector>
+    <vector at="wire2" v="F2/5" tail="object" alignment="se" >
+        <m>\vec{F}_{2}</m>
+    </vector>
+    <!--
+    <vector v="-F1/5" tail="object" dash="4 4" opacity="0.5" />
+    <vector v="-F2/5" tail="object" dash="4 4" opacity="0.5" />
+    -->
+    <point p="mount1" fill="black" alignment="s" ><m>L</m></point>
+    <point p="mount2" fill="black" alignment="s" ><m>R</m></point>
+    <point p="object" fill="black" />
+  </coordinates>
+</diagram>
+</prefigure>

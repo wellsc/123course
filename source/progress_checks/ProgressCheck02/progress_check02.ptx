@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet
+        margin="0.5in"
+        bottom="0.75in"
+        xml:id="progress_check_2"
+        xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Progress Check 2</title>
+<page>
+          <exercise workspace="0.3in">
+                  <introduction>
+                          <p>
+Jesse's favorite band is giving a free concert in a park this weekend and Jesse really wants to hear them, but he can't stand being in a big crowd.  Jesse knows a hiking trail that runs through the park that gets close to the park's amphitheater (where the concert is being held).  The trail does not, however, go right up to the amphitheater.  
+                                  </p>
+                                  <p>
+                                  <xref ref="fig_concert"/> shows the location of the trail and the concert with the
+trail head located at the origin.  The trail runs in the direction of the vector <m>\vec{r}=\Avec{1,2}</m>.  (That is, the line is given by <m>t\vec{r}</m>, where <m>t</m> takes on scalar values.)   The concert is 400<nbsp/>feet north and 500 feet east of the trail head.  (Each unit on the graph is 100<nbsp/>ft.)
+                          </p>
+                          <figure xml:id="fig_concert">
+                                  <caption>A grid showing the locations of the trail and the concert.</caption>
+                                  <image width="50%" >
+                                          <description>
+                                                  <p>
+                                                          A grid showing the location of the trail and the concert. The grid goes from the lower left point -2, -1 to the upper right point 9, 8 with grid lines every one unit in each direction. The trail is a line through the origin with slope 2. The concert is represented by a point at 5, 4.
+                                                  </p>
+                                          </description>
+                                          <xi:include href="./concert.xml" />
+                                  </image>
+                          </figure>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                          Sketch a line segment from the location of the concert to the location of the nearest point on the trail.
+                                  </p>
+                                  <p>
+                                          What will be the relationship between the line representing the trail and the line from the concert to the closest point on the trail?
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          The lines will be perpendicular.
+                                  </p>
+                          </answer>
+                  </task>
+                  <task>
+                          <task>
+                          <statement>
+                                  <p>
+                                          Determine the exact location where Jesse should stop on the trail to be as close as possible to the concert.  
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                                  Here is one way to find this. Let <m>\vec{c}=\Avec{5,4}</m>, the vector from the origin to the concert. We will find the orthogonal projection of <m>\vec{c}</m> onto the trail, <m>\vec{p}=\proj_{\vec{r}}(\vec{c})</m>.
+                                                  <md>
+                                                          <mrow>
+                                                                  \vec{p}
+                                                                  &amp;=
+                                                                  \proj_{\vec{r}}\left(\vec{c}\right)
+                                                          </mrow>
+                                                          <mrow>
+                                                                  &amp;=
+                                                                  \left(\frac{\vec{c}\cdot\vec{r}}{\vec{r}\cdot\vec{r}}\right)\vec{r}
+                                                          </mrow>
+                                                          <mrow>
+                                                                  &amp;=
+                                                                  \left(\frac{\begin{bmatrix}5\\ 4\end{bmatrix}\cdot\begin{bmatrix}1\\ 2\end{bmatrix}}{\begin{bmatrix}1\\ 2\end{bmatrix}\cdot\begin{bmatrix}1\\ 2\end{bmatrix}}\right)\begin{bmatrix}1\\ 2\end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                                  &amp;=
+                                                            \left(\frac{5\cdot 1+4\cdot 2}{1\cdot 1 + 2\cdot 2}\right)\begin{bmatrix}1\\ 2\end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                                  &amp;=
+                                                            \left(\frac{13}{5}\right)\begin{bmatrix}1\\ 2\end{bmatrix}
+                                                          </mrow>
+                                                          <mrow>
+                                                                  &amp;=
+                                                            \begin{bmatrix}2.6\\ 5.2\end{bmatrix}
+                                                          </mrow>
+                                                  </md>
+                                  </p>
+                          </solution>
+                          </task>
+                                  <task>
+                          <statement>
+                                  <p>
+                                          What distance must Jesse walk down the trail from the trail head to reach the closest point?
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          <m>\Abs{\vec{p}}=\sqrt{2.6^{2}+5.2^{2}}=2.6\sqrt{5}\approx 5.59</m>, but because our units are hundreds of meters, this is a distance of <m>559\text{m}</m>.
+                                  </p>
+                          </solution>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                          How far from the concert will he be?
+                                                  </p>
+                                          </statement>
+                                          <solution>
+                                                  <p>
+                                                          We will find <m>\vec{q}=\vec{c}-\vec{p}</m> and find its magnitude, giving us the (perpendicular) distance from the concert to the trail.
+                                                          <md>
+                                                                  <mrow>
+                                                                          \vec{q}
+                                                                                  &amp;=
+                                                                          \vec{c}-\vec{p}
+                                                                  </mrow>
+                                                                  <mrow>
+                                                                                  &amp;=
+                                                                           \begin{bmatrix}5  \\ 4  \end{bmatrix}
+                                                                          -\begin{bmatrix}2.6\\ 5.2\end{bmatrix}
+                                                                  </mrow>
+                                                                  <mrow>
+                                                                                  &amp;=
+                                                                           \begin{bmatrix}2.4\\ -1.2  \end{bmatrix},
+                                                                  </mrow>
+                                                          </md>
+                                                                  and <m>\Abs{\Avec{2.4,-1.2}}=\sqrt{(2.4)^{2}+(-1.2)^{2}}\approx2.683</m>, so the distance to the concert is about <m>268.3\text{m}</m>.
+                                                  </p>
+                                          </solution>
+                                  </task>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                        If your earlier results did not use dot products and orthogonal projection, describe how you could use dot products and orthogonal projection to obtain your result.
+                                  </p>
+                          </statement>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                        Explain how to use dot products and projection solve this problem for the general case: assume that the concert is at <m>\vec{c}=\left\langle{}c_1,c_2\right\rangle{}</m> and the trail runs through the origin in the direction of <m>\vec{v}=\left\langle{}v_1,v_2\right\rangle{}</m>,  and describe the process to find the nearest point on the trail to the concert.
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                                  For a concert located at <m>\vec{c}=\left\langle{}c_1,c_2\right\rangle{}</m> and a trail that runs through the origin in the direction of <m>\vec{v}=\left\langle{}v_1,v_2\right\rangle{}</m>, we first find the nearest point on the trail by finding <m>\vec{p}=\proj_{\vec{v}}(\vec{c})</m> and <m>\vec{q}=\vec{c}-\vec{p}</m>.
+                                  </p>
+                                  <p>
+                                                  By construction, <m>\vec{p}\perp\vec{q}</m>, and the distance from the concert will be <m>\Abs{\vec{q}}</m>, and the distance along the trail will be <m>\Abs{\vec{p}}</m>.
+                                  </p>
+                          </solution>
+                  </task>
+          </exercise>
+</page>
+<page>
+          <exercise workspace="0.5in" >
+                  <introduction>
+                          <p>
+                                  Recall the following information about the London Eye, a cantilevered observation wheel that stands on the South Bank of the Thames in London, England. 
+                          </p>
+                                  <p>
+                                          <ul>
+                                                  <li>
+                                                          The London Eye has 32 passenger <q>pods</q>, numbered 1<ndash/>12, 14<ndash/>33, skipping <q>unlucky</q> 13.
+                                                  </li>
+                                                  <li>
+                                                          The London Eye has a diameter of <m>135</m><nbsp/>meters.
+                                                  </li>
+                                                  <li>
+                                                                  The London Eye rotates so that the speed with which the pods move around the Eye is <m>26\text{cm}/\text{s}</m>.
+                                                  </li>
+                                          </ul>
+                          </p>
+                          <p>
+                                  In the following, imagine that you get into a pod of the London Eye and begin to ride.
+                          </p>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  When the pod has travelled <m>67.5\text{m}</m> along the circumference, how high above your starting point (in meters) are you?
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                                  Place the origin at the center of Eye with the positive <m>x</m>-axis so that the pod will be on the positive <m>x</m>-axis when it has travelled through one quarter of the circumference. A distance/arc length of <m>67.5\text{m}</m> corresponds to an angle of <m>1</m><nbsp/>radian from the bottom, so the pod has an angle of <m>-\pi/2+1</m> when measured from the positive <m>x</m>-axis.
+                                  </p>
+                                  <p>
+                                                  Relative to the center of the Eye, the coordinates of the pod will be <m>\left(67.5\cos(-\pi/2+1),67.5\sin(-\pi/2+1)\right)\approx(56.799,-36.470)</m>, which means the height will be <m>67.5-36.470=31.030\text{m}</m>.
+                                  </p>
+                          </solution>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  When the pod first reaches a height of <m>67.5\text{m}</m>, how far along the circumference (in meters) have you travelled?
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                                  The pod has a height of <m>67.5\text{m}</m> when it is at the same height as the center of the Eye, which first happens when it has travelled one quarter of the way around, so <m>135\pi/4\approx{}106.02875\text{m}</m>. Another way to calculate this is as <m>67.5\cdot \pi/2</m>, the radius times the angle.
+                                  </p>
+                          </solution>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  When the pod first reaches a height of <m>100\text{m}</m>, how far along the circumference (in meters) have you travelled?
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          First we need to find the angle the pod has travelled through, and then we multiply the angle times the radius to get the distance along the circumference.
+                                  </p>
+                                  <p>
+                                          When the pod reaches <m>100\text{m}</m>, it is <m>32.5\text{m}</m> above the center of the Eye. Therefore, if we put our origin and <m>x</m>-axis as before, the angle, let's call it <m>\theta</m>, from horizontal (through the center) to the position of the pod satisfies <m>\sin(\theta)=\frac{32.5}{67.5}</m> and <m>0\le \theta\le \pi/2</m>. Then, using the inverse sine, we have <m>\theta=\arcsin\left(\frac{32.5}{67.5}\right)\approx 0.502344</m>, and the total angle the pod has traversed is <m>\pi/2+\theta</m>, and thus the total distance along the circumference the pod has travelled is
+                                          <md>
+                                                  <mrow>
+                                                          67.5\text{m}\cdot\left(\frac{\pi}{2}+\theta\right)
+                                                          &amp;=
+                                                          67.5\text{m}\cdot\left(\frac{\pi}{2}+\arcsin\left(\frac{32.5}{67.5}\right)\right)
+                                                  </mrow>
+                                                  <mrow>
+                                                          &amp;\approx
+                                                          139.937\text{m}
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </solution>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  As the pod descends from the highest point, when you reach a height of <m>100\text{m}</m>, how far along the circumference (in meters) have you travelled since starting?
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          <m>67.5\text{m}\left(\frac{3\pi}{2}-\arcsin\left(\frac{32.5}{67.5}\right)\right)\approx 284.178\text{m}</m> .
+                                  </p>
+                          </solution>
+                  </task>
+          </exercise>
+</page>
+<page>
+          <exercise workspace="0.5in" xml:id="pc2_projection">
+                  <introduction>
+                          <p>
+                                          An object with a weight of <m>120\text{N}</m> is suspended from two <m>50\text{cm}</m> wires mounted to the ceiling at points, <m>L</m> and <m>R</m>, that are <m>80\text{cm}</m> apart, as shown in <xref ref="fig_pc2_wires" text="type-local" />. As the object is not moving, the forces acting on it must be balanced. That is, the forces must add up to give the zero vector, <m>\Avec{ 0, 0 }</m>.
+                                  </p>
+                                  <p>
+                                  The forces acting on the object are gravity, which exerts a downward force of <m>120\text{N}</m> and the force along each wire, labeled as <m>F_{1}</m> and <m>F_{2}</m> in the figure.
+                          </p>
+                          <figure xml:id="fig_pc2_wires">
+                                  <caption>An Object Suspended by Two Wires</caption>
+                                  <image width="50%">
+                                          <description><p>Diagram showing an object suspended from two wires, each of length 50 centimeters with their mounts place 80 centimeters apart. Force from gravity, Fg, is shown as a vector in angle brackets with coordinates 0 and -120 N.</p></description>
+                                          <xi:include href="./wires.xml" />
+                                  </image>
+                          </figure>
+                  </introduction>
+                  <task>
+                          <statement>
+                                  <p>
+                                          Find the distance, <m>d</m>, from the object to the ceiling directly above it.
+                                  </p>
+                          </statement>
+                          <hint>
+                                  <p>Give the label <m>M</m> to the point halfway between <m>L</m> and <m>R</m>, and call the center of the object <m>O</m>. What do you know about <m>\triangle{}LMO</m>?</p>
+                          </hint>
+                  </task>
+                  <task>
+                          <introduction>
+                                  <p>
+                                                  In this part, we will find the unit vector, <m>\vec{u}_{1}</m>, in the direction of the left wire.
+                                  </p>
+                          </introduction>
+                          <task>
+                          <statement>
+                                  <p>
+                                                  Represent the left wire with a vector, <m>\vec{v}_{1}</m>.
+                                  </p>
+                          </statement>
+                          <hint>
+                                  <p>
+                                          One way to do this is to think of the center of the object as the origin and find the vector that points to the left mount point.
+                                  </p>
+                          </hint>
+                          <solution>
+                                  <p>
+                                                  If we let the tail of the vector be the center of the object and the head be at <m>L</m>, then <m>\vec{v}_{1}=\Avec{ -40, +30}</m>.
+                                  </p>
+                          </solution>
+                          </task>
+                          <task>
+                          <statement>
+                                  <p>
+                                                  Calculate the magnitude of <m>\vec{v}_{1}</m> and call it <m>m_{1}</m>. That is, <m>m_{1}=\Abs{\vec{v}_{1}}</m>.
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          <md>
+                                                  <mrow>
+                                                          m_{1}&amp;=\Abs{\vec{v}_{1}}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{(-40)^{2}+(30)^{2}}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{1600+900}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{2500}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=50.
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </solution>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Scale <m>\vec{v}_{1}</m> by the reciprocal of its magnitude to obtain the unit vector in its direction, which we will call <m>\vec{u}_{1}</m>.
+                                          </p>
+                                  </statement>
+                                  <solution>
+                                          <p>
+                                                  <md>
+                                                          <mrow>
+                                                                  \vec{u}_{1}
+                                                                          &amp;=
+                                                                  \frac{1}{\Abs{\vec{v}_{1}}}\vec{v}_{1}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \frac{1}{50}\Avec{-40,30}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \Avec{-40/50,30/50}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \Avec{-4/5,3/5}
+                                                          </mrow>
+                                                  </md>
+                                          </p>
+                                  </solution>
+                          </task>
+                  </task>
+                  <task>
+                          <introduction>
+                                  <p>
+                                                  In this part, we will find the unit vector, <m>\vec{u}_{2}</m>, in the direction of the right wire.
+                                  </p>
+                          </introduction>
+                          <task>
+                          <statement>
+                                  <p>
+                                                  Represent the right wire with a vector, <m>\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <hint>
+                                  <p>
+                                          One way to do this is to think of the center of the object as the origin and find the vector that points to the right mount point.
+                                  </p>
+                          </hint>
+                          <solution>
+                                  <p>
+                                                  If we let the tail of the vector be the center of the object and the head be at <m>R</m>, then <m>\vec{v}_{2}=\Avec{ 40, 30}</m>.
+                                  </p>
+                          </solution>
+                          </task>
+                          <task>
+                          <statement>
+                                  <p>
+                                                  Calculate the magnitude of <m>\vec{v}_{2}</m> and call it <m>m_{2}</m>. That is, <m>m_{2}=\Abs{\vec{v}_{2}}</m>.
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          <md>
+                                                  <mrow>
+                                                          m_{2}&amp;=\Abs{\vec{v}_{2}}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{(40)^{2}+(30)^{2}}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{1600+900}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=\sqrt{2500}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=50.
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </solution>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Scale <m>\vec{v}_{2}</m> by the reciprocal of its magnitude to obtain the unit vector in its direction, which we will call <m>\vec{u}_{2}</m>.
+                                          </p>
+                                  </statement>
+                                  <solution>
+                                          <p>
+                                                  <md>
+                                                          <mrow>
+                                                                  \vec{u}_{2}
+                                                                          &amp;=
+                                                                  \frac{1}{\Abs{\vec{v}_{2}}}\vec{v}_{2}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \frac{1}{50}\Avec{40,30}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \Avec{40/50,30/50}
+                                                          </mrow>
+                                                          <mrow>
+                                                                          &amp;=
+                                                                  \Avec{4/5,3/5}
+                                                          </mrow>
+                                                  </md>
+                                          </p>
+                                  </solution>
+                          </task>
+                  </task>
+                  <task>
+                          <statement>
+                                  <p>
+                                                  Because of symmetry, we know that the magnitudes of the forces along the two wires must be the same. Let the magnitude of the force along each wire be given by <m>M</m>. Then <m>\vec{F}_{1}=M\vec{u}_{1}</m> and <m>\vec{F}_{2}=M\vec{u}_{2}</m>.
+                                  </p>
+                                  <p>
+                                                  Find the value of <m>M</m> so that <m>\vec{F}_{g}+\vec{F}_{1}+\vec{F}_{2}=\Avec{0,0}</m>.
+                                  </p>
+                          </statement>
+                          <solution>
+                                  <p>
+                                          We have
+                                          <md>
+                                                  <mrow>
+                                                          \Avec{0,0}
+                                                          &amp;=\vec{F}_{g}+\vec{F}_{1}+\vec{F}_{2}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=
+                                                          \begin{bmatrix}0\\ -120\end{bmatrix}
+                                                          +M\begin{bmatrix}\frac{-4}{5}\\ \frac{3}{5}\end{bmatrix}
+                                                          +M\begin{bmatrix}\frac{4}{5}\\ \frac{3}{5}\end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=
+                                                          \begin{bmatrix}0\\ -120\end{bmatrix}
+                                                          +\begin{bmatrix}\frac{-4M}{5}\\ \frac{3M}{5}\end{bmatrix}
+                                                          +\begin{bmatrix}\frac{4M}{5}\\ \frac{3M}{5}\end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=
+                                                          \begin{bmatrix}
+                                                          0-\frac{4M}{5}+\frac{4M}{5}\\
+                                                          -120+\frac{3M}{5}+\frac{3M}{5}
+                                                          \end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=
+                                                          \begin{bmatrix}
+                                                          0\\
+                                                          \frac{-600}{5}+\frac{6M}{5}
+                                                          \end{bmatrix}
+                                                  </mrow>
+                                                  <mrow>
+                                                                  &amp;=
+                                                          \begin{bmatrix}
+                                                          0\\
+                                                          \frac{-600+6M}{5}
+                                                          \end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                                  so we must have <m>6M-600=0</m>, which means that <m>M=100</m>.
+                                  </p>
+                          </solution>
+                  </task>
+          </exercise>
+</page>
+</worksheet>

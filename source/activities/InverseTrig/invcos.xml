@@ -15,7 +15,7 @@
     
     <angle-marker points="((1,0),(0,0),P_star)" arrow="yes" radius="35" ><m>\theta_{*}</m></angle-marker>
     <angle-marker points="((1,0),(0,0),P)" arrow="yes" radius="60" ><m>\theta</m></angle-marker>
-    <angle-marker points="(P,(0,0),(1,0))" reverse="yes" arrow="yes" radius="60" dash="4 4"><m>-\theta_{*}</m></angle-marker>
+    <angle-marker points="(P,(0,0),(1,0))" arrow="yes" radius="60" dash="4 4" reverse="yes" ><m>-\theta_{*}</m></angle-marker>
     <point p="P_star" />
     <point p="P" />
     
