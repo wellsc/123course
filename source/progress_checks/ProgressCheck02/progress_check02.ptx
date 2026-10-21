@@ -265,6 +265,11 @@ trail head located at the origin.  The trail runs in the direction of the vector
                           <hint>
                                   <p>Give the label <m>M</m> to the point halfway between <m>L</m> and <m>R</m>, and call the center of the object <m>O</m>. What do you know about <m>\triangle{}LMO</m>?</p>
                           </hint>
+                          <solution>
+                                  <p>
+                                                  Using the Pythagorean theorem, we know that <m>d^{2}+40^{2}=50^{2}</m>, so <m>d=\sqrt{2500-1600}=\sqrt{900}=30</m>. Thus, the distance is <m>d=30\text{cm}</m>.
+                                  </p>
+                          </solution>
                   </task>
                   <task>
                           <introduction>
