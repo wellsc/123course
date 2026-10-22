@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prefigure xmlns="https://prefigure.org" label="prefig_polar_vecs">
+<diagram dimensions="(700,700)" margins="25">
+  <definition>a1=0.5</definition>
+  <definition>l1=3</definition>
+  <definition>v1=l1*(cos(a1),sin(a1))</definition>
+  <definition>a2=1.9</definition>
+  <definition>l2=6</definition>
+  <definition>v2=l2*(cos(a2),sin(a2))</definition>
+  
+  <definition>O=(0,0)</definition>
+  <definition>u1=(1,0)</definition>
+  <definition>u2=(0,1)</definition>
+  
+  <coordinates bbox="(-7,-7,7,7)">
+    <grid-axes decorations="yes" spacings="((-7,1,7),(-7,1,7))" />
+
+    <!--
+    <circle center="(0,0)" radius="1" thickness="2" opacity="0.5" />
+
+    -->
+    <circle center="O" radius="l1" thickness="2" opacity="0.25" />
+    <circle center="O" radius="l2" thickness="2" opacity="0.25" />
+    <circle center="O" radius="1" thickness="3" opacity="1" dash="2 4" />
+    <angle-marker
+        points="(u1,O,v1)"
+        radius="80"
+        arrow="yes"
+        opacity="0.75" >
+          <m>\theta_{1}=${a1}\text{rad}</m>
+    </angle-marker>
+    <angle-marker
+        points="(u1,O,v2)"
+        radius="230"
+        arrow="yes"
+        opacity="0.75" >
+          <m>\theta_{2}=${a2}\text{rad}</m>
+    </angle-marker>
+ 
+    <line endpoints="(O,v1)" thickness="0" label-location="0.5" ><m>l_{1}=${l1}</m></line>
+    <line endpoints="(v2,O)" thickness="0" label-location="0.4"><m>l_{2}=${l2}</m></line>
+
+    <vector v="v1"
+            alignment="e"
+            clear-background="yes" >
+            <m>\vec{v}_{1}=\left\langle{}${round(v1[0],5)},${round(v1[1],5)}\right\rangle{}</m>
+    </vector>
+    <vector v="v2"
+            alignment="e"
+            clear-background="yes" >
+            <m>\vec{v}_{2}=\left\langle{}${round(v2[0],5)},${round(v2[1],5)}\right\rangle{}</m>
+    </vector>
+  </coordinates>
+
+</diagram>
+</prefigure>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Polar Representation of Vectors</title>
+  <example>
+    <introduction>
+            <p>
+                    <xref ref="fig_polar_vecs" text="type-local" /> shows two vectors in both polar representation (magnitude and angle) and coordinate representation.
+                    </p>
+            <p>
+                    We will demonstrate conversion of a vector from polar representation to coordinate representation, and conversion of a vector from coordinate representation to polar representation.
+            </p>
+      <figure xml:id="fig_polar_vecs">
+              <caption>Polar Representation of Two Vectors</caption>
+              <image width="50%">
+                      <description>
+                              <p>
+                                      Polar and coordinate representation of two vectors, both with their tails at the origin. Vector v 1 has magnitude 3, indicated by circle of radius three centered at the origin, and makes an angle theta 1 = 0.5 radians counter-clockwise from the positive <m>x</m>-axis. Vector v 2 has magnitude 5, indicated by circle of radius five centered at the origin, and makes an angle theta 2 = 1.9 radians counter-clockwise from the positive <m>x</m>-axis. Vector v 1 has coordinate representation 2.63275 comma 1.43828, and vector v 2 has coordinate representation -1.93974 comma 5.6778.
+                              </p>
+                      </description>
+                      <xi:include href="./polar_vectors.xml"/>
+              </image>
+      </figure>
+            </introduction>
+            <task>
+                    <statement>
+                    <p>
+                                    First, we will convert <m>\vec{v}_{1}</m> from polar to coordinate representation.
+                    Vector <m>\vec{v}_{1}</m> has magnitude <m>\Abs{\vec{v}_{1}}=3</m>,  and makes an angle <m>\theta_{1} = 0.5</m> radians counter-clockwise from the positive <m>x</m>-axis. 
+      </p>
+      <p>
+              To find the coordinates of <m>\vec{v}_{1}</m>, we will use the relationship between unit vectors and points on the unit circle.
+      </p>
+      <p>
+                      The point, <m>p_{1}</m>, on the unit circle at angle <m>\theta_{1}=0.5\text{rad}</m> is given by
+                      <md>
+                              <mrow>
+                                      p_{1}
+                                              &amp;=(\cos(\theta_{1}),\sin(\theta_{1}))
+                              </mrow>
+                              <mrow>
+                                              &amp;=(0.877583,0.479426).
+                              </mrow>
+                      </md>
+                              This corresponds to a unit vector, <m>\vec{u}_{1}=\Avec{0.877583,0.479426}</m>. The unit vector captures the <term>direction</term> of the vector. In other words, <m>\vec{u}_{1}</m> points in the same direction as <m>\vec{v}_{1}</m>.
+      </p>
+      <p>
+              To get the vector <m>\vec{v}_{1}</m>, we multiply the unit vector by the magnitude of <m>\vec{v}_{1}</m>. Thus, we have
+              <md>
+                      <mrow>
+                              \vec{v}_{1}
+                                      &amp;=3\vec{u}_{1}
+                      </mrow>
+                      <mrow>
+                                      &amp;=3\begin{bmatrix}\cos(\theta_{1})\\ \sin(\theta_{1})\end{bmatrix}
+                      </mrow>
+                      <mrow>
+                                      &amp;=3\begin{bmatrix}0.877583 \\0.479426\end{bmatrix}
+                      </mrow>
+                      <mrow>
+                                      &amp;=\begin{bmatrix}3\cdot 0.877583 \\3\cdot 0.479426\end{bmatrix}
+                      </mrow>
+                      <mrow>
+                                      &amp;=\begin{bmatrix}2.63275 \\ 1.43828 \end{bmatrix}
+                      </mrow>
+              </md>
+      </p>
+      <p>
+              The coordinate form is <m>\vec{v}_{1}=\Avec{2.63275, 1.43828}</m>
+      </p>
+                    </statement>
+            </task>
+            <task>
+                    <introduction>
+                            <p>
+                                            We will now convert <m>\vec{v}_{2}</m> from coordinate representation to polar representation by finding the magnitude of <m>\vec{v}_{2}</m> and an angle that it makes from the positive <m>x</m> direction. <alert>Be careful!</alert> There is not one unique angle, because for any angle we find, if we add or subtract <m>2\pi</m>, we will get a different angle that gives the same vector! We will show how to find one angle that works.
+                                    </p>
+                                    <p>
+                                    Vector <m>\vec{v}_{2}</m> has coordinate representation
+                                    <md>
+                                            <mrow>
+                                            \vec{v}_{2}
+                                                    &amp;=
+                                                    \begin{bmatrix}-1.93974 \\ 5.6778\end{bmatrix}.
+                                            </mrow>
+                                    </md>
+                                            First we will find the magnitude of <m>\vec{v}_{2}</m>, and then we will find the angle.
+                            </p>
+                            <p>
+                                    Let <m>r</m> represent the magnitude of <m>\vec{v}_{2}</m>. Then
+                                    <md>
+                                            <mrow>
+                                                    r
+                                                            &amp;=\Abs{\vec{v}_{2}}
+                                            </mrow>
+                                            <mrow>
+                                                    r
+                                                            &amp;=\Abs{\begin{bmatrix}-1.93974 \\ 5.6778\end{bmatrix}}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \sqrt{\left(-1.93974\right)^{2} + \left(5.6778\right)^{2}}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \sqrt{\left(-1.93974\right)^{2} + \left(5.6778\right)^{2}}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \sqrt{3.7625912676 + 32.23741284}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \sqrt{36.0000}
+                                            </mrow>
+                                            <mrow>
+                                                    &amp;=6.
+                                            </mrow>
+                                    </md>
+                            </p>
+                            <p>
+                                    We will now find the angle for <m>\vec{v}_{2}</m>. First, for convenience, let's let <m>x_{2}</m> and <m>y_{2}</m> be the coordinates of <m>\vec{v}_{2}</m>, and notice that because <m>x_{2}\lt 0</m> and <m>y_{2}\gt 0</m>, our angle, which we will refer to as <m>\theta_{2}</m> must be in the second quadrant.
+                                    </p>
+                                    <p>
+                                    Next, recall that for any real number <m>a</m> and any vector <m>\vec{w}</m>, <m>\Abs{a\vec{w}}=\Abs{a}\Abs{\vec{w}}</m>. So, if we let <m>\vec{u}_{2}=\frac{1}{r}\vec{v}_{2}=\frac{1}{6}\vec{v}_{2}</m>, then 
+                                            <md>
+                                                    <mrow>
+                                                            \vec{u}_{2}
+                                                                    &amp;=
+                                                            \frac{1}{6}\begin{bmatrix}-1.93974 \\ 5.6778\end{bmatrix}
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            \begin{bmatrix}\frac{1}{6}(-1.93974) \\ \frac{1}{6}(5.6778)\end{bmatrix}
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            \begin{bmatrix}\frac{1}{6}(-1.93974) \\ \frac{1}{6}(5.6778)\end{bmatrix}
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            \begin{bmatrix}-0.323290 \\ 0.94630008\end{bmatrix}
+                                                    </mrow>
+                                            </md>
+                                            and
+                                            <md>
+                                                    <mrow>
+                                                            \Abs{\vec{u}_{2}}
+                                                                    &amp;=\Abs{\frac{1}{6}\vec{v}_{2}}
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            \frac{1}{6}\Abs{\vec{v}_{2}}
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            \frac{1}{6}\cdot{}6
+                                                    </mrow>
+                                                    <mrow>
+                                                                    &amp;=
+                                                            1.
+                                                    </mrow>
+                                            </md>
+                                                    Thus, <m>\vec{u}_{2}=\Avec{-0.323290,  0.94630008}</m> is a unit vector, so it corresponds to a point <m>p_{2}=(-0.323290,  0.94630008)</m> which is <m>1</m> unit away from <m>(0,0)</m>, which means <m>p_{2}</m> is a point on the unit circle.
+                            </p>
+                            <p>
+                                    Since <m>p_{2}</m> is on the unit circle, we know that <m>p_{2}=(\cos(\theta_{2}),\sin(\theta_{2}))</m> where <m>\theta_{2}</m> is some angle that we have yet to calculate. So, we now know that <m>\cos(\theta_{2})=-0.323290</m> and <m>\sin(\theta_{2})=0.94630008</m>. Furthermore, we know that <m>\tan(\theta_{2})=\frac{\sin(\theta_{2})}{\cos(\theta_{2})}</m>. Using tangent here is nice for a couple of reasons. First of all, note that because <m>\vec{u}_{2}=(1/6)\vec{v}_{2}</m>, we have <m>\vec{v}_{2}=6\vec{u}_{2}=\Avec{6\cos(\theta_{2}),6\sin(\theta_{2})}</m>, and
+                                    <md>
+                                            <mrow>
+                                                    \tan(\theta_{2})
+                                                            &amp;=
+                                                    \frac{\sin(\theta_{2})}{\cos(\theta_{2})}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \frac{6\sin(\theta_{2})}{6\cos(\theta_{2})}
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \frac{y_{2}}{x_{2}}
+                                            </mrow>
+                                    </md>
+                                            where <m>\vec{v}_{2}=\Avec{x_{2},y_{2}}</m>. In other words, we don't actually have to calculate the unit vector to find <m>\tan(\theta_{2})</m> from <m>\vec{v}_{2}</m>!
+                            </p>
+                            <p>
+                                            We now have three different ways we can calculate <m>\theta_{2}</m> depending on which information we want to use:
+                                            <ol marker="(i)">
+                                                    <li>Use the fact that <m>\tan(\theta_{2})=\frac{0.94630008}{-0.323290}=\frac{5.6778}{-1.93974}=-2.92709751468</m> and <m>\theta_{2}</m> is in the second quadrant.</li>
+                                                    <li>Use the fact that <m>\cos(\theta_{2})=-0.323290</m> and <m>\theta_{2}</m> is in the second quadrant.</li>
+                                                    <li>Use the fact that <m>\sin(\theta_{2})=0.94630008</m> and <m>\theta_{2}</m> is in the second quadrant.</li>
+                                            </ol>
+                            </p>
+                    </introduction>
+                    <task>
+                            <statement>
+                            <p>
+                                    In general, I find tangent easier to use if you have both sine and cosine, or both coordinates of a vector. The reason is that tangent has period <m>\pi</m> (not <m>2\pi</m>) and so if we find an angle whose tangent is what we want, then the angle we actually want is either the one we found, or it is <m>\pi</m> away from the one we want. More specifically, for any real number, <m>z</m>, if <m>z\ge 0</m>, then <m>0\le \arctan(z)\lt \pi/2</m>, and if <m>z\lt 0</m>, then <m>-\pi/2 \lt \arctan(z)\lt 0</m>. Thus, <m>\arctan(z)</m> is either in the first or the fourth quadrant. So,
+                                    <ul>
+                                            <li>if <m>\tan(\theta)=z</m> and <m>\theta</m> is in the first quadrant or fourth quadrant, then <m>\theta=\arctan(z)</m>;</li>
+                                            <li>if <m>\tan(\theta)=z</m> and <m>\theta</m> is in the second quadrant or third quadrant, then <m>\theta=\arctan(z)+\pi</m>.</li>
+                                    </ul>
+                            </p>
+                            <p>
+                                    For our particular situation, we know that <m>\theta_{2}</m> is in the second quadrant, so 
+                                    <md>
+                                            <mrow>
+                                                    \theta_{2}
+                                                            &amp;=
+                                                    \arctan(-2.92709751468)+\pi
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    \arctan(-2.92709751468)+\pi
+                                            </mrow>
+                                            <mrow>
+                                                            &amp;=
+                                                    1.9.
+                                            </mrow>
+                                    </md>
+                            </p>
+                            <figure xml:id="fig_pf_atan">
+                                    <caption>Inverse Tangent and Reference Angle</caption>
+                                    <image width="50%">
+                                            <description><p>A diagram showing inverse tangent of a value and the angle that is pi away.</p></description>
+                                            <xi:include href="./atan.xml"/>
+                                    </image>
+                            </figure>
+                            </statement>
+                    </task>
+            </task>
+  </example>
+
+</section>
