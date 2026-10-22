@@ -1,0 +1,382 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefig_atan-figure" width="750" height="750" viewBox="0 0 750 750">
+  <defs>
+    <clipPath id="prefig_atan-__clipPath-0">
+      <rect x="25.0" y="25.0" width="700.0" height="700.0"/>
+    </clipPath>
+    <clipPath id="prefig_atan-__clipPath-1">
+      <rect x="25.0" y="25.0" width="700.0" height="700.0"/>
+    </clipPath>
+    <marker id="prefig_atan-arrow-head-end-3_None_24_60-black" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="prefig_atan-arrow-head-end-3_None_24_60-black-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefig_atan-arrow-head-start-3_None_24_60-black" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefig_atan-arrow-head-start-3_None_24_60-black-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefig_atan-grid-axes">
+    <g id="prefig_atan-grid" stroke="#ccc" stroke-width="1">
+      <line x1="25.0" y1="725.0" x2="25.0" y2="25.0"/>
+      <line x1="75.0" y1="725.0" x2="75.0" y2="25.0"/>
+      <line x1="125.0" y1="725.0" x2="125.0" y2="25.0"/>
+      <line x1="175.0" y1="725.0" x2="175.0" y2="25.0"/>
+      <line x1="225.0" y1="725.0" x2="225.0" y2="25.0"/>
+      <line x1="275.0" y1="725.0" x2="275.0" y2="25.0"/>
+      <line x1="325.0" y1="725.0" x2="325.0" y2="25.0"/>
+      <line x1="375.0" y1="725.0" x2="375.0" y2="25.0"/>
+      <line x1="425.0" y1="725.0" x2="425.0" y2="25.0"/>
+      <line x1="475.0" y1="725.0" x2="475.0" y2="25.0"/>
+      <line x1="525.0" y1="725.0" x2="525.0" y2="25.0"/>
+      <line x1="575.0" y1="725.0" x2="575.0" y2="25.0"/>
+      <line x1="625.0" y1="725.0" x2="625.0" y2="25.0"/>
+      <line x1="675.0" y1="725.0" x2="675.0" y2="25.0"/>
+      <line x1="725.0" y1="725.0" x2="725.0" y2="25.0"/>
+      <line x1="25.0" y1="725.0" x2="725.0" y2="725.0"/>
+      <line x1="25.0" y1="675.0" x2="725.0" y2="675.0"/>
+      <line x1="25.0" y1="625.0" x2="725.0" y2="625.0"/>
+      <line x1="25.0" y1="575.0" x2="725.0" y2="575.0"/>
+      <line x1="25.0" y1="525.0" x2="725.0" y2="525.0"/>
+      <line x1="25.0" y1="475.0" x2="725.0" y2="475.0"/>
+      <line x1="25.0" y1="425.0" x2="725.0" y2="425.0"/>
+      <line x1="25.0" y1="375.0" x2="725.0" y2="375.0"/>
+      <line x1="25.0" y1="325.0" x2="725.0" y2="325.0"/>
+      <line x1="25.0" y1="275.0" x2="725.0" y2="275.0"/>
+      <line x1="25.0" y1="225.0" x2="725.0" y2="225.0"/>
+      <line x1="25.0" y1="175.0" x2="725.0" y2="175.0"/>
+      <line x1="25.0" y1="125.0" x2="725.0" y2="125.0"/>
+      <line x1="25.0" y1="75.0" x2="725.0" y2="75.0"/>
+      <line x1="25.0" y1="25.0" x2="725.0" y2="25.0"/>
+    </g>
+    <g id="prefig_atan-axes" stroke="black" stroke-width="2">
+      <line id="prefig_atan-__line-30" x1="25.0" y1="375.0" x2="725.0" y2="375.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefig_atan-__line-31" x1="125.0" y1="378.0" x2="125.0" y2="372.0"/>
+        <line id="prefig_atan-__line-32" x1="625.0" y1="378.0" x2="625.0" y2="372.0"/>
+      </g>
+      <line id="prefig_atan-__line-33" x1="375.0" y1="725.0" x2="375.0" y2="25.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefig_atan-__line-34" x1="372.0" y1="625.0" x2="378.0" y2="625.0"/>
+        <line id="prefig_atan-__line-35" x1="372.0" y1="125.0" x2="378.0" y2="125.0"/>
+      </g>
+    </g>
+    <g id="prefig_atan-__label-0" transform="translate(125.0,386.0) translate(-7.5,-0.0)">
+      <g id="prefig_atan-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="15.080px" height="12.456px" role="img" focusable="false" viewBox="0 -666 833 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-2-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefig_atan-MJX-2-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 5">
+                <use data-c="2D" xlink:href="#prefig_atan-MJX-2-TEX-N-2D"/>
+                <use data-c="35" xlink:href="#prefig_atan-MJX-2-TEX-N-35" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefig_atan-__label-1" transform="translate(625.0,386.0) translate(-4.5,-0.0)">
+      <g id="prefig_atan-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-3-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="5">
+                <use data-c="35" xlink:href="#prefig_atan-MJX-3-TEX-N-35"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefig_atan-__label-2" transform="translate(364.0,625.0) translate(-15.1,-6.2)">
+      <g id="prefig_atan-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="15.080px" height="12.456px" role="img" focusable="false" viewBox="0 -666 833 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefig_atan-MJX-4-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 5">
+                <use data-c="2D" xlink:href="#prefig_atan-MJX-4-TEX-N-2D"/>
+                <use data-c="35" xlink:href="#prefig_atan-MJX-4-TEX-N-35" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefig_atan-__label-3" transform="translate(364.0,125.0) translate(-9.0,-6.2)">
+      <g id="prefig_atan-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-5-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="5">
+                <use data-c="35" xlink:href="#prefig_atan-MJX-5-TEX-N-35"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefig_atan-__path-0" d="M 675.0 375.0 L 674.4 356.2 L 672.6 337.4 L 669.7 318.8 L 665.6 300.4 L 660.3 282.3 L 653.9 264.6 L 646.4 247.3 L 637.9 230.5 L 628.3 214.3 L 617.7 198.7 L 606.2 183.8 L 593.7 169.6 L 580.4 156.3 L 566.2 143.8 L 551.3 132.3 L 535.7 121.7 L 519.5 112.1 L 502.7 103.6 L 485.4 96.1 L 467.7 89.7 L 449.6 84.4 L 431.2 80.3 L 412.6 77.4 L 393.8 75.6 L 375.0 75.0 L 356.2 75.6 L 337.4 77.4 L 318.8 80.3 L 300.4 84.4 L 282.3 89.7 L 264.6 96.1 L 247.3 103.6 L 230.5 112.1 L 214.3 121.7 L 198.7 132.3 L 183.8 143.8 L 169.6 156.3 L 156.3 169.6 L 143.8 183.8 L 132.3 198.7 L 121.7 214.3 L 112.1 230.5 L 103.6 247.3 L 96.1 264.6 L 89.7 282.3 L 84.4 300.4 L 80.3 318.8 L 77.4 337.4 L 75.6 356.2 L 75.0 375.0 L 75.6 393.8 L 77.4 412.6 L 80.3 431.2 L 84.4 449.6 L 89.7 467.7 L 96.1 485.4 L 103.6 502.7 L 112.1 519.5 L 121.7 535.7 L 132.3 551.3 L 143.8 566.2 L 156.3 580.4 L 169.6 593.7 L 183.8 606.2 L 198.7 617.7 L 214.3 628.3 L 230.5 637.9 L 247.3 646.4 L 264.6 653.9 L 282.3 660.3 L 300.4 665.6 L 318.8 669.7 L 337.4 672.6 L 356.2 674.4 L 375.0 675.0 L 393.8 674.4 L 412.6 672.6 L 431.2 669.7 L 449.6 665.6 L 467.7 660.3 L 485.4 653.9 L 502.7 646.4 L 519.5 637.9 L 535.7 628.3 L 551.3 617.7 L 566.2 606.2 L 580.4 593.7 L 593.7 580.4 L 606.2 566.2 L 617.7 551.3 L 628.3 535.7 L 637.9 519.5 L 646.4 502.7 L 653.9 485.4 L 660.3 467.7 L 665.6 449.6 L 669.7 431.2 L 672.6 412.6 L 674.4 393.8 L 675.0 375.0 Z" stroke="black" opacity="0.25" stroke-width="2" fill="none"/>
+  <path id="prefig_atan-__path-1" d="M 425.0 375.0 L 424.9 371.9 L 424.6 368.7 L 424.1 365.6 L 423.4 362.6 L 422.6 359.5 L 421.5 356.6 L 420.2 353.7 L 418.8 350.9 L 417.2 348.2 L 415.5 345.6 L 413.5 343.1 L 411.4 340.8 L 409.2 338.6 L 406.9 336.5 L 404.4 334.5 L 401.8 332.8 L 399.1 331.2 L 396.3 329.8 L 393.4 328.5 L 390.5 327.4 L 387.4 326.6 L 384.4 325.9 L 381.3 325.4 L 378.1 325.1 L 375.0 325.0 L 371.9 325.1 L 368.7 325.4 L 365.6 325.9 L 362.6 326.6 L 359.5 327.4 L 356.6 328.5 L 353.7 329.8 L 350.9 331.2 L 348.2 332.8 L 345.6 334.5 L 343.1 336.5 L 340.8 338.6 L 338.6 340.8 L 336.5 343.1 L 334.5 345.6 L 332.8 348.2 L 331.2 350.9 L 329.8 353.7 L 328.5 356.6 L 327.4 359.5 L 326.6 362.6 L 325.9 365.6 L 325.4 368.7 L 325.1 371.9 L 325.0 375.0 L 325.1 378.1 L 325.4 381.3 L 325.9 384.4 L 326.6 387.4 L 327.4 390.5 L 328.5 393.4 L 329.8 396.3 L 331.2 399.1 L 332.8 401.8 L 334.5 404.4 L 336.5 406.9 L 338.6 409.2 L 340.8 411.4 L 343.1 413.5 L 345.6 415.5 L 348.2 417.2 L 350.9 418.8 L 353.7 420.2 L 356.6 421.5 L 359.5 422.6 L 362.6 423.4 L 365.6 424.1 L 368.7 424.6 L 371.9 424.9 L 375.0 425.0 L 378.1 424.9 L 381.3 424.6 L 384.4 424.1 L 387.4 423.4 L 390.5 422.6 L 393.4 421.5 L 396.3 420.2 L 399.1 418.8 L 401.8 417.2 L 404.4 415.5 L 406.9 413.5 L 409.2 411.4 L 411.4 409.2 L 413.5 406.9 L 415.5 404.4 L 417.2 401.8 L 418.8 399.1 L 420.2 396.3 L 421.5 393.4 L 422.6 390.5 L 423.4 387.4 L 424.1 384.4 L 424.6 381.3 L 424.9 378.1 L 425.0 375.0 Z" stroke="black" opacity="1" stroke-width="3" stroke-dasharray="2 4" fill="none"/>
+  <g id="prefig_atan-__g-0">
+    <g id="prefig_atan-__label-4" transform="translate(512.8,183.9) translate(0.0,-22.1)">
+      <g id="prefig_atan-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="81.456px" height="22.136px" role="img" focusable="false" viewBox="0 -1073 4500.6 1223" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-6-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+            <path id="prefig_atan-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="prefig_atan-MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefig_atan-MJX-6-TEX-N-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"/>
+            <path id="prefig_atan-MJX-6-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+            <path id="prefig_atan-MJX-6-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="10" data-semantic-children="2,9" data-semantic-content="3" data-semantic-speech="theta 2 equals ModifyingAbove theta With caret plus pi">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="greekletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="10" data-semantic-speech="theta 2">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="theta" data-semantic-prefix="Base">
+                  <use data-c="1D703" xlink:href="#prefig_atan-MJX-6-TEX-I-1D703"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(502,-150) scale(0.707)" data-mjx-texclass="ORD">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-attributes="texclass:ORD" data-semantic-speech="2" data-semantic-prefix="Subscript">
+                    <use data-c="32" xlink:href="#prefig_atan-MJX-6-TEX-N-32"/>
+                  </g>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="3" data-semantic-parent="10" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1183.3,0)">
+                <use data-c="3D" xlink:href="#prefig_atan-MJX-6-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="9" data-semantic-children="6,8" data-semantic-content="7" data-semantic-parent="10" data-semantic-speech="ModifyingAbove theta With caret plus pi" transform="translate(2239.1,0)">
+                <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                  <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="greekletter" data-semantic-id="6" data-semantic-children="4,5" data-semantic-parent="9" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove theta With caret">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="theta" data-semantic-prefix="Base">
+                      <use data-c="1D703" xlink:href="#prefig_atan-MJX-6-TEX-I-1D703"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-annotation="accent:unknown" data-semantic-id="5" data-semantic-parent="6" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(317.8,279) translate(-250 0)">
+                      <use data-c="5E" xlink:href="#prefig_atan-MJX-6-TEX-N-5E"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="7" data-semantic-parent="9" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(691.2,0)">
+                  <use data-c="2B" xlink:href="#prefig_atan-MJX-6-TEX-N-2B"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="pi" transform="translate(1691.4,0)">
+                  <use data-c="1D70B" xlink:href="#prefig_atan-MJX-6-TEX-I-1D70B"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" opacity="0.75" stroke-width="2" fill="none" d="M 300.6 157.4 L 304.8 156.0 L 309.0 154.7 L 313.2 153.5 L 317.4 152.3 L 321.6 151.3 L 325.9 150.3 L 330.2 149.4 L 334.5 148.6 L 338.8 147.9 L 343.1 147.2 L 347.4 146.7 L 351.8 146.2 L 356.1 145.8 L 360.5 145.5 L 364.8 145.2 L 369.2 145.1 L 373.6 145.0 L 377.9 145.0 L 382.3 145.1 L 386.7 145.3 L 391.0 145.6 L 395.4 145.9 L 399.7 146.3 L 404.1 146.8 L 408.4 147.4 L 412.7 148.1 L 417.0 148.9 L 421.3 149.7 L 425.6 150.6 L 429.8 151.6 L 434.1 152.7 L 438.3 153.9 L 442.5 155.1 L 446.7 156.4 L 450.8 157.8 L 454.9 159.3 L 459.0 160.9 L 463.0 162.5 L 467.1 164.2 L 471.0 166.0 L 475.0 167.9 L 478.9 169.8 L 482.8 171.8 L 486.6 173.9 L 490.4 176.1 L 494.2 178.3 L 497.9 180.6 L 501.6 183.0 L 505.2 185.4 L 508.8 187.9 L 512.3 190.5 L 515.8 193.1 L 519.2 195.8 L 522.6 198.6 L 525.9 201.4 L 529.2 204.3 L 532.4 207.3 L 535.6 210.3 L 538.7 213.4 L 541.7 216.5 L 544.7 219.7 L 547.6 223.0 L 550.5 226.3 L 553.3 229.7 L 556.0 233.1 L 558.7 236.5 L 561.3 240.1 L 563.8 243.6 L 566.2 247.2 L 568.6 250.9 L 571.0 254.6 L 573.2 258.3 L 575.4 262.1 L 577.5 265.9 L 579.5 269.8 L 581.5 273.7 L 583.4 277.7 L 585.2 281.6 L 586.9 285.6 L 588.6 289.7 L 590.2 293.8 L 591.7 297.9 L 593.1 302.0 L 594.5 306.2 L 595.7 310.3 L 596.9 314.5 L 598.0 318.8 L 599.0 323.0 L 600.0 327.3 L 600.9 331.6 L 601.6 335.9 L 602.3 340.2 L 603.0 344.5 L 603.5 348.8 L 604.0 353.2 L 604.3 357.5 L 604.6 361.9 L 604.8 366.3 L 605.0 370.6 L 605.0 375.0"/>
+  </g>
+  <g id="prefig_atan-__g-1">
+    <g id="prefig_atan-__label-5" transform="translate(525.4,483.7) translate(0.0,-0.0)">
+      <g id="prefig_atan-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -7.296px" width="162.432px" height="26.712px" role="img" focusable="false" viewBox="0 -1073 8974.2 1476" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-7-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-2061" d=""/>
+            <path id="prefig_atan-MJX-7-TEX-SO-28" d="M152 251Q152 646 388 850H416Q422 844 422 841Q422 837 403 816T357 753T302 649T255 482T236 250Q236 124 255 19T301 -147T356 -251T403 -315T422 -340Q422 -343 416 -349H388Q359 -325 332 -296T271 -213T212 -97T170 56T152 251Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+            <path id="prefig_atan-MJX-7-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+            <path id="prefig_atan-MJX-7-TEX-SO-29" d="M305 251Q305 -145 69 -349H56Q43 -349 39 -347T35 -338Q37 -333 60 -307T108 -239T160 -136T204 27T221 250T204 473T160 636T108 740T60 807T35 839Q35 850 50 850H56H69Q197 743 256 566Q305 425 305 251Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="16" data-semantic-children="2,15" data-semantic-content="3" data-semantic-speech="ModifyingAbove theta With caret equals arc tangent left parenthesis StartFraction 5.6778 Over negative 1.93974 EndFraction right parenthesis">
+              <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="greekletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="16" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove theta With caret">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="theta" data-semantic-prefix="Base">
+                    <use data-c="1D703" xlink:href="#prefig_atan-MJX-7-TEX-I-1D703"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-annotation="accent:unknown" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(317.8,279) translate(-250 0)">
+                    <use data-c="5E" xlink:href="#prefig_atan-MJX-7-TEX-N-5E"/>
+                  </g>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="3" data-semantic-parent="16" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(746.8,0)">
+                <use data-c="3D" xlink:href="#prefig_atan-MJX-7-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-id="15" data-semantic-children="4,13" data-semantic-content="14,4" data-semantic-parent="16" data-semantic-speech="arc tangent left parenthesis StartFraction 5.6778 Over negative 1.93974 EndFraction right parenthesis" transform="translate(1802.6,0)">
+                <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="4" data-semantic-parent="15" data-semantic-operator="appl" data-semantic-speech="arc tangent">
+                  <use data-c="61" xlink:href="#prefig_atan-MJX-7-TEX-N-61"/>
+                  <use data-c="72" xlink:href="#prefig_atan-MJX-7-TEX-N-72" transform="translate(500,0)"/>
+                  <use data-c="63" xlink:href="#prefig_atan-MJX-7-TEX-N-63" transform="translate(892,0)"/>
+                  <use data-c="74" xlink:href="#prefig_atan-MJX-7-TEX-N-74" transform="translate(1336,0)"/>
+                  <use data-c="61" xlink:href="#prefig_atan-MJX-7-TEX-N-61" transform="translate(1725,0)"/>
+                  <use data-c="6E" xlink:href="#prefig_atan-MJX-7-TEX-N-6E" transform="translate(2225,0)"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="14" data-semantic-parent="15" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(2781,0)">
+                  <use data-c="2061" xlink:href="#prefig_atan-MJX-7-TEX-N-2061"/>
+                </g>
+                <g data-mml-node="TeXAtom" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="13" data-semantic-children="11" data-semantic-content="6,12" data-semantic-parent="15" data-semantic-attributes="texclass:INNER" data-semantic-speech="left parenthesis StartFraction 5.6778 Over negative 1.93974 EndFraction right parenthesis" data-mjx-texclass="INNER" transform="translate(2947.7,0)">
+                  <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="6" data-semantic-parent="13" data-semantic-attributes="texclass:OPEN" data-semantic-operator="fenced" data-semantic-speech="left parenthesis" transform="translate(0 -0.5)">
+                    <use data-c="28" xlink:href="#prefig_atan-MJX-7-TEX-SO-28"/>
+                  </g>
+                  <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="11" data-semantic-children="7,10" data-semantic-parent="13" data-semantic-speech="StartFraction 5.6778 Over negative 1.93974 EndFraction" transform="translate(458,0)">
+                    <g data-mml-node="mn" transform="translate(671.8,394) scale(0.707)" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="11" data-semantic-speech="5.6778" data-semantic-prefix="Numerator">
+                      <use data-c="35" xlink:href="#prefig_atan-MJX-7-TEX-N-35"/>
+                      <use data-c="2E" xlink:href="#prefig_atan-MJX-7-TEX-N-2E" transform="translate(500,0)"/>
+                      <use data-c="36" xlink:href="#prefig_atan-MJX-7-TEX-N-36" transform="translate(778,0)"/>
+                      <use data-c="37" xlink:href="#prefig_atan-MJX-7-TEX-N-37" transform="translate(1278,0)"/>
+                      <use data-c="37" xlink:href="#prefig_atan-MJX-7-TEX-N-37" transform="translate(1778,0)"/>
+                      <use data-c="38" xlink:href="#prefig_atan-MJX-7-TEX-N-38" transform="translate(2278,0)"/>
+                    </g>
+                    <g data-mml-node="mrow" transform="translate(220,-345) scale(0.707)" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-children="9" data-semantic-content="8" data-semantic-parent="11" data-semantic-speech="negative 1.93974" data-semantic-prefix="Denominator">
+                      <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="8" data-semantic-parent="10" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                        <use data-c="2212" xlink:href="#prefig_atan-MJX-7-TEX-N-2212"/>
+                      </g>
+                      <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="10" data-semantic-speech="1.93974" transform="translate(778,0)">
+                        <use data-c="31" xlink:href="#prefig_atan-MJX-7-TEX-N-31"/>
+                        <use data-c="2E" xlink:href="#prefig_atan-MJX-7-TEX-N-2E" transform="translate(500,0)"/>
+                        <use data-c="39" xlink:href="#prefig_atan-MJX-7-TEX-N-39" transform="translate(778,0)"/>
+                        <use data-c="33" xlink:href="#prefig_atan-MJX-7-TEX-N-33" transform="translate(1278,0)"/>
+                        <use data-c="39" xlink:href="#prefig_atan-MJX-7-TEX-N-39" transform="translate(1778,0)"/>
+                        <use data-c="37" xlink:href="#prefig_atan-MJX-7-TEX-N-37" transform="translate(2278,0)"/>
+                        <use data-c="34" xlink:href="#prefig_atan-MJX-7-TEX-N-34" transform="translate(2778,0)"/>
+                      </g>
+                    </g>
+                    <rect width="3068" height="60" x="120" y="220"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="12" data-semantic-parent="13" data-semantic-attributes="texclass:CLOSE" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(3766,0) translate(0 -0.5)">
+                    <use data-c="29" xlink:href="#prefig_atan-MJX-7-TEX-SO-29"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" opacity="0.75" stroke-width="2" fill="none" d="M 555.0 375.0 L 555.0 377.2 L 554.9 379.5 L 554.9 381.7 L 554.8 383.9 L 554.7 386.2 L 554.5 388.4 L 554.3 390.6 L 554.1 392.8 L 553.9 395.1 L 553.6 397.3 L 553.3 399.5 L 553.0 401.7 L 552.7 403.9 L 552.3 406.1 L 551.9 408.3 L 551.5 410.5 L 551.0 412.7 L 550.5 414.9 L 550.0 417.1 L 549.5 419.2 L 548.9 421.4 L 548.3 423.6 L 547.7 425.7 L 547.1 427.8 L 546.4 430.0 L 545.7 432.1 L 545.0 434.2 L 544.2 436.3 L 543.5 438.4 L 542.7 440.5 L 541.8 442.6 L 541.0 444.6 L 540.1 446.7 L 539.2 448.7 L 538.3 450.8 L 537.3 452.8 L 536.3 454.8 L 535.3 456.8 L 534.3 458.8 L 533.3 460.8 L 532.2 462.7 L 531.1 464.7 L 530.0 466.6 L 528.8 468.5 L 527.6 470.4 L 526.4 472.3 L 525.2 474.2 L 524.0 476.0 L 522.7 477.9 L 521.4 479.7 L 520.1 481.5 L 518.8 483.3 L 517.4 485.1 L 516.0 486.8 L 514.6 488.6 L 513.2 490.3 L 511.8 492.0 L 510.3 493.7 L 508.8 495.4 L 507.3 497.0 L 505.8 498.7 L 504.3 500.3 L 502.7 501.9 L 501.1 503.4 L 499.5 505.0 L 497.9 506.5 L 496.2 508.1 L 494.6 509.5 L 492.9 511.0 L 491.2 512.5 L 489.5 513.9 L 487.7 515.3 L 486.0 516.7 L 484.2 518.1 L 482.4 519.4 L 480.6 520.7 L 478.8 522.0 L 477.0 523.3 L 475.1 524.6 L 473.3 525.8 L 471.4 527.0 L 469.5 528.2 L 467.6 529.4 L 465.7 530.5 L 463.7 531.6 L 461.8 532.7 L 459.8 533.8 L 457.8 534.8 L 455.8 535.8 L 453.8 536.8 L 451.8 537.8 L 449.8 538.7 L 447.8 539.6 L 445.7 540.5 L 443.6 541.4 L 441.6 542.2 L 439.5 543.0 L 437.4 543.8 L 435.3 544.6 L 433.2 545.3"/>
+  </g>
+  <line id="prefig_atan-__line-36" x1="255.4" y1="25.0" x2="494.6" y2="725.0" stroke="black" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <g id="prefig_atan-__g-2">
+    <g id="prefig_atan-__label-6" transform="translate(284.0,91.1) translate(0.0,-9.9)">
+      <rect x="-6" y="-6" width="209.696" height="31.84" stroke="none" fill="white"/>
+      <g id="prefig_atan-__g-9">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="197.696px" height="19.840px" role="img" focusable="false" viewBox="0 -846 10922.9 1096" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_atan-MJX-8-TEX-I-1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-27E8" d="M333 -232Q332 -239 327 -244T313 -250Q303 -250 296 -240Q293 -233 202 6T110 250T201 494T296 740Q299 745 306 749L309 750Q312 750 313 750Q331 750 333 732Q333 727 243 489Q152 252 152 250T243 11Q333 -227 333 -232Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+            <path id="prefig_atan-MJX-8-TEX-N-27E9" d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="15" data-semantic-children="4,14" data-semantic-content="5" data-semantic-speech="ModifyingAbove v With right arrow Subscript 2 Baseline equals left angle bracket negative 1.93974 comma 5.6778 right angle bracket">
+                <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="4" data-semantic-children="2,3" data-semantic-parent="15" data-semantic-speech="ModifyingAbove v With right arrow Subscript 2 Baseline">
+                  <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                    <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="4" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove v With right arrow" data-semantic-prefix="Base">
+                      <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="v" data-semantic-prefix="Base">
+                        <use data-c="1D463" xlink:href="#prefig_atan-MJX-8-TEX-I-1D463"/>
+                      </g>
+                      <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(270.3,32) translate(-250 0)">
+                        <use data-c="20D7" xlink:href="#prefig_atan-MJX-8-TEX-N-20D7"/>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="TeXAtom" transform="translate(518,-150) scale(0.707)" data-mjx-texclass="ORD">
+                    <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="4" data-semantic-attributes="texclass:ORD" data-semantic-speech="2" data-semantic-prefix="Subscript">
+                      <use data-c="32" xlink:href="#prefig_atan-MJX-8-TEX-N-32"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="5" data-semantic-parent="15" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1199.3,0)">
+                  <use data-c="3D" xlink:href="#prefig_atan-MJX-8-TEX-N-3D"/>
+                </g>
+                <g data-mml-node="TeXAtom" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="14" data-semantic-children="13" data-semantic-content="6,11" data-semantic-parent="15" data-semantic-attributes="texclass:INNER" data-semantic-speech="left angle bracket negative 1.93974 comma 5.6778 right angle bracket" data-mjx-texclass="INNER" transform="translate(2255.1,0)">
+                  <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="6" data-semantic-parent="14" data-semantic-attributes="texclass:OPEN" data-semantic-operator="fenced" data-semantic-speech="left angle bracket">
+                    <use data-c="27E8" xlink:href="#prefig_atan-MJX-8-TEX-N-27E8"/>
+                  </g>
+                  <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(389,0)"/>
+                  <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="13" data-semantic-children="12,9,10" data-semantic-content="9" data-semantic-parent="14" data-semantic-speech="negative 1.93974 comma 5.6778" transform="translate(611.2,0)">
+                    <g data-mml-node="mrow" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-children="8" data-semantic-content="7" data-semantic-parent="13" data-semantic-speech="negative 1.93974">
+                      <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="7" data-semantic-parent="12" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                        <use data-c="2212" xlink:href="#prefig_atan-MJX-8-TEX-N-2212"/>
+                      </g>
+                      <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-parent="12" data-semantic-speech="1.93974" transform="translate(1000.2,0)">
+                        <use data-c="31" xlink:href="#prefig_atan-MJX-8-TEX-N-31"/>
+                        <use data-c="2E" xlink:href="#prefig_atan-MJX-8-TEX-N-2E" transform="translate(500,0)"/>
+                        <use data-c="39" xlink:href="#prefig_atan-MJX-8-TEX-N-39" transform="translate(778,0)"/>
+                        <use data-c="33" xlink:href="#prefig_atan-MJX-8-TEX-N-33" transform="translate(1278,0)"/>
+                        <use data-c="39" xlink:href="#prefig_atan-MJX-8-TEX-N-39" transform="translate(1778,0)"/>
+                        <use data-c="37" xlink:href="#prefig_atan-MJX-8-TEX-N-37" transform="translate(2278,0)"/>
+                        <use data-c="34" xlink:href="#prefig_atan-MJX-8-TEX-N-34" transform="translate(2778,0)"/>
+                      </g>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="comma" data-semantic-id="9" data-semantic-parent="13" data-semantic-operator="punctuated" data-semantic-speech="comma" transform="translate(4278.2,0)">
+                      <use data-c="2C" xlink:href="#prefig_atan-MJX-8-TEX-N-2C"/>
+                    </g>
+                    <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="13" data-semantic-speech="5.6778" transform="translate(4722.9,0)">
+                      <use data-c="35" xlink:href="#prefig_atan-MJX-8-TEX-N-35"/>
+                      <use data-c="2E" xlink:href="#prefig_atan-MJX-8-TEX-N-2E" transform="translate(500,0)"/>
+                      <use data-c="36" xlink:href="#prefig_atan-MJX-8-TEX-N-36" transform="translate(778,0)"/>
+                      <use data-c="37" xlink:href="#prefig_atan-MJX-8-TEX-N-37" transform="translate(1278,0)"/>
+                      <use data-c="37" xlink:href="#prefig_atan-MJX-8-TEX-N-37" transform="translate(1778,0)"/>
+                      <use data-c="38" xlink:href="#prefig_atan-MJX-8-TEX-N-38" transform="translate(2278,0)"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="11" data-semantic-parent="14" data-semantic-attributes="texclass:CLOSE" data-semantic-operator="fenced" data-semantic-speech="right angle bracket" transform="translate(8112.1,0)">
+                    <use data-c="27E9" xlink:href="#prefig_atan-MJX-8-TEX-N-27E9"/>
+                  </g>
+                </g>
+              </g>
+              <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(10922.9,0)"/>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="3" fill="none" marker-end="url(#prefig_atan-arrow-head-end-3_None_24_60-black)" d="M 375.0 375.0 L 279.2 94.6"/>
+  </g>
+</svg>
