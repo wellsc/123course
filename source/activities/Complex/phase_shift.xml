@@ -1,0 +1,47 @@
+<diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=3*cos(2*x)-4*sin(2*x)</definition>
+  <definition>g(x)=5*cos(2*x+atan(4/3))</definition>
+  <definition>h(x)=10000*(f(x)-g(x))</definition>
+  <definition>a = 5*pi/12</definition>
+
+  <coordinates bbox="(-1.75*pi,-1.75*pi,2.5*pi,2.5*pi)">
+    <grid-axes 
+        xlabel="x" 
+        ylabel="y" 
+        h-pi-format="yes" 
+        v-pi-format="yes" 
+        decorations="no" 
+    />
+    <graph 
+        at="graph0" 
+        function="h"
+    />
+    <graph at="graph1"
+        function="f" N="300"
+        stroke="blue" 
+        thickness="4"
+    />
+    <graph 
+        at="graph2"
+        function="g"
+        N="300"
+        stroke="red"
+        thickness="2"
+        dash="6 6"
+    />
+    <legend anchor="(bbox[2], bbox[3])"
+            alignment="sw" opacity="0.9"
+            scale="0.9" vertical-skip="10">
+      <item ref="graph1"><m>3\cos(2x)-4\sin(2x)</m></item>
+      <item ref="graph2"><m>5\cos\big(2x+\arctan(4/3)\big)</m></item>
+    </legend>
+  </coordinates>
+
+  <annotations text="A graph showing the equivalence of two sinusoidal functions.">
+    <annotation ref="graph-group" text="The graph of two sinusoidal functions">
+      <annotation ref="graph1" text="The graph of the function f" sonify="yes"/>
+      <annotation ref="graph2" text="The graph of the function g" sonify="yes"/> 
+      <annotation ref="graph0" text="The graph of ten thousand times the difference between f and g"/>
+    </annotation>
+  </annotations>
+</diagram>
