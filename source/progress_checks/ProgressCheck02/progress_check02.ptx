@@ -91,7 +91,7 @@ trail head located at the origin.  The trail runs in the direction of the vector
                           </statement>
                           <solution>
                                   <p>
-                                          <m>\Abs{\vec{p}}=\sqrt{2.6^{2}+5.2^{2}}=2.6\sqrt{5}\approx 5.59</m>, but because our units are hundreds of meters, this is a distance of <m>559\text{m}</m>.
+                                          <m>\Abs{\vec{p}}=\sqrt{2.6^{2}+5.2^{2}}=2.6\sqrt{5}\approx 5.59</m>, but because our units are hundreds of feet, this is a distance of <m>559\text{ft}</m>.
                                   </p>
                           </solution>
                                   </task>
@@ -120,7 +120,7 @@ trail head located at the origin.  The trail runs in the direction of the vector
                                                                            \begin{bmatrix}2.4\\ -1.2  \end{bmatrix},
                                                                   </mrow>
                                                           </md>
-                                                                  and <m>\Abs{\Avec{2.4,-1.2}}=\sqrt{(2.4)^{2}+(-1.2)^{2}}\approx2.683</m>, so the distance to the concert is about <m>268.3\text{m}</m>.
+                                                                  and <m>\Abs{\Avec{2.4,-1.2}}=\sqrt{(2.4)^{2}+(-1.2)^{2}}\approx2.683</m>, so the distance to the concert is about <m>268.3\text{ft}</m>.
                                                   </p>
                                           </solution>
                                   </task>
