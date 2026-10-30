@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig_using_LOC_and_LOS_exercise-figure" speech2="A triangle with two side lengths and the measure of the included angle given">
+      <grouped>prefig_using_LOC_and_LOS_exercise-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig_using_LOC_and_LOS_exercise-AC</active>
+        <active>prefig_using_LOC_and_LOS_exercise-BC</active>
+        <active>prefig_using_LOC_and_LOS_exercise-aC</active>
+      </children>
+      <components>
+        <active>prefig_using_LOC_and_LOS_exercise-AC</active>
+        <active>prefig_using_LOC_and_LOS_exercise-BC</active>
+        <active>prefig_using_LOC_and_LOS_exercise-aC</active>
+      </components>
+    </annotation>
+    <annotation id="prefig_using_LOC_and_LOS_exercise-AC" speech2="Side AC, whose length is 30 cm">
+      <active>prefig_using_LOC_and_LOS_exercise-AC</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig_using_LOC_and_LOS_exercise-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig_using_LOC_and_LOS_exercise-BC" speech2="Side BC, whose length is 25 cm">
+      <active>prefig_using_LOC_and_LOS_exercise-BC</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig_using_LOC_and_LOS_exercise-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig_using_LOC_and_LOS_exercise-aC" speech2="Angle C, whose measure is pi over five">
+      <active>prefig_using_LOC_and_LOS_exercise-aC</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig_using_LOC_and_LOS_exercise-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

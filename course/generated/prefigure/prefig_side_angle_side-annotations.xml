@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig_side_angle_side-figure" speech2="A triangle with two side lengths and the measure of the included angle given">
+      <grouped>prefig_side_angle_side-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig_side_angle_side-AC</active>
+        <active>prefig_side_angle_side-BC</active>
+        <active>prefig_side_angle_side-aC</active>
+      </children>
+      <components>
+        <active>prefig_side_angle_side-AC</active>
+        <active>prefig_side_angle_side-BC</active>
+        <active>prefig_side_angle_side-aC</active>
+      </components>
+    </annotation>
+    <annotation id="prefig_side_angle_side-AC" speech2="Side AC, whose length is 30 cm">
+      <active>prefig_side_angle_side-AC</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig_side_angle_side-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig_side_angle_side-BC" speech2="Side BC, whose length is 20 cm">
+      <active>prefig_side_angle_side-BC</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig_side_angle_side-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig_side_angle_side-aC" speech2="Angle C, whose measure is pi over twelve">
+      <active>prefig_side_angle_side-aC</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig_side_angle_side-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
