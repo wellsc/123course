@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Using Law of Sines and Law of Cosines</title>
+                <p>
+                        Given partial information about a triangle, some of the side lengths and the measure of some of the angles, Law of Sines and Law of Cosines can often be used to determine the missing information, and can even be used to determine whether it is possible to have a triangle that satisfies the information provided.
+                </p>
+                <p>
+                        In this activity, we will see an example of how to determine the missing information, and then work through several problems.
+                </p>
+                <example>
+                        <statement>
+                                <p>
+                                                We are told that a triangle has two sides of length <m>20\text{cm}</m> and <m>30\text{cm}</m>, and that the angle between those two sides is <m>\pi/12</m>. We want to determine the length of the third side and the measure of the other two angles, if such a triangle is even possible.
+                                </p>
+                                <p>
+                                        We begin by sketching a diagram of what the triangle might look like, as shown in <xref ref="fig_Using_LoC_and_LoS" text="type-local" />. With two sides and the included angle, we will be able to use the Law of Cosines to find the third side, so we will label the vertex with the known angle <m>C</m> and the other two vertices <m>A</m>, opposite the side of length <m>20\text{cm}</m>, and <m>B</m>, opposite the side of length <m>30\text{cm}</m>. After finding then length of the third side, we will then use Law of Sines to find the measure of the remaining angles.
+                                        </p>
+                                        <p>
+                                                        We notice that side <m>AB</m> has to be more than <m>10\text{cm}</m>. If <m>AB</m> were exactly <m>10\text{cm}</m>, then <m>AB+BC=30\text{cm}</m>, which is the same as the length of <m>AC</m>, so point <m>B</m> would lie on <m>\overline{AC}</m>, and we wouldn't have a triangle, and if it were shorter we couldn't even reach from <m>A</m> to <m>C</m>.
+                                </p>
+                                <figure xml:id="fig_Using_LoC_and_LoS">
+                                        <caption>A Triangle with Partial Information</caption>
+                                        <image width="30%">
+                                                <description>
+                                                        <p>
+  A triangle, A B C, with two side lengths and the measure of the included angle given.  Side AC has length  30 cm, side BC, has length 20 cm, and angle C has measure  pi over twelve.
+                                                        </p>
+                                                </description>
+                                                <xi:include href="./Using_LoC_and_LoS.xml"/>
+                                        </image>
+                                </figure>
+                                <p>
+                                        Although we don't have to do this, we can find the values for <m>\cos\left(\pi/12\right)</m> and <m>\sin\left(\pi/12\right)</m> exactly using the fact that <m>\pi/12=\pi/4-\pi/6</m> and the angle difference formulas for sine and cosine. In particular, we have
+                                        <md>
+                                                <mrow>
+                                                        \cos\left(\frac{\pi}{12}\right)
+                                                        &amp;=\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)
+                                                        &amp;
+                                                        \sin\left(\frac{\pi}{12}\right)
+                                                        &amp;=\sin\left(\frac{\pi}{4}-\frac{\pi}{6}\right)
+                                                </mrow>
+                                                <mrow>
+                                                        &amp;=\cos\left(\frac{\pi}{4}\right)\cos\left(\frac{\pi}{6}\right)
+                                                             +\sin\left(\frac{\pi}{4}\right)\sin\left(\frac{\pi}{6}\right)
+                                                        &amp;
+                                                        &amp;=\sin\left(\frac{\pi}{4}\right)\cos\left(\frac{\pi}{6}\right)
+                                                             -\cos\left(\frac{\pi}{4}\right)\sin\left(\frac{\pi}{6}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2}
+                                                        +\frac{\sqrt{2}}{2}\frac{1}{2}
+                                                        &amp;
+                                                                &amp;=\frac{\sqrt{2}}{2}\frac{\sqrt{3}}{2}
+                                                        -\frac{\sqrt{2}}{2}\frac{1}{2}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{\sqrt{6}}{4}+\frac{\sqrt{2}}{4}
+                                                        &amp;
+                                                                &amp;=\frac{\sqrt{6}}{4}-\frac{\sqrt{2}}{4}
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;=\frac{\sqrt{6}+\sqrt{2}}{4}
+                                                        &amp;
+                                                                &amp;=\frac{\sqrt{6}-\sqrt{2}}{4}
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                        From Law of Cosines, we have
+                                        <md>
+                                                <mrow> c^{2}&amp;=a^{2}+b^{2}-2ab\cos(C) </mrow>
+                                                <mrow>      &amp;=(20)^{2}+(30)^{2}-2(20)(30)\cos\left(\frac{\pi}{12}\right) </mrow>
+                                                <mrow>      &amp;=400+900-1200\left(\frac{\sqrt{6}+\sqrt{2}}{4}\right)</mrow>
+                                                <mrow>      &amp;=1300-300\left(\sqrt{6}+\sqrt{2}\right)</mrow>
+                                                <mrow>\text{so, }</mrow>
+                                                <mrow> c&amp;=\sqrt{1300-300\left(\sqrt{6}+\sqrt{2}\right)}</mrow>
+                                                <mrow>  &amp;=10\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}</mrow>
+                                                <mrow>  &amp;\approx{}11.86966758\text{cm}.</mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                        Now we will use the Law of Sines to find the angles. We know that
+                                        <md>
+                                                <mrow>\frac{\sin(A)}{a}=\frac{\sin(B)}{b}&amp;=\frac{\sin(C)}{c}</mrow>
+                                                <mrow>\text{so}</mrow>
+                                                <mrow>\frac{\sin(A)}{20}=\frac{\sin(B)}{30}&amp;=\frac{\sqrt{6}-\sqrt{2}}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}</mrow>
+                                        </md>
+                                        which means
+                                        <md>
+                                                <mrow>
+                                                                {\sin(A)}&amp;=\frac{20(\sqrt{6}-\sqrt{2})}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}
+                                                        &amp;
+                                                                {\sin(B)}&amp;=\frac{30(\sqrt{6}-\sqrt{2})}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}
+                                                </mrow>
+                                                <mrow>
+                                                        &amp;=\frac{\sqrt{6}-\sqrt{2}}{2\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}
+                                                        &amp;
+                                                        &amp;=\frac{3(\sqrt{6}-\sqrt{2})}{4\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                                In our picture, it looks like <m>\angle{}B</m> is obtuse, but pictures aren't always reliable. However, we do know that at most one angle in a triangle can be obtuse (because if two were more than <m>90^{\circ}</m>, the angle sum would be more than <m>180^{\circ}</m>), and we know that larger angles are opposite larger sides, so the only angle that could possibly be obtuse is <m>\angle{}B</m>. In particular, we know that <m>\angle{}A</m> will be acute. This is important, because the inverse sine function always returns an angle between <m>-\pi/2</m> and <m>\pi/2</m>. Since <m>\angle{}A</m> is acute, we know that
+                                        <md>
+                                                <mrow>
+                                                        {A}&amp;=\arcsin\left(\frac{\sqrt{6}-\sqrt{2}}{2\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx{}0.4512620424\text{rad}.
+                                                </mrow>
+                                        </md>
+                                </p>
+                                <p>
+                                        We now have two ways to find the third angle. The easiest is using the fact that the sum of the angle in a triangle will be <m>\pi</m> radians. Thus,
+                                        <md>
+                                                <mrow>
+                                                        B&amp;=\pi - \frac{\pi}{12} -\arcsin\left(\frac{\sqrt{6}-\sqrt{2}}{2\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}\right)
+                                                </mrow>
+                                                <mrow>
+                                                                &amp;\approx{}2.428531223\text{rad}.
+                                                </mrow>
+                                        </md>
+                                        The other way is to use Law of Sines:
+                                        <md>
+                                                <mrow>
+                                        {\sin(B)}&amp;=\frac{30(\sqrt{6}-\sqrt{2})}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}
+                                                </mrow>
+                                        </md>
+                                                However, we don't know if <m>B\le \pi/2</m> or <m>B\gt\pi/2</m>, so we don't know if 
+                                                <md>
+                                                        <mrow>
+                                        B&amp;=\arcsin\left(\frac{30(\sqrt{6}-\sqrt{2})}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}\right)
+                                                        </mrow>
+                                                        <mrow>
+                                                                        &amp;\approx{}0.7130614302\text{rad}
+                                                        </mrow>
+                                                        <mrow>\text{or}</mrow>
+                                                        <mrow>
+                                        B&amp;=\pi-\arcsin\left(\frac{30(\sqrt{6}-\sqrt{2})}{40\sqrt{13-3\left(\sqrt{6}+\sqrt{2}\right)}}\right)
+                                                        </mrow>
+                                                        <mrow>
+                                                                        &amp;\approx{}2.428531223\text{rad}.
+                                                        </mrow>
+                                                </md>
+                                                We would have to check to make sure that the angle sum is <m>\pi</m>, and thus conclude that <m>B\approx{}2.428531223\text{rad}</m>.
+                                </p>
+                        </statement>
+                </example>
+                <exercise>
+                        <statement>
+                                <p>
+                                                A triangle has two sides of length <m>30\text{cm}</m> and <m>20\text{cm}</m>, and the angle between the two sides is <m>\pi/5\text{rad}</m>. Find the length of the third side and the measure of the other two angles.
+                                </p>
+                                <figure xml:id="fig_Using_LoC_and_LoS_exer">
+                                        <caption>A Triangle with Partial Information</caption>
+                                        <image width="30%">
+                                                <description>
+                                                        <p>
+  A triangle, A B C, with two side lengths and the measure of the included angle given.  Side AC has length  30 cm, side BC, has length 25 cm, and angle C has measure  pi over five.
+                                                        </p>
+                                                </description>
+                                                <xi:include href="./Using_LoC_and_LoS_exer.xml"/>
+                                        </image>
+                                </figure>
+                        </statement>
+                </exercise>
+</section>

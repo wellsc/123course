@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prefigure xmlns="https://prefigure.org" label="prefig_side_angle_side">
+<diagram dimensions="(600,300)" margins="5">
+  <definition>theta=pi/12</definition>
+  <definition>C=(0,0)</definition>
+  <definition>A=(30,0)</definition>
+  <definition>B=(20*cos(theta),20*sin(theta))</definition>
+  <coordinates bbox="(-5,-5,35,15)">
+    <triangle vertices="(A,B,C)" labels="A,B,C" />
+    <angle-marker at="aC" points="(A,C,B)" radius="100" >
+      <m>\frac{\pi}{12}</m>
+    </angle-marker>
+
+    <line at="AC" endpoints="(C,A)"><m>30\text{cm}</m></line>
+    <line at="BC" endpoints="(C,B)"><m>20\text{cm}</m></line>
+
+  </coordinates>
+
+  <annotations text="A triangle with two side lengths and the measure of the included angle given">
+    <annotation ref="AC" text="Side AC, whose length is 30 cm" />
+    <annotation ref="BC" text="Side BC, whose length is 20 cm" />
+    <annotation ref="aC" text="Angle C, whose measure is pi over twelve" />
+  </annotations>
+</diagram>
+</prefigure>

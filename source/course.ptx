@@ -53,6 +53,7 @@
       <xi:include href='./activities/Polar/Polar.ptx'/>
       <xi:include href='./activities/WhatTimeIsIt/WhatTime.ptx'/>
       <xi:include href='./activities/HangingWeight/HangingWeight.ptx'/>
+      <xi:include href='./activities/UsingLawsOfSinesAndCos/UsingLawsOfSinesAndCos.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">

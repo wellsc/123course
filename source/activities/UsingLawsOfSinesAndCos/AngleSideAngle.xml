@@ -1,0 +1,31 @@
+<diagram dimensions="(600,450)" margins="5">
+  <definition>thetaA=pi/4</definition>
+  <definition>thetaB=5*pi/12</definition>
+  <definition>thetaC=pi-thetaA-thetaB</definition>
+  <definition>c=25</definition>
+  <definition>B=(c,0)</definition>
+  <definition>A=(0,0)</definition>
+  <definition>a=sin(thetaA)/sin(thetaC)*c</definition>
+  <definition>b=sin(thetaB)/sin(thetaC)*c</definition>
+  <definition>C=(b*cos(thetaA),b*sin(thetaA))</definition>
+  
+  <coordinates bbox="(-5,-5,35,25)">
+    <triangle vertices="(A,B,C)" labels="A,B,C" />
+    <angle-marker at="aA" points="(B,A,C)" radius="50" >
+      <m>\pi/${round(pi/thetaA)}</m>
+    </angle-marker>
+    <angle-marker at="aB" points="(C,B,A)" radius="50" >
+      <m>\frac{5\pi}{12}</m>
+    </angle-marker>
+
+    <line at="AC" endpoints="(A,B)"><m>${c}\text{cm}</m></line>
+    
+
+  </coordinates>
+
+  <annotations text="A triangle with two side lengths and the measure of the included angle given">
+    <annotation ref="AC" text="Side AC, whose length is 30 cm" />
+    <annotation ref="BC" text="Side BC, whose length is 25 cm" />
+    <annotation ref="aC" text="Angle C, whose measure is pi over five" />
+  </annotations>
+</diagram>
