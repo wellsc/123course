@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <prefigure xmlns="https://prefigure.org" label="law_of_sines_triangle" >
-<diagram dimensions="(300,240)" margins="5">
+<diagram dimensions="(600,480)" margins="5">
   <definition>A=(0,0)</definition>
   <definition>B=(8,0)</definition>
   <definition>C=(6,5)</definition>

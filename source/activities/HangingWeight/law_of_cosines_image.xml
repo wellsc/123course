@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <prefigure xmlns="https://prefigure.org" label="law_of_cosines_triangle" >
-<diagram dimensions="(300,270)" margins="5">
+<diagram dimensions="(600,540)" margins="5">
   <definition>A=(0,0)</definition>
   <definition>B=(6,0)</definition>
   <definition>C=(8,5)</definition>
