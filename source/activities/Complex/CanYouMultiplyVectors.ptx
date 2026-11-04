@@ -398,6 +398,67 @@
                                           </statement>
                                   </task>
                   </exercise>
+                  <exercise xml:id="exer_complex_mult">
+                          <introduction>
+                                  <p>
+                                          Recall that for any vectors <m>\vec{u}</m> and <m>\vec{v}</m>, we can represent them as
+                                          <md>
+                                                  <mrow>
+                                                          \vec{u}
+                                                                  &amp;=
+                                                          \begin{bmatrix}r\cos(\theta)\\ r\sin(\theta)\end{bmatrix}
+                                                          &amp;
+                                                          \vec{v}
+                                                                  &amp;=
+                                                          \begin{bmatrix}s\cos(\varphi)\\ s\sin(\varphi)\end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                                  where <m>r=\Abs{\vec{u}}</m>, <m>s=\Abs{\vec{v}}</m>, and <m>\theta</m> and <m>\phi</m> are the angles that the vectors make with the positive <m>x</m>-axis.
+                                  </p>
+                                  <p>
+                                                  So, let <m>r</m> and <m>s</m> be any non-negative real numbers, let <m>\theta</m> and <m>\phi</m> be real numbers, and define 
+                                          <md>
+                                                  <mrow>
+                                                          \vec{u}
+                                                                  &amp;=
+                                                          \begin{bmatrix}r\cos(\theta)\\ r\sin(\theta)\end{bmatrix}
+                                                          &amp;
+                                                          \vec{v}
+                                                                  &amp;=
+                                                          \begin{bmatrix}s\cos(\varphi)\\ s\sin(\varphi)\end{bmatrix}
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                          </introduction>
+                          <task>
+                          <statement>
+                                  <p>
+                                                  Calculate <m>\vec{u}\cdot\vec{v}</m>. Factor <m>rs</m> out of each component.
+                                  </p>
+                          </statement>
+                          </task>
+                          <task>
+                          <statement>
+                                  <p>
+                                          Compare your results to the angle sum identities for sine and cosine:
+                                          <md>
+                                                  <mrow>
+                                                          \cos(\theta+\phi)
+                                                          &amp;=
+                                                          \cos(\theta)\cos(\phi)-\sin(\theta)\sin(\phi)
+                                                          &amp;
+                                                          \sin(\theta+\phi)
+                                                          &amp;=
+                                                          \cos(\theta)\sin(\phi)+\sin(\theta)\cos(\phi)
+                                                  </mrow>
+                                          </md>
+                                  </p>
+                                  <p>
+                                                          What relationships do you notice among the magnitudes and angles?
+                                  </p>
+                          </statement>
+                          </task>
+                  </exercise>
           </worksheet>
   </subsection>
   <subsection xml:id="ssec_more_complex_multiplication">
@@ -516,7 +577,7 @@
                                           </statement>
                                   </task>
                           </exercise>
-                          <image width="90%">
+                          <image width="75%">
                                   <description><p>A blank five by five grid.</p></description>
                                         <prefigure xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="https://prefigure.org" label="prefig_blank_grid_01">
                                         <diagram dimensions="(300,300)" margins="5">
@@ -556,7 +617,7 @@
                                           </statement>
                                   </task>
                           </exercise>
-                          <image width="90%">
+                          <image width="75%">
                                   <description><p>A blank five by five grid.</p></description>
                                         <prefigure xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="https://prefigure.org" label="prefig_blank_grid_02">
                                         <diagram dimensions="(300,300)" margins="5">
@@ -574,6 +635,11 @@
                                                   </p>
                                           </statement>
                                   </exercise>
+                                  <conclusion>
+                                          <p>
+                                                          It may not look like it, but what we have just done is develop the arithmetic of the complex numbers: we just have to re-write all our vectors as <m>a+bi</m> instead of <m>a\BFvec{1}+b\BFvec{i}</m>! And because <m>\BFvec{i}\cdot\BFvec{i}=-\BFvec{1}</m>, we have shown that <m>i\cdot{}i=-1</m>. Furthermore, we have a very real, physical interpretation of the so-called imaginary unit, <m>i</m>: it is a <m>90^{\circ}</m> counter-clockwise rotation!
+                                          </p>
+                                  </conclusion>
                           </worksheet>
   </subsection>
 </section>
