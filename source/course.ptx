@@ -54,6 +54,7 @@
       <xi:include href='./activities/WhatTimeIsIt/WhatTime.ptx'/>
       <xi:include href='./activities/HangingWeight/HangingWeight.ptx'/>
       <xi:include href='./activities/UsingLawsOfSinesAndCos/UsingLawsOfSinesAndCos.ptx'/>
+      <xi:include href='./activities/Complex/CanYouMultiplyVectors.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">

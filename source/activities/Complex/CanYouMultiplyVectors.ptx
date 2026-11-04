@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_vec_mult" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Can You Multiply Vectors?</title>
+
+  <introduction>
+    <p>
+                    Once we learn that we can add and subtract vectors, an obvious question comes up, which is whether (and how) you can <em>multiply</em> vectors. We have seen that if we have two vectors (with the same number of entries), we can find their dot product, but this gives us a <em>number</em>, not another vector. So the question remains, is there a way to multiply, say, one <m>2</m>-vector by another <m>2</m>-vector and get a <m>2</m>-vector as a result?
+    </p>
+    <p>
+                    It turns out that there are ways to do this, but there is not one universally accepted <q>correct</q> way to multiply two vectors. In this activity, we will look at different ways that we can multiply <m>2</m>-vectors and discuss why we might want to use each type of multiplication.
+    </p>
+  </introduction>
+  <subsection xml:id="ssec_hadamard">
+          <title>The Hadamard Product</title>
+          <p>
+                          The simplest way to multiply two vectors the <term>Hadamard product</term>, which is when we multiply element-wise, as defined in <xref ref="def_hadamard_2" text="type-local"/>.
+          </p>
+          <definition xml:id="def_hadamard_2">
+                  <title>The Hadamard Product</title>
+                  <statement>
+                          <p>
+                                  For any <m>2</m>-vectors <m>\vec{v}_{1}=\Avec{x_{1}, y_{1}}</m> and <m>\vec{v}_{2}=\Avec{x_{2}, y_{2}}</m>, their <term>Hadamard product</term>, often written as <m>\vec{v}_{1}\odot\vec{v}_{2}</m>, is given by
+                                  <md>
+                                          <mrow>
+                                                  \vec{v}_{1}\odot\vec{v}_{2}
+                                                  &amp;=
+                                                  \begin{bmatrix}x_{1}\\y_{1}\end{bmatrix}
+                                                  \odot
+                                                  \begin{bmatrix}x_{2}\\y_{2}\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}x_{1}x_{2}\\y_{1}y_{2}\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                          <p>
+                                  More generally, for any positive integer <m>n</m>, for any <m>n</m>-vectors <m>\vec{u}=\Avec{u_{1}, u_{2},\ldots,u_{n}}</m> and <m>\vec{v}=\Avec{v_{1}, v_{2},\ldots,v_{n}}</m>, their <term>Hadamard product</term>, often written as <m>\vec{u}\odot\vec{v}</m>, is given by
+                                  <md>
+                                          <mrow>
+                                                  \vec{u}\odot\vec{v}
+                                                  &amp;=
+                                                  \begin{bmatrix}u_{1}\\ u_{2}\\\vdots \\ u_{n}\end{bmatrix}
+                                                  \odot
+                                                  \begin{bmatrix}v_{1}\\ v_{2}\\\vdots \\ v_{n}\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}u_{1}v_{1}\\ u_{2}v_{2}\\\vdots \\ u_{n}v_{n}\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                  </statement>
+          </definition>
+          <example>
+                  <statement>
+                          <p>
+                                          Let <m>\vec{v}_{1}=\Avec{3, -1}</m> and let <m>\vec{v}_{2}=\Avec{4,5}</m>. Then
+                                  <md>
+                                          <mrow>
+                                                  \vec{v}_{1}\odot\vec{v}_{2}
+                                                  &amp;=
+                                                  \begin{bmatrix}3\\-1\end{bmatrix}
+                                                  \odot
+                                                  \begin{bmatrix}4\\5\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}3\cdot 4\\ -1\cdot 5\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}12 \\ -5\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                  </statement>
+          </example>
+          <p>
+                          Although the Hadamard product has uses in applications such as image compression and neural networks, it has some significant limitations compared to, say, multiplication of real numbers. In particular, for a lot of vectors, there is no way to undo the multiplication, which means no division of vectors.
+          </p>
+          <exercises>
+                  <exercise>
+                          <statement>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{3, 0.5}</m> and let <m>\vec{v}_{2}=\Avec{2,6}</m>. Find <m>\vec{v}_{1}\odot\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\odot\vec{v}_{2}=\Avec{6,3}</m>.
+                                  </p>
+                          </answer>
+                  </exercise>
+                  <exercise>
+                          <statement>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{4, -8}</m> and let <m>\vec{v}_{2}=\Avec{0.25, -0.125}</m>. Find <m>\vec{v}_{1}\odot\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\odot\vec{v}_{2}=\Avec{1,1}</m>.
+                                  </p>
+                          </answer>
+                  </exercise>
+                  <exercise>
+                          <statement>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{a, b}</m> where <m>a</m> and <m>b</m> are unspecified real numbers, and let <m>\vec{v}_{2}=\Avec{1, 1}</m>. Find <m>\vec{v}_{1}\odot\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\odot\vec{v}_{2}=\Avec{a,b}=\vec{v}{1}</m>.
+                                  </p>
+                          </answer>
+                  </exercise>
+                  <exercise>
+                          <introduction>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{3, 0}</m> and let <m>\vec{v}_{2}=\Avec{0,5}</m>.
+                                  </p>
+                          </introduction>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Find <m>\vec{v}_{1}\odot\vec{v}_{2}</m>.
+                                          </p>
+                                  </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\odot\vec{v}_{2}=\Avec{0,0}</m>.
+                                  </p>
+                          </answer>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Are there any other vectors, <m>\vec{w}</m>, so that <m>\vec{v}_{1}\odot\vec{w}=\vec{v}_{1}\odot\vec{v}_{2}</m>?
+                                          </p>
+                                  </statement>
+                                  <answer>
+                                          <p>
+                                                          Any vector <m>\vec{w}=\Avec{0,a}</m>, where <m>a</m> is any real number.
+                                          </p>
+                                  </answer>
+                          </task>
+                  </exercise>
+          </exercises>
+  </subsection>
+  <subsection xml:id="ssec_complex_multiplication">
+          <title><m>C</m>-multiplication</title>
+          <p>
+                          Another type of multiplication is what we will call (for now) <m>C</m>-multiplication.
+          </p>
+          <definition xml:id="def_C_mult">
+                  <statement>
+                          <p>
+                                  For any <m>2</m>-vectors <m>\vec{v}_{1}=\Avec{x_{1}, y_{1}}</m> and <m>\vec{v}_{2}=\Avec{x_{2}, y_{2}}</m>, their <term><m>C</m>-product</term>, which we will write as <m>\vec{v}_{1}\cdot\vec{v}_{2}</m>, is given by
+                                  <md>
+                                          <mrow>
+                                                  \vec{v}_{1}\cdot\vec{v}_{2}
+                                                  &amp;=
+                                                  \begin{bmatrix}x_{1}\\y_{1}\end{bmatrix}
+                                                  \cdot
+                                                  \begin{bmatrix}x_{2}\\y_{2}\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}x_{1}x_{2} - y_{1}y_{2}\\x_{1}y_{2}+y_{1}x_{2}\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                  </statement>
+          </definition>
+          <example>
+                  <statement>
+                          <p>
+                                          Let <m>\vec{v}_{1}=\Avec{3, -1}</m> and let <m>\vec{v}_{2}=\Avec{4,5}</m>. Then
+                                  <md>
+                                          <mrow>
+                                                  \vec{v}_{1}\cdot\vec{v}_{2}
+                                                  &amp;=
+                                                  \begin{bmatrix}3\\-1\end{bmatrix}
+                                                  \cdot
+                                                  \begin{bmatrix}4\\5\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}(3)(4) - (-1)(5)\\ (3)(5)+(-1)(4)\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}12+5\\ 15-4\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                  &amp;=
+                                                  \begin{bmatrix}17\\ 11\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                  </statement>
+          </example>
+          <p>
+                          In the following exercises, we will explore some of the features of <m>C</m>-multiplication.
+          </p>
+          <worksheet>
+                  <exercise>
+                          <statement>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{3, 0.5}</m> and let <m>\vec{v}_{2}=\Avec{2,6}</m>. Find <m>\vec{v}_{1}\cdot\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\cdot\vec{v}_{2}=\Avec{3,19}</m>.
+                                  </p>
+                          </answer>
+                  </exercise>
+                  <exercise>
+                          <statement>
+                                  <p>
+                                                  Let <m>\vec{v}_{1}=\Avec{1, 1}</m> and let <m>\vec{v}_{2}=\Avec{1,-1}</m>. Find <m>\vec{v}_{1}\cdot\vec{v}_{2}</m>.
+                                  </p>
+                          </statement>
+                          <answer>
+                                  <p>
+                                          <m>\vec{v}_{1}\cdot\vec{v}_{2}=\Avec{2,0}</m>.
+                                  </p>
+                          </answer>
+                  </exercise>
+                  <exercise xml:id="exer_complex_id">
+                          <introduction>
+                                  <p>
+                                                  For this exercise, we will use the vector <m>\BFvec{1}=\Avec{1,0}</m>.
+                                  </p>
+                          </introduction>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Let <m>\vec{v}_{1}=\Avec{2,3}</m>. Calculate <m>\BFvec{1}\cdot\vec{v}_{1}</m>.
+                                          </p>
+                                  </statement>
+                                  <answer>
+                                          <p>
+                                                  <m>\BFvec{1}\cdot\vec{v}_{1}=\Avec{2,3}=\vec{v}_{1}</m>.
+                                          </p>
+                                  </answer>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Let <m>\vec{v}_{2}=\Avec{-5,7}</m>. Calculate <m>\BFvec{1}\cdot\vec{v}_{2}</m>.
+                                          </p>
+                                  </statement>
+                                  <answer>
+                                          <p>
+                                                  <m>\BFvec{1}\cdot\vec{v}_{2}=\Avec{-5,7}=\vec{v}_{2}</m>.
+                                          </p>
+                                  </answer>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Let <m>\vec{v}_{3}=\Avec{3,-\sqrt{2}}</m>. Calculate <m>\BFvec{1}\cdot\vec{v}_{3}</m>.
+                                          </p>
+                                  </statement>
+                                  <answer>
+                                          <p>
+                                                  <m>\BFvec{1}\cdot\vec{v}_{3}=\Avec{2,-\sqrt{2}}=\vec{v}_{3}</m>.
+                                          </p>
+                                  </answer>
+                          </task>
+                          <task>
+                                  <statement>
+                                          <p>
+                                                          Let <m>\vec{v}=\Avec{a,b}</m>, where <m>a</m> and <m>b</m> are unspecified real numbers. Calculate <m>\BFvec{1}\cdot\vec{v}</m>.
+                                          </p>
+                                  </statement>
+                                  <answer>
+                                          <p>
+                                                  <m>\BFvec{1}\cdot\vec{v}=\Avec{a,b}=\vec{v}</m>.
+                                          </p>
+                                  </answer>
+                          </task>
+                  </exercise>
+                  <exercise>
+                                  <introduction>
+                                          <p>
+                                                          Let <m>\vec{v}_{1}=\Avec{\sqrt{3},1}</m> and let <m>\vec{v}_{2}=\Avec{2,2\sqrt{3}}</m>.
+                                          </p>
+                                  </introduction>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the magnitude of <m>\vec{v}_{1}</m>.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the magnitude of <m>\vec{v}_{2}</m>.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the angle that <m>\vec{v}_{1}</m> makes with the positive real axis.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the angle that <m>\vec{v}_{2}</m> makes with the positive real axis.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate <m>\vec{v}_{1}\cdot \vec{v}_{2}</m>. 
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the magnitude of <m>(\vec{v}_{1}\cdot\vec{v}_{2})</m>.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate the angle that <m>(\vec{v}_{1}\cdot\vec{v}_{2})</m> makes with the positive real axis.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          What relationships do you notice among the magnitudes and angles?
+                                                  </p>
+                                          </statement>
+                                  </task>
+                  </exercise>
+                  <exercise>
+                                  <introduction>
+                                          <p>
+                                                          Let <m>\vec{v}_{1}=\Avec{\sqrt{2},\sqrt{2}}</m>.
+                                          </p>
+                                  </introduction>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the magnitude of <m>\vec{v}_{1}</m>.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the angle that <m>\vec{v}_{1}</m> makes with the positive real axis.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate <m>\vec{v}_{1}\cdot \vec{v}_{1}</m>. 
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate the magnitude of <m>(\vec{v}_{1}\cdot\vec{v}_{1})</m>.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate the angle that <m>(\vec{v}_{1}\cdot\vec{v}_{1})</m> makes with the positive real axis.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          What relationships do you notice among the magnitudes and angles?
+                                                  </p>
+                                          </statement>
+                                  </task>
+                  </exercise>
+          </worksheet>
+  </subsection>
+  <subsection xml:id="ssec_more_complex_multiplication">
+          <title>An Alternate Representation of <m>C</m>-multiplication</title>
+          <p>
+                  We saw earlier in this course at we can represent vectors as a particular type of sum of vectors, for example, 
+                  <md>
+                          <mrow>
+                                  \begin{bmatrix}
+                                  4 \\ 5
+                                  \end{bmatrix}
+                                  &amp;=
+                                  \begin{bmatrix}
+                                  4 \\ 0
+                                  \end{bmatrix}
+                                  +
+                                  \begin{bmatrix}
+                                  0 \\ 5
+                                  \end{bmatrix}
+                                  &amp;
+                                  \begin{bmatrix}
+                                  -3 \\ 2
+                                  \end{bmatrix}
+                                  &amp;=
+                                  \begin{bmatrix}
+                                  -3 \\ 0
+                                  \end{bmatrix}
+                                  +
+                                  \begin{bmatrix}
+                                  0 \\ 2
+                                  \end{bmatrix}
+                          </mrow>
+                          <mrow>
+                                  &amp;=
+                                  4
+                                  \begin{bmatrix}
+                                  1 \\ 0
+                                  \end{bmatrix}
+                                  +5
+                                  \begin{bmatrix}
+                                  0 \\ 1
+                                  \end{bmatrix}
+                                          &amp;
+                                  &amp;=
+                                  -3
+                                  \begin{bmatrix}
+                                  1 \\ 0
+                                  \end{bmatrix}
+                                  +2
+                                  \begin{bmatrix}
+                                  0 \\ 1
+                                  \end{bmatrix}
+                          </mrow>
+                  </md>
+                  If we define the vectors <m>\BFvec{1}=\Avec{1,0}</m> and <m>\BFvec{i}=\Avec{0,0}</m>, the every <m>2</m>-vector can be written in terms of <m>\BFvec{1}</m> and <m>\BFvec{i}</m>. So, we can write <m>\Avec{4,5}=4\BFvec{1}+5\BFvec{i}</m>, <m>\Avec{-3,2}=-3\BFvec{1}+2\BFvec{i}</m>, or <m>\Avec{2,-3}=2\BFvec{1}-3\BFvec{i}</m>.
+                  In <xref ref="exer_complex_id" text="type-local"/>, we saw that for any <m>2</m>-vector, <m>\vec{v}</m>, <m>\BFvec{1}\cdot\vec{v}=\vec{v}</m>, which means that multiplying by <m>\BFvec{1}</m> with <m>2</m>-vectors acts just like multiplying by <m>1</m> in the real numbers, so it makes sense that we gave it the name <m>\BFvec{1}</m>. But there's more to it.
+          </p>
+          <aside>
+                  <p>
+                          The technical term here is that the set <m>\left\{\BFvec{1},\BFvec{i}\right\}</m> forms a <term>basis</term> for the set of all <m>2</m>-vectors, and more specifically this is the <term>standard normal basis</term>.
+                  </p>
+          </aside>
+          <example xml:id="example_extend_reals">
+                  <statement>
+                          <p>
+                                  Let <m>\BFvec{1}=\Avec{1,0}</m> and let <m>a</m> and <m>b</m> be any real numbers. Notice that
+                                  <md>
+                                          <mrow>
+                                                  a\BFvec{1}\cdot{}b\BFvec{1}
+                                                          &amp;
+                                                  \begin{bmatrix}a \\ 0\end{bmatrix}
+                                                  \cdot
+                                                  \begin{bmatrix}b \\ 0\end{bmatrix}
+                                          </mrow>
+                                          <mrow>
+                                                          &amp;
+                                                  \begin{bmatrix}ab \\ 0\end{bmatrix}
+                                          </mrow>
+                                  </md>
+                          </p>
+                  </statement>
+          </example>
+                          <p>
+                                  <xref ref="example_extend_reals" text="type-local"/> is particularly interesting, because it tells us that if we only look at vectors of the form <m>a\BFvec{1}</m>, they behave exactly like the real numbers! But you may be wondering if there are any interesting things about <m>\BFvec{i}</m>. Let's explore that in 
+                          </p>
+                          <worksheet>
+                                  <p>
+                                                  For all of the following problems, let <m>\BFvec{1}=\Avec{1,0}</m> and <m>\BFvec{i}=\Avec{0,1}</m>.
+                                  </p>
+                                  <sidebyside>
+                          <exercise>
+                                  <introduction>
+                                          <p>
+                                                          Let <m>\vec{v}=(\BFvec{1}+2\BFvec{i})</m>.
+                                          </p>
+                                  </introduction>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Draw <m>\vec{v}</m> with its tail at the origin and find the slope of the line it lies on.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate and  draw <m>\BFvec{i}\cdot\vec{v}</m> with its tail at the origin and find the slope of the line it lies on.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          What is the relationship between these slopes? Or said another way, what is true about the two lines?
+                                                  </p>
+                                          </statement>
+                                  </task>
+                          </exercise>
+                          <image width="90%">
+                                  <description><p>A blank five by five grid.</p></description>
+                                        <prefigure xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="https://prefigure.org" label="prefig_blank_grid_01">
+                                        <diagram dimensions="(300,300)" margins="5">
+                                          <coordinates bbox="(-6,-6,6,6)">
+                                            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+                                          </coordinates>
+                                        </diagram>
+                                        </prefigure>
+                          </image>
+                                  </sidebyside>
+                                  <sidebyside>
+                          <exercise>
+                                  <introduction>
+                                          <p>
+                                                          Let <m>\vec{v}=(\BFvec{4}+5\BFvec{i})</m>.
+                                          </p>
+                                  </introduction>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                                  Draw <m>\vec{v}</m> with its tail at the origin and find the slope of the line it lies on.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          Calculate and  draw <m>\BFvec{i}\cdot\vec{v}</m> with its tail at the origin and find the slope of the line it lies on.
+                                                  </p>
+                                          </statement>
+                                  </task>
+                                  <task>
+                                          <statement>
+                                                  <p>
+                                                          What is the relationship between these slopes? Or said another way, what is true about the two lines?
+                                                  </p>
+                                          </statement>
+                                  </task>
+                          </exercise>
+                          <image width="90%">
+                                  <description><p>A blank five by five grid.</p></description>
+                                        <prefigure xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="https://prefigure.org" label="prefig_blank_grid_02">
+                                        <diagram dimensions="(300,300)" margins="5">
+                                          <coordinates bbox="(-6,-6,6,6)">
+                                            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+                                          </coordinates>
+                                        </diagram>
+                                        </prefigure>
+                          </image>
+                                  </sidebyside>
+                                  <exercise>
+                                          <statement>
+                                                  <p>
+                                                                  Calculate <m>\BFvec{i}\cdot\BFvec{i}</m> and write it in terms of <m>\BFvec{1}</m> and <m>\BFvec{i}</m>. What do you notice?
+                                                  </p>
+                                          </statement>
+                                  </exercise>
+                          </worksheet>
+  </subsection>
+</section>

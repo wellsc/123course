@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefigure xmlns="https://prefigure.org" label="law_of_cosines_external_alt" >
+<diagram dimensions="(600,540)" margins="5">
+  <definition>C=(0,0)</definition>
+  <definition>B=(6,0)</definition>
+  <definition>A=(8,5)</definition>
+  <definition>H=(8,0)</definition>
+  <coordinates bbox="(-1,-2,9,7)">
+    
+    <line endpoints="(C,B)" alignment="s" offset="(50,-10)" ></line>
+    <line endpoints="(C-(0,1),H-(0,1))" dash="4 4" arrows="2" alignment="s" ><m>x</m></line>
+    <line endpoints="(B,A)" alignment="n" ><m>c</m></line>
+    <line endpoints="(C,A)" alignment="n" ><m>b</m></line>
+    <line endpoints="(A,H)" dash="4 4" alignment="n" offset="(0,6)" rotate="90" ><m>h</m></line>
+    <line endpoints="(C,B)" alignment="n"><m>a</m></line>
+    <line endpoints="(B,H)" alignment="n" dash="4 4" ><m>x-a</m></line>
+    <angle-marker points="(A,H,C)" radius="10" />
+    <point p="C" size="0" alignment="sw" ><m>C</m></point>
+    <point p="B" size="0" alignment="s" ><m>B</m></point>
+    <point p="A" size="0" alignment="n" ><m>A</m></point>
+    <point p="H" size="0" alignment="se" ><m>H</m></point>
+  </coordinates>
+</diagram>
+</prefigure>
