@@ -1384,7 +1384,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "4.13.3",
   "title": "The Law of Cosines",
-  "body": " The Law of Cosines  There is another important identity for general triangles called the law of cosines . It is simple to state, but it is a bit harder to derive, so we will state it first, set up the machinery we need to derive it, and then go through the whole derivation.   The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,     In order to derive this identity, we need to recall a few identities we have already developed and apply them to the situation here.  First, we need the Pythagorean identity for sine and cosine: for any (real number) angle , Note that this equation also means that and .  Next, we will state the angle sum identities (although we will only use the identity for cosine). For any (real number) angles and , Also, recall that for any angle , and . Thus, Finally, a special case of the angle sum formula for cosine, using the facts that and , for any angle     Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.    An Triangle with an Exterior Altitude    An arbitrary triangle with an external altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     A=(0,0)  B=(6,0)  C=(8,5)  D=(8,0)    c+x  a  b  h  c  x   A  B  C  D       "
+  "body": " The Law of Cosines  There is another important identity for general triangles called the law of cosines . It is simple to state, but it is a bit harder to derive, so we will state it first, set up the machinery we need to derive it, and then go through the whole derivation.   The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,     Let be an arbitrary triangle with vertices , , and , and opposite side lengths , , and , respectively. We construct the altitude (perpendicular segment) from to the point on the line determined by . We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .   A Triangle with an Interior Altitude    An arbitrary triangle with an interior altitude.  The vertices are A B and C, with C on the far left, B on the far right, horizontally even with C, and A above and between C and B.  The sides opposite each angle are labeled a, b, and c respectively.  A perpendicular dashed line, labeled h, descends from A to point H on segment BC.  Segment C H is labeled x and segment B H is labeled a-x.     C=(0,0)  B=(8,0)  A=(6,5)  H=(6,0)   a  c  b  h  x  a-x   C  B  A  H       Referring to , we see that we have right triangles and . Let be the length of the altitude , let be the length of segment , and thus the length of segment will be . From the Pythagorean theorem, we have Also, from the right triangle interpretation of cosine, we have Because , we have , and because , we have . Thus, we have as desired.  In the case of an exterior altitude, as shown in , we again have right triangles and , and we let be the length of the altitude and let be the length of segment . The length of segment then will be . From the Pythagorean theorem, we have And from the right triangle interpretation of cosine, we have The only difference between this case and the interior altitude case is that we have instead of . However, and so the rest of the proof is the same.     A Triangle with an Exterior Altitude    An arbitrary triangle with an exterior altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     C=(0,0)  B=(6,0)  A=(8,5)  H=(8,0)    x  c  b  h  a  x-a   C  B  A  H       "
 },
 {
   "id": "thm_law_of_cosines",
@@ -1393,25 +1393,16 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "74",
   "title": "The Law of Cosines.",
-  "body": " The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,    "
-},
-{
-  "id": "law_of_cosines-7",
-  "level": "2",
-  "url": "law_of_cosines.html#law_of_cosines-7",
-  "type": "Proof",
-  "number": "4.13.3.1",
-  "title": "Proof of Theorem 74.",
-  "body": " Proof of  We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .  Referring to , we see that so which means that   Using the (rearranged) Pythagorean identity twice, we have   Rearranging , we see that so Substituting this into our equation for gives   Next, we note that and , so and , so we have   Finally, we know that the angle sum for any triangle is , so in particular, , which means that . Thus, using ,   In the case of an exterior altitude, the derivation is almost the same, but there are a couple of differences.  Referring to , let be the measure of , so , and so . Then we see that and , . However, . This means that , and the rest of the proof continues in the same way.  "
+  "body": " The Law of Cosines   For any triangle with angles , , and , and with side lengths opposite each angle given by , , and , respectively,     Let be an arbitrary triangle with vertices , , and , and opposite side lengths , , and , respectively. We construct the altitude (perpendicular segment) from to the point on the line determined by . We need to deal with two different cases. In one case, we have an interior altitude, as shown in , and in the other case, we have an exterior altitude, as shown in .   A Triangle with an Interior Altitude    An arbitrary triangle with an interior altitude.  The vertices are A B and C, with C on the far left, B on the far right, horizontally even with C, and A above and between C and B.  The sides opposite each angle are labeled a, b, and c respectively.  A perpendicular dashed line, labeled h, descends from A to point H on segment BC.  Segment C H is labeled x and segment B H is labeled a-x.     C=(0,0)  B=(8,0)  A=(6,5)  H=(6,0)   a  c  b  h  x  a-x   C  B  A  H       Referring to , we see that we have right triangles and . Let be the length of the altitude , let be the length of segment , and thus the length of segment will be . From the Pythagorean theorem, we have Also, from the right triangle interpretation of cosine, we have Because , we have , and because , we have . Thus, we have as desired.  In the case of an exterior altitude, as shown in , we again have right triangles and , and we let be the length of the altitude and let be the length of segment . The length of segment then will be . From the Pythagorean theorem, we have And from the right triangle interpretation of cosine, we have The only difference between this case and the interior altitude case is that we have instead of . However, and so the rest of the proof is the same.   "
 },
 {
   "id": "fig_exterior_alt",
   "level": "2",
   "url": "law_of_cosines.html#fig_exterior_alt",
   "type": "Figure",
-  "number": "75",
+  "number": "76",
   "title": "",
-  "body": " An Triangle with an Exterior Altitude    An arbitrary triangle with an external altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     A=(0,0)  B=(6,0)  C=(8,5)  D=(8,0)    c+x  a  b  h  c  x   A  B  C  D      "
+  "body": " A Triangle with an Exterior Altitude    An arbitrary triangle with an exterior altitude.  The vertices are A B and C, with A on the far left, B on the far right, horizontally even with A, and C above and to the right of B.  The sides opposite each angle are labeled a, b, and c respectively.  A dashed line extends segment A B to the right, and a perpendicular dashed line, labeled h, descends from C to point D on segment to the right of B.  Segment A D is labeled c+x and segment B D is labeled x.     C=(0,0)  B=(6,0)  A=(8,5)  H=(8,0)    x  c  b  h  a  x-a   C  B  A  H      "
 },
 {
   "id": "hanging_wt_soln",
@@ -1427,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#fig_suspended_wt_redux",
   "type": "Figure",
-  "number": "76",
+  "number": "77",
   "title": "",
   "body": " A Weight Suspended Asymmetrically with Axes Imposed   A diagram showing a weight suspended from two wires with axes imposed    g=(0,-9.8)  Fg=20*g  P1=(0,0)  P2=(60,0)  rad1=30  rad2=50  c1(x)=P1[1]-sqrt(rad1**2-(x-P1[0])**2)  c2(x)=P2[1]-sqrt(rad2**2-(x-P2[0])**2)  a=intersect((c1,c2),20)  crux=(a,c1(a))  weight=crux-(0,25)  u1=normalize(P1-crux)  u2=normalize(P2-crux)  l1=91*sqrt(14)\/2  l2=175*sqrt(14)\/6  v1=l1*u1  v2=l2*u2  right=(crux[0]+40,crux[1])  phi=atan(v1[1]\/v1[0])   y  x   30 cm  50 cm   60 cm  \\theta_{1}  \\theta_{2}  \\vec{F}_{1}  \\vec{F}_{2}  \\vec{F}_{g}=\\left[\\begin{array}{r}0\\\\-196\\end{array}\\right]     \\phi_{1}  \\phi_{2}      "
 },
@@ -1436,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "hanging_wt_soln.html#example_law_of_sines",
   "type": "Example",
-  "number": "77",
+  "number": "78",
   "title": "",
   "body": "   Is This Triangle Possible?    A triangle with one side length and one angle known. side AB in the figure, is 2 meters long, and the angle adjacent to that side at point A is 40 degrees.     A=(0,0)  theta=40*pi\/180  B=(2*cos(theta),2*sin(theta))  C=(2,0)  H=(B[0],0)   2\\text{m}  a   1.7\\text{m?}  A  B  C  H  40^{\\circ}        shows a triangle with one side length and one angle known. The side, side in the figure, is m long, and one of the angles adjacent to that side is , at the point labeled in the figure.  We want to know:  Is it possible for the side opposite the angle, that is, side , to be m long? If it is possible,  what will the length of the third side be? And  what will the measures of the other two angles be?    To answer the first question, we can find out what the shortest possible length is for the side opposite the angle and see if it is less than m.  The shortest possible side opposite the angle would be a segment perpendicular to the dashed line at the bottom. Let's say that the length of that side is and the point where it intersects the horizontal side is . Then because we have a right triangle, we would have   Solving for , we have   Since , it is possible to have the side opposite the angle be in length. However, the picture is a little misleading, because the point where the side touches the third side could be on either side of the perpendicular segment, so we will need to make sure we consider both possibilities.  From the Law of Sines, if we label the angle at as , then so   This is where we have to be careful. We know we are dealing with triangles, and so we know that , but there are two angles in that range whose sine is , one in the first quadrant and one in the second quadrant.  If the side is similar to what is drawn in the picture, with the corner of the triangle on the far side of from , then the angle at that point will be acute, and so we have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then   On the other hand, if the corner of the triangle on the near side of from , then the angle at that point will be obtuse, and so we will have   In this case, the third angle will be   Then, again using law of sines, if we say the length of is , then    "
 },
@@ -1454,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-15.html#activities-15-4",
   "type": "Example",
-  "number": "79",
+  "number": "80",
   "title": "",
   "body": "  We are told that a triangle has two sides of length and , and that the angle between those two sides is . We want to determine the length of the third side and the measure of the other two angles, if such a triangle is even possible.  We begin by sketching a diagram of what the triangle might look like, as shown in . With two sides and the included angle, we will be able to use the Law of Cosines to find the third side, so we will label the vertex with the known angle and the other two vertices , opposite the side of length , and , opposite the side of length . After finding then length of the third side, we will then use Law of Sines to find the measure of the remaining angles.  We notice that side has to be more than . If were exactly , then , which is the same as the length of , so point would lie on , and we wouldn't have a triangle, and if it were shorter we couldn't even reach from to .   A Triangle with Partial Information    A triangle, A B C, with two side lengths and the measure of the included angle given. Side AC has length 30 cm, side BC, has length 20 cm, and angle C has measure pi over twelve.     theta=pi\/12  C=(0,0)  A=(30,0)  B=(20*cos(theta),20*sin(theta))     \\frac{\\pi}{12}   30\\text{cm}  20\\text{cm}            Although we don't have to do this, we can find the values for and exactly using the fact that and the angle difference formulas for sine and cosine. In particular, we have   From Law of Cosines, we have   Now we will use the Law of Sines to find the angles. We know that which means   In our picture, it looks like is obtuse, but pictures aren't always reliable. However, we do know that at most one angle in a triangle can be obtuse (because if two were more than , the angle sum would be more than ), and we know that larger angles are opposite larger sides, so the only angle that could possibly be obtuse is . In particular, we know that will be acute. This is important, because the inverse sine function always returns an angle between and . Since is acute, we know that   We now have two ways to find the third angle. The easiest is using the fact that the sum of the angle in a triangle will be radians. Thus, The other way is to use Law of Sines: However, we don't know if or , so we don't know if We would have to check to make sure that the angle sum is , and thus conclude that .   "
 },
@@ -1463,9 +1454,207 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-15.html#activities-15-5",
   "type": "Checkpoint",
-  "number": "81",
+  "number": "82",
   "title": "",
   "body": "  A triangle has two sides of length and , and the angle between the two sides is . Find the length of the third side and the measure of the other two angles.   A Triangle with Partial Information    A triangle, A B C, with two side lengths and the measure of the included angle given. Side AC has length 30 cm, side BC, has length 25 cm, and angle C has measure pi over five.     theta=1\/5*pi  a=25  b=30  C=(0,0)  A=(b,0)  B=(a*cos(theta),a*sin(theta))     \\pi\/${round(pi\/theta)}   ${b}\\text{cm}  ${a}\\text{cm}             "
+},
+{
+  "id": "ssec_hadamard",
+  "level": "1",
+  "url": "ssec_hadamard.html",
+  "type": "Subsection",
+  "number": "4.15.1",
+  "title": "The Hadamard Product",
+  "body": " The Hadamard Product  The simplest way to multiply two vectors the Hadamard product , which is when we multiply element-wise, as defined in .   The Hadamard Product   For any -vectors and , their Hadamard product , often written as , is given by   More generally, for any positive integer , for any -vectors and , their Hadamard product , often written as , is given by       Let and let . Then     Although the Hadamard product has uses in applications such as image compression and neural networks, it has some significant limitations compared to, say, multiplication of real numbers. In particular, for a lot of vectors, there is no way to undo the multiplication, which means no division of vectors.     Let and let . Find .     .      Let and let . Find .     .      Let where and are unspecified real numbers, and let . Find .     .      Let and let .     Find .     .      Are there any other vectors, , so that ?    Any vector , where is any real number.      "
+},
+{
+  "id": "ssec_hadamard-2",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Hadamard product "
+},
+{
+  "id": "def_hadamard_2",
+  "level": "2",
+  "url": "ssec_hadamard.html#def_hadamard_2",
+  "type": "Definition",
+  "number": "84",
+  "title": "The Hadamard Product.",
+  "body": " The Hadamard Product   For any -vectors and , their Hadamard product , often written as , is given by   More generally, for any positive integer , for any -vectors and , their Hadamard product , often written as , is given by    "
+},
+{
+  "id": "ssec_hadamard-4",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-4",
+  "type": "Example",
+  "number": "85",
+  "title": "",
+  "body": "  Let and let . Then    "
+},
+{
+  "id": "ssec_hadamard-6-1",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-6-1",
+  "type": "Exercise",
+  "number": "4.15.1.1",
+  "title": "",
+  "body": "  Let and let . Find .     .   "
+},
+{
+  "id": "ssec_hadamard-6-2",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-6-2",
+  "type": "Exercise",
+  "number": "4.15.1.2",
+  "title": "",
+  "body": "  Let and let . Find .     .   "
+},
+{
+  "id": "ssec_hadamard-6-3",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-6-3",
+  "type": "Exercise",
+  "number": "4.15.1.3",
+  "title": "",
+  "body": "  Let where and are unspecified real numbers, and let . Find .     .   "
+},
+{
+  "id": "ssec_hadamard-6-4",
+  "level": "2",
+  "url": "ssec_hadamard.html#ssec_hadamard-6-4",
+  "type": "Exercise",
+  "number": "4.15.1.4",
+  "title": "",
+  "body": "  Let and let .     Find .     .      Are there any other vectors, , so that ?    Any vector , where is any real number.    "
+},
+{
+  "id": "ssec_complex_multiplication",
+  "level": "1",
+  "url": "ssec_complex_multiplication.html",
+  "type": "Subsection",
+  "number": "4.15.2",
+  "title": "<span class=\"process-math\">\\(C\\)<\/span>-multiplication",
+  "body": " -multiplication  Another type of multiplication is what we will call (for now) -multiplication.    For any -vectors and , their -product , which we will write as , is given by       Let and let . Then     In the following exercises, we will explore some of the features of -multiplication.     Let and let . Find .     .      Let and let . Find .     .      For this exercise, we will use the vector .     Let . Calculate .     .      Let . Calculate .     .      Let . Calculate .     .      Let , where and are unspecified real numbers. Calculate .     .       Let and let .     Calculate the magnitude of .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      Calculate the angle that makes with the positive real axis.      Calculate .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      What relationships do you notice among the magnitudes and angles?       Let .     Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      Calculate .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      What relationships do you notice among the magnitudes and angles?      "
+},
+{
+  "id": "def_C_mult",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#def_C_mult",
+  "type": "Definition",
+  "number": "86",
+  "title": "",
+  "body": "  For any -vectors and , their -product , which we will write as , is given by    "
+},
+{
+  "id": "ssec_complex_multiplication-4",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#ssec_complex_multiplication-4",
+  "type": "Example",
+  "number": "87",
+  "title": "",
+  "body": "  Let and let . Then    "
+},
+{
+  "id": "ssec_complex_multiplication-6-1",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#ssec_complex_multiplication-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4.15.2.1",
+  "title": "",
+  "body": "  Let and let . Find .     .   "
+},
+{
+  "id": "ssec_complex_multiplication-6-2",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#ssec_complex_multiplication-6-2",
+  "type": "Worksheet Exercise",
+  "number": "4.15.2.2",
+  "title": "",
+  "body": "  Let and let . Find .     .   "
+},
+{
+  "id": "exer_complex_id",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#exer_complex_id",
+  "type": "Worksheet Exercise",
+  "number": "4.15.2.3",
+  "title": "",
+  "body": "  For this exercise, we will use the vector .     Let . Calculate .     .      Let . Calculate .     .      Let . Calculate .     .      Let , where and are unspecified real numbers. Calculate .     .    "
+},
+{
+  "id": "ssec_complex_multiplication-6-4",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#ssec_complex_multiplication-6-4",
+  "type": "Worksheet Exercise",
+  "number": "4.15.2.4",
+  "title": "",
+  "body": "  Let and let .     Calculate the magnitude of .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      Calculate the angle that makes with the positive real axis.      Calculate .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      What relationships do you notice among the magnitudes and angles?    "
+},
+{
+  "id": "ssec_complex_multiplication-6-5",
+  "level": "2",
+  "url": "ssec_complex_multiplication.html#ssec_complex_multiplication-6-5",
+  "type": "Worksheet Exercise",
+  "number": "4.15.2.5",
+  "title": "",
+  "body": "  Let .     Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      Calculate .      Calculate the magnitude of .      Calculate the angle that makes with the positive real axis.      What relationships do you notice among the magnitudes and angles?    "
+},
+{
+  "id": "ssec_more_complex_multiplication",
+  "level": "1",
+  "url": "ssec_more_complex_multiplication.html",
+  "type": "Subsection",
+  "number": "4.15.3",
+  "title": "An Alternate Representation of <span class=\"process-math\">\\(C\\)<\/span>-multiplication",
+  "body": " An Alternate Representation of -multiplication  We saw earlier in this course at we can represent vectors as a particular type of sum of vectors, for example, If we define the vectors and , the every -vector can be written in terms of and . So, we can write , , or . In , we saw that for any -vector, , , which means that multiplying by with -vectors acts just like multiplying by in the real numbers, so it makes sense that we gave it the name . But there's more to it.   The technical term here is that the set forms a basis for the set of all -vectors, and more specifically this is the standard normal basis .     Let and let and be any real numbers. Notice that      is particularly interesting, because it tells us that if we only look at vectors of the form , they behave exactly like the real numbers! But you may be wondering if there are any interesting things about . Let's explore that in   For all of the following problems, let and .     Let .     Draw with its tail at the origin and find the slope of the line it lies on.      Calculate and draw with its tail at the origin and find the slope of the line it lies on.      What is the relationship between these slopes? Or said another way, what is true about the two lines?      A blank five by five grid.              Let .     Draw with its tail at the origin and find the slope of the line it lies on.      Calculate and draw with its tail at the origin and find the slope of the line it lies on.      What is the relationship between these slopes? Or said another way, what is true about the two lines?      A blank five by five grid.             Calculate and write it in terms of and . What do you notice?     "
+},
+{
+  "id": "ssec_more_complex_multiplication-3-1",
+  "level": "2",
+  "url": "ssec_more_complex_multiplication.html#ssec_more_complex_multiplication-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "basis standard normal basis "
+},
+{
+  "id": "example_extend_reals",
+  "level": "2",
+  "url": "ssec_more_complex_multiplication.html#example_extend_reals",
+  "type": "Example",
+  "number": "88",
+  "title": "",
+  "body": "  Let and let and be any real numbers. Notice that    "
+},
+{
+  "id": "ssec_more_complex_multiplication-6-2-1",
+  "level": "2",
+  "url": "ssec_more_complex_multiplication.html#ssec_more_complex_multiplication-6-2-1",
+  "type": "Worksheet Exercise",
+  "number": "4.15.3.1",
+  "title": "",
+  "body": "  Let .     Draw with its tail at the origin and find the slope of the line it lies on.      Calculate and draw with its tail at the origin and find the slope of the line it lies on.      What is the relationship between these slopes? Or said another way, what is true about the two lines?    "
+},
+{
+  "id": "ssec_more_complex_multiplication-6-3-1",
+  "level": "2",
+  "url": "ssec_more_complex_multiplication.html#ssec_more_complex_multiplication-6-3-1",
+  "type": "Worksheet Exercise",
+  "number": "4.15.3.2",
+  "title": "",
+  "body": "  Let .     Draw with its tail at the origin and find the slope of the line it lies on.      Calculate and draw with its tail at the origin and find the slope of the line it lies on.      What is the relationship between these slopes? Or said another way, what is true about the two lines?    "
+},
+{
+  "id": "ssec_more_complex_multiplication-6-4",
+  "level": "2",
+  "url": "ssec_more_complex_multiplication.html#ssec_more_complex_multiplication-6-4",
+  "type": "Worksheet Exercise",
+  "number": "4.15.3.3",
+  "title": "",
+  "body": "  Calculate and write it in terms of and . What do you notice?   "
 },
 {
   "id": "progress_check_1",
