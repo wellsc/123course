@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="sec_theoretical_cosine">
+        <title>Creating a Regression Model with the cosine</title>
+        <introduction>
+        <p>
+                        We will now create a <term>cosine regression model</term> in Desmos and then analyze it.
+        </p>
+        </introduction>
+        <subsubsection xml:id='ssec_cosine_regression'>
+                <title>Creating the Model</title>
+        <p>
+                <ol>
+                        <li>
+                                <p>
+                                        Visit 
+                                </p>
+                                <p>
+                                        <url href='https://docs.google.com/spreadsheets/d/1BEGdDjyL0i1CUE2rJARknO6TELHEYEG-WFCXwz8Zdr4/edit?usp=sharing' visual='docs.google.com/spreadsheets/d/1BEGdDjyL0i1CUE2rJARknO6TELHEYEG-WFCXwz8Zdr4/edit?usp=sharing'/>
+                                </p>
+                                <p>
+                                        to find a spreadsheet with hours of daylight by day of the year (day 1 through day 366) for all of 2024.
+                                </p>
+                        </li>
+                        <li>
+                                <p>
+                                        Open the <url href='https://www.desmos.com/calculator'>Desmos Calcuator</url> in another browser window.
+                                </p>
+                        </li>
+                        <li>
+                                <p>
+                                        Select/highlight all of the data in the spreadsheet and copy it (Ctrl-C).
+                                </p>
+                        </li>
+                        <li>
+                                <p>
+                                        Click in a blank cell on the left in Desmos and paste the date. You should now have a table labeled with <m>x_{1}</m> and <m>y_{1}</m>. (Desmos will zoom out to fit the data.)
+                                </p>
+                        </li>
+                        <li>
+                                <p>
+                                                In another cell in Desmos, generate a <term>regression model</term> by typing 
+                                </p>
+                                <p>
+                                        <c>y_1 ~ a_c cos (k_c (x_1-x_c))+m_c</c>
+                                </p>
+                                <p>
+                                                Desmos will choose values for <m>a_{s}</m>, <m>k_{s}</m>, <m>x_{s}</m>, and <m>m_{s}</m> to find a model of <q>best fit</q>. 
+                                </p>
+                        </li>
+                        <li>
+                                <p>
+                                        In another cell in Desmos, type
+                                </p>
+                                <p>
+                                        <c>h_c(x) = a_c cos (k_c (x_1-x_c))+m_c</c>
+                                </p>
+                                <p>
+                                        This is the <term>regression function</term>.
+                                </p>
+                        </li>
+                        </ol>
+        </p>
+        </subsubsection>
+        <subsubsection xml:id='ssec_analyzing_cosine_regression'>
+                <title>Analyzing the Cosine Regression Model</title>
+                <p>
+                        We will now analyze the regression model. Note that Desmos lists the <term>regression parameters</term>, <m>a_c</m>, <m> k_c</m>, <m> x_c</m>, and <m> m_c</m>, and their values. Use these values to answer the following questions.
+                        <ol>
+                                <li>
+                                        <p>
+                                                What is the <em>period</em> of the cosine function in your regression model? How does this compare to the period of the function you defined in <xref ref="sec_recursion_cosine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>amplitude</em> of the cosine function in your regression model? How does this compare to the amplitude of the function you defined in <xref ref="sec_recursion_cosine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>midline</em> of the cosine function in your regression model? How does this compare to the midline of the function you defined in <xref ref="sec_recursion_cosine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>horizontal shift</em> of the cosine function in your regression model? How does this compare to the horizontal shift of the function you defined in <xref ref="sec_recursion_cosine"/>?
+                                        </p>
+        <p>
+                        Desmos gives additional information about the model, too.
+        </p>
+        <p>
+                        The value of <m>R^{2}</m> is a measure of how well the model predicts the values of the data. If you had <m>R^{2}=1</m>, it would mean that the model predicts all of the data points perfectly, and if you had <m>R^{2}=0</m> it would mean that the model has no predictive value at all.
+        </p>
+        <p>
+                        There is also a list of <term>residuals</term>, labeled as <m>e_{1}</m>. This is a list of differences between actual and predicted values. 
+        </p>
+                                </li>
+                <li>
+        <p>
+                        Click on the box labeled <c>plot</c> next to <m>e_{1}</m>, then click on the magnifying glass with a <m>+</m> inside that appears next to <m>e_{1}</m> to zoom to fit the plot of the residuals.
+        </p>
+                </li>
+                <li>
+        <p>
+                How much does the actual daylight vary from the regression model?
+        </p>
+                </li>
+                <li>
+                        <p>
+                                        Enter the function for your theoretical model, <m>h_{2}(t)</m> into a new cell in Desmos, and then in yet another cell, enter <c>h_c(x)-h_2(x)</c> and adjust the window to fit. (Try <m>-1\le{}y\le{}1</m>.)
+                        </p>
+                        <p>
+                                Describe what you notice.
+                        </p>
+                </li>
+                        </ol>
+                </p>
+        <p>
+        </p>
+        </subsubsection>
+</subsection>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="sec_recursion_sine">
+        <title>Creating a Theoretical Model with the Sine</title>
+                <p>
+                                Begin by determining how you are measuring days of the year. In particular,
+                                measuring time in days, when is time <m>t=0</m>?
+                                For example, is January 1, 2024 day <m>t=0</m>, day <m>t=1</m>, or some other day?
+                </p>
+        <p>
+                        Next, search the Internet to find the dates of the Spring Equinox, the Summer Solstice, the Fall Equinox, and the Winter Solstice for 2024. Make note of the date itself and determine what value of <m>t</m> corresponds to these dates
+        </p>
+        <p>
+                Go to <url href='https://www.timeanddate.com/sun/usa/grand-rapids?month=3&amp;year=2024' visual='timeanddate.com/sun/usa/grand-rapids?month=3&amp;year=2024'/>. 
+                <ul>
+                        <li>
+                                Determine the number of hours of daylight on the spring equinox. 
+                        </li>
+                        <li>
+                                Use the navigation links to determine the number of hours of daylight on the summer solstice. 
+                        </li>
+                        <li>
+                                Use the navigation links to determine the number of hours of daylight on the fall equinox. 
+                        </li>
+                        <li>
+                                Use the navigation links to determine the number of hours of daylight on the winter solstice. 
+                        </li>
+                </ul>
+        </p>
+        <p>
+                You can record your information in <xref ref='tab_important_dates'/>.
+        </p>
+        <table xml:id='tab_important_dates'>
+                <title>Important Dates</title>
+                <tabular row-headers='yes'>
+                        <col width='40%'/>
+                        <col width='20%'/>
+                        <col width='20%'/>
+                        <col width='20%'/>
+                        <row header='yes'>
+                                <cell bottom='major'>Event</cell>
+                                <cell bottom='major'>Date<nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
+                                <cell bottom='major'>Day Number</cell>
+                                <cell bottom='major'>Daylight</cell>
+                        </row>
+                        <row>
+                                <cell bottom='minor'>Spring Equinox</cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                        </row>
+                        <row>
+                                <cell bottom='minor'>Summer Solstice</cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                        </row>
+                        <row>
+                                <cell bottom='minor'>Fall Equinox</cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                        </row>
+                        <row>
+                                <cell bottom='minor'>Winter Solstice</cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                                <cell bottom='minor'></cell>
+                        </row>
+                </tabular>
+        </table>
+        <p>
+                With this information in hand, compute the appropriate parameters, <m>a_{1}</m>, <m>k_{1}</m>, <m>t_{1}</m>, and <m>m_{1}</m> to correctly fit your data with the function
+                <md>h_{1}(t)=a_{1}\sin\left(k_{1}(t-t_{1})\right)+m_{1}</md>
+                where <m>t</m> is time in days (measured from your reference time), and <m>h_{1}(t)</m> is hours of daylight.
+        </p>
+</subsection>

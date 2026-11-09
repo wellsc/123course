@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="hours_of_daylight_project" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Modeling Hours of Daylight</title>
+        <xi:include href='./daylight_intro.ptx'/>
+        <xi:include href='./theoretical_sine.ptx'/>
+        <xi:include href='./theoretical_cosine.ptx'/>
+        <xi:include href='./recursion_sine.ptx'/>
+        <xi:include href='./recursion_cosine.ptx'/>
+</section>

@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- This is the publication file for a newly generated PreTeXt book.     -->
-<!-- By changing the values of attributes here, you can change how        -->
-<!-- the output looks and functions.  For the complete documentation      -->
-<!-- of publication-file options, see                                     -->
-<!-- https://pretextbook.org/doc/guide/html/publisher-file-reference.html -->
-
-<!-- Commented settings below illustrate some possible changes you can    -->
-<!-- make from the default values.  Unless a comment says otherwise, the  -->
-<!-- value shown in a commented entry is PreTeXt's default, and the       -->
-<!-- comment above it lists the other values you may use.                 -->
-
 <publication>
   <common>
     <!-- Level at which html output is split into separate pages: 0 gives -->
     <!-- a single page, 1 is chapter, 2 is section, and so on through 6.  -->
     <!-- The default depends on the type of document.                     -->
       <chunking level="3" />
-
-    <!-- Depth of the table of contents, from 0 through 6.  A value of 0 -->
-    <!-- means no table of contents.  The default depends on the type of -->
-    <!-- document and the conversion.                                    -->
-      <!-- -->
-      <tableofcontents level="3" />
 
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
@@ -35,6 +18,12 @@
       <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
       <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
+
+    <!-- Depth of the table of contents, from 0 through 6.  A value of 0 -->
+    <!-- means no table of contents.  The default depends on the type of -->
+    <!-- document and the conversion.                                    -->
+      <!-- -->
+      <tableofcontents level="3" />
 
     <!-- Style of fill-in-the-blanks.  Each attribute may be "underline", -->
     <!-- "box", or "shade".  Defaults are shown.                          -->

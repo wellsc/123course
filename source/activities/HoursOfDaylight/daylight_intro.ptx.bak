@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<introduction xml:id="daylight_intro">
+        <title>Introduction</title>
+        <p>
+                In this group activity, you will use limited data to create theoretical models for the amount of daylight (measured from sunrise to sunset) in Grand Rapids, Michigan as a function of day of the year. Then, you will use a larger data set to create recursion models which you will compare and contrast with your models.
+        </p>
+        <p>
+                        This activity is <alert>required</alert> for your portfolio. 
+        </p>
+        <p>
+                        You are not being <em>assigned</em> specific roles in your groups, so your first order of business once you are in groups will be to negotiate and assign roles in your groups.
+        </p>
+        <p>
+                Your final product for this group activity needs to contain:
+                <ol>
+                        <li>graphical representations of your data and your models;</li>
+                        <li>a careful discussion of how you chose the parameters for your theoretical models;</li>
+                        <li>a comparison of your parameters with those from your regression analysis;</li>
+                        <li>a discussion of possible confounding issues.</li>
+                </ol>
+        </p>
+        <p>
+                        You also need to include a <alert>discussion of group roles</alert> and a summary of your group interactions, including how each person in your group contributed to the final result.
+        </p>
+        <p>
+                You will have two entire class periods to work on this project.
+        </p>
+</introduction>

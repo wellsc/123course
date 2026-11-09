@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_recursion_cosine">
+        <title>Creating a Theoretical Model with the Cosine</title>
+        <p>
+                Use the data you recorded in <xref ref='tab_important_dates'/>
+                to compute the appropriate parameters, <m>a_{2}</m>, <m>k_{2}</m>, <m>t_{2}</m>, and <m>m_{2}</m> to correctly fit your data with the function
+                <md>h_{2}(t)=a_{2}\cos\left(k_{2}(t-t_{2})\right)+m_{2}</md>
+                where <m>t</m> is time in days (measured from your reference time), and <m>h_{2}(t)</m> is hours of daylight.
+        </p>
+        <p>
+                Note that some of these parameters may be the same as in your model using sine, but they will not all be the same!
+        </p>
+                <p>
+                        We will now compare your sine and cosine models.
+                        <ol>
+                                <li>
+                                        <p>
+                                                What is the <em>period</em> of the cosine function in your theoretical cosine model? How does this compare to the period of the function you defined in <xref ref="sec_recursion_sine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>amplitude</em> of the cosine function in your theoretical cosine model? How does this compare to the amplitude of the function you defined in <xref ref="sec_recursion_sine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>midline</em> of the cosine function in your theoretical cosine model? How does this compare to the midline of the function you defined in <xref ref="sec_recursion_sine"/>?
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                                What is the <em>horizontal shift</em> of the cosine function in your theoretical cosine model? How does this compare to the horizontal shift of the function you defined in <xref ref="sec_recursion_sine"/>?
+                                        </p>
+                                </li>
+                        </ol>
+                </p>
+</section>
