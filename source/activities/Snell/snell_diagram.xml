@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<prefigure xmlns="https://prefigure.org" label="prefig_snell_diagram">
+<diagram dimensions="(600,600)" margins="5">
+  <definition>n1=1.000273</definition><!-- Refractive Index for air -->
+  <definition>n2=1.52</definition><!-- Refractive Index for plate glass -->
+  <definition>theta1=30*pi/180</definition><!-- Angle of incidence -->
+  <definition>theta2=-asin(n1*sin(theta1)/n2)</definition><!-- Angle of refraction -->
+  
+  <definition>S=(0,0)</definition>
+  <definition>B=(cos(pi-theta1),sin(pi-theta1))</definition>
+  <definition>C=(-1,0)</definition>
+  <definition>r=(cos(theta2),sin(theta2))</definition>
+  <definition>left=((0,-1.5),(0,1.5))</definition>
+  <definition>right=((0.6,-1.5),(0.6,1.5))</definition>
+  <definition>ray=(S,r)</definition>
+  <definition>normal=(S,(1,0))</definition>
+  <definition>dim=((0,0.5),(0.6,0.5))</definition>
+  <coordinates bbox="(-2,-2,2,2)">
+    <label anchor="(-1,1)">Air</label>
+    <label anchor="(0.3,1)">Glass</label>
+    <label anchor="(1.6,1)">Air</label>
+    <line endpoints="(left)" />
+    <line endpoints="(right)" />
+    <definition>p1=intersect((right,ray))</definition>
+    
+    <definition>dotted=(S,2*(S-B))</definition>
+    <definition>p2=intersect((dotted,right))</definition>
+    <definition>O=(cos(-pi/6),sin(-pi/6))+p1</definition>
+    <definition>I=O+p2-p1</definition>
+    <line endpoints="(S,p1)"/>
+    <line endpoints="(B,S)" />
+    <line endpoints="(S,I)" dash="4 4" infinite="no"/>
+    <line endpoints="(p1,O)"/>
+    <line endpoints="normal" dash="2 6" infinite="yes" />
+    <line endpoints="(p1,(1,0)+p1)" dash="2 6" infinite="yes"/>
+    <definition>p3=intersect((normal,right))</definition>
+    <line endpoints="dim" alignment="n" arrows="2" ><m>3\text{cm}</m></line>
+    <angle-marker points="(B,S,C)" radius="50"><m>30^{\circ}</m></angle-marker>
+    <angle-marker points="(O,p1,p1+(1,0))" radius="50"><m>30^{\circ}</m></angle-marker>
+    <angle-marker points="(p1,S,p3)" radius="60"><m>\theta</m></angle-marker>
+    <angle-marker points="(S,p1,p1-(1,0))" radius="60" offset="(-3,3)"><m>\theta</m></angle-marker>
+    <!--
+    <point p="p1"><m>p_1</m></point>
+    <point p="p2"><m>p_2</m></point>
+    <point p="p3"><m>p_3</m></point>
+    <point p="S"><m>S</m></point>
+    <point p="B"><m>B</m></point>
+    <point p="C"><m>C</m></point>
+    -->
+    <point p="B" alignment="w">Observer</point>
+    <point p="I" alignment="s">Image</point>
+    <point p="O" alignment="n" style="box">Object</point>
+  </coordinates>
+
+</diagram>
+</prefigure>

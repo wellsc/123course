@@ -56,6 +56,7 @@
       <xi:include href='./activities/UsingLawsOfSinesAndCos/UsingLawsOfSinesAndCos.ptx'/>
       <xi:include href='./activities/Complex/CanYouMultiplyVectors.ptx'/>
       <xi:include href='./activities/HoursOfDaylight/HoursOfDaylight.ptx'/>
+      <xi:include href='./activities/Snell/Snell.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">

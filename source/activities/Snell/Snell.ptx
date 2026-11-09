@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="snells_law" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Snell's Law</title>
+        <introduction>
+        <p>
+                <term>Snell's law</term> describes the behavior of light when it travels from one medium to another, such as from air to water, or air to glass. There are two forms, one that uses the speeds of light in each medium and another that uses the <term>index of refraction</term> for each medium. We will define the index of refraction, and then give both versions of Snell's law.
+        </p>
+        <definition xml:id='def_index_of_ref'>
+                <title>Index of Refraction</title>
+                <statement>
+                        <p>
+                                Let <m>c</m> be the speed of light in vacuum,
+                                <md>c={299792458}\text{m}/\text{s},</md>
+                                and let <m>v</m> be the speed of light (in <m>\text{m}/\text{s}</m>) in a given medium.
+                        </p>
+                        <p>
+                                The <term>index of refraction</term> for the medium is 
+                                <md>n=\frac{c}{v}.</md>
+                        </p>
+                </statement>
+        </definition>
+        <definition xml:id='def_snell_1'>
+                <title>Snell's Law (Velocity Version)</title>
+                <statement>
+                        <p>
+                                Let <m>\vec{N}</m> be the <term>normal line</term> to the interface between two media, let <m>v_{1}</m> be the speed of light in the first medium, and let  <m>v_{2}</m> be the speed of light in the second medium. If <m>\theta_{1}</m> is the angle that a ray of light in the first medium makes with the normal line (the <term>angle of incidence</term>) and <m>\theta_{2}</m> is the angle the ray of light in the second medium makes with the normal line (the <term>angle of refraction</term>), then
+                                <md number="yes" xml:id='eq_snell_1'>
+                                        \frac{\sin(\theta_{1})}{v_{1}}
+                                        =
+                                        \frac{\sin(\theta_{2})}{v_{2}}.
+                                </md>
+                        </p>
+                </statement>
+        </definition>
+        <theorem xml:id='def_snell_2'>
+                <title>Snell's Law (Index of Refraction Version)</title>
+                <statement>
+                        <p>
+                                Let <m>\vec{N}</m> be the <term>normal line</term> to the interface between two media, let <m>n_{1}</m> be the index of refraction for the first medium, and let <m>n_{2}</m> be the index of refraction for the second medium.
+                                </p>
+                                <p>
+                                If <m>\theta_{1}</m> is the angle that a ray of light in the first medium makes with the normal line (the <term>angle of incidence</term>) and <m>\theta_{2}</m> is the angle the ray of light in the second medium makes with the normal line (the <term>angle of refraction</term>), then
+                                <md>
+                                        {\sin(\theta_{1})}{n_{1}}
+                                        =
+                                        {\sin(\theta_{2})}{n_{2}}.
+                                </md>
+                                </p>
+
+                </statement>
+                <proof>
+                        <p>
+                                Let <m>c</m> be the speed of light in vacuum, <m>v_{1}</m> be the speed of light in the first medium, and let  <m>v_{2}</m> be the speed of light in the second medium. Then
+                                <md>
+                                        <mrow>
+                                        {\sin(\theta_{1})}{n_{1}}
+                                        &amp;=
+                                                {\sin(\theta_{1})}\frac{c}{v_{1}}
+                                        </mrow>
+                                        <mrow>
+                                        &amp;=
+                                                c\frac{\sin(\theta_{1})}{v_{1}}
+                                        </mrow>
+                                        <mrow>
+                                        &amp;=
+                                                c\frac{\sin(\theta_{2})}{v_{2}}
+                                        </mrow>
+                                        <mrow>
+                                        &amp;=
+                                                {\sin(\theta_{2})}\frac{c}{v_{2}}
+                                        </mrow>
+                                        <mrow>
+                                        &amp;=
+                                        {\sin(\theta_{2})}{n_{2}}.
+                                        </mrow>
+                                </md>
+                        </p>
+                </proof>
+        </theorem>
+        </introduction>
+        <worksheet>
+	<title>Applying Snell's Law</title>
+                <exercise>
+                                <statement>
+        <p>
+                        An observer sees an object through a <m>3\text{cm}</m> sheet of plate glass, as shown in <xref ref='fig_image_of_object'/>. The object appears to the observer to be at an angle of <m>30^{\circ}</m> below horizontal. But, due to refraction, the image of the object (where the object seems to be) is lower than the object actually is.
+        </p>
+                <figure xml:id='fig_image_of_object'>
+                        <caption>An Object Seen Through Glass</caption>
+                        <image width='75%'>
+                                <description><p>A diagram showing the path of light and the apparent path from an object to an observer as the light moves from air to plate glass and then to air. The glass is represented by two vertical lines indicated to be three centimeters apart. There is a horizontal dotted line indicating the normal line, perpendicular to the glass.</p><p>The light enters the glass at an angle of thirty degrees from the normal, is refracted as it enters the glass, and is refracted again as it exits the glass so that it exits again at thirty degrees.</p></description>
+                                <xi:include href="./snell_diagram.xml"/>
+                        </image>
+                </figure>
+                <p>
+                        The index of refraction for air is <m>n_{1}=1.000237</m>, while the index of refraction for plate glass is <m>n_{2}=1.52</m>. Determine the vertical displacement between the object and its image.
+                </p>
+                                </statement>
+                </exercise>
+        </worksheet>
+  </section>
