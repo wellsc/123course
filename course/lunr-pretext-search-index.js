@@ -1666,6 +1666,105 @@ var ptx_lunr_docs = [
   "body": "  Calculate and write it in terms of and . What do you notice?   "
 },
 {
+  "id": "sec_recursion_sine",
+  "level": "1",
+  "url": "sec_recursion_sine.html",
+  "type": "Subsection",
+  "number": "4.16.1",
+  "title": "Creating a Theoretical Model with the Sine",
+  "body": " Creating a Theoretical Model with the Sine  Begin by determining how you are measuring days of the year. In particular, measuring time in days, when is time ? For example, is January 1, 2024 day , day , or some other day?  Next, search the Internet to find the dates of the Spring Equinox, the Summer Solstice, the Fall Equinox, and the Winter Solstice for 2024. Make note of the date itself and determine what value of corresponds to these dates  Go to .  Determine the number of hours of daylight on the spring equinox.  Use the navigation links to determine the number of hours of daylight on the summer solstice.  Use the navigation links to determine the number of hours of daylight on the fall equinox.  Use the navigation links to determine the number of hours of daylight on the winter solstice.    You can record your information in .   Important Dates        Event  Date  Day Number  Daylight    Spring Equinox       Summer Solstice       Fall Equinox       Winter Solstice        With this information in hand, compute the appropriate parameters, , , , and to correctly fit your data with the function where is time in days (measured from your reference time), and is hours of daylight.  "
+},
+{
+  "id": "tab_important_dates",
+  "level": "2",
+  "url": "sec_recursion_sine.html#tab_important_dates",
+  "type": "Table",
+  "number": "89",
+  "title": "Important Dates",
+  "body": " Important Dates        Event  Date  Day Number  Daylight    Spring Equinox       Summer Solstice       Fall Equinox       Winter Solstice       "
+},
+{
+  "id": "sec_recursion_cosine",
+  "level": "1",
+  "url": "sec_recursion_cosine.html",
+  "type": "Subsection",
+  "number": "4.16.2",
+  "title": "Creating a Theoretical Model with the Cosine",
+  "body": " Creating a Theoretical Model with the Cosine  Use the data you recorded in to compute the appropriate parameters, , , , and to correctly fit your data with the function where is time in days (measured from your reference time), and is hours of daylight.  Note that some of these parameters may be the same as in your model using sine, but they will not all be the same!  We will now compare your sine and cosine models.   What is the period of the cosine function in your theoretical cosine model? How does this compare to the period of the function you defined in ?    What is the amplitude of the cosine function in your theoretical cosine model? How does this compare to the amplitude of the function you defined in ?    What is the midline of the cosine function in your theoretical cosine model? How does this compare to the midline of the function you defined in ?    What is the horizontal shift of the cosine function in your theoretical cosine model? How does this compare to the horizontal shift of the function you defined in ?     "
+},
+{
+  "id": "sec_theoretical_sine",
+  "level": "1",
+  "url": "sec_theoretical_sine.html",
+  "type": "Subsection",
+  "number": "4.16.3",
+  "title": "Creating a Regression Model with the Sine",
+  "body": " Creating a Regression Model with the Sine   We will now create a sine regression model in Desmos and then analyze it.    Creating the Model     Visit     to find a spreadsheet with hours of daylight by day of the year (day 1 through day 366) for all of 2024.    Open the Desmos Calcuator in another browser window.    Select\/highlight all of the data in the spreadsheet and copy it (Ctrl-C).    Click in a blank cell on the left in Desmos and paste the date. You should now have a table labeled with and . (Desmos will zoom out to fit the data.)    In another cell in Desmos, generate a regression model by typing   y_1 ~ a_s sin (k_s (x_1-x_s))+m_s   Desmos will choose values for , , , and to find a model of best fit .    In another cell in Desmos, type   h_s(x) = a_s sin (k_s (x_1-x_s))+m_s   This is the regression function .       Analyzing the Sine Regression Model  We will now analyze the regression model. Note that Desmos lists the regression parameters , , , , and , and their values. Use these values to answer the following questions.   What is the period of the sine function in your regression model? How does this compare to the period of the function you defined in ?    What is the amplitude of the sine function in your regression model? How does this compare to the amplitude of the function you defined in ?    What is the midline of the sine function in your regression model? How does this compare to the midline of the function you defined in ?    What is the horizontal shift of the sine function in your regression model? How does this compare to the horizontal shift of the function you defined in ?  Desmos gives additional information about the model, too.  The value of is a measure of how well the model predicts the values of the data. If you had , it would mean that the model predicts all of the data points perfectly, and if you had it would mean that the model has no predictive value at all.  There is also a list of residuals , labeled as . This is a list of differences between actual and predicted values.    Click on the box labeled plot next to , then click on the magnifying glass with a inside that appears next to to zoom to fit the plot of the residuals.    How much does the actual daylight vary from the regression model?    Enter the function for your theoretical model, into a new cell in Desmos, and then in yet another cell, enter h_s(x)-h_1(x) and adjust the window to fit. (Try .)  Describe what you notice.        "
+},
+{
+  "id": "sec_theoretical_sine-2-1",
+  "level": "2",
+  "url": "sec_theoretical_sine.html#sec_theoretical_sine-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sine regression model "
+},
+{
+  "id": "ssec_sine_regression-2",
+  "level": "2",
+  "url": "sec_theoretical_sine.html#ssec_sine_regression-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "regression model regression function "
+},
+{
+  "id": "ssec_analyzing_sine_regression-2",
+  "level": "2",
+  "url": "sec_theoretical_sine.html#ssec_analyzing_sine_regression-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "regression parameters residuals "
+},
+{
+  "id": "sec_theoretical_cosine",
+  "level": "1",
+  "url": "sec_theoretical_cosine.html",
+  "type": "Subsection",
+  "number": "4.16.4",
+  "title": "Creating a Regression Model with the cosine",
+  "body": " Creating a Regression Model with the cosine   We will now create a cosine regression model in Desmos and then analyze it.    Creating the Model     Visit     to find a spreadsheet with hours of daylight by day of the year (day 1 through day 366) for all of 2024.    Open the Desmos Calcuator in another browser window.    Select\/highlight all of the data in the spreadsheet and copy it (Ctrl-C).    Click in a blank cell on the left in Desmos and paste the date. You should now have a table labeled with and . (Desmos will zoom out to fit the data.)    In another cell in Desmos, generate a regression model by typing   y_1 ~ a_c cos (k_c (x_1-x_c))+m_c   Desmos will choose values for , , , and to find a model of best fit .    In another cell in Desmos, type   h_c(x) = a_c cos (k_c (x_1-x_c))+m_c   This is the regression function .       Analyzing the Cosine Regression Model  We will now analyze the regression model. Note that Desmos lists the regression parameters , , , , and , and their values. Use these values to answer the following questions.   What is the period of the cosine function in your regression model? How does this compare to the period of the function you defined in ?    What is the amplitude of the cosine function in your regression model? How does this compare to the amplitude of the function you defined in ?    What is the midline of the cosine function in your regression model? How does this compare to the midline of the function you defined in ?    What is the horizontal shift of the cosine function in your regression model? How does this compare to the horizontal shift of the function you defined in ?  Desmos gives additional information about the model, too.  The value of is a measure of how well the model predicts the values of the data. If you had , it would mean that the model predicts all of the data points perfectly, and if you had it would mean that the model has no predictive value at all.  There is also a list of residuals , labeled as . This is a list of differences between actual and predicted values.    Click on the box labeled plot next to , then click on the magnifying glass with a inside that appears next to to zoom to fit the plot of the residuals.    How much does the actual daylight vary from the regression model?    Enter the function for your theoretical model, into a new cell in Desmos, and then in yet another cell, enter h_c(x)-h_2(x) and adjust the window to fit. (Try .)  Describe what you notice.        "
+},
+{
+  "id": "sec_theoretical_cosine-2-1",
+  "level": "2",
+  "url": "sec_theoretical_cosine.html#sec_theoretical_cosine-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cosine regression model "
+},
+{
+  "id": "ssec_cosine_regression-2",
+  "level": "2",
+  "url": "sec_theoretical_cosine.html#ssec_cosine_regression-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "regression model regression function "
+},
+{
+  "id": "ssec_analyzing_cosine_regression-2",
+  "level": "2",
+  "url": "sec_theoretical_cosine.html#ssec_analyzing_cosine_regression-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "regression parameters residuals "
+},
+{
   "id": "progress_check_1",
   "level": "1",
   "url": "progress_check_1.html",

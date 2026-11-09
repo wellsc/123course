@@ -40,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="MATH 123 Fall 2026">
 <meta property="og:description" content="MATH 123 Fall 2026">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.55"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.55"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.56"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.56"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -62,15 +62,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.6';
+eBookConfig.runestone_version = '8.4.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/prefix-runtime.7e2ee203f2ecd6c8.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.35a40fea06647cf2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.7062ede5334282a6.css">
 <script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -426,6 +425,28 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="hours_of_daylight_project.html" class="internal"><span class="codenumber">4.16</span> <span class="title">Modeling Hours of Daylight</span></a></div>
+<ul id="ptx-toc-group-hours_of_daylight_project" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="daylight_intro.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_recursion_sine.html" class="internal"><span class="codenumber">4.16.1</span> <span class="title">Creating a Theoretical Model with the Sine</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_recursion_cosine.html" class="internal"><span class="codenumber">4.16.2</span> <span class="title">Creating a Theoretical Model with the Cosine</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_theoretical_sine.html" class="internal"><span class="codenumber">4.16.3</span> <span class="title">Creating a Regression Model with the Sine</span></a></div>
+<ul id="ptx-toc-group-sec_theoretical_sine" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_theoretical_sine.html#ssec_sine_regression" class="internal"><span class="codenumber">4.16.3.1</span> <span class="title">Creating the Model</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_theoretical_sine.html#ssec_analyzing_sine_regression" class="internal"><span class="codenumber">4.16.3.2</span> <span class="title">Analyzing the Sine Regression Model</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_theoretical_cosine.html" class="internal"><span class="codenumber">4.16.4</span> <span class="title">Creating a Regression Model with the cosine</span></a></div>
+<ul id="ptx-toc-group-sec_theoretical_cosine" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_theoretical_cosine.html#ssec_cosine_regression" class="internal"><span class="codenumber">4.16.4.1</span> <span class="title">Creating the Model</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_theoretical_cosine.html#ssec_analyzing_cosine_regression" class="internal"><span class="codenumber">4.16.4.2</span> <span class="title">Analyzing the Cosine Regression Model</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -511,7 +532,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec_practical_sine-2-1-1-1">We will show how to use sine, cosine, and similar triangles to solve a practical problem.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_practical_sine-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <figure class="figure figure-like" id="fig_river1"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
-<img src="generated/prefigure/gatehouses.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_river1-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_river1-2-description">
+<img src="generated/prefigure/gatehouses.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_river1-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_river1-2-description" style="width: 133.33%; margin-left: -16.67%;">
 <div class="para" id="fig_river1-2-1-1">An image showing a canal lock with a gatehouse on each side.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_river1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></details>
@@ -525,7 +546,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec_practical_sine-2-1-1-5">We start by drawing a copy of the unit circle centered on Amir’s position, and we will assign the distance between the two gatehouses to the variable <span class="process-math">\(d\text{.}\)</span> Then, by dropping a perpendicular from the point, <span class="process-math">\(P\text{,}\)</span> where the line from Amir to the far gatehouse crosses the circle, we have similar triangles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_practical_sine-2-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <figure class="figure figure-like" id="fig_river2"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
-<img src="generated/prefigure/gatehouses_unit_circle.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_river2-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_river2-2-description">
+<img src="generated/prefigure/gatehouses_unit_circle.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_river2-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_river2-2-description" style="width: 133.33%; margin-left: -16.67%;">
 <div class="para" id="fig_river2-2-1-1">Canal Lock with Unit Circle<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_river2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></details>
@@ -559,7 +580,7 @@ d&amp;=\frac{30\text{m}\sin(0.69474)}{\cos(0.69474)}\\
 <div class="para" id="exer_tree_height-1-2">To the nearest tenth of a meter, how tall is the tree? That is, what is the value of <span class="process-math">\(d\)</span> in meters?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer_tree_height-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <figure class="figure figure-like" id="fig_tree"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
-<img src="generated/prefigure/tree_height.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_tree-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_tree-2-description">
+<img src="generated/prefigure/tree_height.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_tree-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_tree-2-description" style="width: 200%; margin-left: -50%;">
 <div class="para" id="fig_tree-2-1-1">Image of a tree and an observer 10m away.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_tree-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></details>
@@ -600,7 +621,7 @@ d&amp;=10\text{m}\frac{\sin(\theta)}{\cos(\theta)}\\
 <div class="para" id="exer_train_dist-1-2">                                                        He observes that the train makes an angle of approximately <span class="process-math">\(0.98273\)</span> radians, and then one second later an angle of approximately <span class="process-math">\(0.89594\)</span> radians. How fast is the train travelling?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer_train_dist-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <figure class="figure figure-like" id="fig_train_position"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
-<img src="generated/prefigure/train.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_train_position-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_train_position-2-description">
+<img src="generated/prefigure/train.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig_train_position-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig_train_position-2-description" style="width: 133.33%; margin-left: -16.67%;">
 <div class="para" id="fig_train_position-2-1-1">Image of a train on a horizontal track with an observer vertically 10m below the track.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_train_position-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div></details>
