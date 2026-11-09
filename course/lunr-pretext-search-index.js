@@ -1765,6 +1765,24 @@ var ptx_lunr_docs = [
   "body": "regression parameters residuals "
 },
 {
+  "id": "snells_law-3",
+  "level": "1",
+  "url": "snells_law-3.html",
+  "type": "Worksheet",
+  "number": "4.17.1",
+  "title": "Applying Snell’s Law",
+  "body": " Applying Snell's Law    An observer sees an object through a sheet of plate glass, as shown in . The object appears to the observer to be at an angle of below horizontal. But, due to refraction, the image of the object (where the object seems to be) is lower than the object actually is.   An Object Seen Through Glass   A diagram showing the path of light and the apparent path from an object to an observer as the light moves from air to plate glass and then to air. The glass is represented by two vertical lines indicated to be three centimeters apart. There is a horizontal dotted line indicating the normal line, perpendicular to the glass. The light enters the glass at an angle of thirty degrees from the normal, is refracted as it enters the glass, and is refracted again as it exits the glass so that it exits again at thirty degrees.    n1=1.000273  n2=1.52  theta1=30*pi\/180  theta2=-asin(n1*sin(theta1)\/n2)  S=(0,0)  B=(cos(pi-theta1),sin(pi-theta1))  C=(-1,0)  r=(cos(theta2),sin(theta2))  left=((0,-1.5),(0,1.5))  right=((0.6,-1.5),(0.6,1.5))  ray=(S,r)  normal=(S,(1,0))  dim=((0,0.5),(0.6,0.5))   Air  Glass  Air    p1=intersect((right,ray))  dotted=(S,2*(S-B))  p2=intersect((dotted,right))  O=(cos(-pi\/6),sin(-pi\/6))+p1  I=O+p2-p1        p3=intersect((normal,right))  3\\text{cm}  30^{\\circ}  30^{\\circ}  \\theta  \\theta   Observer  Image  Object       The index of refraction for air is , while the index of refraction for plate glass is . Determine the vertical displacement between the object and its image.    "
+},
+{
+  "id": "snells_law-3-2",
+  "level": "2",
+  "url": "snells_law-3.html#snells_law-3-2",
+  "type": "Worksheet Exercise",
+  "number": "4.17.1.1",
+  "title": "",
+  "body": "  An observer sees an object through a sheet of plate glass, as shown in . The object appears to the observer to be at an angle of below horizontal. But, due to refraction, the image of the object (where the object seems to be) is lower than the object actually is.   An Object Seen Through Glass   A diagram showing the path of light and the apparent path from an object to an observer as the light moves from air to plate glass and then to air. The glass is represented by two vertical lines indicated to be three centimeters apart. There is a horizontal dotted line indicating the normal line, perpendicular to the glass. The light enters the glass at an angle of thirty degrees from the normal, is refracted as it enters the glass, and is refracted again as it exits the glass so that it exits again at thirty degrees.    n1=1.000273  n2=1.52  theta1=30*pi\/180  theta2=-asin(n1*sin(theta1)\/n2)  S=(0,0)  B=(cos(pi-theta1),sin(pi-theta1))  C=(-1,0)  r=(cos(theta2),sin(theta2))  left=((0,-1.5),(0,1.5))  right=((0.6,-1.5),(0.6,1.5))  ray=(S,r)  normal=(S,(1,0))  dim=((0,0.5),(0.6,0.5))   Air  Glass  Air    p1=intersect((right,ray))  dotted=(S,2*(S-B))  p2=intersect((dotted,right))  O=(cos(-pi\/6),sin(-pi\/6))+p1  I=O+p2-p1        p3=intersect((normal,right))  3\\text{cm}  30^{\\circ}  30^{\\circ}  \\theta  \\theta   Observer  Image  Object       The index of refraction for air is , while the index of refraction for plate glass is . Determine the vertical displacement between the object and its image.   "
+},
+{
   "id": "progress_check_1",
   "level": "1",
   "url": "progress_check_1.html",
