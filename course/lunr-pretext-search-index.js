@@ -1783,6 +1783,141 @@ var ptx_lunr_docs = [
   "body": "  An observer sees an object through a sheet of plate glass, as shown in . The object appears to the observer to be at an angle of below horizontal. But, due to refraction, the image of the object (where the object seems to be) is lower than the object actually is.   An Object Seen Through Glass   A diagram showing the path of light and the apparent path from an object to an observer as the light moves from air to plate glass and then to air. The glass is represented by two vertical lines indicated to be three centimeters apart. There is a horizontal dotted line indicating the normal line, perpendicular to the glass. The light enters the glass at an angle of thirty degrees from the normal, is refracted as it enters the glass, and is refracted again as it exits the glass so that it exits again at thirty degrees.    n1=1.000273  n2=1.52  theta1=30*pi\/180  theta2=-asin(n1*sin(theta1)\/n2)  S=(0,0)  B=(cos(pi-theta1),sin(pi-theta1))  C=(-1,0)  r=(cos(theta2),sin(theta2))  left=((0,-1.5),(0,1.5))  right=((0.6,-1.5),(0.6,1.5))  ray=(S,r)  normal=(S,(1,0))  dim=((0,0.5),(0.6,0.5))   Air  Glass  Air    p1=intersect((right,ray))  dotted=(S,2*(S-B))  p2=intersect((dotted,right))  O=(cos(-pi\/6),sin(-pi\/6))+p1  I=O+p2-p1        p3=intersect((normal,right))  3\\text{cm}  30^{\\circ}  30^{\\circ}  \\theta  \\theta   Observer  Image  Object       The index of refraction for air is , while the index of refraction for plate glass is . Determine the vertical displacement between the object and its image.   "
 },
 {
+  "id": "sec_angle_and_dist",
+  "level": "1",
+  "url": "sec_angle_and_dist.html",
+  "type": "Subsection",
+  "number": "4.18.1",
+  "title": "Distance and Angle",
+  "body": " Distance and Angle  Recall that distance travelled around a circle and the angle travelled are related in a very simple way when we measure the angle in radians.   Finding Distances from Angles    A Circle Representing a Carousel    A diagram showing a carousel with thirty-six cars equally spaced around a circle of radius seven meters.     C=(0,0)  num_cars=36  rot_angle=2*pi\/num_cars  r=7  R=(r,0)  M=r*(cos(3*rot_angle),sin(3*rot_angle))  car_size=2*pi*r\/num_cars*0.6       \\theta    ${r}\\text{m}              A person is riding on a carousel that has a radius of m. We place our coordinates axes so that they begin at the point .     When they have travelled through an angle of radian, what distance along the circumference of the carousel have they travelled?      When they have travelled through an angle of radians, what distance along the circumference of the carousel have they travelled?      Write a formula for the distance, travelled along the circumference of the carousel when they have travelled through an angle of radians.      Repeat the previous questions for a carousel whose radius is m.  Based on your results, write a formula for the distance, travelled along the circumference of a circle of radius when they have travelled through an angle of radians.      Finding Angles from Distances   We will look again at person riding on a carousel that has a radius of m.     When they have travelled m along the circumference of the carousel through what angle of (in radians) have they travelled?      When they have travelled m along the circumference of the carousel through what angle of (in radians) have they travelled?      Write a formula to find the angle (in radians) they have travelled when they have travelled m along the circumference of the carousel.      Write a formula to find the angle (in radians) they have travelled when they have travelled m along the circumference of a circle with radius .     "
+},
+{
+  "id": "exer_dist_from_angle",
+  "level": "2",
+  "url": "sec_angle_and_dist.html#exer_dist_from_angle",
+  "type": "Checkpoint",
+  "number": "94",
+  "title": "Finding Distances from Angles.",
+  "body": " Finding Distances from Angles    A Circle Representing a Carousel    A diagram showing a carousel with thirty-six cars equally spaced around a circle of radius seven meters.     C=(0,0)  num_cars=36  rot_angle=2*pi\/num_cars  r=7  R=(r,0)  M=r*(cos(3*rot_angle),sin(3*rot_angle))  car_size=2*pi*r\/num_cars*0.6       \\theta    ${r}\\text{m}              A person is riding on a carousel that has a radius of m. We place our coordinates axes so that they begin at the point .     When they have travelled through an angle of radian, what distance along the circumference of the carousel have they travelled?      When they have travelled through an angle of radians, what distance along the circumference of the carousel have they travelled?      Write a formula for the distance, travelled along the circumference of the carousel when they have travelled through an angle of radians.      Repeat the previous questions for a carousel whose radius is m.  Based on your results, write a formula for the distance, travelled along the circumference of a circle of radius when they have travelled through an angle of radians.    "
+},
+{
+  "id": "exer_angle_from_dist",
+  "level": "2",
+  "url": "sec_angle_and_dist.html#exer_angle_from_dist",
+  "type": "Checkpoint",
+  "number": "96",
+  "title": "Finding Angles from Distances.",
+  "body": " Finding Angles from Distances   We will look again at person riding on a carousel that has a radius of m.     When they have travelled m along the circumference of the carousel through what angle of (in radians) have they travelled?      When they have travelled m along the circumference of the carousel through what angle of (in radians) have they travelled?      Write a formula to find the angle (in radians) they have travelled when they have travelled m along the circumference of the carousel.      Write a formula to find the angle (in radians) they have travelled when they have travelled m along the circumference of a circle with radius .    "
+},
+{
+  "id": "sec_ang_and_lin_vel",
+  "level": "1",
+  "url": "sec_ang_and_lin_vel.html",
+  "type": "Subsection",
+  "number": "4.18.2",
+  "title": "Angular Velocity and Speed",
+  "body": " Angular Velocity and Speed  Using the relationship between angle and distance, we can now move to their rates of change , giving us a relationship between angular velocity , which is the rate at which the angle changes, and speed , which is the rate at which distance changes.  We will eventually move to calculating linear velocity , but because linear velocity is a vector quantity, what we will be calculating below is speed , which is the magnitude of the linear velocity. We will make the distinction clearer later in .   Finding Angular Velocity from Speed   We will look again at person riding on a carousel that has a radius of m.     If they have travelled m along the circumference of the carousel in seconds, what is their speed (in meters per second)?    Recall that speed is distance per unit time.      If they have travelled m along the circumference of the carousel in seconds, how many radians per second have they travelled? (This is their angular velocity .)    Find the angle through which they have travelled and divide it by the number of seconds.      Finding Speed from Angular Velocity   We will look again at person riding on a carousel that has a radius of m.     When they have travelled through an angle of radian in seconds, what is their angular velocity?      When they have travelled through an angle of radian in seconds, what is their speed (in meters per second)?     "
+},
+{
+  "id": "sec_ang_and_lin_vel-2",
+  "level": "2",
+  "url": "sec_ang_and_lin_vel.html#sec_ang_and_lin_vel-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rates of change angular velocity speed "
+},
+{
+  "id": "sec_ang_and_lin_vel-3",
+  "level": "2",
+  "url": "sec_ang_and_lin_vel.html#sec_ang_and_lin_vel-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear velocity speed "
+},
+{
+  "id": "exer_angular_from_linear",
+  "level": "2",
+  "url": "sec_ang_and_lin_vel.html#exer_angular_from_linear",
+  "type": "Checkpoint",
+  "number": "97",
+  "title": "Finding Angular Velocity from Speed.",
+  "body": " Finding Angular Velocity from Speed   We will look again at person riding on a carousel that has a radius of m.     If they have travelled m along the circumference of the carousel in seconds, what is their speed (in meters per second)?    Recall that speed is distance per unit time.      If they have travelled m along the circumference of the carousel in seconds, how many radians per second have they travelled? (This is their angular velocity .)    Find the angle through which they have travelled and divide it by the number of seconds.    "
+},
+{
+  "id": "exer_vel_from_ang_vel",
+  "level": "2",
+  "url": "sec_ang_and_lin_vel.html#exer_vel_from_ang_vel",
+  "type": "Checkpoint",
+  "number": "98",
+  "title": "Finding Speed from Angular Velocity.",
+  "body": " Finding Speed from Angular Velocity   We will look again at person riding on a carousel that has a radius of m.     When they have travelled through an angle of radian in seconds, what is their angular velocity?      When they have travelled through an angle of radian in seconds, what is their speed (in meters per second)?    "
+},
+{
+  "id": "sec_ang_vel_problem",
+  "level": "1",
+  "url": "sec_ang_vel_problem.html",
+  "type": "Worksheet",
+  "number": "4.18.3",
+  "title": "Linear Velocity and Angular Velocity",
+  "body": " Linear Velocity and Angular Velocity  As mentioned earlier, linear velocity is a vector quantity . Thus, it has a magnitude and a direction, and the magnitude of linear velocity is speed .  Another distinction between the speeds we calculated in and what we will be doing here is that we calculated average speeds , whereas what we are going to calculate in this subsection is instantaneous velocity .  An average speed is simply total distance divided by total time. So, for example, if you were to drive from Grand Rapids to Kalamazoo, to calculate your average speed you would record your mileage (from your odometer) before leaving and the time at which you are leaving, and then after driving to Kalamazoo you calculate the distance travelled (your new mileage minus the one you recorded) and the elapsed time, and then divide. So, if you drove a distance of miles in one hour and minutes ( hr), your average speed for the trip would be .  But, if you are driving from Grand Rapids to Kalamazoo and want to know your speed, you don't pull off the road, look at your odometer and your watch, and divide. Instead you look at your speedometer, which gives you your instantaneous speed.   An Easy Problem    A Train and a Camera    A diagram representing a train being followed by a camera.     C=(0,0)  T=(0,5)  L=(-3.5,5)  R=(3.5,5)  cab_lr=(0,5.1)  cablength=0.6  cabheight=0.2  cab_ll=cab_lr-(cablength,0)  cab_ul=cab_ll+(0,cabheight)  cab_window=cab_ul+(cablength-cabheight,0)        50\\text{m}  camera                  15.6\\text{m}\/\\text{s}       A train is travelling (due east) at a speed of . An observer is following the front of the train with a camera from a spot m south of the railway.  When the front of the train is at its closest point to the camera (so, due north of the camera in this case), how fast must the camera turn (in radians per second) to follow the train?    The radius of rotation is m, so the angular velocity is     Now things get more complicated, because the relationship between linear velocity and angular velocity is in fact between angular velocity and tangential velocity . is easy because the velocity given along the rails, and the rails are perpendicular to the line from the camera to the train. In other words, the train's velocity is along a tangent line to the rotation, so it is tangential to the rotation.  In the next example, the train has a velocity that is not tangential to the rotation. In addition, the distance to the train is no longer m!   A Harder Problem   A train is travelling (due east) at a speed of . An observer is following the front of the train with a camera from a spot m south of the railway.  We want to find the rate at which the camera is turning when the front of the train is at an angle of radians to the right of the nearest point.  We will now apply Polya's four steps for problem solving, and begin by drawing a picture.   A Train and a Camera    A diagram representing a train being followed by a camera.     C=(0,0)  T=(0,5)  L=(-3.5,5)  R=(3.5,5)  cab_lr=(1.5,5.1)  cablength=0.6  cabheight=0.2  cab_ll=cab_lr-(cablength,0)  cab_ul=cab_ll+(0,cabheight)  cab_window=cab_ul+(cablength-cabheight,0)        50\\text{m}   camera                  15.6\\text{m}\/\\text{s}           Understand the Problem   The difficulties with this problem are that the distance to the train is not given, and the train's velocity is not perpendicular to the line of sight, and so is not tangent to the rotation. First, we label the distance to the train as . This is the radius of gyration . Then, we draw part of the circle of radius (centered at the camera) that goes through the front of the train.  Next, we draw the line that is tangent to the circle at the point where the front of the train is. We label this line .  We draw a vector, , representing the train's velocity, and we draw the projection of onto the tangent line, , and the component that is perpendicular to the tangent line (and thus parallel to the line of sight), .  If we know the distance , and the tangential velocity, , our problem is the same as with different numbers.     Make a Plan   Our plan is as follows:  Calculate the distance from the camera to the front of the train.  Find a unit vector that points in the direction from the camera to the train. We will call it .  Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector that points in the direction of the tangent line. Call this .  Find the projection of the velocity vector onto . This will be .  Use the radius of gyration and the magnitude of to find the angular velocity.       Carry Out the Plan         Calculate the distance from the camera to the front of the train.      Find a unit vector, , that points in the direction from the camera to the train.      Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector, , that points in the direction of the tangent line. Call this .      Find the projection, , of the velocity vector onto .      Use the radius of gyration and the magnitude of to find the angular velocity.         Look Back   What tools did we need to solve this problem?  Can you think of other situations where you might need to calculate angular velocity?  What is the ratio of the angular velocity in this problem to the angular velocity in ?  What would change if we had an angle different from ? Can you solve the problem for an unspecified angle, ? What would the ratio of the angular velocity in that problem be to the angular velocity in ?  How would the problem change if we were given the angular velocity and asked to find the (linear) velocity of the train?       "
+},
+{
+  "id": "sec_ang_vel_problem-2",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#sec_ang_vel_problem-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear velocity "
+},
+{
+  "id": "sec_ang_vel_problem-3",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#sec_ang_vel_problem-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "average speeds instantaneous velocity "
+},
+{
+  "id": "sec_ang_vel_problem-4",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#sec_ang_vel_problem-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "average speed "
+},
+{
+  "id": "exer_easy",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#exer_easy",
+  "type": "Worksheet Exercise",
+  "number": "4.18.3.1",
+  "title": "An Easy Problem.",
+  "body": " An Easy Problem    A Train and a Camera    A diagram representing a train being followed by a camera.     C=(0,0)  T=(0,5)  L=(-3.5,5)  R=(3.5,5)  cab_lr=(0,5.1)  cablength=0.6  cabheight=0.2  cab_ll=cab_lr-(cablength,0)  cab_ul=cab_ll+(0,cabheight)  cab_window=cab_ul+(cablength-cabheight,0)        50\\text{m}  camera                  15.6\\text{m}\/\\text{s}       A train is travelling (due east) at a speed of . An observer is following the front of the train with a camera from a spot m south of the railway.  When the front of the train is at its closest point to the camera (so, due north of the camera in this case), how fast must the camera turn (in radians per second) to follow the train?    The radius of rotation is m, so the angular velocity is    "
+},
+{
+  "id": "sec_ang_vel_problem-7",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#sec_ang_vel_problem-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tangential velocity tangent line "
+},
+{
+  "id": "sec_ang_vel_problem-9",
+  "level": "2",
+  "url": "sec_ang_vel_problem.html#sec_ang_vel_problem-9",
+  "type": "Worksheet Exercise",
+  "number": "4.18.3.2",
+  "title": "A Harder Problem.",
+  "body": " A Harder Problem   A train is travelling (due east) at a speed of . An observer is following the front of the train with a camera from a spot m south of the railway.  We want to find the rate at which the camera is turning when the front of the train is at an angle of radians to the right of the nearest point.  We will now apply Polya's four steps for problem solving, and begin by drawing a picture.   A Train and a Camera    A diagram representing a train being followed by a camera.     C=(0,0)  T=(0,5)  L=(-3.5,5)  R=(3.5,5)  cab_lr=(1.5,5.1)  cablength=0.6  cabheight=0.2  cab_ll=cab_lr-(cablength,0)  cab_ul=cab_ll+(0,cabheight)  cab_window=cab_ul+(cablength-cabheight,0)        50\\text{m}   camera                  15.6\\text{m}\/\\text{s}           Understand the Problem   The difficulties with this problem are that the distance to the train is not given, and the train's velocity is not perpendicular to the line of sight, and so is not tangent to the rotation. First, we label the distance to the train as . This is the radius of gyration . Then, we draw part of the circle of radius (centered at the camera) that goes through the front of the train.  Next, we draw the line that is tangent to the circle at the point where the front of the train is. We label this line .  We draw a vector, , representing the train's velocity, and we draw the projection of onto the tangent line, , and the component that is perpendicular to the tangent line (and thus parallel to the line of sight), .  If we know the distance , and the tangential velocity, , our problem is the same as with different numbers.     Make a Plan   Our plan is as follows:  Calculate the distance from the camera to the front of the train.  Find a unit vector that points in the direction from the camera to the train. We will call it .  Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector that points in the direction of the tangent line. Call this .  Find the projection of the velocity vector onto . This will be .  Use the radius of gyration and the magnitude of to find the angular velocity.       Carry Out the Plan         Calculate the distance from the camera to the front of the train.      Find a unit vector, , that points in the direction from the camera to the train.      Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector, , that points in the direction of the tangent line. Call this .      Find the projection, , of the velocity vector onto .      Use the radius of gyration and the magnitude of to find the angular velocity.         Look Back   What tools did we need to solve this problem?  Can you think of other situations where you might need to calculate angular velocity?  What is the ratio of the angular velocity in this problem to the angular velocity in ?  What would change if we had an angle different from ? Can you solve the problem for an unspecified angle, ? What would the ratio of the angular velocity in that problem be to the angular velocity in ?  How would the problem change if we were given the angular velocity and asked to find the (linear) velocity of the train?      "
+},
+{
   "id": "progress_check_1",
   "level": "1",
   "url": "progress_check_1.html",

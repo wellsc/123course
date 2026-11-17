@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefig_carousel-figure" width="630" height="630" viewBox="0 0 630 630">
+  <defs>
+    <clipPath id="prefig_carousel-__clipPath-0">
+      <rect x="15.0" y="15.0" width="600.0" height="600.0"/>
+    </clipPath>
+    <clipPath id="prefig_carousel-__clipPath-1">
+      <rect x="15.0" y="15.0" width="600.0" height="600.0"/>
+    </clipPath>
+    <marker id="prefig_carousel-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="prefig_carousel-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefig_carousel-arrow-head-start-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefig_carousel-arrow-head-start-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefig_carousel-axes" stroke="black" stroke-width="1">
+    <line id="prefig_carousel-__line-0" x1="15.0" y1="315.0" x2="615.0" y2="315.0" stroke="black" stroke-width="1"/>
+    <line id="prefig_carousel-__line-1" x1="315.0" y1="615.0" x2="315.0" y2="15.0" stroke="black" stroke-width="1"/>
+  </g>
+  <circle id="prefig_carousel-__circle-0" cx="315.0" cy="315.0" r="4" stroke="black" stroke-width="2" fill="black"/>
+  <path id="prefig_carousel-__path-0" d="M 577.5 315.0 L 577.0 298.5 L 575.4 282.1 L 572.9 265.8 L 569.3 249.7 L 564.7 233.9 L 559.1 218.4 L 552.5 203.2 L 545.0 188.5 L 536.6 174.3 L 527.4 160.7 L 517.3 147.7 L 506.4 135.3 L 494.7 123.6 L 482.3 112.7 L 469.3 102.6 L 455.7 93.4 L 441.5 85.0 L 426.8 77.5 L 411.6 70.9 L 396.1 65.3 L 380.3 60.7 L 364.2 57.1 L 347.9 54.6 L 331.5 53.0 L 315.0 52.5 L 298.5 53.0 L 282.1 54.6 L 265.8 57.1 L 249.7 60.7 L 233.9 65.3 L 218.4 70.9 L 203.2 77.5 L 188.5 85.0 L 174.3 93.4 L 160.7 102.6 L 147.7 112.7 L 135.3 123.6 L 123.6 135.3 L 112.7 147.7 L 102.6 160.7 L 93.4 174.3 L 85.0 188.5 L 77.5 203.2 L 70.9 218.4 L 65.3 233.9 L 60.7 249.7 L 57.1 265.8 L 54.6 282.1 L 53.0 298.5 L 52.5 315.0 L 53.0 331.5 L 54.6 347.9 L 57.1 364.2 L 60.7 380.3 L 65.3 396.1 L 70.9 411.6 L 77.5 426.8 L 85.0 441.5 L 93.4 455.7 L 102.6 469.3 L 112.7 482.3 L 123.6 494.7 L 135.3 506.4 L 147.7 517.3 L 160.7 527.4 L 174.3 536.6 L 188.5 545.0 L 203.2 552.5 L 218.4 559.1 L 233.9 564.7 L 249.7 569.3 L 265.8 572.9 L 282.1 575.4 L 298.5 577.0 L 315.0 577.5 L 331.5 577.0 L 347.9 575.4 L 364.2 572.9 L 380.3 569.3 L 396.1 564.7 L 411.6 559.1 L 426.8 552.5 L 441.5 545.0 L 455.7 536.6 L 469.3 527.4 L 482.3 517.3 L 494.7 506.4 L 506.4 494.7 L 517.3 482.3 L 527.4 469.3 L 536.6 455.7 L 545.0 441.5 L 552.5 426.8 L 559.1 411.6 L 564.7 396.1 L 569.3 380.3 L 572.9 364.2 L 575.4 347.9 L 577.0 331.5 L 577.5 315.0 Z" stroke="black" stroke-width="2" fill="none"/>
+  <g id="prefig_carousel-__g-0">
+    <g id="prefig_carousel-__label-0" transform="translate(396.3,294.3) translate(0.0,-6.5)">
+      <g id="prefig_carousel-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="8.488px" height="12.944px" role="img" focusable="false" viewBox="0 -705 469 715" x="0.0" y="0.0">
+          <defs>
+            <path id="prefig_carousel-MJX-2-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="theta">
+                <use data-c="1D703" xlink:href="#prefig_carousel-MJX-2-TEX-I-1D703"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" marker-start="url(#prefig_carousel-arrow-head-start-2_None_24_60-black)" d="M 385.5 277.1 L 385.7 277.5 L 385.8 277.8 L 386.0 278.2 L 386.2 278.5 L 386.4 278.9 L 386.6 279.2 L 386.7 279.6 L 386.9 279.9 L 387.1 280.3 L 387.3 280.7 L 387.4 281.0 L 387.6 281.4 L 387.8 281.7 L 387.9 282.1 L 388.1 282.4 L 388.2 282.8 L 388.4 283.2 L 388.6 283.5 L 388.7 283.9 L 388.9 284.3 L 389.0 284.6 L 389.2 285.0 L 389.3 285.4 L 389.4 285.7 L 389.6 286.1 L 389.7 286.5 L 389.9 286.8 L 390.0 287.2 L 390.1 287.6 L 390.3 287.9 L 390.4 288.3 L 390.5 288.7 L 390.7 289.1 L 390.8 289.4 L 390.9 289.8 L 391.1 290.2 L 391.2 290.5 L 391.3 290.9 L 391.4 291.3 L 391.5 291.7 L 391.6 292.1 L 391.8 292.4 L 391.9 292.8 L 392.0 293.2 L 392.1 293.6 L 392.2 294.0 L 392.3 294.3 L 392.4 294.7 L 392.5 295.1 L 392.6 295.5 L 392.7 295.9 L 392.8 296.2 L 392.9 296.6 L 393.0 297.0 L 393.0 297.4 L 393.1 297.8 L 393.2 298.2 L 393.3 298.6 L 393.4 298.9 L 393.4 299.3 L 393.5 299.7 L 393.6 300.1 L 393.7 300.5 L 393.7 300.9 L 393.8 301.3 L 393.9 301.7 L 393.9 302.0 L 394.0 302.4 L 394.1 302.8 L 394.1 303.2 L 394.2 303.6 L 394.2 304.0 L 394.3 304.4 L 394.3 304.8 L 394.4 305.2 L 394.4 305.6 L 394.5 305.9 L 394.5 306.3 L 394.6 306.7 L 394.6 307.1 L 394.6 307.5 L 394.7 307.9 L 394.7 308.3 L 394.8 308.7 L 394.8 309.1 L 394.8 309.5 L 394.8 309.9 L 394.9 310.3 L 394.9 310.7 L 394.9 311.1 L 394.9 311.5 L 394.9 311.8 L 395.0 312.2 L 395.0 312.6 L 395.0 313.0 L 395.0 313.4 L 395.0 313.8 L 395.0 314.2 L 395.0 314.6 L 395.0 315.0"/>
+  </g>
+  <g id="prefig_carousel-__line-2">
+    <g transform="translate(315.0,315.0) rotate(-30.0)">
+      <g id="prefig_carousel-__label-1" transform="translate(131.2,-4.0) translate(-12.1,-12.6)">
+        <g id="prefig_carousel-__g-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="24.128px" height="12.632px" role="img" focusable="false" viewBox="0 -676 1333 698" x="0.0" y="0.0">
+            <defs>
+              <path id="prefig_carousel-MJX-3-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"/>
+              <path id="prefig_carousel-MJX-3-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-annotation="clearspeak:unit" data-semantic-id="3" data-semantic-children="0,1" data-semantic-collapsed="(3 (c 2) 0 1)" data-semantic-speech="7 m">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="7">
+                  <use data-c="37" xlink:href="#prefig_carousel-MJX-3-TEX-N-37"/>
+                </g>
+                <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="latinletter" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="1" data-semantic-parent="3" data-semantic-speech="m" transform="translate(500,0)">
+                  <use data-c="6D" xlink:href="#prefig_carousel-MJX-3-TEX-N-6D"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <line x1="315.0" y1="315.0" x2="540.2" y2="185.0" stroke="black" stroke-width="2" stroke-dasharray="4 4" fill="none" marker-end="url(#prefig_carousel-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="prefig_carousel-__group-0">
+    <path id="prefig_carousel-__path-1-k_0" d="M 577.5 328.7 L 585.0 328.7 L 585.0 301.3 L 577.5 301.3 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-2-k_1" d="M 575.9 283.0 L 583.3 281.7 L 578.5 254.6 L 571.1 255.9 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-3-k_2" d="M 566.4 238.1 L 573.4 235.6 L 564.0 209.7 L 557.0 212.3 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-4-k_3" d="M 549.2 195.7 L 555.7 191.9 L 542.0 168.1 L 535.5 171.8 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-5-k_4" d="M 524.9 156.8 L 530.7 152.0 L 513.0 130.9 L 507.3 135.7 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-6-k_5" d="M 494.3 122.7 L 499.1 117.0 L 478.0 99.3 L 473.2 105.1 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-7-k_6" d="M 458.2 94.5 L 461.9 88.0 L 438.1 74.3 L 434.3 80.8 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-8-k_7" d="M 417.7 73.0 L 420.3 66.0 L 394.4 56.6 L 391.9 63.6 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-9-k_8" d="M 374.1 58.9 L 375.4 51.5 L 348.3 46.7 L 347.0 54.1 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-10-k_9" d="M 328.7 52.5 L 328.7 45.0 L 301.3 45.0 L 301.3 52.5 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-11-k_10" d="M 283.0 54.1 L 281.7 46.7 L 254.6 51.5 L 255.9 58.9 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-12-k_11" d="M 238.1 63.6 L 235.6 56.6 L 209.7 66.0 L 212.3 73.0 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-13-k_12" d="M 195.7 80.8 L 191.9 74.3 L 168.1 88.0 L 171.8 94.5 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-14-k_13" d="M 156.8 105.1 L 152.0 99.3 L 130.9 117.0 L 135.7 122.7 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-15-k_14" d="M 122.7 135.7 L 117.0 130.9 L 99.3 152.0 L 105.1 156.8 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-16-k_15" d="M 94.5 171.8 L 88.0 168.1 L 74.3 191.9 L 80.8 195.7 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-17-k_16" d="M 73.0 212.3 L 66.0 209.7 L 56.6 235.6 L 63.6 238.1 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-18-k_17" d="M 58.9 255.9 L 51.5 254.6 L 46.7 281.7 L 54.1 283.0 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-19-k_18" d="M 52.5 301.3 L 45.0 301.3 L 45.0 328.7 L 52.5 328.7 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-20-k_19" d="M 54.1 347.0 L 46.7 348.3 L 51.5 375.4 L 58.9 374.1 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-21-k_20" d="M 63.6 391.9 L 56.6 394.4 L 66.0 420.3 L 73.0 417.7 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-22-k_21" d="M 80.8 434.3 L 74.3 438.1 L 88.0 461.9 L 94.5 458.2 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-23-k_22" d="M 105.1 473.2 L 99.3 478.0 L 117.0 499.1 L 122.7 494.3 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-24-k_23" d="M 135.7 507.3 L 130.9 513.0 L 152.0 530.7 L 156.8 524.9 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-25-k_24" d="M 171.8 535.5 L 168.1 542.0 L 191.9 555.7 L 195.7 549.2 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-26-k_25" d="M 212.3 557.0 L 209.7 564.0 L 235.6 573.4 L 238.1 566.4 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-27-k_26" d="M 255.9 571.1 L 254.6 578.5 L 281.7 583.3 L 283.0 575.9 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-28-k_27" d="M 301.3 577.5 L 301.3 585.0 L 328.7 585.0 L 328.7 577.5 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-29-k_28" d="M 347.0 575.9 L 348.3 583.3 L 375.4 578.5 L 374.1 571.1 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-30-k_29" d="M 391.9 566.4 L 394.4 573.4 L 420.3 564.0 L 417.7 557.0 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-31-k_30" d="M 434.3 549.2 L 438.1 555.7 L 461.9 542.0 L 458.2 535.5 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-32-k_31" d="M 473.2 524.9 L 478.0 530.7 L 499.1 513.0 L 494.3 507.3 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-33-k_32" d="M 507.3 494.3 L 513.0 499.1 L 530.7 478.0 L 524.9 473.2 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-34-k_33" d="M 535.5 458.2 L 542.0 461.9 L 555.7 438.1 L 549.2 434.3 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-35-k_34" d="M 557.0 417.7 L 564.0 420.3 L 573.4 394.4 L 566.4 391.9 Z" stroke="black" stroke-width="2" fill="none"/>
+    <path id="prefig_carousel-__path-36-k_35" d="M 571.1 374.1 L 578.5 375.4 L 583.3 348.3 L 575.9 347.0 Z" stroke="black" stroke-width="2" fill="none"/>
+  </g>
+</svg>
