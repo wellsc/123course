@@ -24,7 +24,7 @@
                                                         A diagram representing a train being followed by a camera.
                                                 </p>
                                         </description>
-                                        <xi:include href="./train2.xml"/>
+                                        <xi:include href="./train1.xml"/>
                                 </image>
                         </figure>
                         <p>
@@ -81,7 +81,7 @@
                                                         A diagram representing a train being followed by a camera.
                                                 </p>
                                         </description>
-                                        <xi:include href="./train1.xml"/>
+                                        <xi:include href="./train2.xml"/>
                                 </image>
                         </figure>
                                 <p>

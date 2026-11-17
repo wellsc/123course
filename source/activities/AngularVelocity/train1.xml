@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<prefigure xmlns="https://prefigure.org" label="prefig_train2">
-<diagram dimensions="(800,700)" margins="5">
+<prefigure xmlns="https://prefigure.org" label="prefig_train1">
+<diagram dimensions="(500,350)" margins="5">
   <definition>C=(0,0)</definition>
   <definition>T=(0,5)</definition>
   <definition>L=(-3.5,5)</definition>
   <definition>R=(3.5,5)</definition>
-  <definition>cab_lr=(1.5,5.1)</definition>
+  <definition>cab_lr=(0,5)</definition>
   <definition>cablength=0.6</definition>
   <definition>cabheight=0.2</definition>
   <definition>cab_ll=cab_lr-(cablength,0)</definition>
   <definition>cab_ul=cab_ll+(0,cabheight)</definition>
   <definition>cab_window=cab_ul+(cablength-cabheight,0)</definition>
-  <coordinates bbox="(-4,-1,4,6)">
+  <coordinates bbox="(-4,-1,6,6)">
 
     <!-- Train track -->
-    <line endpoints="(L,R)" infinite="yes" />
+    <line endpoints="(L,R)" infinite="yes" thickness="1"/>
 
     <!-- Camera arc -->
     <arc center="C" 
@@ -27,8 +27,6 @@
 
     <!-- Perpendicular from camera to train track -->
     <line endpoints="(C,T)" dash="4 4"><m>50\text{m}</m></line>
-
-    <line endpoints="(C,cab_lr)" dash="4 4" />
     
     <point p="C" fill="black">camera</point>
     
@@ -49,7 +47,7 @@
     </repeat>
     
     <!-- Train velocity -->
-    <line endpoints="(cab_lr+(cabheight,cabheight/2),cab_lr+(cabheight,cabheight/2)+(2,0))" thickness="1" arrows="1"><m>15.6\text{m}/\text{s}</m></line>
+    <line endpoints="(cab_lr,cab_lr+(2*1.56,0))" thickness="2" arrows="1"><m>15.6\text{m}/\text{s}</m></line>
   </coordinates>
 </diagram>
 </prefigure>
