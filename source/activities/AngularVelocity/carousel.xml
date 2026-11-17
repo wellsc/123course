@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<prefigure xmlns="https://prefigure.org" label="prefig_carousel">
+<diagram dimensions="(600,600)" margins="15">
+  <definition>C=(0,0)</definition>
+  <definition>num_cars=36</definition>
+  <definition>rot_angle=2*pi/num_cars</definition>
+  <definition>r=7</definition>
+  <definition>R=(r,0)</definition>
+  <definition>M=r*(cos(3*rot_angle),sin(3*rot_angle))</definition>
+  <definition>car_size=2*pi*r/num_cars*0.6</definition>
+  
+  <coordinates bbox="(-(r+1),-(r+1),(r+1),(r+1))">
+    <axes decorations="no" thickness="1"/>
+    <point p="C" fill="black" />
+    <circle center="C" radius="r" />
+    <angle-marker 
+            points="(R,C,M)" 
+            arrow="yes"
+            radius="80" >
+            <m>\theta</m>
+    </angle-marker>
+    <line 
+        endpoints="(C,M)" 
+        arrows="1" 
+        dash="4 4" 
+        thickness="2">
+        <m>${r}\text{m}</m>
+    </line>
+    <repeat parameter="k=0..(num_cars-1)" >
+      <transform>
+        <rotate by="k*rot_angle" degrees="no"/>
+        <rectangle
+                lower-left="(r,-car_size/2)"
+                dimensions="(r/35,car_size)"
+                stroke="black"
+        />
+      </transform>
+    </repeat>
+  </coordinates>
+</diagram>
+</prefigure>

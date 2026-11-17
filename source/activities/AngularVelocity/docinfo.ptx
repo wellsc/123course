@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docinfo>
+    <rename element="inlineexercise" xml:lang="en-US">Exploration</rename>
+    <rename element="divisionalexercise" xml:lang="en-US">Exercise</rename>
+    <rename element="exercises" xml:lang="en-US">Exercises</rename>
+    <rename element="exercisegroup" xml:lang="en-US">Exercise Group</rename>
+          <macros>
+                  \DeclareMathOperator{\Len}{len}
+                  \DeclareMathOperator{\uncos}{uncos}
+                  \DeclareMathOperator{\Cos}{Cos}
+                  \DeclareMathOperator{\unsin}{unsin}
+                  \DeclareMathOperator{\Sin}{Sin}
+                  \DeclareMathOperator{\untan}{untan}
+                  \DeclareMathOperator{\Tan}{Tan}
+                  \DeclareMathOperator{\Seq}{Seq}
+                  \newcommand{\abs}[1]{\left\lvert{#1}\right\rvert}
+                  \newcommand{\Abs}[1]{\left\lVert{#1}\right\rVert}
+                  \newcommand{\N}{\mathbb{N}}
+                  \newcommand{\R}{\mathbb{R}}
+                  \newcommand{\C}{\mathbb{C}}
+                  \newcommand{\Mat}[1]{\boldsymbol{\mathrm{#1}}}
+                  \newcommand{\suchthat}{\vert{}}
+                  \newcommand{\Set}[1]{\left\{{#1}\right\}}
+                  \newcommand{\union}{\cup}
+                  \newcommand{\intersect}{\cap}
+          </macros>
+    <latex-image-preamble>
+            \RequirePackage{amsmath}
+            \RequirePackage{mathtools}
+            \RequirePackage{tcolorbox}
+            \RequirePackage{tikz}
+            \RequirePackage{siunitx}
+            \RequirePackage[american,siunitx]{circuitikz}
+            \usetikzlibrary{
+                fit,
+                positioning,
+                arrows,
+                calc,
+                decorations.pathreplacing,
+                patterns,
+                intersections,
+                matrix,
+                shapes,
+                shapes.geometric,
+                graphs,
+                graphs.standard,
+            }
+    </latex-image-preamble>
+</docinfo>

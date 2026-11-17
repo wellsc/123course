@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_ang_vel_problem">
+        <title>Linear Velocity and Angular Velocity</title>
+        <p>
+                        As mentioned earlier, <term>linear velocity</term> is a <em>vector quantity</em>. Thus, it has a magnitude and a direction, and the magnitude of linear velocity is <em>speed</em>.
+        </p>
+        <p>
+                        Another distinction between the speeds we calculated in <xref ref="sec_ang_and_lin_vel"/> and what we will be doing here is that we calculated <term>average speeds</term>, whereas what we are going to calculate in this section is <term>instantaneous velocity</term>.
+                        </p>
+                        <p>
+                                An average speed is simply total distance divided by total time. So, for example, if you were to drive from Grand Rapids to Kalamazoo, to calculate your average speed you would record your mileage (from your odometer) before leaving and the time at which you are leaving, and then after driving to Kalamazoo you calculate the distance travelled (your new mileage minus the one you recorded) and the elapsed time, and then divide. So, if you drove a distance of <m>71</m><nbsp/>miles in one hour and <m>15</m><nbsp/>minutes (<m>1.25</m><nbsp/>hr), your <term>average speed</term> for the trip would be <m>\frac{71\text{mi}}{1.25\text{hr}}=56.8\text{mph}</m>.
+        </p>
+        <p>
+                But, if you are driving from Grand Rapids to Kalamazoo and want to know your speed, you don't pull off the road, look at your odometer and your watch, and divide. Instead you look at your speedometer, which gives you your instantaneous speed.
+        </p>
+        <exercise xml:id='exer_easy'>
+                <title>An Easy Problem</title>
+                <statement>
+                        <figure xml:id='fig_train1'>
+                                <caption>A Train and a Camera</caption>
+                                <image width='50%'>
+                                        <latex-image>
+                                                \begin{tikzpicture}
+                                                [scale=0.7]
+                                                \coordinate (C) at (0,0);
+                                                % Camera
+                                                \coordinate (T) at (0,5);
+                                                % Train
+                                                \coordinate (V) at (4,5.2);
+                                                \fill (C) circle (0.07) node[right] {camera};
+                                                \draw[dashed] (C) -- node[midway,right] {\(50\)m} (T);
+                                                \draw[dashed,color=black!80!white]
+                                                (120:5) arc[start angle=120, end angle=60, radius=5];
+                                                \draw (-5,5) -- (5,5);
+                                                \draw (-0.6,5.1) -- (-0.6,5.3) -- (-0.2,5.3) arc[start angle=90, end angle=0, radius=0.2] -- cycle;
+                                                \draw[-stealth] (0,5.2) -- node[midway,above] {\(15.6\frac{\text{m}}{\text{s}}\)} (V);
+                                                \foreach \d in {1,2,3,4,5} {
+                                                \draw (-0.6-\d*0.6,5.1) -- (-0.6-\d*0.6,5.3) -- (-0.1-\d*0.6,5.3) -- (-0.1-\d*0.6,5.1) -- cycle;
+                                                }
+%                                                \draw (C) -- (60:5.735);
+                                                \begin{scope}[xshift=82.48]
+%                                                \draw (-0.6,5.1) -- (-0.6,5.3) -- (-0.2,5.3) arc[start angle=90, end angle=0, radius=0.2] -- cycle;
+                                                \end{scope}
+                                                \end{tikzpicture}
+                                        </latex-image>
+                                </image>
+                        </figure>
+                        <p>
+                                        A train is travelling (due east) at a speed of <m>15.6\frac{\text{m}}{\text{s}}</m>. An observer is following the front of the train with a camera from a spot <m>50</m>m south of the railway.
+                        </p>
+                        <p>
+                                When the front of the train is at its closest point to the camera (so, due north of the camera in this case), how fast must the camera turn (in radians per second) to follow the train?
+                        </p>
+                </statement>
+                <solution>
+                        <p>
+                                The radius of rotation is <m>50</m>m, so the angular velocity is
+                                <md>
+                                        <mrow>
+                                                \omega
+                                                &amp;=
+                                                \frac{\text{speed}}{\text{radius}}
+                                        </mrow>
+                                        <mrow>
+                                                &amp;=
+                                                \frac{15.6\frac{\text{m}}{\text{s}}}{50\text{m}}
+                                        </mrow>
+                                        <mrow>
+                                                &amp;=
+                                                0.312\frac{\text{rad}}{\text{s}}
+                                        </mrow>
+                                </md>
+                        </p>
+                </solution>
+        </exercise>
+        <p>
+                        Now things get more complicated, because the relationship between linear velocity and angular velocity is in fact between angular velocity and <term>tangential velocity</term>. <xref ref='exer_easy'/> is easy because the velocity given along the rails, and the rails are perpendicular to the line from the camera to the train. In other words, the train's velocity is along a <term>tangent line</term> to the rotation, so it is <em>tangential</em> to the rotation.
+        </p>
+        <p>
+                        In the next example, the train has a velocity that is <em>not</em> tangential to the rotation. In addition, the distance to the train is no longer <m>50</m>m!
+        </p>
+        <exercise>
+                <title>A Harder Problem</title>
+                <introduction>
+                        <p>
+                                        A train is travelling (due east) at a speed of <m>15.6\frac{\text{m}}{\text{s}}</m>. An observer is following the front of the train with a camera from a spot <m>50</m>m south of the railway.
+                        </p>
+                        <p>
+                                We want to find the rate at which the camera is turning when the front of the train is at an angle of <m>\frac{\pi}{6}</m> radians to the right of the nearest point.
+                        </p>
+                        <p>
+                                We will now apply Polya's four steps for problem solving, and begin by drawing a picture.
+                                </p>
+                        <figure xml:id='fig_train2'>
+                                <caption>A Train and a Camera</caption>
+                                <image width='50%'>
+                                        <latex-image>
+                                                \begin{tikzpicture}
+                                                [scale=0.7]
+                                                \coordinate (C) at (0,0);
+                                                % Camera
+                                                \coordinate (N) at (0,5);
+                                                % Due north of camera
+                                                \coordinate (T) at (60:5.735);
+                                                % Train
+                                                \fill (C) circle (0.07) node[right] {camera};
+                                                \draw[dashed] (C) -- (N);
+                                                \draw[stealth-stealth] ($(C)+(-0.3,0)$) -- node[midway,left] {\(50\)m} ($(N)+(-0.3,0)$);
+                                                \draw[dashed] (N) -- ($(C)!1.4!(N)$);
+                                                \draw (-5,5) -- (5,5);
+                                                \draw[dashed] (C) -- node[midway,right]{\(r\)} (T);
+                                                \draw[dashed] (T) --($(C)!1.2!(T)$);
+
+                                                \draw (0,2) arc[start angle=90, end angle=60, radius=2] node[midway,above] {\(\frac{\pi}{6}\)};
+                                                \begin{scope}[xshift=82.48]
+                                                \draw (-0.6,5.1) -- (-0.6,5.3) -- (-0.2,5.3) arc[start angle=90, end angle=0, radius=0.2] -- cycle;
+                                                \coordinate (V) at (4,5);
+                                                \draw[thick,-stealth] (T) -- node[midway,above] {\(15.6\frac{\text{m}}{\text{s}}\)} (V) node[right]{\(\vec{v}\)};
+                                                \foreach \d in {1,2,3,4,5} {
+                                                \draw (-0.6-\d*0.6,5.1) -- (-0.6-\d*0.6,5.3) -- (-0.1-\d*0.6,5.3) -- (-0.1-\d*0.6,5.1) -- cycle;
+                                                }
+                                                \end{scope}
+                                                \begin{scope}[rotate=-30,scale=1.1547]
+                                                \coordinate (VT) at (3,5);
+                                                \coordinate (TT) at (0,5);
+                                                \draw[dashed,color=black!80!white]
+                                                (125:5) arc[start angle=125, end angle=55, radius=5];
+                                                \draw[thick,-stealth] (TT) -- node[near end,above] {\(\vec{v}_{T}\)} (VT);
+                                                \draw[dashed] ($(TT)!-1.0!(VT)$) -- node[at end,right] {\(\ell\)} ($(TT)!1.2!(VT)$);
+                                                \end{scope}
+                                                \draw[dashed,-stealth] (VT) -- node[midway,right] {\(\vec{v}_{r}\)} (V);
+                                                \end{tikzpicture}
+                                        </latex-image>
+                                </image>
+                        </figure>
+                                <p>
+                                <ul>
+                                        <li>
+                                                <p>
+                                                        <alert>Understand the Problem</alert>
+                                                </p>
+                                                <p>
+                                                        The difficulties with this problem are that the distance to the train is not given, and the train's velocity is not perpendicular to the line of sight, and so is not tangent to the rotation. First, we label the distance to the train as <m>r</m>. This is the <term>radius of gyration</term>. Then, we draw part of the circle of radius <m>r</m> (centered at the camera) that goes through the front of the train.
+                                                </p>
+                                                <p>
+                                                                Next, we draw the line that is tangent to the circle at the point where the front of the train is. We label this line <m>\ell</m>.
+                                                </p>
+                                                <p>
+                                                                We draw a vector, <m>\vec{v}</m>, representing the train's velocity, and we draw the projection of <m>\vec{v}</m> onto the tangent line, <m>\vec{v}_{T}</m>, and the component that is perpendicular to the tangent line (and thus parallel to the line of sight), <m>\vec{v}_{r}</m>.
+                                                </p>
+                                                <p>
+                                                        If we know the distance <m>r</m>, and the tangential velocity, <m>\vec{v}_{T}</m>, our problem is the same as <xref ref='exer_easy'/> with different numbers.
+                                                </p>
+                                        </li>
+                                        <li>
+                                                <p>
+                                                        <alert>Make a Plan</alert>
+                                                </p>
+                                                <p>Our plan is as follows: 
+                                                        <ul>
+                                                                <li>
+                                                                Calculate the distance <m>r</m> from the camera to the front of the train.
+                                                                </li>
+                                                                <li>
+                                                                                Find a unit vector that points in the direction from the camera to the train. We will call it <m>\vec{u}_{r}</m>.
+                                                                </li>
+                                                                <li>
+                                                                                Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector that points in the direction of the tangent line. Call this <m>\vec{u}_{T}</m>.
+                                                                </li>
+                                                                <li>
+                                                                                Find the projection of the velocity vector <m>\vec{v}</m> onto <m>\vec{u}_{T}</m>. This will be <m>\vec{v}_{T}</m>.
+                                                                </li>
+                                                                <li>
+                                                                                Use the radius of gyration and the magnitude of <m>\vec{v}_{T}</m> to find the angular velocity.
+                                                                </li>
+                                                        </ul>
+                                                </p>
+                                        </li>
+                                        <li>
+                                                <p>
+                                                        <alert>Carry Out the Plan</alert>
+                                                </p>
+                                        </li>
+                                </ul>
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        Calculate the distance <m>r</m> from the camera to the front of the train.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Find a unit vector, <m>\vec{u}_{r}</m>, that points in the direction from the camera to the train.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Use the fact that the tangent line is perpendicular to the line of sight (from the camera to the train) to find a unit vector, <m>\vec{u}_{T}</m>, that points in the direction of the tangent line. Call this .
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the projection, <m>\vec{v}_{T}</m>, of the velocity vector <m>\vec{v}</m> onto <m>\vec{u}_{T}</m>.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Use the radius of gyration and the magnitude of <m>\vec{v}_{T}</m> to find the angular velocity.
+                                </p>
+                        </statement>
+                </task>
+                <conclusion>
+                        <p>
+                                <ul>
+                                        <li>
+                                                <p>
+                                                        <alert>Look Back</alert>
+                                                </p>
+                                                <p>
+                                                        What tools did we need to solve this problem?
+                                                </p>
+                                                <p>
+                                                        Can you think of other situations where you might need to calculate angular velocity?
+                                                </p>
+                                                <p>
+                                                        What is the ratio of the angular velocity in this problem to the angular velocity in <xref ref='exer_easy'/>?
+                                                </p>
+                                                <p>
+                                                                What would change if we had an angle different from <m>\frac{\pi}{6}</m>? Can you solve the problem for an unspecified angle,<nbsp/><m>\theta</m>?
+                                                        What would the ratio of the angular velocity in that problem be to the angular velocity in <xref ref='exer_easy'/>?
+                                                </p>
+                                                <p>
+                                                        How would the problem change if we were given the angular velocity and asked to find the (linear) velocity of the train?
+                                                </p>
+                                        </li>
+                                </ul>
+                        </p>
+                </conclusion>
+        </exercise>
+</section>

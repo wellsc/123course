@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="angular_velocity" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Angular and Linear Velocity</title>
+        <xi:include href='./angle_and_dist.ptx'/>
+        <xi:include href='./ang_and_lin_vel.ptx'/>
+        <xi:include href='./angular_vel_problem.ptx'/>
+</section>

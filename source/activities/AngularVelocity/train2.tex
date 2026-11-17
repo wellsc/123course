@@ -1,0 +1,38 @@
+
+                                        <latex-image>
+                                                \begin{tikzpicture}
+                                                [scale=0.7]
+                                                \coordinate (C) at (0,0);
+                                                % Camera
+                                                \coordinate (N) at (0,5);
+                                                % Due north of camera
+                                                \coordinate (T) at (60:5.735);
+                                                % Train
+                                                \fill (C) circle (0.07) node[right] {camera};
+                                                \draw[dashed] (C) -- (N);
+                                                \draw[stealth-stealth] ($(C)+(-0.3,0)$) -- node[midway,left] {\(50\)m} ($(N)+(-0.3,0)$);
+                                                \draw[dashed] (N) -- ($(C)!1.4!(N)$);
+                                                \draw (-5,5) -- (5,5);
+                                                \draw[dashed] (C) -- node[midway,right]{\(r\)} (T);
+                                                \draw[dashed] (T) --($(C)!1.2!(T)$);
+
+                                                \draw (0,2) arc[start angle=90, end angle=60, radius=2] node[midway,above] {\(\frac{\pi}{6}\)};
+                                                \begin{scope}[xshift=82.48]
+                                                \draw (-0.6,5.1) -- (-0.6,5.3) -- (-0.2,5.3) arc[start angle=90, end angle=0, radius=0.2] -- cycle;
+                                                \coordinate (V) at (4,5);
+                                                \draw[thick,-stealth] (T) -- node[midway,above] {\(15.6\frac{\text{m}}{\text{s}}\)} (V) node[right]{\(\vec{v}\)};
+                                                \foreach \d in {1,2,3,4,5} {
+                                                \draw (-0.6-\d*0.6,5.1) -- (-0.6-\d*0.6,5.3) -- (-0.1-\d*0.6,5.3) -- (-0.1-\d*0.6,5.1) -- cycle;
+                                                }
+                                                \end{scope}
+                                                \begin{scope}[rotate=-30,scale=1.1547]
+                                                \coordinate (VT) at (3,5);
+                                                \coordinate (TT) at (0,5);
+                                                \draw[dashed,color=black!80!white]
+                                                (125:5) arc[start angle=125, end angle=55, radius=5];
+                                                \draw[thick,-stealth] (TT) -- node[near end,above] {\(\vec{v}_{T}\)} (VT);
+                                                \draw[dashed] ($(TT)!-1.0!(VT)$) -- node[at end,right] {\(\ell\)} ($(TT)!1.2!(VT)$);
+                                                \end{scope}
+                                                \draw[dashed,-stealth] (VT) -- node[midway,right] {\(\vec{v}_{r}\)} (V);
+                                                \end{tikzpicture}
+                                        </latex-image>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_ang_and_lin_vel">
+        <title>Angular Velocity and Speed</title>
+        <p>
+                Using the relationship between angle and distance, we can now move to their <term>rates of change</term>, giving us a relationship between <term>angular velocity</term>, which is the rate at which the angle changes, and <term>speed</term>, which is the rate at which distance changes.
+        </p>
+        <p>
+                        We will eventually move to calculating <term>linear velocity</term>, but because linear velocity is a <em>vector</em> quantity, what we will be calculating below is <term>speed</term>, which is the <em>magnitude</em> of the linear velocity. We will make the distinction clearer later in <xref ref="sec_ang_vel_problem"/>.
+        </p>
+        <exercise xml:id='exer_angular_from_linear'>
+                <title>Finding Angular Velocity from Speed</title>
+                <introduction>
+                        <p>
+                                        We will look again at person riding on a carousel that has a radius of <m>7</m>m.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        If they have travelled 
+                                        <m>14</m>m along the circumference of the carousel in <m>10</m> seconds,
+                                        what is their speed (in meters per second)?
+                                </p>
+                        </statement>
+                        <hint>
+                                <p>
+                                        Recall that speed is distance per unit time.
+                                </p>
+                        </hint>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        If they have travelled 
+                                        <m>14</m>m along the circumference of the carousel in <m>10</m> seconds,
+                                                how many radians per second have they travelled? (This is their <term>angular velocity</term>.)
+                                </p>
+                        </statement>
+                        <hint>
+                                <p>
+                                        Find the angle through which they have travelled and divide it by the number of seconds.
+                                </p>
+                        </hint>
+                </task>
+        </exercise>
+        <exercise xml:id='exer_vel_from_ang_vel'>
+                <title>Finding Speed from Angular Velocity</title>
+                <introduction>
+                        <p>
+                                        We will look again at person riding on a carousel that has a radius of <m>7</m>m.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled through an angle of <m>\theta=1</m><nbsp/>radian in <m>10</m> seconds, what is their angular velocity?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled through an angle of <m>\theta=1</m><nbsp/>radian in <m>10</m> seconds, what is their speed (in meters per second)?
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+</section>

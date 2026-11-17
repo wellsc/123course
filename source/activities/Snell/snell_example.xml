@@ -1,0 +1,33 @@
+
+<diagram dimensions="(300,300)" margins="15">
+  <definition>s=(0,0)</definition>
+  <definition>n_air=1.000239</definition>
+  <definition>n_water=1.333</definition>
+  <definition>theta_air=pi/4</definition>
+  <definition>theta_water=asin(n_air*sin(theta_air)/n_water)</definition>
+  <definition>obs=s+4*(cos(pi/2+theta_air),sin(pi/2+theta_air))</definition>
+  <definition>obj=s+(3*sin(theta_water),-3)</definition>
+  <definition>image=s+(3*tan(theta_air),-3)</definition>
+  <definition>waterline=((-1,0),(1,0))</definition>
+  <definition>bottom=((-1,-3),(1,-3))</definition>
+  <definition>up=s+(0,1)</definition>
+  <coordinates bbox="(-4,-4,4,4)">
+    <rectangle lower-left="(bbox[0],-3)" dimensions="(8,3)" fill="blue" opacity="0.3"/>
+    <line endpoints="waterline" infinite="yes" stroke="blue" />
+    <line endpoints="bottom" infinite="yes" stroke="brown" />
+    <line endpoints="(obs,s)"/>
+    <line endpoints="(s,obj)" />
+    <line endpoints="(s,image)" dash="2 4" />
+    <line endpoints="(s,up)" infinite="yes" dash="4 4" />
+    <line endpoints="((-2,-3),(-2,0))" arrows="2" ><m>3\text{m}</m></line>
+    <angle-marker points="(up,s,obs)"><m>45^{\circ}</m></angle-marker>
+
+    <point p="image" alignment="se" >Image</point>
+    <point p="obj" alignment="sw" style="box" >Object</point>
+    <point p="obs" alignment="ne">Observer</point>
+    
+    
+    
+  </coordinates>
+
+</diagram>

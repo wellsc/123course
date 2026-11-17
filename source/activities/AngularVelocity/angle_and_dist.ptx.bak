@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_angle_and_dist">
+        <title>Distance and Angle</title>
+        <p>
+                Recall that distance travelled around a circle and the angle travelled are related in a very simple way when we measure the angle in radians.
+        </p>
+        <exercise xml:id='exer_dist_from_angle'>
+                <title>Finding Distances from Angles</title>
+                <introduction>
+                        <figure xml:id='fig_carousel'>
+                                <caption>A Circle Representing a Carousel</caption>
+                                <image width="50%">
+                                        <latex-image>
+                                                \begin{tikzpicture}
+                                                [scale=0.7]
+                                                %[scale=0.25mm]
+                                                \coordinate (C) at (0,0);
+                                                \coordinate (R) at (7,0);
+                                                \coordinate (M) at (30:7);
+                                                \fill (C) circle (0.1);
+                                                \draw (C) circle (7);
+                                                \draw[-stealth,dashed] (C) -- node[midway,above left]{\(7\)m} (M);
+                                                \draw[-stealth] (3,0)
+                                                        arc[start angle=0, end angle=30, radius=3]
+                                                        node[midway,right] {\(\theta\)}
+                                                ;
+                                                \draw (-8,0) -- (8,0) (0,-8) -- (0,8);
+                                                \foreach \a in {30, 40, ..., 380}
+                                                {
+                                                \begin{scope}[rotate=\a]
+                                                \draw (7,-0.3625) rectangle (7.2,0.3625);
+                                                \end{scope}
+                                                %        \draw (\a:7) circle (0.1);
+                                                }
+                                                \end{tikzpicture}
+                                        </latex-image>
+                                </image>
+                        </figure>
+                        <p>
+                                        A person is riding on a carousel that has a radius of <m>7</m>m. We place our coordinates axes so that they begin at the point <m>(7,0)</m>.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled through an angle of <m>\theta=1</m><nbsp/>radian, what distance along the circumference of the carousel have they travelled?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled through an angle of <m>\theta=3</m><nbsp/>radians, what distance along the circumference of the carousel have they travelled?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Write a formula for the distance, <m>d</m> travelled along the circumference of the carousel when they have travelled through an angle of <m>\theta</m><nbsp/>radians.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                                Repeat the previous questions for a carousel whose radius is <m>9</m>m.
+                                </p>
+                                <p>
+                                        Based on your results, write a formula for the distance, <m>d</m> travelled along the circumference of a circle of radius <m>r</m> when they have travelled through an angle of <m>\theta</m><nbsp/>radians.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise xml:id='exer_angle_from_dist'>
+                <title>Finding Angles from Distances</title>
+                <introduction>
+                        <p>
+                                        We will look again at person riding on a carousel that has a radius of <m>7</m>m.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled 
+                                        <m>14</m>m along the circumference of the carousel
+                                        through what angle of <m>\theta</m> (in radians)
+                                        have they travelled?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        When they have travelled 
+                                        <m>35</m>m along the circumference of the carousel
+                                        through what angle of <m>\theta</m> (in radians)
+                                        have they travelled?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Write a formula to find 
+                                        the angle <m>\theta</m> (in radians)
+                                        they have travelled
+                                        when 
+                                        they have travelled
+                                        <m>d</m>m along the circumference of the carousel.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Write a formula to find 
+                                        the angle <m>\theta</m> (in radians)
+                                        they have travelled
+                                        when 
+                                        they have travelled
+                                        <m>d</m>m along the circumference of a circle with radius <m>r</m>.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+</section>

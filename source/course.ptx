@@ -57,6 +57,7 @@
       <xi:include href='./activities/Complex/CanYouMultiplyVectors.ptx'/>
       <xi:include href='./activities/HoursOfDaylight/HoursOfDaylight.ptx'/>
       <xi:include href='./activities/Snell/Snell.ptx'/>
+      <xi:include href='./activities/AngularVelocity/AngularVelocity.ptx'/>
     </chapter>
 
     <chapter xml:id="progress_checks">
