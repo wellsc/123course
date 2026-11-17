@@ -133,7 +133,7 @@
     <line x1="349.3" y1="55.0" x2="502.9" y2="55.0" stroke="black" stroke-width="2" fill="none" marker-end="url(#prefig_train2-arrow-head-end-2_None_24_60-black)"/>
   </g>
   <g id="prefig_train2-__g-2">
-    <g id="prefig_train2-__label-4" transform="translate(486.4,129.5) translate(0.0,-18.0)">
+    <g id="prefig_train2-__label-4" transform="translate(468.3,119.1) translate(0.0,-18.0)">
       <g id="prefig_train2-__g-7">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="19.288px" height="18.024px" role="img" focusable="false" viewBox="0 -846 1065.8 996" x="0.0" y="0.0">
           <defs>
@@ -165,6 +165,6 @@
         </svg>
       </g>
     </g>
-    <path stroke="black" stroke-width="1" fill="none" marker-end="url(#prefig_train2-arrow-head-end-1_None_24_60-black)" d="M 349.3 55.0 L 483.4 132.4"/>
+    <path stroke="black" stroke-width="1" fill="none" marker-end="url(#prefig_train2-arrow-head-end-1_None_24_60-black)" d="M 349.3 55.0 L 465.3 121.9"/>
   </g>
 </svg>
