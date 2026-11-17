@@ -55,7 +55,7 @@
     <line endpoints="(cab_lr,cab_lr+(2*1.56,0))" 
           thickness="2" 
           arrows="1"><m>15.6\text{m}/\text{s}</m></line>
-    <vector v="2*1.56*u" tail="cab_lr" thickness="1"><m>\vec{v}_{T}</m></vector>
+  <vector v="2*1.56*cos(pi/6)*u" tail="cab_lr" thickness="1"><m>\vec{v}_{T}</m></vector>
   </coordinates>
 </diagram>
 
